@@ -107,6 +107,27 @@ python scripts/fit_lens.py --model Qwen/Qwen3.5-4B --out lens.pt --n 100
 
 See [`examples/`](examples/) for runnable text, vision, conflict, and prompt-helper demos.
 
+## MLX backend (Apple Silicon, forward-only)
+
+The Jacobian `J_ℓ` is fit **once, offline** (on CUDA or Apple MPS via torch); applying the
+lens at inference is **forward-only** (`unembed(norm(J_ℓ · h))`). So on Apple Silicon you
+don't need a custom Metal backward kernel for Qwen3.5's Gated-DeltaNet layers at all — you
+just load the fitted `J_ℓ` into MLX and do a native MLX forward + a matmul:
+
+```bash
+# 1) fit J_ell offline (torch; do NOT install fla so GDN stays differentiable)
+python scripts/fit_lens.py --model Qwen/Qwen3.5-4B --out lens.pt --n 100
+# 2) export to a plain .npz MLX can read
+python scripts/lens_to_npz.py lens.pt lens_jl.npz
+# 3) run the native-MLX forward-only lens (loads mlx-community/Qwen3.5-4B-4bit)
+python examples/05_mlx_forward_lens.py
+```
+
+Verified: the MLX forward-only lens reproduces the same `currency → euro → Italian`
+readout as the torch lens — sub-second per forward, no `custom_gdn_vjp` Metal kernel.
+Loading the MLX model sidesteps a `mlx_lm`/transformers-5.x clash by using
+`mlx_lm.utils.load_model` + the raw `tokenizers` lib (see the example).
+
 ## API
 
 | call | what |

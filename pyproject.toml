@@ -24,6 +24,7 @@ classifiers = [
 dependencies = [
   "torch>=2.4",
   "transformers>=5.13",
+  "accelerate",           # device_map model loading
   "pillow",
   "torchvision",
   # J-Lens engine (Anthropic reference implementation, Apache-2.0):
@@ -32,6 +33,7 @@ dependencies = [
 
 [project.optional-dependencies]
 fit = ["datasets"]        # for fitting a lens on WikiText prompts
+mlx = ["mlx", "mlx-lm", "tokenizers"]   # Apple-Silicon forward-only backend
 
 [project.urls]
 Homepage = "https://github.com/your-org/JLensVL"
