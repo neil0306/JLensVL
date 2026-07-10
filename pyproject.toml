@@ -1,0 +1,41 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "jlensvl"
+version = "0.1.0"
+description = "A Jacobian-Lens (J-Lens) observer for vision-language models — read what a VLM is poised to say, before it says it."
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "Apache-2.0" }
+authors = [{ name = "JLensVL contributors" }]
+keywords = [
+  "jlens", "jacobian-lens", "j-lens", "logit-lens", "interpretability",
+  "mechanistic-interpretability", "vlm", "multimodal", "transformer-circuits",
+  "global-workspace", "qwen",
+]
+classifiers = [
+  "Programming Language :: Python :: 3",
+  "License :: OSI Approved :: Apache Software License",
+  "Intended Audience :: Science/Research",
+  "Topic :: Scientific/Engineering :: Artificial Intelligence",
+]
+dependencies = [
+  "torch>=2.4",
+  "transformers>=5.13",
+  "pillow",
+  "torchvision",
+  # J-Lens engine (Anthropic reference implementation, Apache-2.0):
+  "jlens @ git+https://github.com/anthropics/jacobian-lens.git",
+]
+
+[project.optional-dependencies]
+fit = ["datasets"]        # for fitting a lens on WikiText prompts
+
+[project.urls]
+Homepage = "https://github.com/your-org/JLensVL"
+"J-Lens paper" = "https://transformer-circuits.pub/2026/workspace/"
+
+[tool.setuptools.packages.find]
+where = ["src"]

@@ -1,0 +1,16 @@
+.venv/
+venv/
+__pycache__/
+*.pyc
+*.pyo
+*.egg-info/
+build/
+dist/
+.ipynb_checkpoints/
+# large fitted lenses / model weights (fit or download separately)
+*.pt
+*.npz
+*.safetensors
+*.bin
+# downloaded demo images (reproducible)
+images/
