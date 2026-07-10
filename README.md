@@ -107,6 +107,30 @@ python scripts/fit_lens.py --model Qwen/Qwen3.5-4B --out lens.pt --n 100
 
 See [`examples/`](examples/) for runnable text, vision, conflict, and prompt-helper demos.
 
+## Visualization (`jlensvl.viz`)
+
+Self-contained HTML — no server, no external deps, open in any browser:
+
+```python
+from jlensvl import JLensVL, viz
+jl = JLensVL.from_pretrained("Qwen/Qwen3.5-4B", lens="lens.pt")
+
+# layer × position "slice grid": what concept each layer holds at each token
+viz.slice_grid_html(jl, "…the country shaped like a boot is the",
+                    layers=range(16, 31), out_path="slice.html")
+
+# VLM slice grid (image tokens collapsed to an [IMG] band)
+viz.slice_grid_image_html(jl, "cat.jpg", "What is this?", out_path="slice_vlm.html")
+
+# concept-race line chart from concept_race() output
+race = jl.concept_race("dog.jpg", "This is a cat. What is it?",
+                       {"dog": ["dog"], "cat": ["cat"]})
+viz.race_chart_html(race, "dog", "cat", out_path="race.html")
+```
+
+The slice grid colors each cell by confidence and shows the top token; hover for the
+full top-k. See `examples/06_visualize.py`.
+
 ## MLX backend (Apple Silicon, forward-only)
 
 The Jacobian `J_ℓ` is fit **once, offline** (on CUDA or Apple MPS via torch); applying the
