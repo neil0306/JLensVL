@@ -1,0 +1,26 @@
+{"_header": true, "name": "association_text", "category": "association", "concepts": {"paris": ["Paris"], "tokyo": ["Tokyo"], "berlin": ["Berlin"], "rome": ["Rome"], "madrid": ["Madrid"], "moscow": ["Moscow"], "beijing": ["Beijing"], "london": ["London"], "cairo": ["Cairo"], "ottawa": ["Ottawa"], "vienna": ["Vienna"], "seoul": ["Seoul"], "bangkok": ["Bangkok"], "warsaw": ["Warsaw"], "lisbon": ["Lisbon"], "dublin": ["Dublin"], "shanghai": ["Shanghai"], "munich": ["Munich"], "toronto": ["Toronto"], "riyadh": ["Riyadh"], "baghdad": ["Baghdad"], "yen": ["yen"], "pound": ["pound"], "dollar": ["dollar"], "euro": ["euro"], "rupee": ["rupee"], "won": ["won"], "franc": ["franc"], "dinar": ["dinar"], "bark": ["bark", "woof"], "meow": ["meow"], "moo": ["moo"], "quack": ["quack"], "neigh": ["neigh"], "baa": ["baa"], "oink": ["oink"], "yellow": ["yellow"], "blue": ["blue"], "green": ["green"], "red": ["red"], "white": ["white"], "black": ["black"]}}
+{"id": "cap-fr", "prompt": "The capital of France is", "target": "paris", "distractors": ["london", "berlin", "madrid"], "image": null, "category": "capital", "meta": {}}
+{"id": "cap-jp", "prompt": "The capital of Japan is", "target": "tokyo", "distractors": ["beijing", "seoul", "bangkok"], "image": null, "category": "capital", "meta": {}}
+{"id": "cap-de", "prompt": "The capital of Germany is", "target": "berlin", "distractors": ["paris", "vienna", "munich"], "image": null, "category": "capital", "meta": {}}
+{"id": "cap-it", "prompt": "The capital of Italy is", "target": "rome", "distractors": ["paris", "madrid", "vienna"], "image": null, "category": "capital", "meta": {}}
+{"id": "cap-es", "prompt": "The capital of Spain is", "target": "madrid", "distractors": ["rome", "lisbon", "paris"], "image": null, "category": "capital", "meta": {}}
+{"id": "cap-ru", "prompt": "The capital of Russia is", "target": "moscow", "distractors": ["warsaw", "berlin", "beijing"], "image": null, "category": "capital", "meta": {}}
+{"id": "cap-cn", "prompt": "The capital of China is", "target": "beijing", "distractors": ["shanghai", "tokyo", "seoul"], "image": null, "category": "capital", "meta": {}}
+{"id": "cap-uk", "prompt": "The capital of the United Kingdom is", "target": "london", "distractors": ["dublin", "paris", "berlin"], "image": null, "category": "capital", "meta": {}}
+{"id": "cap-eg", "prompt": "The capital of Egypt is", "target": "cairo", "distractors": ["riyadh", "baghdad", "moscow"], "image": null, "category": "capital", "meta": {}}
+{"id": "cap-ca", "prompt": "The capital of Canada is", "target": "ottawa", "distractors": ["toronto", "london", "paris"], "image": null, "category": "capital", "meta": {}}
+{"id": "cur-jp", "prompt": "The currency of Japan is the", "target": "yen", "distractors": ["dollar", "euro", "won"], "image": null, "category": "currency", "meta": {}}
+{"id": "cur-uk", "prompt": "The currency of the United Kingdom is the", "target": "pound", "distractors": ["dollar", "euro", "yen"], "image": null, "category": "currency", "meta": {}}
+{"id": "cur-us", "prompt": "The currency of the United States is the", "target": "dollar", "distractors": ["pound", "euro", "yen"], "image": null, "category": "currency", "meta": {}}
+{"id": "cur-de", "prompt": "The currency of Germany is the", "target": "euro", "distractors": ["dollar", "pound", "franc"], "image": null, "category": "currency", "meta": {}}
+{"id": "cur-in", "prompt": "The currency of India is the", "target": "rupee", "distractors": ["dollar", "yen", "dinar"], "image": null, "category": "currency", "meta": {}}
+{"id": "snd-dog", "prompt": "The sound a dog makes is a", "target": "bark", "distractors": ["meow", "moo", "neigh"], "image": null, "category": "animal_sound", "meta": {}}
+{"id": "snd-cat", "prompt": "The sound a cat makes is a", "target": "meow", "distractors": ["bark", "moo", "oink"], "image": null, "category": "animal_sound", "meta": {}}
+{"id": "snd-cow", "prompt": "The sound a cow makes is a", "target": "moo", "distractors": ["bark", "meow", "baa"], "image": null, "category": "animal_sound", "meta": {}}
+{"id": "snd-duck", "prompt": "The sound a duck makes is a", "target": "quack", "distractors": ["moo", "bark", "meow"], "image": null, "category": "animal_sound", "meta": {}}
+{"id": "snd-horse", "prompt": "The sound a horse makes is a", "target": "neigh", "distractors": ["moo", "bark", "baa"], "image": null, "category": "animal_sound", "meta": {}}
+{"id": "col-banana", "prompt": "The typical color of a ripe banana is", "target": "yellow", "distractors": ["red", "green", "blue"], "image": null, "category": "color", "meta": {}}
+{"id": "col-sky", "prompt": "The typical color of a clear sky is", "target": "blue", "distractors": ["red", "yellow", "green"], "image": null, "category": "color", "meta": {}}
+{"id": "col-grass", "prompt": "The typical color of fresh grass is", "target": "green", "distractors": ["blue", "red", "yellow"], "image": null, "category": "color", "meta": {}}
+{"id": "col-blood", "prompt": "The typical color of blood is", "target": "red", "distractors": ["blue", "green", "yellow"], "image": null, "category": "color", "meta": {}}
+{"id": "col-snow", "prompt": "The typical color of fresh snow is", "target": "white", "distractors": ["black", "red", "blue"], "image": null, "category": "color", "meta": {}}

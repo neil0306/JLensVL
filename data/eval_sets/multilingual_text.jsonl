@@ -1,0 +1,20 @@
+{"_header": true, "name": "multilingual_text", "category": "multilingual", "concepts": {"red": ["red", "rouge", "rojo", "rot"], "blue": ["blue", "bleu", "azul", "blau"], "green": ["green", "vert", "verde", "grün"], "yellow": ["yellow", "jaune", "amarillo", "gelb"], "black": ["black", "noir", "negro", "schwarz"], "white": ["white", "blanc", "blanco", "weiss"]}}
+{"id": "ml-strawberry-en", "prompt": "The color of a ripe strawberry is", "target": "red", "distractors": ["blue", "green", "yellow"], "image": null, "category": "multilingual_en", "meta": {"lang": "en"}}
+{"id": "ml-strawberry-fr", "prompt": "La couleur d'une fraise mûre est", "target": "red", "distractors": ["blue", "green", "yellow"], "image": null, "category": "multilingual_fr", "meta": {"lang": "fr"}}
+{"id": "ml-strawberry-es", "prompt": "El color de una fresa madura es", "target": "red", "distractors": ["blue", "green", "yellow"], "image": null, "category": "multilingual_es", "meta": {"lang": "es"}}
+{"id": "ml-strawberry-de", "prompt": "Die Farbe einer reifen Erdbeere ist", "target": "red", "distractors": ["blue", "green", "yellow"], "image": null, "category": "multilingual_de", "meta": {"lang": "de"}}
+{"id": "ml-blood-de", "prompt": "Die Farbe von Blut ist", "target": "red", "distractors": ["blue", "green", "white"], "image": null, "category": "multilingual_de", "meta": {"lang": "de"}}
+{"id": "ml-sky-en", "prompt": "The color of a clear sky is", "target": "blue", "distractors": ["red", "yellow", "green"], "image": null, "category": "multilingual_en", "meta": {"lang": "en"}}
+{"id": "ml-sky-fr", "prompt": "La couleur d'un ciel dégagé est", "target": "blue", "distractors": ["red", "yellow", "green"], "image": null, "category": "multilingual_fr", "meta": {"lang": "fr"}}
+{"id": "ml-sky-es", "prompt": "El color de un cielo despejado es", "target": "blue", "distractors": ["red", "yellow", "green"], "image": null, "category": "multilingual_es", "meta": {"lang": "es"}}
+{"id": "ml-grass-en", "prompt": "The color of fresh grass is", "target": "green", "distractors": ["blue", "red", "yellow"], "image": null, "category": "multilingual_en", "meta": {"lang": "en"}}
+{"id": "ml-grass-fr", "prompt": "La couleur de l'herbe fraîche est", "target": "green", "distractors": ["blue", "red", "yellow"], "image": null, "category": "multilingual_fr", "meta": {"lang": "fr"}}
+{"id": "ml-grass-de", "prompt": "Die Farbe von frischem Gras ist", "target": "green", "distractors": ["blue", "red", "yellow"], "image": null, "category": "multilingual_de", "meta": {"lang": "de"}}
+{"id": "ml-banana-en", "prompt": "The color of a ripe banana is", "target": "yellow", "distractors": ["red", "green", "blue"], "image": null, "category": "multilingual_en", "meta": {"lang": "en"}}
+{"id": "ml-banana-es", "prompt": "El color de un plátano maduro es", "target": "yellow", "distractors": ["red", "green", "blue"], "image": null, "category": "multilingual_es", "meta": {"lang": "es"}}
+{"id": "ml-lemon-en", "prompt": "The color of a lemon is", "target": "yellow", "distractors": ["red", "green", "blue"], "image": null, "category": "multilingual_en", "meta": {"lang": "en"}}
+{"id": "ml-night-en", "prompt": "The color of the night sky is", "target": "black", "distractors": ["blue", "white", "yellow"], "image": null, "category": "multilingual_en", "meta": {"lang": "en"}}
+{"id": "ml-night-de", "prompt": "Die Farbe des Nachthimmels ist", "target": "black", "distractors": ["blue", "white", "yellow"], "image": null, "category": "multilingual_de", "meta": {"lang": "de"}}
+{"id": "ml-coal-es", "prompt": "El color del carbón es", "target": "black", "distractors": ["blue", "white", "red"], "image": null, "category": "multilingual_es", "meta": {"lang": "es"}}
+{"id": "ml-snow-en", "prompt": "The color of fresh snow is", "target": "white", "distractors": ["black", "red", "blue"], "image": null, "category": "multilingual_en", "meta": {"lang": "en"}}
+{"id": "ml-snow-fr", "prompt": "La couleur de la neige fraîche est", "target": "white", "distractors": ["black", "red", "blue"], "image": null, "category": "multilingual_fr", "meta": {"lang": "fr"}}
