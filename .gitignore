@@ -14,3 +14,6 @@ dist/
 *.bin
 # downloaded demo images (reproducible)
 images/
+**/linkedin
+*.ckpt
+*.DS_Store
