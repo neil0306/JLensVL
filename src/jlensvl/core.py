@@ -183,3 +183,50 @@ class JLensVL:
             logits = self.lm.unembed(self.lens.transport(r, L)[None].to(r.device))[0]
             rows[L] = {n: float(logits[i].max()) for n, i in cid.items()}
         return rows
+
+    def decision_trace(self, image, question, *, system=None, concepts=None,
+                       prefill='{"tier": "', auto_k=3, layers=None, k=6):
+        """One VLM forward at a *decision point* (the `prefill` primes the answer),
+        returning per-layer J-Lens scores for the candidate answers and the poised
+        readout — the raw material for a layer-by-layer 'thinking' animation.
+
+        If `concepts` is None, the candidates are **auto-detected from the model's own
+        top-`auto_k` next tokens at the decision point** — i.e. exactly what the model
+        is deciding between during this inference (no hardcoding). Pass `concepts=
+        {name:[words]}` to score explicit classes instead.
+
+        Returns: {image, candidates:[names], scores:{layer:{name:score}},
+                  readouts:{layer:[tokens]}, layers:[...]}.
+        """
+        self._require_lens()
+        from PIL import Image as _Im
+        pil = _Im.open(image).convert("RGB") if isinstance(image, str) else image
+        content = [{"type": "image", "image": pil}, {"type": "text", "text": question}]
+        msgs = ([{"role": "system", "content": system}] if system else []) + \
+               [{"role": "user", "content": content}]
+        try:
+            text = self.processor.apply_chat_template(
+                msgs, tokenize=False, add_generation_prompt=True, enable_thinking=False)
+        except TypeError:
+            text = self.processor.apply_chat_template(msgs, tokenize=False, add_generation_prompt=True)
+        inputs = self.processor(text=[text + prefill], images=[pil], return_tensors="pt").to(self.model.device)
+        layers = list(layers) if layers is not None else self.lens.source_layers
+        with torch.no_grad(), ActivationRecorder(self.lm.layers, at=layers) as rec:
+            out = self.model(**inputs)
+            acts = {i: rec.activations[i].detach() for i in layers}
+        last = inputs["input_ids"].shape[1] - 1
+        if concepts is None:                       # auto-detect the model's own candidates
+            final = out.logits[0, last].float()
+            cand_ids = {}
+            for t in final.topk(auto_k).indices.tolist():
+                cand_ids[self.tok.decode([int(t)]).strip() or self.tok.decode([int(t)])] = [int(t)]
+        else:
+            cand_ids = {n: self._word_ids(w) for n, w in concepts.items()}
+        scores, readouts = {}, {}
+        for L in layers:
+            r = acts[L][0, last].float()
+            lg = self.lm.unembed(self.lens.transport(r, L)[None].to(r.device))[0]
+            scores[L] = {n: float(lg[i].max()) for n, i in cand_ids.items()}
+            readouts[L] = [self.tok.decode([int(i)]).strip() or "·" for i in lg.topk(k).indices.tolist()]
+        return {"image": pil, "candidates": list(cand_ids.keys()), "scores": scores,
+                "readouts": readouts, "layers": list(layers)}

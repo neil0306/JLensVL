@@ -295,6 +295,49 @@ def rendered_strip_html(trace, *, intended=None, out_path=None, title="template-
     return doc
 
 
+def decision_gif(trace, *, out_gif, title="J-Lens decision", duration=280, hold=5):
+    """Animate, layer by layer, how the candidate answers' J-Lens scores form during
+    a single inference. `trace` = `JLensVL.decision_trace(...)` output (its candidates
+    may be auto-detected). Writes an animated GIF (embeds the image thumbnail). PIL only."""
+    from PIL import Image, ImageDraw, ImageFont
+    layers = sorted(trace["layers"]); lmax = layers[-1]
+    cands, scores, reado = trace["candidates"], trace["scores"], trace["readouts"]
+    pal = [(248, 81, 73), (227, 179, 65), (126, 231, 135), (121, 192, 255), (255, 166, 87), (210, 168, 255)]
+    col = {c: pal[i % len(pal)] for i, c in enumerate(cands)}
+    try:
+        fb = ImageFont.truetype("/usr/share/fonts/truetype/dejavu/DejaVuSans-Bold.ttf", 22)
+        f = ImageFont.truetype("/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf", 18)
+        fs = ImageFont.truetype("/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf", 15)
+    except Exception:
+        fb = f = fs = ImageFont.load_default()
+    thumb = None
+    if trace.get("image") is not None:
+        thumb = trace["image"].copy(); thumb.thumbnail((250, 250))
+    W, H = 880, 150 + 46 * len(cands) + 70
+    vmax = max((max(scores[L].values()) for L in layers), default=1.0) or 1.0
+    frames = []
+    for L in layers:
+        c = Image.new("RGB", (W, H), (13, 17, 23)); d = ImageDraw.Draw(c)
+        d.text((24, 18), f"{title} · J-Lens Layer L{L:02d}/{lmax}", font=fb, fill=(230, 237, 243))
+        if thumb is not None:
+            c.paste(thumb, (W - 270, 52))
+        lead = max(scores[L], key=scores[L].get)
+        y = 90
+        for cand in cands:
+            v = scores[L][cand]; w = int(max(v, 0) / vmax * 380)
+            tag = "  <= leading" if cand == lead else ""
+            d.text((24, y), cand[:18], font=f, fill=col[cand])
+            d.rectangle([200, y + 2, 200 + w, y + 22], fill=col[cand])
+            d.text((200 + w + 8, y), f"{v:.1f}{tag}", font=f, fill=(230, 237, 243)); y += 46
+        d.text((24, y + 14), "J-Lens poised (top-6):", font=f, fill=(139, 148, 158))
+        d.text((24, y + 44), ("   ".join(reado[L]))[:96], font=fs, fill=(230, 237, 243))
+        d.rectangle([24, H - 26, 24 + int((L / lmax) * (W - 48)), H - 18], fill=(121, 192, 255))
+        frames.append(c)
+    frames += [frames[-1]] * hold
+    frames[0].save(out_gif, save_all=True, append_images=frames[1:], duration=duration, loop=0)
+    return out_gif
+
+
 def race_chart_html(race, concept_a, concept_b, *, out_path=None, title="concept race",
                     crossover=None):
     """Inline-SVG line chart from a `concept_race` result {layer: {name: score}}."""
