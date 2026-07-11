@@ -1,0 +1,22 @@
+Causal lens-coordinate swap intervention -- real run, Qwen3.5-4B, GPU1 (RTX 3090)
+Command: examples/09_intervention.py --model /home/anu/qwen35_4b_dl \
+  --lens lens_qwen35_4b_final.pt \
+  --prompt "Fact: The capital city of France is" --a Paris --b Rome --layer 28
+
+prompt: 'Fact: The capital city of France is'
+swap  : 'Paris' <-> 'Rome'  at layer 28 pos 7
+lens (observational): Paris=24.62  Rome=14.44
+dose-response (model's OWN final logits):
+   t        Paris      Rome   pref(b-a)
+  0.00     19.25     11.38   -7.88
+  0.25     18.62     14.12   -4.50
+  0.50     17.75     16.62   -1.12
+  0.75     16.25     18.62   +2.38
+  1.00     14.44     19.88   +5.44
+=> CAUSAL (decision flipped);  net effect on pref = +13.31
+
+Note: the same swap at an earlier layer (15 of 31) was NOT decisive
+(net effect +0.50, no sign flip) -- the causal effect is layer-dependent,
+consistent with the observational lens finding that "Paris" only pulls
+decisively ahead of "Rome" in the deeper layers (see README currency/boot
+example for the analogous mid-stack-to-late-stack pattern).
