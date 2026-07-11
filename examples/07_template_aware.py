@@ -34,6 +34,9 @@ for r in ph.compare_templates([user], variants, senses, intended="programming"):
 print("\n=== check_system_registers (software-eng system) ===")
 print("  ", ph.check_system_registers([sys_se, user], senses, intended="programming"))
 
+print("\n=== diagnose_thinking (does enabling <think> help or hurt 'programming'?) ===")
+print("  ", ph.diagnose_thinking([sys_se, user], senses, intended="programming"))
+
 tr = ph.trace_rendered([sys_se, user], senses=senses)
 viz.rendered_strip_html(tr, intended="programming", out_path="template_strip.html",
                         title="template-aware J-Lens — Java (sys=software eng)")

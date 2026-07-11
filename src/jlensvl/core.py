@@ -44,20 +44,36 @@ class JLensVL:
     # ---------- construction ----------
     @classmethod
     def from_pretrained(cls, model_id, *, lens=None, dtype=torch.bfloat16,
-                        device="cuda:0", multimodal="auto"):
+                        device="auto", multimodal="auto"):
         """Load `model_id` and wrap it. `lens` may be a path to a saved lens,
         a `JacobianLens`, or None (fit later). `multimodal="auto"` detects a
-        vision tower from the config."""
+        vision tower from the config. `device="auto"` picks cuda if available,
+        else mps (Apple Silicon), else cpu; an explicit "cuda"/"cuda:N"/"mps"/
+        "cpu" is honored as given."""
         from transformers import (AutoConfig, AutoProcessor, AutoTokenizer,
                                    AutoModelForCausalLM, AutoModelForImageTextToText)
+        if device == "auto":
+            if torch.cuda.is_available():
+                device = "cuda"
+            elif torch.backends.mps.is_available():
+                device = "mps"
+            else:
+                device = "cpu"
+        use_cuda = device.startswith("cuda")
         cfg = AutoConfig.from_pretrained(model_id)
         is_mm = (multimodal is True) or (multimodal == "auto" and hasattr(cfg, "vision_config"))
         if is_mm:
             processor = AutoProcessor.from_pretrained(model_id)
-            model = AutoModelForImageTextToText.from_pretrained(model_id, dtype=dtype, device_map={"": device})
+            if use_cuda:
+                model = AutoModelForImageTextToText.from_pretrained(model_id, dtype=dtype, device_map={"": device})
+            else:
+                model = AutoModelForImageTextToText.from_pretrained(model_id, dtype=dtype).to(device)
         else:
             processor = AutoTokenizer.from_pretrained(model_id)
-            model = AutoModelForCausalLM.from_pretrained(model_id, dtype=dtype, device_map={"": device})
+            if use_cuda:
+                model = AutoModelForCausalLM.from_pretrained(model_id, dtype=dtype, device_map={"": device})
+            else:
+                model = AutoModelForCausalLM.from_pretrained(model_id, dtype=dtype).to(device)
         model.eval()
         tok = getattr(processor, "tokenizer", processor)
         lm = jlens.from_hf(model, tok)

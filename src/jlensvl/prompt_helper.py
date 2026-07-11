@@ -159,3 +159,24 @@ class PromptHelper:
         return {"with_system": with_sys, "without_system": without,
                 "delta": with_sys - without,
                 "verdict": "registers" if abs(with_sys - without) >= 1.0 else "no measurable effect"}
+
+    def diagnose_thinking(self, messages, senses, intended, *, layer=None):
+        """Does enabling Qwen's thinking mode help or hurt the intended sense at the
+        answer position? Compares trace_rendered with enable_thinking=True vs =False.
+        Returns a dict: intended-sense score and margin(intended - best competitor) for
+        each mode, their deltas, and a verdict ('helps' / 'hurts' / 'no measurable effect')."""
+        def _mode(enable_thinking):
+            sc = self.trace_rendered(messages, senses=senses,
+                                     enable_thinking=enable_thinking, layer=layer)["senses"]
+            if sc is None:
+                raise ValueError("trace_rendered returned no senses; pass a non-empty `senses`.")
+            intended_score = sc[intended]
+            comp = max((v for k, v in sc.items() if k != intended), default=float("-inf"))
+            return {"intended": intended_score, "margin": intended_score - comp}
+        on = _mode(True)
+        off = _mode(False)
+        delta_margin = on["margin"] - off["margin"]
+        verdict = ("helps" if delta_margin >= 1.0
+                   else "hurts" if delta_margin <= -1.0 else "no measurable effect")
+        return {"thinking_on": on, "thinking_off": off,
+                "delta_margin": delta_margin, "verdict": verdict}

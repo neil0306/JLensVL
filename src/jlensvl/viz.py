@@ -27,6 +27,10 @@ thead th{{position:sticky;top:0;background:var(--pan);color:var(--ac);z-index:2}
 th.ly{{position:sticky;left:0;background:var(--pan);color:var(--mu);z-index:1}}
 td{{cursor:default;color:var(--tx)}}td:hover{{outline:2px solid var(--ac)}}
 .mo{{font-weight:700}}.legend{{color:var(--mu);font-size:.85em;margin:.6em 0}}
+.spark-tip{{position:fixed;z-index:9999;pointer-events:none;display:none;background:var(--pan);border:1px solid var(--bd);border-radius:6px;padding:6px 8px;box-shadow:0 4px 16px rgba(0,0,0,.4);font:11px/1.35 ui-monospace,Menlo,monospace;color:var(--tx);max-width:240px}}
+.spark-tip .st-h{{color:var(--ac);font-weight:700;margin-bottom:3px}}
+.spark-tip .st-k{{color:var(--mu);margin-top:3px;white-space:normal;word-break:break-word}}
+.spark-tip svg{{display:block}}
 </style></head><body>"""
 
 
@@ -61,21 +65,76 @@ def slice_grid_html(jl, prompt, *, layers=None, topk=5, out_path=None, title="JL
         a = max(0.0, min(1.0, s / vmax))
         return f"background:rgba(126,231,135,{a*0.8:.2f})"
 
-    head = "".join(f'<th title="position {p}">{_h.escape(tokens[p])}</th>' for p in range(seq))
+    # Per-position top-1 trajectory across depth (layers ascending) for the sparkline.
+    asc = sorted(layers)
+    traj = {p: [round(cell[(L, p)][1], 4) for L in asc] for p in range(seq)}
+    import json as _json
+    traj_js = _json.dumps({str(p): traj[p] for p in range(seq)}, separators=(",", ":"))
+    layers_js = _json.dumps(asc, separators=(",", ":"))
+    toks_js = _json.dumps([tokens[p] for p in range(seq)], separators=(",", ":"))
+
+    head = "".join(f'<th data-p="{p}" title="position {p}">{_h.escape(tokens[p])}</th>' for p in range(seq))
     rows = ""
     for L in reversed(layers):                       # deep layers on top
         cells = ""
         for p in range(seq):
             top, s = cell[(L, p)]
-            cells += f'<td style="{color(s)}" title="{_h.escape(" · ".join(top))}">{_h.escape(top[0])}</td>'
+            cells += (f'<td data-p="{p}" style="{color(s)}" '
+                      f'title="{_h.escape(" · ".join(top))}">{_h.escape(top[0])}</td>')
         rows += f'<tr><th class="ly">L{L}</th>{cells}</tr>'
-    mcells = "".join(f'<td class="mo" title="{_h.escape(" · ".join(mrow[p]))}">{_h.escape(mrow[p][0])}</td>' for p in range(seq))
+    mcells = "".join(f'<td class="mo" data-p="{p}" title="{_h.escape(" · ".join(mrow[p]))}">{_h.escape(mrow[p][0])}</td>' for p in range(seq))
     rows += f'<tr><th class="ly">OUT</th>{mcells}</tr>'
+
+    script = (
+        "<script>(function(){"
+        f"const TRAJ={traj_js},LAYERS={layers_js},TOKS={toks_js};"
+        "const tip=document.createElement('div');tip.className='spark-tip';"
+        "document.body.appendChild(tip);"
+        "function spark(a){"
+        "const W=120,H=36,pad=3;"
+        "if(!a||!a.length)return '';"
+        "let mn=Math.min.apply(null,a),mx=Math.max.apply(null,a);"
+        "const rng=(mx-mn)||1;"
+        "const n=a.length;"
+        "const xs=i=>pad+(n<2?0:i/(n-1)*(W-2*pad));"
+        "const ys=v=>H-pad-(v-mn)/rng*(H-2*pad);"
+        "let pts=a.map((v,i)=>xs(i).toFixed(1)+','+ys(v).toFixed(1)).join(' ');"
+        "let lx=xs(n-1).toFixed(1),ly=ys(a[n-1]).toFixed(1);"
+        "return '<svg width=\"'+W+'\" height=\"'+H+'\" viewBox=\"0 0 '+W+' '+H+'\">'"
+        "+'<polyline fill=\"none\" stroke=\"#7ee787\" stroke-width=\"1.6\" points=\"'+pts+'\"/>'"
+        "+'<circle cx=\"'+lx+'\" cy=\"'+ly+'\" r=\"2.2\" fill=\"#79c0ff\"/></svg>';"
+        "}"
+        "function show(p,x,y){"
+        "const a=TRAJ[String(p)];if(!a)return;"
+        "const tk=TOKS[p]||'',lo=LAYERS[0],hi=LAYERS[LAYERS.length-1];"
+        "tip.innerHTML='<div class=\"st-h\">pos '+p+' · '+esc(tk)+'</div>'"
+        "+spark(a)"
+        "+'<div class=\"st-k\">top-1 score L'+lo+'→L'+hi+' · '+a[0].toFixed(2)+' → '+a[a.length-1].toFixed(2)+'</div>';"
+        "tip.style.display='block';move(x,y);"
+        "}"
+        "function esc(s){return String(s).replace(/[&<>\"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','\"':'&quot;'}[c]));}"
+        "function move(x,y){"
+        "const w=tip.offsetWidth,h=tip.offsetHeight;"
+        "let nx=x+14,ny=y+14;"
+        "if(nx+w>window.innerWidth)nx=x-w-14;"
+        "if(ny+h>window.innerHeight)ny=y-h-14;"
+        "tip.style.left=Math.max(2,nx)+'px';tip.style.top=Math.max(2,ny)+'px';"
+        "}"
+        "function hide(){tip.style.display='none';}"
+        "const tbl=document.currentScript.previousElementSibling.querySelector('table');"
+        "tbl.addEventListener('mouseover',e=>{"
+        "const c=e.target.closest('[data-p]');if(!c)return;show(+c.getAttribute('data-p'),e.clientX,e.clientY);"
+        "});"
+        "tbl.addEventListener('mousemove',e=>{if(tip.style.display==='block')move(e.clientX,e.clientY);});"
+        "tbl.addEventListener('mouseout',e=>{if(!e.relatedTarget||!e.relatedTarget.closest('[data-p]'))hide();});"
+        "})();</script>"
+    )
 
     doc = (_HEAD.format(title=_h.escape(title)) +
            f'<h1>{_h.escape(title)}</h1>'
-           f'<p class="sub">J-Lens 每层每位置「欲言」的概念 · 越绿=越确定 · hover 看 top-{topk} · 深层在上，OUT=模型真实输出</p>'
+           f'<p class="sub">J-Lens 每层每位置「欲言」的概念 · 越绿=越确定 · hover 看 top-{topk} 与该位置 top-1 分数逐层轨迹 · 深层在上，OUT=模型真实输出</p>'
            f'<div class="wrap"><table><thead><tr><th class="ly">layer</th>{head}</tr></thead><tbody>{rows}</tbody></table></div>'
+           f'{script}'
            f'<p class="legend">prompt: {_h.escape(prompt)}</p></body></html>')
     if out_path:
         open(out_path, "w").write(doc)
