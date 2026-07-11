@@ -181,9 +181,20 @@ just load the fitted `J_ℓ` into MLX and do a native MLX forward + a matmul:
 python scripts/fit_lens.py --model Qwen/Qwen3.5-4B --out lens.pt --n 100
 # 2) export to a plain .npz MLX can read
 python scripts/lens_to_npz.py lens.pt lens_jl.npz
-# 3) run the native-MLX forward-only lens (loads mlx-community/Qwen3.5-4B-4bit)
-python examples/05_mlx_forward_lens.py
+# 3) install the MLX extra:  pip install mlx mlx-lm tokenizers
 ```
+
+Then use the `MLXJLens` class (import-safe on non-Apple machines; `mlx`/`mlx_lm` load lazily):
+
+```python
+from jlensvl import MLXJLens
+jl = MLXJLens.from_pretrained("mlx-community/Qwen3.5-4B-4bit", "lens_jl.npz")
+print(jl.trace("… the country shaped like a boot is the")[30])   # -> ['Euro', 'euro', …, 'Italian']
+jl.slice_grid_html("… boot is the", out_path="slice.html")        # native-MLX slice grid HTML
+```
+
+In an MLX-only environment (no torch) `from jlensvl import MLXJLens` still works — the
+torch-backed `JLensVL`/`PromptHelper` are simply `None` there. See `examples/05_mlx_forward_lens.py`.
 
 Verified: the MLX forward-only lens reproduces the same `currency → euro → Italian`
 readout as the torch lens — sub-second per forward, no `custom_gdn_vjp` Metal kernel.
