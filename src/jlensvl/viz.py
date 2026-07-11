@@ -134,6 +134,51 @@ def slice_grid_image_html(jl, image, question, *, layers=None, topk=5, out_path=
     return doc
 
 
+def rendered_strip_html(trace, *, intended=None, out_path=None, title="template-aware J-Lens"):
+    """Token strip over the chat-template-rendered sequence. Special/template tokens
+    are highlighted (the invisible layer between your text and the model); hover any
+    token to see the concept the model is poised to say there. `trace` = output of
+    PromptHelper.trace_rendered."""
+    boxes = ""
+    for p, c in enumerate(trace["per"]):
+        surf = c["tok"].replace("\n", "\\n") or "·"
+        tip = _h.escape("L%d 欲言: %s" % (trace["layer"], " · ".join(c["top"])))
+        cls = "sp" if c["special"] else "ct"
+        if p == trace["answer"]:
+            cls += " ans"
+        role = c.get("role")
+        rl = f' data-role="{role}"' if role else ""
+        boxes += f'<span class="tk {cls}"{rl} title="{tip}">{_h.escape(surf)}</span>'
+    senses_html = ""
+    if trace.get("senses"):
+        vmax = max(trace["senses"].values()) or 1e-6
+        rows = ""
+        for n, v in sorted(trace["senses"].items(), key=lambda x: -x[1]):
+            w = max(2, int(v / vmax * 240))
+            hl = "background:var(--gn)" if n == intended else "background:var(--mu)"
+            tag = " ← intended" if n == intended else ""
+            rows += (f'<div style="display:flex;align-items:center;gap:8px;margin:3px 0">'
+                     f'<span style="width:120px;color:var(--mu)">{_h.escape(n)}{tag}</span>'
+                     f'<span style="height:12px;width:{w}px;border-radius:3px;{hl}"></span>'
+                     f'<span>{v:.2f}</span></div>')
+        senses_html = (f'<h3 style="margin:1.2em 0 .3em;color:var(--ac)">答案位各义分数 (L{trace["layer"]})</h3>{rows}')
+    css = ('.tk{display:inline-block;padding:2px 4px;margin:1px;border-radius:4px;'
+           'font:12px/1.4 ui-monospace,Menlo,monospace;border:1px solid transparent}'
+           '.ct{background:rgba(126,231,135,.14)}'
+           '.sp{background:rgba(121,192,255,.22);color:var(--ac);border-color:var(--bd)}'
+           '.ans{outline:2px solid var(--or);font-weight:700}'
+           '.tk:hover{border-color:var(--ac)}')
+    doc = (_HEAD.format(title=_h.escape(title)).replace("</style>", css + "</style>") +
+           f'<h1>{_h.escape(title)}</h1>'
+           f'<p class="sub">在<b>真实模板渲染的 token</b> 上跑 J-Lens（不是裸字符串）。'
+           f'<span class="sp" style="padding:1px 4px">蓝色</span>=模板注入的特殊 token（你看不见的那层）· '
+           f'<span class="ans" style="padding:1px 4px">橙框</span>=答案位 · hover 看该位置「欲言」的概念。</p>'
+           f'<div style="line-height:2.2">{boxes}</div>{senses_html}</body></html>')
+    if out_path:
+        open(out_path, "w").write(doc)
+    return doc
+
+
 def race_chart_html(race, concept_a, concept_b, *, out_path=None, title="concept race",
                     crossover=None):
     """Inline-SVG line chart from a `concept_race` result {layer: {name: score}}."""

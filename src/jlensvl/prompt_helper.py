@@ -80,3 +80,82 @@ class PromptHelper:
         out.append(f"VERDICT: use [{b['name']}] — it steers the model to {intended!r} "
                    f"with a {b['margin']:+.2f} margin over the next sense.")
         return "\n".join(out)
+
+    # ---------- template-aware (chat_template.jinja) ----------
+    def _render(self, messages, *, add_generation_prompt=True, enable_thinking=None):
+        """messages -> the exact chat-template-rendered string the model sees."""
+        tok = self.jl.tok
+        kw = dict(tokenize=False, add_generation_prompt=add_generation_prompt)
+        if enable_thinking is not None:
+            try:
+                return tok.apply_chat_template(messages, enable_thinking=enable_thinking, **kw)
+            except TypeError:
+                pass
+        return tok.apply_chat_template(messages, **kw)
+
+    def trace_rendered(self, messages, *, senses=None, enable_thinking=None,
+                       add_generation_prompt=True, layer=None, topk=6):
+        """Run the J-Lens on the REAL chat-template-rendered token sequence (not the
+        raw string). Returns a per-token trace + segment/special tags + the sense
+        scores at the answer position. This is the faithful thing to lens for a
+        chat model — the model never sees your raw text, it sees the rendered tokens.
+        """
+        jl = self.jl; jl._require_lens()
+        tok = jl.tok
+        rendered = self._render(messages, add_generation_prompt=add_generation_prompt,
+                                enable_thinking=enable_thinking)
+        layers = jl.lens.source_layers
+        ll, ml, ids = jl.lens.apply(jl.lm, rendered, positions=None, layers=layers, use_jacobian=True)
+        if hasattr(ids, "dim") and ids.dim() > 1:
+            ids = ids[0]
+        ids = [int(i) for i in ids]
+        toks = [tok.decode([i]) for i in ids]
+        L = layer if layer is not None else layers[-2]
+        special = set(getattr(tok, "all_special_ids", []) or [])
+        role = None
+        per = []
+        for p, i in enumerate(ids):
+            surf = toks[p]
+            is_sp = i in special or ("<|" in surf and "|>" in surf) or surf in ("<think>", "</think>")
+            if "im_start" in surf:
+                role = "?"
+            elif role == "?" and surf.strip() in ("system", "user", "assistant", "tool"):
+                role = surf.strip()
+            elif "im_end" in surf:
+                role = None
+            idx = [int(j) for j in ll[L][p].topk(topk).indices.tolist()]
+            per.append({"tok": surf, "top": [tok.decode([j]) for j in idx],
+                        "special": is_sp, "role": role})
+        ans = len(ids) - 1
+        sc = None
+        if senses:
+            alog = ll[L][ans]
+            sc = {n: float(alog[jl._word_ids(w)].max()) for n, w in senses.items()}
+        return {"rendered": rendered, "tokens": toks, "per": per, "answer": ans,
+                "layer": int(L), "senses": sc}
+
+    def compare_templates(self, base_messages, variants, senses, intended, *, layer=None):
+        """A/B different template configs (system on/off, thinking on/off, few-shot…)
+        by how strongly each steers to `intended` sense at the answer position.
+        `variants` = {name: {"messages": …?, "enable_thinking": …?}}. Best-first list.
+        """
+        rows = []
+        for name, cfg in variants.items():
+            tr = self.trace_rendered(cfg.get("messages", base_messages), senses=senses,
+                                     enable_thinking=cfg.get("enable_thinking"), layer=layer)
+            sc = tr["senses"]
+            comp = max((v for k, v in sc.items() if k != intended), default=float("-inf"))
+            rows.append({"name": name, "scores": sc, "intended": sc.get(intended),
+                         "best_competitor": comp, "margin": sc.get(intended, float("-inf")) - comp})
+        rows.sort(key=lambda r: r["margin"], reverse=True)
+        return rows
+
+    def check_system_registers(self, messages, senses, intended, *, layer=None):
+        """Does the system message actually 'land'? Compare the intended-sense score
+        at the answer position WITH vs WITHOUT the system message."""
+        with_sys = self.trace_rendered(messages, senses=senses, layer=layer)["senses"][intended]
+        no_sys = [m for m in messages if m.get("role") != "system"]
+        without = self.trace_rendered(no_sys, senses=senses, layer=layer)["senses"][intended]
+        return {"with_system": with_sys, "without_system": without,
+                "delta": with_sys - without,
+                "verdict": "registers" if abs(with_sys - without) >= 1.0 else "no measurable effect"}
