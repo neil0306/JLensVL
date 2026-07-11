@@ -1,0 +1,37 @@
+{
+  "n_items": 19,
+  "n_scored": 19,
+  "accuracy_final_layer": 0.8421052631578947,
+  "mean_first_correct_layer": 8.842105263157896,
+  "mean_peak_margin": 7.066611842105263,
+  "by_category": {
+    "multilingual_de": {
+      "n_items": 4,
+      "n_scored": 4,
+      "accuracy_final_layer": 0.75,
+      "mean_first_correct_layer": 1.5,
+      "mean_peak_margin": 4.48828125
+    },
+    "multilingual_en": {
+      "n_items": 7,
+      "n_scored": 7,
+      "accuracy_final_layer": 0.8571428571428571,
+      "mean_first_correct_layer": 12.0,
+      "mean_peak_margin": 8.767857142857142
+    },
+    "multilingual_es": {
+      "n_items": 4,
+      "n_scored": 4,
+      "accuracy_final_layer": 0.75,
+      "mean_first_correct_layer": 10.75,
+      "mean_peak_margin": 9.4375
+    },
+    "multilingual_fr": {
+      "n_items": 4,
+      "n_scored": 4,
+      "accuracy_final_layer": 1.0,
+      "mean_first_correct_layer": 8.75,
+      "mean_peak_margin": 4.296875
+    }
+  }
+}

@@ -1,0 +1,37 @@
+{
+  "n_items": 25,
+  "n_scored": 22,
+  "accuracy_final_layer": 1.0,
+  "mean_first_correct_layer": 6.590909090909091,
+  "mean_peak_margin": 9.443181818181818,
+  "by_category": {
+    "animal_sound": {
+      "n_items": 5,
+      "n_scored": 3,
+      "accuracy_final_layer": 1.0,
+      "mean_first_correct_layer": 4.666666666666667,
+      "mean_peak_margin": 7.520833333333333
+    },
+    "capital": {
+      "n_items": 10,
+      "n_scored": 10,
+      "accuracy_final_layer": 1.0,
+      "mean_first_correct_layer": 8.6,
+      "mean_peak_margin": 8.875
+    },
+    "color": {
+      "n_items": 5,
+      "n_scored": 5,
+      "accuracy_final_layer": 1.0,
+      "mean_first_correct_layer": 7.2,
+      "mean_peak_margin": 9.0875
+    },
+    "currency": {
+      "n_items": 5,
+      "n_scored": 4,
+      "accuracy_final_layer": 1.0,
+      "mean_first_correct_layer": 2.25,
+      "mean_peak_margin": 12.75
+    }
+  }
+}
