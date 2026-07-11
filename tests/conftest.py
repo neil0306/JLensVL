@@ -29,7 +29,9 @@ for _p in (_SRC, _ENGINE):
 os.environ.setdefault("HF_HUB_OFFLINE", "1")
 os.environ.setdefault("TRANSFORMERS_OFFLINE", "1")
 
-QWEN_MODEL_ID = "Qwen/Qwen3.5-4B"
+QWEN_MODEL_ID = os.environ.get("JLENSVL_MODEL_PATH", "Qwen/Qwen3.5-4B")
+# JLENSVL_MODEL_PATH may point at a local weights directory (e.g.
+# /home/anu/qwen35_4b_dl) to avoid a network fetch once weights are on disk.
 
 
 def have_weights() -> bool:
