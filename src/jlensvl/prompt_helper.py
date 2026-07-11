@@ -9,6 +9,7 @@ This is a diagnostic/comparison aid (white-box; needs the model + a fitted lens)
 not an automatic prompt generator. Every call is a single forward pass.
 """
 from __future__ import annotations
+import html
 
 
 class PromptHelper:
@@ -180,3 +181,133 @@ class PromptHelper:
                    else "hurts" if delta_margin <= -1.0 else "no measurable effect")
         return {"thinking_on": on, "thinking_off": off,
                 "delta_margin": delta_margin, "verdict": verdict}
+
+    # ---------- self-contained HTML report ----------
+    def report_html(self, base_messages, variants, senses, intended, *, layer=None,
+                    out_path=None, title="JLensVL prompt-helper report"):
+        """A single self-contained HTML prompt-helper report (inline CSS/JS, no
+        external deps, dark/light, offline).
+
+        Two parts:
+        1. A grouped horizontal-bar ranking of the template `variants`
+           (`compare_templates`): per variant, one bar per sense (width ∝ score;
+           the `intended` sense highlighted green, others muted), the margin, and a
+           verdict (✓ CLEAR / ~ weak / ✗ OFF-TARGET). Best-first.
+        2. A token strip over the REAL chat-template-rendered sequence of the
+           winning variant (`trace_rendered`) — mirrors `viz.rendered_strip_html`'s
+           look: special tokens blue, answer position outlined orange, hover shows
+           the poised concept.
+
+        Reuses `viz._HEAD` for head/theme so styling matches the rest of JLensVL.
+        Writes to `out_path` if given; always returns the HTML string.
+        """
+        from . import viz  # inside method to avoid any import-order surprises
+
+        rows = self.compare_templates(base_messages, variants, senses, intended, layer=layer)
+
+        def esc(s):
+            return html.escape(str(s))
+
+        def verdict(m):
+            return "✓ CLEAR" if m >= 3 else ("~ weak" if m > 0 else "✗ OFF-TARGET")
+
+        # --- part 1: grouped horizontal bar ranking ---
+        allv = [v for r in rows for v in r["scores"].values() if v is not None]
+        vmax = max(allv) if allv else 1e-6
+        vmax = vmax if vmax > 0 else 1e-6
+        rank_html = ""
+        for i, r in enumerate(rows, 1):
+            m = r["margin"] if r["margin"] is not None else float("-inf")
+            vd = verdict(m)
+            vcls = "vok" if m >= 3 else ("vweak" if m > 0 else "voff")
+            bars = ""
+            for s, v in sorted(r["scores"].items(), key=lambda x: -(x[1] if x[1] is not None else -1e9)):
+                val = v if v is not None else 0.0
+                w = max(2, int(round(max(val, 0.0) / vmax * 240)))
+                hl = "background:var(--gn)" if s == intended else "background:var(--mu)"
+                tag = " ← intended" if s == intended else ""
+                bars += (f'<div class="bar">'
+                         f'<span class="bn">{esc(s)}{tag}</span>'
+                         f'<span class="bt" style="width:{w}px;{hl}"></span>'
+                         f'<span class="bv">{val:.2f}</span></div>')
+            mtxt = f"{m:+.2f}" if m != float("-inf") else "n/a"
+            rank_html += (f'<div class="var">'
+                          f'<div class="vh"><span class="rk">#{i}</span>'
+                          f'<span class="vn">{esc(r["name"])}</span>'
+                          f'<span class="vd {vcls}">{esc(vd)}</span></div>'
+                          f'{bars}'
+                          f'<div class="mg">margin (intended − best competitor) = {esc(mtxt)}</div>'
+                          f'</div>')
+
+        # --- part 2: token strip of the winning variant ---
+        win = rows[0]["name"]
+        win_cfg = variants[win]
+        win_messages = win_cfg.get("messages", base_messages)
+        win_thinking = win_cfg.get("enable_thinking")
+        trace = self.trace_rendered(win_messages, senses=senses,
+                                    enable_thinking=win_thinking, layer=layer)
+        boxes = ""
+        for p, c in enumerate(trace["per"]):
+            surf = c["tok"].replace("\n", "\\n") or "·"
+            tip = esc("L%d 欲言: %s" % (trace["layer"], " · ".join(c["top"])))
+            cls = "sp" if c["special"] else "ct"
+            if p == trace["answer"]:
+                cls += " ans"
+            role = c.get("role")
+            rl = f' data-role="{esc(role)}"' if role else ""
+            boxes += f'<span class="tk {cls}"{rl} title="{tip}">{esc(surf)}</span>'
+
+        # --- extra CSS (bars + token strip, mirroring rendered_strip_html) ---
+        css = (
+            '.var{border:1px solid var(--bd);border-radius:8px;background:var(--pan);'
+            'padding:10px 12px;margin:10px 0}'
+            '.vh{display:flex;align-items:center;gap:10px;margin-bottom:6px}'
+            '.rk{color:var(--mu);font:700 12px ui-monospace,Menlo,monospace}'
+            '.vn{font-weight:700;color:var(--ac)}'
+            '.vd{margin-left:auto;font:700 11px ui-monospace,Menlo,monospace;'
+            'padding:2px 8px;border-radius:10px;border:1px solid var(--bd)}'
+            '.vok{color:var(--gn)}.vweak{color:var(--or)}.voff{color:var(--mu)}'
+            '.bar{display:flex;align-items:center;gap:8px;margin:3px 0}'
+            '.bn{width:150px;color:var(--mu);font-size:.9em;text-align:right}'
+            '.bt{height:12px;border-radius:3px}'
+            '.bv{font:12px ui-monospace,Menlo,monospace}'
+            '.mg{margin-top:6px;color:var(--mu);font-size:.85em}'
+            '.tk{display:inline-block;padding:2px 4px;margin:1px;border-radius:4px;'
+            'font:12px/1.4 ui-monospace,Menlo,monospace;border:1px solid transparent}'
+            '.ct{background:rgba(126,231,135,.14)}'
+            '.sp{background:rgba(121,192,255,.22);color:var(--ac);border-color:var(--bd)}'
+            '.ans{outline:2px solid var(--or);font-weight:700}'
+            '.tk:hover{border-color:var(--ac)}'
+            '.nav{position:fixed;right:14px;bottom:14px;display:flex;flex-direction:column;'
+            'gap:6px;z-index:9998}'
+            '.nav a{display:block;width:38px;height:38px;line-height:38px;text-align:center;'
+            'background:var(--pan);border:1px solid var(--bd);border-radius:8px;color:var(--tx);'
+            'text-decoration:none;font-size:16px;box-shadow:0 2px 8px rgba(0,0,0,.3)}'
+            '.nav a:hover{border-color:var(--ac);color:var(--ac)}')
+
+        nav = ('<div class="nav">'
+               '<a href="#top" title="top">⤒</a>'
+               '<a href="#strip" title="jump to token strip">↓</a>'
+               '<a href="#top" title="up">↑</a>'
+               '<a href="#bottom" title="bottom">⤓</a></div>')
+
+        doc = (viz._HEAD.format(title=esc(title)).replace("</style>", css + "</style>") +
+               f'<a id="top"></a>'
+               f'<h1>{esc(title)}</h1>'
+               f'<p class="sub">读的是<b>真实模板渲染的 token</b>（不是裸字符串）· '
+               f'排名按 intended 义与最强竞争义的 margin · '
+               f'目标义: <b>{esc(intended)}</b> · J-Lens @ layer {esc(self._layer(layer))}</p>'
+               f'<h3 style="margin:1.2em 0 .3em;color:var(--ac)">模板变体排名（best first）</h3>'
+               f'{rank_html}'
+               f'<a id="strip"></a>'
+               f'<h3 style="margin:1.6em 0 .3em;color:var(--ac)">胜出变体的 token strip · [{esc(win)}]</h3>'
+               f'<p class="sub"><span class="sp" style="padding:1px 4px">蓝色</span>=模板注入的特殊 token'
+               f'（你看不见的那层）· '
+               f'<span class="ans" style="padding:1px 4px">橙框</span>=答案位 · '
+               f'hover 看该位置「欲言」的概念。</p>'
+               f'<div style="line-height:2.2">{boxes}</div>'
+               f'{nav}'
+               f'<a id="bottom"></a></body></html>')
+        if out_path:
+            open(out_path, "w").write(doc)
+        return doc

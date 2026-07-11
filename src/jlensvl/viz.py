@@ -12,6 +12,7 @@ optionally write it to `out_path`. Works offline; open in any browser.
 """
 from __future__ import annotations
 import html as _h
+import json
 
 _HEAD = """<!doctype html><html><head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1"><title>{title}</title>
@@ -169,7 +170,9 @@ def slice_grid_image_html(jl, image, question, *, layers=None, topk=5, out_path=
         return [tok(i) for i in v.indices.tolist()], float(v.values[0])
 
     img_mid = sorted(img_pos)[len(img_pos)//2] if img_pos else None
-    header = "".join(('<th>[IMG]</th>' if kind == "img" else f'<th>{_h.escape(tok(ids[p]))}</th>') for kind, p in cols)
+    # per-column labels ([IMG] band or decoded token) — the TOKS-equivalent array
+    col_labels = ["[IMG]" if kind == "img" else tok(ids[p]) for kind, p in cols]
+    header = "".join(f'<th data-p="{j}">{_h.escape(col_labels[j])}</th>' for j in range(len(cols)))
     vmax = 1e-6; grid = {}
     for L in layers:
         for j, (kind, p) in enumerate(cols):
@@ -181,12 +184,66 @@ def slice_grid_image_html(jl, image, question, *, layers=None, topk=5, out_path=
         for j in range(len(cols)):
             top, s = grid[(L, j)]
             a = max(0.0, min(1.0, s / vmax))
-            cells += f'<td style="background:rgba(126,231,135,{a*0.8:.2f})" title="{_h.escape(" · ".join(top))}">{_h.escape(top[0])}</td>'
+            cells += f'<td data-p="{j}" style="background:rgba(126,231,135,{a*0.8:.2f})" title="{_h.escape(" · ".join(top))}">{_h.escape(top[0])}</td>'
         rows += f'<tr><th class="ly">L{L}</th>{cells}</tr>'
+
+    # Per-column top-1 trajectory across depth (layers ascending) for the sparkline.
+    asc = sorted(layers)
+    traj = {j: [round(grid[(L, j)][1], 4) for L in asc] for j in range(len(cols))}
+    traj_js = json.dumps({str(j): traj[j] for j in range(len(cols))}, separators=(",", ":"))
+    layers_js = json.dumps(asc, separators=(",", ":"))
+    toks_js = json.dumps(col_labels, separators=(",", ":"))
+
+    script = (
+        "<script>(function(){"
+        f"const TRAJ={traj_js},LAYERS={layers_js},TOKS={toks_js};"
+        "const tip=document.createElement('div');tip.className='spark-tip';"
+        "document.body.appendChild(tip);"
+        "function spark(a){"
+        "const W=120,H=36,pad=3;"
+        "if(!a||!a.length)return '';"
+        "let mn=Math.min.apply(null,a),mx=Math.max.apply(null,a);"
+        "const rng=(mx-mn)||1;"
+        "const n=a.length;"
+        "const xs=i=>pad+(n<2?0:i/(n-1)*(W-2*pad));"
+        "const ys=v=>H-pad-(v-mn)/rng*(H-2*pad);"
+        "let pts=a.map((v,i)=>xs(i).toFixed(1)+','+ys(v).toFixed(1)).join(' ');"
+        "let lx=xs(n-1).toFixed(1),ly=ys(a[n-1]).toFixed(1);"
+        "return '<svg width=\"'+W+'\" height=\"'+H+'\" viewBox=\"0 0 '+W+' '+H+'\">'"
+        "+'<polyline fill=\"none\" stroke=\"#7ee787\" stroke-width=\"1.6\" points=\"'+pts+'\"/>'"
+        "+'<circle cx=\"'+lx+'\" cy=\"'+ly+'\" r=\"2.2\" fill=\"#79c0ff\"/></svg>';"
+        "}"
+        "function show(p,x,y){"
+        "const a=TRAJ[String(p)];if(!a)return;"
+        "const tk=TOKS[p]||'',lo=LAYERS[0],hi=LAYERS[LAYERS.length-1];"
+        "tip.innerHTML='<div class=\"st-h\">pos '+p+' · '+esc(tk)+'</div>'"
+        "+spark(a)"
+        "+'<div class=\"st-k\">top-1 score L'+lo+'→L'+hi+' · '+a[0].toFixed(2)+' → '+a[a.length-1].toFixed(2)+'</div>';"
+        "tip.style.display='block';move(x,y);"
+        "}"
+        "function esc(s){return String(s).replace(/[&<>\"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','\"':'&quot;'}[c]));}"
+        "function move(x,y){"
+        "const w=tip.offsetWidth,h=tip.offsetHeight;"
+        "let nx=x+14,ny=y+14;"
+        "if(nx+w>window.innerWidth)nx=x-w-14;"
+        "if(ny+h>window.innerHeight)ny=y-h-14;"
+        "tip.style.left=Math.max(2,nx)+'px';tip.style.top=Math.max(2,ny)+'px';"
+        "}"
+        "function hide(){tip.style.display='none';}"
+        "const tbl=document.currentScript.previousElementSibling.querySelector('table');"
+        "tbl.addEventListener('mouseover',e=>{"
+        "const c=e.target.closest('[data-p]');if(!c)return;show(+c.getAttribute('data-p'),e.clientX,e.clientY);"
+        "});"
+        "tbl.addEventListener('mousemove',e=>{if(tip.style.display==='block')move(e.clientX,e.clientY);});"
+        "tbl.addEventListener('mouseout',e=>{if(!e.relatedTarget||!e.relatedTarget.closest('[data-p]'))hide();});"
+        "})();</script>"
+    )
+
     doc = (_HEAD.format(title=_h.escape(title)) +
            f'<h1>{_h.escape(title)}</h1>'
-           f'<p class="sub">VLM J-Lens · 图像 token 折叠成 [IMG] 单列 · 关注 post-image 与答案位视觉概念在哪 verbalize · hover 看 top-{topk}</p>'
+           f'<p class="sub">VLM J-Lens · 图像 token 折叠成 [IMG] 单列 · 关注 post-image 与答案位视觉概念在哪 verbalize · hover 看 top-{topk} 与该列 top-1 分数逐层轨迹</p>'
            f'<div class="wrap"><table><thead><tr><th class="ly">layer</th>{header}</tr></thead><tbody>{rows}</tbody></table></div>'
+           f'{script}'
            f'<p class="legend">image: {_h.escape(str(image))} · question: {_h.escape(question)}</p></body></html>')
     if out_path:
         open(out_path, "w").write(doc)

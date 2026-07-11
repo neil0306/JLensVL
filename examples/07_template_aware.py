@@ -41,3 +41,7 @@ tr = ph.trace_rendered([sys_se, user], senses=senses)
 viz.rendered_strip_html(tr, intended="programming", out_path="template_strip.html",
                         title="template-aware J-Lens — Java (sys=software eng)")
 print("\nwrote template_strip.html  |  rendered:", repr(tr["rendered"][:80]), "...")
+
+# one-click self-contained prompt-helper report (ranking bars + token strip)
+ph.report_html([user], variants, senses, intended="programming", out_path="ph_report.html")
+print("wrote ph_report.html")
