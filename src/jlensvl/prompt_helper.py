@@ -257,6 +257,45 @@ class PromptHelper:
             rl = f' data-role="{esc(role)}"' if role else ""
             boxes += f'<span class="tk {cls}"{rl} title="{tip}">{esc(surf)}</span>'
 
+        # --- diagnostic callout cards for the winning variant ---
+        diag_html = ""
+
+        # 1. system-registers card (only if the winning messages have a system role)
+        if any(m.get("role") == "system" for m in win_messages):
+            sr = self.check_system_registers(win_messages, senses, intended, layer=layer)
+            sr_pill = "pill-gn" if sr["verdict"] == "registers" else "pill-or"
+            diag_html += (
+                '<div class="diag-card">'
+                '<div class="dt">System 消息是否「落地」？（with vs without system）</div>'
+                '<div class="dn">'
+                f'<span><b>with_system:</b> {sr["with_system"]:.2f}</span>'
+                f'<span><b>without_system:</b> {sr["without_system"]:.2f}</span>'
+                f'<span><b>delta:</b> {sr["delta"]:+.2f}</span>'
+                f'<span class="pill {sr_pill}">{esc(sr["verdict"])}</span>'
+                '</div></div>')
+
+        # 2. thinking card (guarded: some tokenizers/paths don't support thinking mode)
+        try:
+            dt = self.diagnose_thinking(win_messages, senses, intended, layer=layer)
+        except Exception:
+            dt = None
+        if dt is not None:
+            dv = dt["verdict"]
+            dt_pill = ("pill-gn" if dv == "helps"
+                       else "pill-or" if dv == "hurts" else "pill-mu")
+            diag_html += (
+                '<div class="diag-card">'
+                '<div class="dt">Thinking 模式是否有帮助？（thinking on vs off）</div>'
+                '<div class="dn">'
+                f'<span><b>on margin:</b> {dt["thinking_on"]["margin"]:+.2f}</span>'
+                f'<span><b>off margin:</b> {dt["thinking_off"]["margin"]:+.2f}</span>'
+                f'<span><b>delta_margin:</b> {dt["delta_margin"]:+.2f}</span>'
+                f'<span class="pill {dt_pill}">{esc(dv)}</span>'
+                '</div></div>')
+
+        diag_section = (f'<h3 style="margin:1.4em 0 .3em;color:var(--ac)">诊断卡片 · [{esc(win)}]</h3>'
+                        f'{diag_html}') if diag_html else ""
+
         # --- extra CSS (bars + token strip, mirroring rendered_strip_html) ---
         css = (
             '.var{border:1px solid var(--bd);border-radius:8px;background:var(--pan);'
@@ -283,7 +322,16 @@ class PromptHelper:
             '.nav a{display:block;width:38px;height:38px;line-height:38px;text-align:center;'
             'background:var(--pan);border:1px solid var(--bd);border-radius:8px;color:var(--tx);'
             'text-decoration:none;font-size:16px;box-shadow:0 2px 8px rgba(0,0,0,.3)}'
-            '.nav a:hover{border-color:var(--ac);color:var(--ac)}')
+            '.nav a:hover{border-color:var(--ac);color:var(--ac)}'
+            '.diag-card{border:1px solid var(--bd);border-radius:8px;background:var(--pan);'
+            'padding:10px 14px;margin:10px 0}'
+            '.diag-card .dt{font-weight:700;color:var(--ac);margin-bottom:6px}'
+            '.diag-card .dn{display:flex;flex-wrap:wrap;gap:8px 18px;align-items:center;'
+            'font:12px ui-monospace,Menlo,monospace;color:var(--tx)}'
+            '.diag-card .dn b{color:var(--mu);font-weight:400}'
+            '.diag-card .pill{display:inline-block;padding:2px 10px;border-radius:10px;'
+            'font:700 11px ui-monospace,Menlo,monospace;border:1px solid var(--bd)}'
+            '.pill-gn{color:var(--gn)}.pill-or{color:var(--or)}.pill-mu{color:var(--mu)}')
 
         nav = ('<div class="nav">'
                '<a href="#top" title="top">⤒</a>'
@@ -299,6 +347,7 @@ class PromptHelper:
                f'目标义: <b>{esc(intended)}</b> · J-Lens @ layer {esc(self._layer(layer))}</p>'
                f'<h3 style="margin:1.2em 0 .3em;color:var(--ac)">模板变体排名（best first）</h3>'
                f'{rank_html}'
+               f'{diag_section}'
                f'<a id="strip"></a>'
                f'<h3 style="margin:1.6em 0 .3em;color:var(--ac)">胜出变体的 token strip · [{esc(win)}]</h3>'
                f'<p class="sub"><span class="sp" style="padding:1px 4px">蓝色</span>=模板注入的特殊 token'
