@@ -119,6 +119,23 @@ Needs a CUDA GPU (or Apple Silicon via MPS) with the model resident. For Qwen3.5
 pip install -e .          # pulls torch, transformers, pillow, torchvision, and the jacobian-lens engine
 ```
 
+## Pretrained lens
+
+A fitted `J_ℓ` for `Qwen/Qwen3.5-4B` is published on the Hub — skip straight to the
+[Quickstart](#quickstart) below instead of fitting your own:
+
+**[huggingface.co/neil0306/jlensvl-qwen35-4b-lens](https://huggingface.co/neil0306/jlensvl-qwen35-4b-lens)**
+
+```bash
+# torch (.pt) — for JLensVL.from_pretrained(..., lens=...)
+hf download neil0306/jlensvl-qwen35-4b-lens lens_qwen35_4b_final.pt --local-dir .
+
+# MLX (.npz) — for MLXJLens.from_pretrained(..., lens_npz=...)
+hf download neil0306/jlensvl-qwen35-4b-lens lens_jl.npz --local-dir .
+```
+
+(Older `huggingface_hub` versions: use `huggingface-cli download` instead of `hf download`.)
+
 ## Quickstart
 
 ```python
@@ -147,7 +164,10 @@ print(ph.report(
 
 Need a specific device instead of auto-detection? Pass `device="cuda"`, `"cuda:0"`, `"mps"`, or `"cpu"` explicitly — they're honored as given.
 
-Don't have a lens yet? Fit one (does backward passes; ~15 min for a 4B model on a 24 GB GPU):
+Don't have a lens yet? Either [download the pretrained one](#pretrained-lens) above, or fit
+your own (does backward passes; ~15 min for a 4B model on a 24 GB GPU, much longer on MPS —
+see `examples/09_apple_silicon_check.py` for a quick sanity check before committing to a long
+run, and `--checkpoint` to make it resumable):
 
 ```bash
 python scripts/fit_lens.py --model Qwen/Qwen3.5-4B --out lens.pt --n 100
@@ -199,6 +219,9 @@ python scripts/fit_lens.py --model Qwen/Qwen3.5-4B --out lens.pt --n 100
 python scripts/lens_to_npz.py lens.pt lens_jl.npz
 # 3) install the MLX extra:  pip install mlx mlx-lm tokenizers
 ```
+
+Or skip steps 1–2 and grab the already-exported `lens_jl.npz` from the
+[pretrained lens](#pretrained-lens) above.
 
 Then use the `MLXJLens` class (import-safe on non-Apple machines; `mlx`/`mlx_lm` load lazily):
 
