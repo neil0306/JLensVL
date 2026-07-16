@@ -11,5 +11,14 @@ except ImportError:  # pragma: no cover
     JLensVL = None
     PromptHelper = None
 
-__all__ = ["JLensVL", "PromptHelper", "MLXJLens", "viz"]
-__version__ = "0.3.0"
+# Vision-tower J-Lens (torch only; no `jlens` engine dependency). Guard so MLX-only envs
+# and installs without transformers' Qwen3.5 vision model still import the package.
+try:
+    from .vision_lens import VisionJLens, VisionJacobianLens
+except ImportError:  # pragma: no cover
+    VisionJLens = None
+    VisionJacobianLens = None
+
+__all__ = ["JLensVL", "PromptHelper", "MLXJLens",
+           "VisionJLens", "VisionJacobianLens", "viz"]
+__version__ = "0.4.0"
