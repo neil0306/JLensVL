@@ -253,9 +253,15 @@ class VisionJLens:
         return self._unembed(self.merger(h_block.to(self.visual.dtype)))
 
     def jacobian_logits(self, h_block, block):
-        """Fitted vision-Jacobian-lens: unembed(merger(J_l @ h_l)) -> [P, vocab]."""
+        """Fitted vision-Jacobian-lens: unembed(merger(J_l @ h_l)) -> [P, vocab].
+
+        At the target block the transport is the identity (``J = I``), so no ``J`` is
+        stored for it; there the Jacobian readout is exactly the naive readout.
+        """
         if self.lens is None:
             raise RuntimeError("no fitted lens: call .fit(images) or pass lens=")
+        if block not in self.lens.jacobians:      # target block: J = I -> naive readout
+            return self.naive_logits(h_block)
         transported = self.lens.transport(h_block.float(), block).to(self.visual.dtype)
         return self._unembed(self.merger(transported))
 
