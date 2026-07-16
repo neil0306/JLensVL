@@ -18,6 +18,25 @@
 
 ---
 
+### 🆕 Now the lens goes *inside the vision tower*, too
+
+<p align="center">
+  <img src="assets/vision/dog_jac_L2.png" width="300" alt="vision-Jacobian-lens locks onto the dog patch">
+  &nbsp;&nbsp;
+  <img src="assets/vision/V3_legibility.png" width="360" alt="pointing accuracy: Jacobian vs naive across ViT depth">
+</p>
+
+<p align="center"><b>What the ViT sees, decoded into words — patch by patch.</b> <code>VisionJLens</code> reads
+each of Qwen3.5's <b>24 vision-encoder blocks</b> into the language vocabulary, giving a spatial
+<code>[14×14 × vocab]</code> map. <b>Left:</b> the fitted vision-Jacobian-lens's "dog" heat over the merged
+patch grid — its argmax patch (white) lands on the animal. <b>Right:</b> pointing-game accuracy across ViT
+depth — the Jacobian lens (blue) beats the naive vision-logit-lens (red) at nearly every layer:
+best-layer <b>0.80 vs 0.70</b>, and mid-stack (L6–17) <b>0.13 vs 0.01</b>, where the naive lens collapses
+as deep merged patches go register/background-dominated. One forward pass.
+→ <a href="#vision-tower-j-lens-the-vit-face">Vision-tower J-Lens</a> · <code>examples/12_full_stack.py</code></p>
+
+---
+
 The [Jacobian lens](https://transformer-circuits.pub/2026/workspace/) (Anthropic, 2026) reads an internal activation by transporting it into the final-layer basis with the model's average input→output Jacobian and decoding it with the unembedding:
 
 ```
@@ -113,44 +132,86 @@ All of the below return a **self-contained HTML string** (inline CSS/JS, no exte
 
 ## Install
 
-Needs a CUDA GPU (or Apple Silicon via MPS) with the model resident. For Qwen3.5's Gated-DeltaNet layers, **do not install `fla`/`causal-conv1d`** — the differentiable pure-PyTorch path is what makes the lens fittable.
+Needs a CUDA GPU (or Apple Silicon via MPS). For Qwen3.5's Gated-DeltaNet layers, **do not install `fla`/`causal-conv1d`** — the differentiable pure-PyTorch path is what makes the lens fittable.
 
 ```bash
-pip install -e .          # pulls torch, transformers, pillow, torchvision, and the jacobian-lens engine
+git clone https://github.com/neil0306/JLensVL.git && cd JLensVL
+python -m venv .venv && source .venv/bin/activate        # or: conda create -n jlensvl python=3.10
+pip install -e .          # pulls torch, transformers>=5.13, pillow, torchvision, and the jacobian-lens engine
 ```
 
-## Pretrained lens
+## Run it in 60 seconds (fully reproducible)
 
-A fitted `J_ℓ` for `Qwen/Qwen3.5-4B` is published on the Hub — skip straight to the
-[Quickstart](#quickstart) below instead of fitting your own:
-
-**[huggingface.co/neil0306/jlensvl-qwen35-4b-lens](https://huggingface.co/neil0306/jlensvl-qwen35-4b-lens)**
+Nothing to configure and no local files to prepare. The base model (`Qwen/Qwen3.5-4B`,
+public) and **both** fitted lenses (from [`TerryYu/JLensVL-lenses`](https://huggingface.co/TerryYu/JLensVL-lenses),
+public) are downloaded automatically on first run; a demo image ships in the repo.
 
 ```bash
-# torch (.pt) — for JLensVL.from_pretrained(..., lens=...)
-hf download neil0306/jlensvl-qwen35-4b-lens lens_qwen35_4b_final.pt --local-dir .
-
-# MLX (.npz) — for MLXJLens.from_pretrained(..., lens_npz=...)
-hf download neil0306/jlensvl-qwen35-4b-lens lens_jl.npz --local-dir .
+# Full stack — the ViT (vision-tower) face AND the LLM-decoder face on one photo:
+CUDA_VISIBLE_DEVICES=0 python examples/12_full_stack.py            # defaults to a shipped dog photo
+# or your own:  python examples/12_full_stack.py path/to/photo.jpg dog
 ```
 
-(Older `huggingface_hub` versions: use `huggingface-cli download` instead of `hf download`.)
+Expected output (real, from `Qwen/Qwen3.5-4B`):
+
+```
+### (A) VISION TOWER — VisionJLens over the ViT ###
+[A] 'dog' localizes strongest at ViT block L22, merged-patch (row=3, col=4) of the 14x14 grid
+
+### (B) LLM DECODER — JLensVL over the full VLM ###
+[B] MODEL says: 'A white dog'
+[B] concept race (max-logit per class) across LLM depth:
+      block :      dog       cat       car    person
+      L25   :    21.12      9.19      4.00      6.44     ← "dog" locks in mid-stack
+```
+
+The rigorous vision naive-vs-Jacobian validation (V1 pointing game / V2 emergence / V3
+legibility) is one more command:
+
+```bash
+CUDA_VISIBLE_DEVICES=0 python examples/11_vision_lens_validations.py
+# -> results/vision_lens/: V2_emergence.png, V3_legibility.png, metrics.json, RESULTS.md
+```
+
+## Pretrained lenses
+
+Both fitted lenses for `Qwen/Qwen3.5-4B` are published (public) on the Hub and are pulled
+automatically by the examples above. To grab them manually:
+
+**[huggingface.co/TerryYu/JLensVL-lenses](https://huggingface.co/TerryYu/JLensVL-lenses)**
+
+```bash
+hf download TerryYu/JLensVL-lenses lens_qwen35_4b_final.pt   --local-dir .   # LLM-decoder lens
+hf download TerryYu/JLensVL-lenses vision_jacobian_lens.pt   --local-dir .   # vision-tower lens
+```
+
+Point the code at local copies (skip the download) via env vars:
+`JLENSVL_LLM_LENS=/path/lens.pt`, `JLENSVL_VISION_LENS=/path/vlens.pt`,
+`JLENSVL_MODEL=/path/to/Qwen3.5-4B`. For the MLX `.npz`, export it yourself with
+`scripts/lens_to_npz.py` (see the MLX section). Older `huggingface_hub`: use
+`huggingface-cli download`.
 
 ## Quickstart
 
 ```python
+from huggingface_hub import hf_hub_download
 from jlensvl import JLensVL, PromptHelper
 
-# load a VLM (vision tower auto-detected) with a fitted lens
+# fitted LLM-decoder lens (auto-downloaded, cached)
+lens = hf_hub_download("TerryYu/JLensVL-lenses", "lens_qwen35_4b_final.pt")
+
+# load a VLM (vision tower auto-detected) with the fitted lens
 # device="auto" (default) picks cuda if available, else mps (Apple Silicon), else cpu
-jl = JLensVL.from_pretrained("Qwen/Qwen3.5-4B", lens="lens.pt")
+jl = JLensVL.from_pretrained("Qwen/Qwen3.5-4B", lens=lens)
+
+img = "examples/assets/vision/dog.jpg"               # ships in the repo
 
 # --- vision: what is the model poised to say about an image? ---
-print(jl.describe("pug.jpg"))                       # -> 'dog'
-print(jl.trace_image("pug.jpg", "What is this?")["answer"][30])   # -> ['pug', 'Pug', 'dog', ...]
+print(jl.describe(img))                              # -> 'A white dog'
+print(jl.trace_image(img, "What is this?")["answer"][25])   # -> [' Dog', ' dog', ' dogs', ...]
 
 # --- conflict: dog photo, text says cat ---
-race = jl.concept_race("dog.jpg",
+race = jl.concept_race(img,
                        "This is a cat. What animal is this?",
                        {"dog": ["dog", "puppy"], "cat": ["cat", "kitten"]})
 
@@ -175,11 +236,52 @@ python scripts/fit_lens.py --model Qwen/Qwen3.5-4B --out lens.pt --n 100
 
 See [`examples/`](examples/) for runnable text, vision, conflict, and prompt-helper demos.
 
+## Vision-tower J-Lens (the ViT face)
+
+`JLensVL` above lenses the **LLM decoder** at image-token positions. `VisionJLens` lenses the
+**vision encoder itself** — it reads what each of the 24 ViT blocks of `model.model.visual` is
+*poised to say*, decoded into the language vocabulary, at every merged patch → a spatial
+`[14×14 × vocab]` map. Two readouts: a **naive vision-logit-lens** (`unembed(merger(h_ℓ))`) and
+the fitted **vision-Jacobian-lens** (`unembed(merger(J_ℓ·h_ℓ))`, `J_ℓ = E[∂h₂₃/∂h_ℓ]`).
+
+It loads from a **single public checkpoint** (only the vision tower + merger + tied unembed;
+the LLM decoder is never materialised):
+
+```python
+from huggingface_hub import hf_hub_download
+from jlensvl import VisionJLens
+
+vlens = hf_hub_download("TerryYu/JLensVL-lenses", "vision_jacobian_lens.pt")
+vl = VisionJLens.from_pretrained("Qwen/Qwen3.5-4B", lens=vlens)
+
+# object-localization heatmap over the merged patch grid, at a given ViT block
+heat, ids = vl.object_heatmap("examples/assets/vision/dog.jpg", ["dog"], block=2, use_jacobian=True)
+print(heat.shape)        # -> torch.Size([14, 14])   (argmax patch lands on the dog)
+```
+
+On the shipped pointing-game validation set, the fitted Jacobian lens beats the naive
+logit-lens (`examples/11`): best-layer pointing accuracy **0.80 vs 0.70**, and mid-stack
+(L6–17) **0.13 vs 0.01** — the naive lens goes background-dominated mid-stack (Neo et al.'s
+register artifact), the Jacobian transport removes it. At the final block `J₂₃ = I`, so the
+Jacobian readout equals the naive one there (built-in sanity anchor).
+
+| call | what |
+|---|---|
+| `VisionJLens.from_pretrained(model_id, lens=..., device=...)` | load vision tower + merger + tied unembed from one public checkpoint |
+| `.read_image(image, use_jacobian=...)` | per-block `[P × vocab]` lens logits over the merged patch grid |
+| `.object_heatmap(image, words, block=..., use_jacobian=...)` | `[rows × cols]` localization heatmap for an object's token(s) |
+| `.fit(images, R=...)` | (re)fit the per-block vision Jacobians `J_ℓ` and store the lens |
+
+Re-fit it yourself (any handful of photos; needs a GPU) with
+`python examples/10_fit_vision_lens.py`.
+
 ## Visualization quickstart
 
 ```python
+from huggingface_hub import hf_hub_download
 from jlensvl import JLensVL, viz
-jl = JLensVL.from_pretrained("Qwen/Qwen3.5-4B", lens="lens.pt")
+jl = JLensVL.from_pretrained("Qwen/Qwen3.5-4B",
+                             lens=hf_hub_download("TerryYu/JLensVL-lenses", "lens_qwen35_4b_final.pt"))
 
 # layer × position "slice grid": what concept each layer holds at each token
 viz.slice_grid_html(jl, "…the country shaped like a boot is the",

@@ -15,9 +15,11 @@ beats the naive vision-logit-lens:
 Artifacts -> results/vision_lens/: heatmap overlay PNGs, emergence.png, legibility.png,
 metrics.json, and RESULTS.md.
 
-Run (jlensvl env, GPU 0):  CUDA_VISIBLE_DEVICES=0 python examples/11_vision_lens_validations.py
-Requires the lens from examples/10 (results/vision_lens/vision_jacobian_lens.pt); if absent it
-is fitted on the fly.
+Weights: vision tower from the public Qwen/Qwen3.5-4B; the fitted lens is auto-downloaded
+from TerryYu/JLensVL-lenses (or set JLENSVL_VISION_LENS to a local file). Test images ship
+in examples/assets/vision.
+
+Run (GPU 0):  CUDA_VISIBLE_DEVICES=0 python examples/11_vision_lens_validations.py
 """
 import os
 import sys
@@ -30,17 +32,14 @@ import matplotlib
 matplotlib.use("Agg")
 import matplotlib.pyplot as plt
 
-HERE = os.path.dirname(__file__)
+HERE = os.path.dirname(os.path.abspath(__file__))
 sys.path.insert(0, os.path.join(HERE, "..", "src"))
+sys.path.insert(0, HERE)
+from _common import MODEL_ID, DEMO_IMAGES, lens_path  # noqa: E402
 from jlensvl.vision_lens import VisionJLens  # noqa: E402
 
-AWQ = os.environ.get(
-    "AWQ_SNAPSHOT",
-    "/home/anu/.cache/huggingface/hub/models--QuantTrio--Qwen3.5-4B-AWQ/snapshots/"
-    "32c292e3a73afe1138518180b1b6d2868c980ee2")
-VIS = os.environ.get("VIS_WEIGHTS", "/home/anu/hf_probe_cache/vis_only/visual.safetensors")
 OUT = os.environ.get("OUT", os.path.join(HERE, "..", "results", "vision_lens"))
-INPUTS = os.path.join(OUT, "inputs")
+INPUTS = os.environ.get("INPUTS", DEMO_IMAGES)
 HEAT = os.path.join(OUT, "heatmaps")
 os.makedirs(HEAT, exist_ok=True)
 SIZE = 448
@@ -85,17 +84,8 @@ def gt_mask(bbox):
 
 
 # ---- load ----
-vl = VisionJLens.from_qwen35(awq_snapshot=AWQ, vis_weights=VIS)
-lens_path = os.path.join(OUT, "vision_jacobian_lens.pt")
-if os.path.exists(lens_path):
-    from jlensvl.vision_lens import VisionJacobianLens
-    vl.lens = VisionJacobianLens.load(lens_path)
-    print(f"[val] loaded lens {lens_path}: {vl.lens!r}")
-else:
-    import glob
-    calib = sorted(glob.glob(os.path.join(INPUTS, "*.jpg")))
-    print(f"[val] no saved lens; fitting on {len(calib)} images")
-    vl.fit(calib, R=int(os.environ.get("R", "128")))
+vl = VisionJLens.from_pretrained(MODEL_ID, lens=lens_path("vision"))
+print(f"[val] model={MODEL_ID}  lens={vl.lens!r}")
 
 W = vl.unembed_weight                                    # [V, 2560] float32
 LAYERS = list(range(vl.n_blocks))

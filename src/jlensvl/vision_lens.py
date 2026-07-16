@@ -168,6 +168,67 @@ class VisionJLens:
 
     # ---------- construction ----------
     @classmethod
+    def from_pretrained(cls, model_id="Qwen/Qwen3.5-4B", *, device="cuda:0",
+                        dtype=torch.bfloat16, lens=None):
+        """Build from a single (public) Qwen3.5 VLM checkpoint — the reproducible path.
+
+        Loads only the vision tower + merger (``model.visual.*``) and the tied
+        unembedding (``model.language_model.embed_tokens.weight``) from ``model_id``;
+        the LLM decoder is never materialised. ``model_id`` may be a HF hub id
+        (e.g. ``"Qwen/Qwen3.5-4B"``) or a local directory. Only the shards holding
+        those tensors are read, so peak host memory stays modest.
+
+        `lens` may be a path to a saved `VisionJacobianLens`, a lens object, or None.
+        """
+        from transformers import AutoConfig, AutoImageProcessor, AutoTokenizer
+        from transformers.models.qwen3_5.modeling_qwen3_5 import Qwen3_5VisionModel
+        from safetensors import safe_open
+        import json
+
+        def _resolve(fn):
+            if os.path.isdir(model_id):
+                return os.path.join(model_id, fn)
+            from huggingface_hub import hf_hub_download
+            return hf_hub_download(model_id, fn)
+
+        cfg = AutoConfig.from_pretrained(model_id)
+        vc = cfg.vision_config
+        vc._attn_implementation = "sdpa"          # flash-attn not required; sdpa differentiable
+        visual = Qwen3_5VisionModel(vc)
+
+        idx = json.load(open(_resolve("model.safetensors.index.json")))
+        wm = idx["weight_map"]
+        emb_key = "model.language_model.embed_tokens.weight"
+        need = {k: s for k, s in wm.items() if ".visual." in k or k == emb_key}
+        by_shard = {}
+        for k, s in need.items():
+            by_shard.setdefault(s, []).append(k)
+        vis_sd, emb = {}, None
+        for shard, keys in by_shard.items():
+            with safe_open(_resolve(shard), framework="pt", device="cpu") as f:
+                for k in keys:
+                    if k == emb_key:
+                        emb = f.get_tensor(k)
+                    else:
+                        vis_sd[k.replace("model.visual.", "")] = f.get_tensor(k)
+        if emb is None:
+            raise RuntimeError(f"{model_id} has no {emb_key}; not a Qwen3.5 VLM checkpoint?")
+        missing, unexpected = visual.load_state_dict(vis_sd, strict=False)
+        # non-persistent buffers (e.g. rotary inv_freq) may be 'missing' — that's fine;
+        # 'unexpected' keys mean a real mismatch.
+        if unexpected:
+            raise RuntimeError(f"unexpected vision keys: {unexpected[:6]}")
+        visual = visual.to(device=device, dtype=dtype).eval()
+        visual.requires_grad_(False)              # Jacobian is d(act)/d(act) at fixed weights
+        unembed_weight = emb.to(device=device, dtype=torch.float32)
+
+        ip = AutoImageProcessor.from_pretrained(model_id)
+        tok = AutoTokenizer.from_pretrained(model_id)
+        if isinstance(lens, str):
+            lens = VisionJacobianLens.load(lens)
+        return cls(visual, visual.merger, unembed_weight, ip, tok, lens=lens, device=device)
+
+    @classmethod
     def from_qwen35(cls, *, awq_snapshot, vis_weights, device="cuda:0",
                     dtype=torch.bfloat16, lens=None):
         """Build from the AWQ snapshot (unquantized vision tower + merger + tied embed).

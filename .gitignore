@@ -17,3 +17,8 @@ images/
 **/linkedin
 *.ckpt
 *.DS_Store
+# local experiment outputs / scratch (regenerable; lenses live on HF)
+scratchpad/
+results/
+reports/
+*.log
