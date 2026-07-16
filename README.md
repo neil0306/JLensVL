@@ -143,7 +143,7 @@ pip install -e .          # pulls torch, transformers>=5.13, pillow, torchvision
 ## Run it in 60 seconds (fully reproducible)
 
 Nothing to configure and no local files to prepare. The base model (`Qwen/Qwen3.5-4B`,
-public) and **both** fitted lenses (from [`TerryYu/JLensVL-lenses`](https://huggingface.co/TerryYu/JLensVL-lenses),
+public) and **both** fitted lenses (from [`neil0306/JLensVL-lenses`](https://huggingface.co/neil0306/JLensVL-lenses),
 public) are downloaded automatically on first run; a demo image ships in the repo.
 
 ```bash
@@ -178,11 +178,11 @@ CUDA_VISIBLE_DEVICES=0 python examples/11_vision_lens_validations.py
 Both fitted lenses for `Qwen/Qwen3.5-4B` are published (public) on the Hub and are pulled
 automatically by the examples above. To grab them manually:
 
-**[huggingface.co/TerryYu/JLensVL-lenses](https://huggingface.co/TerryYu/JLensVL-lenses)**
+**[huggingface.co/neil0306/JLensVL-lenses](https://huggingface.co/neil0306/JLensVL-lenses)**
 
 ```bash
-hf download TerryYu/JLensVL-lenses lens_qwen35_4b_final.pt   --local-dir .   # LLM-decoder lens
-hf download TerryYu/JLensVL-lenses vision_jacobian_lens.pt   --local-dir .   # vision-tower lens
+hf download neil0306/JLensVL-lenses lens_qwen35_4b_final.pt   --local-dir .   # LLM-decoder lens
+hf download neil0306/JLensVL-lenses vision_jacobian_lens.pt   --local-dir .   # vision-tower lens
 ```
 
 Point the code at local copies (skip the download) via env vars:
@@ -198,7 +198,7 @@ from huggingface_hub import hf_hub_download
 from jlensvl import JLensVL, PromptHelper
 
 # fitted LLM-decoder lens (auto-downloaded, cached)
-lens = hf_hub_download("TerryYu/JLensVL-lenses", "lens_qwen35_4b_final.pt")
+lens = hf_hub_download("neil0306/JLensVL-lenses", "lens_qwen35_4b_final.pt")
 
 # load a VLM (vision tower auto-detected) with the fitted lens
 # device="auto" (default) picks cuda if available, else mps (Apple Silicon), else cpu
@@ -251,7 +251,7 @@ the LLM decoder is never materialised):
 from huggingface_hub import hf_hub_download
 from jlensvl import VisionJLens
 
-vlens = hf_hub_download("TerryYu/JLensVL-lenses", "vision_jacobian_lens.pt")
+vlens = hf_hub_download("neil0306/JLensVL-lenses", "vision_jacobian_lens.pt")
 vl = VisionJLens.from_pretrained("Qwen/Qwen3.5-4B", lens=vlens)
 
 # object-localization heatmap over the merged patch grid, at a given ViT block
@@ -281,7 +281,7 @@ Re-fit it yourself (any handful of photos; needs a GPU) with
 from huggingface_hub import hf_hub_download
 from jlensvl import JLensVL, viz
 jl = JLensVL.from_pretrained("Qwen/Qwen3.5-4B",
-                             lens=hf_hub_download("TerryYu/JLensVL-lenses", "lens_qwen35_4b_final.pt"))
+                             lens=hf_hub_download("neil0306/JLensVL-lenses", "lens_qwen35_4b_final.pt"))
 
 # layer × position "slice grid": what concept each layer holds at each token
 viz.slice_grid_html(jl, "…the country shaped like a boot is the",

@@ -2,13 +2,13 @@
 
 Nothing here is hardcoded to one machine: the base model defaults to the public
 ``Qwen/Qwen3.5-4B`` checkpoint, and the two fitted lenses are pulled from the public
-HF repo ``TerryYu/JLensVL-lenses`` on first use (cached by huggingface_hub). Every
+HF repo ``neil0306/JLensVL-lenses`` on first use (cached by huggingface_hub). Every
 default is overridable by an env var so you can point at local copies.
 """
 import os
 
 MODEL_ID = os.environ.get("JLENSVL_MODEL", "Qwen/Qwen3.5-4B")
-LENS_REPO = os.environ.get("JLENSVL_LENS_REPO", "TerryYu/JLensVL-lenses")
+LENS_REPO = os.environ.get("JLENSVL_LENS_REPO", "neil0306/JLensVL-lenses")
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 DEMO_IMAGES = os.path.join(HERE, "assets", "vision")     # 7 object photos shipped in-repo
