@@ -1,0 +1,20 @@
+{
+  "model": "/home/anu/qwen35_4b_dl",
+  "question": "Main subject?",
+  "calib_image": "dog.jpg@224px",
+  "deepstack": [],
+  "blocks": {
+    "2": {
+      "fit_seconds": 1124.0,
+      "peak_gb": 11.011753984,
+      "n_image_tokens": 64,
+      "path": "/home/anu/src/ning/JLensVL/results/vision_lens/cross_modal_jx_L2.pt"
+    },
+    "16": {
+      "fit_seconds": 1105.6,
+      "peak_gb": 10.923372544,
+      "n_image_tokens": 64,
+      "path": "/home/anu/src/ning/JLensVL/results/vision_lens/cross_modal_jx_L16.pt"
+    }
+  }
+}

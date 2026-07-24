@@ -7,7 +7,7 @@ the sibling `jacobian-lens` engine on `PYTHONPATH` (also auto-added by
 ```
 HF_HOME=/home/anu/.cache/huggingface HF_HUB_OFFLINE=1 TRANSFORMERS_OFFLINE=1 \
 PYTHONPATH=$PWD/src:/home/anu/src/ning/J-space-test/jacobian-lens \
-~/miniconda3/envs/self_forcing/bin/python -m pytest tests/ -q
+~/miniconda3/envs/jlensvl/bin/python -m pytest tests/ -q
 ```
 
 `test_lens_math.py` and `test_viz.py` are pure CPU/data-in-data-out tests and

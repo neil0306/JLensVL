@@ -1,0 +1,29 @@
+{
+  "lens_path": "results/vision_lens/vision_jacobian_lens.pt",
+  "size_mb": 48.2,
+  "calibration": [
+    "banana.jpg",
+    "car.jpg",
+    "cat.jpg",
+    "clock.jpg",
+    "dog.jpg",
+    "elephant.jpg",
+    "zebra.jpg"
+  ],
+  "R": 128,
+  "fit_size": 448,
+  "d_vision": 1024,
+  "target_block": 23,
+  "per_sample_max_norm": [
+    32.22938537597656,
+    19.768882751464844,
+    24.130558013916016,
+    86.62068176269531,
+    23.365612030029297,
+    14.991425514221191,
+    9.017868041992188
+  ],
+  "size": 448,
+  "peak_gb": 72.15394816,
+  "n_images": 7
+}

@@ -1,0 +1,337 @@
+{
+  "image": "dog.jpg",
+  "question": "What is the main subject of this photo? Answer with a single word.",
+  "doses": [
+    0.0,
+    0.5,
+    1.0,
+    2.0,
+    4.0
+  ],
+  "results": [
+    {
+      "block": 2,
+      "A": [
+        "dog",
+        "puppy",
+        "canine"
+      ],
+      "B": [
+        "cat",
+        "kitten",
+        "feline"
+      ],
+      "pick_by": "model",
+      "concept_a": "dog",
+      "concept_b": "cat",
+      "a_id": 5388,
+      "b_id": 7993,
+      "baseline": {
+        "model_a": 17.25,
+        "model_b": 8.6875
+      },
+      "dose": [
+        {
+          "t": 0.0,
+          "model_a": 17.25,
+          "model_b": 8.6875,
+          "pref": -8.5625
+        },
+        {
+          "t": 0.5,
+          "model_a": 17.0,
+          "model_b": 8.625,
+          "pref": -8.375
+        },
+        {
+          "t": 1.0,
+          "model_a": 17.125,
+          "model_b": 8.625,
+          "pref": -8.5
+        },
+        {
+          "t": 2.0,
+          "model_a": 17.0,
+          "model_b": 8.5625,
+          "pref": -8.4375
+        },
+        {
+          "t": 4.0,
+          "model_a": 17.125,
+          "model_b": 8.5625,
+          "pref": -8.5625
+        }
+      ],
+      "flipped": false,
+      "effect": 0.0
+    },
+    {
+      "block": 16,
+      "A": [
+        "dog",
+        "puppy",
+        "canine"
+      ],
+      "B": [
+        "cat",
+        "kitten",
+        "feline"
+      ],
+      "pick_by": "model",
+      "concept_a": "dog",
+      "concept_b": "cat",
+      "a_id": 5388,
+      "b_id": 7993,
+      "baseline": {
+        "model_a": 17.25,
+        "model_b": 8.6875
+      },
+      "dose": [
+        {
+          "t": 0.0,
+          "model_a": 17.25,
+          "model_b": 8.6875,
+          "pref": -8.5625
+        },
+        {
+          "t": 0.5,
+          "model_a": 17.0,
+          "model_b": 8.625,
+          "pref": -8.375
+        },
+        {
+          "t": 1.0,
+          "model_a": 17.125,
+          "model_b": 8.6875,
+          "pref": -8.4375
+        },
+        {
+          "t": 2.0,
+          "model_a": 17.125,
+          "model_b": 8.625,
+          "pref": -8.5
+        },
+        {
+          "t": 4.0,
+          "model_a": 17.125,
+          "model_b": 8.6875,
+          "pref": -8.4375
+        }
+      ],
+      "flipped": false,
+      "effect": 0.125
+    },
+    {
+      "block": 22,
+      "A": [
+        "dog",
+        "puppy",
+        "canine"
+      ],
+      "B": [
+        "cat",
+        "kitten",
+        "feline"
+      ],
+      "pick_by": "model",
+      "concept_a": "dog",
+      "concept_b": "cat",
+      "a_id": 5388,
+      "b_id": 7993,
+      "baseline": {
+        "model_a": 17.25,
+        "model_b": 8.6875
+      },
+      "dose": [
+        {
+          "t": 0.0,
+          "model_a": 17.25,
+          "model_b": 8.6875,
+          "pref": -8.5625
+        },
+        {
+          "t": 0.5,
+          "model_a": 17.125,
+          "model_b": 8.625,
+          "pref": -8.5
+        },
+        {
+          "t": 1.0,
+          "model_a": 17.25,
+          "model_b": 8.6875,
+          "pref": -8.5625
+        },
+        {
+          "t": 2.0,
+          "model_a": 17.125,
+          "model_b": 8.6875,
+          "pref": -8.4375
+        },
+        {
+          "t": 4.0,
+          "model_a": 17.25,
+          "model_b": 8.6875,
+          "pref": -8.5625
+        }
+      ],
+      "flipped": false,
+      "effect": 0.0
+    },
+    {
+      "block": 2,
+      "A": [
+        "white"
+      ],
+      "B": [
+        "black"
+      ],
+      "pick_by": "model",
+      "concept_a": "white",
+      "concept_b": "black",
+      "a_id": 4022,
+      "b_id": 3565,
+      "baseline": {
+        "model_a": 11.6875,
+        "model_b": 6.0
+      },
+      "dose": [
+        {
+          "t": 0.0,
+          "model_a": 11.6875,
+          "model_b": 6.0,
+          "pref": -5.6875
+        },
+        {
+          "t": 0.5,
+          "model_a": 11.625,
+          "model_b": 5.8125,
+          "pref": -5.8125
+        },
+        {
+          "t": 1.0,
+          "model_a": 11.5625,
+          "model_b": 5.71875,
+          "pref": -5.84375
+        },
+        {
+          "t": 2.0,
+          "model_a": 11.6875,
+          "model_b": 5.84375,
+          "pref": -5.84375
+        },
+        {
+          "t": 4.0,
+          "model_a": 11.5,
+          "model_b": 5.875,
+          "pref": -5.625
+        }
+      ],
+      "flipped": false,
+      "effect": 0.0625
+    },
+    {
+      "block": 16,
+      "A": [
+        "white"
+      ],
+      "B": [
+        "black"
+      ],
+      "pick_by": "model",
+      "concept_a": "white",
+      "concept_b": "black",
+      "a_id": 4022,
+      "b_id": 3565,
+      "baseline": {
+        "model_a": 11.6875,
+        "model_b": 6.0
+      },
+      "dose": [
+        {
+          "t": 0.0,
+          "model_a": 11.6875,
+          "model_b": 6.0,
+          "pref": -5.6875
+        },
+        {
+          "t": 0.5,
+          "model_a": 11.625,
+          "model_b": 5.875,
+          "pref": -5.75
+        },
+        {
+          "t": 1.0,
+          "model_a": 11.6875,
+          "model_b": 5.96875,
+          "pref": -5.71875
+        },
+        {
+          "t": 2.0,
+          "model_a": 11.6875,
+          "model_b": 5.96875,
+          "pref": -5.71875
+        },
+        {
+          "t": 4.0,
+          "model_a": 11.625,
+          "model_b": 5.875,
+          "pref": -5.75
+        }
+      ],
+      "flipped": false,
+      "effect": -0.0625
+    },
+    {
+      "block": 22,
+      "A": [
+        "white"
+      ],
+      "B": [
+        "black"
+      ],
+      "pick_by": "model",
+      "concept_a": "white",
+      "concept_b": "black",
+      "a_id": 4022,
+      "b_id": 3565,
+      "baseline": {
+        "model_a": 11.6875,
+        "model_b": 6.0
+      },
+      "dose": [
+        {
+          "t": 0.0,
+          "model_a": 11.6875,
+          "model_b": 6.0,
+          "pref": -5.6875
+        },
+        {
+          "t": 0.5,
+          "model_a": 11.6875,
+          "model_b": 5.9375,
+          "pref": -5.75
+        },
+        {
+          "t": 1.0,
+          "model_a": 11.6875,
+          "model_b": 5.9375,
+          "pref": -5.75
+        },
+        {
+          "t": 2.0,
+          "model_a": 11.6875,
+          "model_b": 5.96875,
+          "pref": -5.71875
+        },
+        {
+          "t": 4.0,
+          "model_a": 11.6875,
+          "model_b": 5.875,
+          "pref": -5.8125
+        }
+      ],
+      "flipped": false,
+      "effect": -0.125
+    }
+  ]
+}

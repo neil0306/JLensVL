@@ -1,0 +1,40 @@
+{
+  "_meta": {
+    "task": "smoking-verdict-from-text",
+    "labels": ["CONFIRMED", "POSSIBLE", "CLEAR"],
+    "user_placeholder": "{text}",
+    "note": "6 prompt variants that differ ONLY in wording, not in the task or the label set. Each has a system message and a user_template containing the '{text}' placeholder for the photo description. The P3 harness renders each variant through the model's REAL chat template, measures the prompt-helper observational lens-margin (verdict-decisiveness at the answer position), and separately runs the model to get REAL accuracy on the labeled task, then correlates the two."
+  },
+  "variants": {
+    "neutral": {
+      "style": "neutral baseline",
+      "system": "You classify workplace safety photos for a smoking policy.",
+      "user_template": "Description of a cropped photo of one person:\n\"{text}\"\n\nClassify the smoking tier as exactly one of CONFIRMED, POSSIBLE, or CLEAR. Answer with only that one word.\nVerdict:"
+    },
+    "native": {
+      "style": "helper-suggested native verdict words emphasized",
+      "system": "You are a worksite safety inspector deciding the smoking tier of a person in a photo. The only valid verdicts are the three tier words CONFIRMED, POSSIBLE, and CLEAR. CONFIRMED = a clearly visible cigarette, cigar, vape, or pipe (held even if unlit, or lit with smoke/vapor/a glowing tip). POSSIBLE = a genuinely ambiguous cue that might or might not be a smoking object. CLEAR = empty hands or a non-smoking object, or a lighter/pack/ashtray alone with nothing at the mouth or in the hand.",
+      "user_template": "Photo description:\n\"{text}\"\n\nGive the smoking tier. Reply with exactly one of: CONFIRMED, POSSIBLE, CLEAR.\nVerdict:"
+    },
+    "terse": {
+      "style": "terse / minimal",
+      "system": "Smoking tier: CONFIRMED, POSSIBLE, or CLEAR.",
+      "user_template": "\"{text}\"\nTier:"
+    },
+    "verbose": {
+      "style": "verbose rubric",
+      "system": "You are an expert occupational-safety auditor reviewing cropped surveillance stills from a construction site. For each still you receive a written description of exactly one person and you must assign a single smoking-tier label. Use this rubric carefully. Assign CONFIRMED when the description states or clearly implies a real smoking object in use or in hand: a lit or unlit cigarette held in the fingers or lips, a cigar or pipe with smoke or a glowing tip, or a vape/e-cigarette with visible vapor. Assign POSSIBLE when the cue is genuinely uncertain: a maybe-stick, a faint haze that could be smoke or blur, a few-pixel object at a great distance, or an occluded item that cannot be identified. Assign CLEAR when the hands are empty or hold an unrelated object such as a phone, food, drink, or tool, or when only a lighter, cigarette pack, or ashtray is present with nothing actually at the mouth or in the hand. Remember that image blur or low resolution by itself is never sufficient reason to choose CLEAR.",
+      "user_template": "Here is the description of the cropped photo of one person to be assessed:\n\n\"{text}\"\n\nWorking through the rubric above, decide the single most appropriate smoking tier for this person. Respond with exactly one word, one of CONFIRMED, POSSIBLE, or CLEAR, and nothing else.\nFinal verdict:"
+    },
+    "role": {
+      "style": "role-framed",
+      "system": "You are Chief Site Safety Officer with twenty years of experience spotting smoking violations from photos. Your judgement is trusted and decisive. You answer with one tier word only: CONFIRMED, POSSIBLE, or CLEAR.",
+      "user_template": "Officer, review this crop of one worker and rule on the smoking tier.\n\n\"{text}\"\n\nYour ruling (one word: CONFIRMED, POSSIBLE, or CLEAR):"
+    },
+    "reasoned": {
+      "style": "reason-then-answer",
+      "system": "You classify workplace photos for a smoking policy into CONFIRMED, POSSIBLE, or CLEAR. Think briefly about what smoking cue, if any, is present and how certain it is, then commit to one tier.",
+      "user_template": "Description:\n\"{text}\"\n\nFirst note the key cue in one short phrase, then on a new line give the tier as exactly one of CONFIRMED, POSSIBLE, or CLEAR.\nVerdict:"
+    }
+  }
+}

@@ -29,13 +29,123 @@ class PromptHelper:
         toks = jl._decode(idx.tolist())
         return {"tokens": toks, "top1": toks[0], "margin": float(vals[0] - vals[1]), "layer": L}
 
+    def poised_continuation(self, messages, prefill, *, reasoning=False, layer=None,
+                            senses=None, k=6):
+        """Counterfactual assistant-prefill: *if the model had already committed
+        to `prefill`, what is it poised to say NEXT?*
+
+        Renders `messages` with an extra trailing **assistant** turn carrying the
+        prefill and uses ``continue_final_message=True`` (NOT
+        ``add_generation_prompt`` — the two are mutually exclusive) so the model
+        continues that same turn rather than opening a fresh one. `prefill` goes
+        in as the partial answer ``content``, or as partial chain-of-thought
+        ``reasoning_content`` when ``reasoning=True``.
+
+        Caveat: templates that close ``</think>`` around ``reasoning_content``
+        (ours does) leave the model poised right AFTER the reasoning block — i.e.
+        "given this reasoning, what's the answer" — not mid-thought.
+
+        Returns top-k poised tokens + decisiveness margin (and optional
+        `sense_scores` when `senses` is given).
+        """
+        jl = self.jl; jl._require_lens(); tok = jl.tok; L = self._layer(layer)
+        turn = {"role": "assistant"}
+        turn["reasoning_content" if reasoning else "content"] = prefill
+        msgs = list(messages) + [turn]
+        rendered = tok.apply_chat_template(
+            msgs, tokenize=False, continue_final_message=True,
+            add_generation_prompt=False)
+        ll, _, _ = jl.lens.apply(jl.lm, rendered, positions=[-1], layers=[L],
+                                 use_jacobian=True)
+        logits = ll[L][0]
+        vals, idx = logits.topk(k)
+        toks = jl._decode(idx.tolist())
+        out = {"tokens": toks, "top1": toks[0], "margin": float(vals[0] - vals[1]),
+               "layer": int(L), "reasoning": bool(reasoning), "rendered": rendered}
+        if senses:
+            out["senses"] = {n: self._score_words(logits, w)
+                             for n, w in senses.items()}
+        return out
+
+    def _score_words(self, logits, words):
+        """Max poised logit over `words`' token ids, with the `_phrase_ids`
+        fallback so unknown / multi-token senses don't crash on an empty max()."""
+        ids = self.jl._word_ids(words)
+        if not ids:
+            acc = set()
+            for w in words:
+                acc.update(self._phrase_ids(w))
+            ids = sorted(acc)
+        return float(logits[ids].max()) if ids else float("-inf")
+
+    @staticmethod
+    def _tool_names(tools):
+        """Extract callable/schema tool names from an OpenAI-style `tools` list."""
+        names = []
+        for t in tools or []:
+            if callable(t):
+                names.append(getattr(t, "__name__", None))
+                continue
+            fn = t.get("function", t) if isinstance(t, dict) else None
+            if isinstance(fn, dict) and fn.get("name"):
+                names.append(fn["name"])
+        return [n for n in names if n]
+
+    def _phrase_ids(self, text):
+        """Single-token ids for `text` (reusing `_word_ids`), else the first
+        sub-token of each surface form — so multi-token tool/arg names still get
+        a defined poised score instead of an empty max()."""
+        ids = self.jl._word_ids([text])
+        if ids:
+            return ids
+        unk = getattr(self.jl.tok, "unk_token_id", None)
+        out = set()
+        for v in (text, " " + text):
+            e = self.jl.tok.encode(v, add_special_tokens=False)
+            if e and e[0] != unk:
+                out.add(int(e[0]))
+        return sorted(out)
+
+    def poised_tool(self, messages, tools, *, layer=None, tool_names=None,
+                    arg_names=None, enable_thinking=None):
+        """Which tool / arg is the model poised toward at the generation point?
+
+        Renders the tool-calling prompt (threading `tools` through the template)
+        and scores each candidate tool name (and optional `arg_names`) with the
+        same J-Lens readout as `sense_scores`: the max poised logit of the name's
+        token ids at the answer position. No-op (returns ``{}``) when `tools` is
+        falsy. `tool_names` defaults to the names parsed from `tools`.
+        """
+        jl = self.jl; jl._require_lens(); L = self._layer(layer)
+        if not tools:
+            return {}
+        names = list(tool_names) if tool_names is not None else self._tool_names(tools)
+        rendered = self._render(messages, add_generation_prompt=True,
+                                enable_thinking=enable_thinking, tools=tools)
+        ll, _, _ = jl.lens.apply(jl.lm, rendered, positions=[-1], layers=[L],
+                                 use_jacobian=True)
+        logits = ll[L][0]
+
+        def score(name):
+            ids = self._phrase_ids(name)
+            return float(logits[ids].max()) if ids else float("-inf")
+
+        tool_scores = {n: score(n) for n in names}
+        out = {"layer": int(L), "tools": tool_scores,
+               "top_tool": max(tool_scores, key=tool_scores.get) if tool_scores else None}
+        if arg_names:
+            out["args"] = {a: score(a) for a in arg_names}
+            if out["args"]:
+                out["top_arg"] = max(out["args"], key=out["args"].get)
+        return out
+
     def sense_scores(self, prompt, senses, *, layer=None):
         """J-Lens score of each candidate sense at the answer position.
         `senses` = {name: [words]}. Higher = the model leans that way."""
         jl = self.jl; jl._require_lens(); L = self._layer(layer)
         ll, _, _ = jl.lens.apply(jl.lm, prompt, positions=[-1], layers=[L], use_jacobian=True)
         logits = ll[L][0]
-        return {n: float(logits[jl._word_ids(w)].max()) for n, w in senses.items()}
+        return {n: self._score_words(logits, w) for n, w in senses.items()}
 
     def rank_prompts(self, variants, senses, intended, *, layer=None):
         """Rank prompt `variants` by how well they steer to the `intended` sense
@@ -83,28 +193,147 @@ class PromptHelper:
         return "\n".join(out)
 
     # ---------- template-aware (chat_template.jinja) ----------
-    def _render(self, messages, *, add_generation_prompt=True, enable_thinking=None):
-        """messages -> the exact chat-template-rendered string the model sees."""
+    @staticmethod
+    def _is_unsupported_kwarg_error(exc: TypeError, name: str) -> bool:
+        """True only for the CANONICAL "unexpected keyword argument" signature
+        error about `name` (e.g. transformers predating the flag) — NOT some
+        other TypeError raised from inside the template that merely mentions
+        `name`. Kept deliberately narrow so a genuine request is never dropped."""
+        msg = str(exc)
+        return name in msg and ("unexpected keyword argument" in msg
+                                or "got an unexpected keyword" in msg)
+
+    def _thinking_flag_effective(self):
+        """Cached: does passing `enable_thinking` actually CHANGE what the
+        template renders? ``False`` means the flag is accepted-but-ignored (or
+        unsupported at the signature level) — so an ``enable_thinking=False``
+        request cannot really be honored. ``None`` when undeterminable."""
+        cached = getattr(self, "_think_eff_cache", "unset")
+        if cached != "unset":
+            return cached
+        tok = self.jl.tok
+        probe = [{"role": "user", "content": "x"}]
+        kw = dict(tokenize=False, add_generation_prompt=True)
+        try:
+            on = tok.apply_chat_template(probe, enable_thinking=True, **kw)
+            off = tok.apply_chat_template(probe, enable_thinking=False, **kw)
+            eff = (on != off)
+        except TypeError as exc:
+            # Canonical "unexpected keyword" => flag genuinely unsupported.
+            # Any OTHER TypeError is undeterminable — don't misread it as
+            # "ineffective" (that would mask a real template bug).
+            eff = False if self._is_unsupported_kwarg_error(exc, "enable_thinking") else None
+        except Exception:  # noqa: BLE001 - undeterminable, don't block
+            eff = None
+        self._think_eff_cache = eff
+        return eff
+
+    def _thinking_default(self):
+        """Best-effort: does THIS chat template default thinking ON?
+
+        Portability note: our 4B template defaults ON, but sibling templates
+        (Qwen3.5-2B/9B) default OFF. Rather than assume, we render a trivial
+        generation prompt with no `enable_thinking` and compare it against the
+        explicit `enable_thinking=False` rendering. If they differ, the implicit
+        default is ON. Returns True/False, or None when the flag is ineffective
+        (unsupported OR accepted-but-ignored) so "thinking default" is moot."""
+        if self._thinking_flag_effective() is not True:
+            return None
+        tok = self.jl.tok
+        probe = [{"role": "user", "content": "x"}]
+        default = tok.apply_chat_template(probe, tokenize=False,
+                                          add_generation_prompt=True)
+        off = tok.apply_chat_template(probe, tokenize=False,
+                                      add_generation_prompt=True,
+                                      enable_thinking=False)
+        return default != off
+
+    def _render(self, messages, *, add_generation_prompt=True, enable_thinking=None,
+                tools=None, add_vision_id=None):
+        """messages -> the exact chat-template-rendered string the model sees.
+
+        Universal `apply_chat_template` passthroughs:
+          * `enable_thinking` (None = the template's own default; see
+            `_thinking_default`). A genuine `enable_thinking=False` is NEVER
+            silently dropped — if the tokenizer truly can't honor it we raise.
+          * `tools` — tool schemas for tool-calling prompts (no-op when None).
+          * `add_vision_id` — Qwen VLM image tagging (no-op / ignored when the
+            template doesn't reference it).
+        """
         tok = self.jl.tok
         kw = dict(tokenize=False, add_generation_prompt=add_generation_prompt)
+        if tools is not None:
+            kw["tools"] = tools
+        if add_vision_id is not None:
+            kw["add_vision_id"] = add_vision_id
         if enable_thinking is not None:
+            # An explicit `enable_thinking=False` we cannot actually effect (the
+            # template ignores or rejects the flag) must NOT be silently honored
+            # in name only — surface it rather than render thinking-on regardless.
+            if enable_thinking is False and self._thinking_flag_effective() is False:
+                raise TypeError(
+                    "enable_thinking=False was requested but this tokenizer's "
+                    "apply_chat_template ignores/rejects the flag (identical render "
+                    "with and without it); refusing to silently render with thinking "
+                    "possibly enabled.")
             try:
                 return tok.apply_chat_template(messages, enable_thinking=enable_thinking, **kw)
-            except TypeError:
-                pass
+            except TypeError as exc:
+                # Only fall back when `enable_thinking` is genuinely unsupported
+                # by the signature — never swallow an unrelated TypeError.
+                if not self._is_unsupported_kwarg_error(exc, "enable_thinking"):
+                    raise
+                # enable_thinking=True but unsupported -> template has no thinking
+                # concept; fall through to the plain render. (False already
+                # raised above via the effectiveness guard.)
         return tok.apply_chat_template(messages, **kw)
 
+    @staticmethod
+    def _phantom_think_positions(toks):
+        """Positions belonging to a PHANTOM empty ``<think>\\n\\n</think>`` block
+        (the one the template injects when thinking is OFF). Detected as a
+        ``<think>`` token followed — across whitespace-only tokens — immediately
+        by ``</think>`` with no real content between. Returned as a set so callers
+        can skip it; leaving it in skews per-token traces / diagnose_thinking on
+        multi-turn and tool prompts."""
+        phantom = set()
+        n = len(toks)
+        for p, t in enumerate(toks):
+            if t != "<think>":
+                continue
+            run = [p]
+            q = p + 1
+            while q < n and toks[q].strip() == "":
+                run.append(q)
+                q += 1
+            if q < n and toks[q] == "</think>":
+                run.append(q)
+                phantom.update(run)
+        return phantom
+
     def trace_rendered(self, messages, *, senses=None, enable_thinking=None,
-                       add_generation_prompt=True, layer=None, topk=6):
+                       add_generation_prompt=True, tools=None, add_vision_id=None,
+                       layer=None, topk=6):
         """Run the J-Lens on the REAL chat-template-rendered token sequence (not the
         raw string). Returns a per-token trace + segment/special tags + the sense
         scores at the answer position. This is the faithful thing to lens for a
         chat model — the model never sees your raw text, it sees the rendered tokens.
+
+        `tools` / `add_vision_id` are universal `apply_chat_template` passthroughs
+        (no-op when None) so tool-calling / VLM prompts can be lensed faithfully.
+
+        Answer-position caveat: `answer = len(ids) - 1` is the FINAL rendered
+        token, which differs by thinking mode — thinking-on ends at an open
+        ``<think>\\n`` (poised to reason), thinking-off ends past the closed
+        ``</think>\\n\\n`` block (poised to answer). So sense scores across modes
+        are read at genuinely different residual states; that's intended, but
+        don't treat the two positions as identical.
         """
         jl = self.jl; jl._require_lens()
         tok = jl.tok
         rendered = self._render(messages, add_generation_prompt=add_generation_prompt,
-                                enable_thinking=enable_thinking)
+                                enable_thinking=enable_thinking, tools=tools,
+                                add_vision_id=add_vision_id)
         layers = jl.lens.source_layers
         ll, ml, ids = jl.lens.apply(jl.lm, rendered, positions=None, layers=layers, use_jacobian=True)
         if hasattr(ids, "dim") and ids.dim() > 1:
@@ -113,6 +342,7 @@ class PromptHelper:
         toks = [tok.decode([i]) for i in ids]
         L = layer if layer is not None else layers[-2]
         special = set(getattr(tok, "all_special_ids", []) or [])
+        phantom = self._phantom_think_positions(toks)
         role = None
         per = []
         for p, i in enumerate(ids):
@@ -126,14 +356,15 @@ class PromptHelper:
                 role = None
             idx = [int(j) for j in ll[L][p].topk(topk).indices.tolist()]
             per.append({"tok": surf, "top": [tok.decode([j]) for j in idx],
-                        "special": is_sp, "role": role})
+                        "special": is_sp or (p in phantom), "role": role,
+                        "phantom": p in phantom})
         ans = len(ids) - 1
         sc = None
         if senses:
             alog = ll[L][ans]
-            sc = {n: float(alog[jl._word_ids(w)].max()) for n, w in senses.items()}
+            sc = {n: self._score_words(alog, w) for n, w in senses.items()}
         return {"rendered": rendered, "tokens": toks, "per": per, "answer": ans,
-                "layer": int(L), "senses": sc}
+                "layer": int(L), "senses": sc, "phantom_think": sorted(phantom)}
 
     def compare_templates(self, base_messages, variants, senses, intended, *, layer=None):
         """A/B different template configs (system on/off, thinking on/off, few-shot…)

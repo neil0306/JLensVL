@@ -1,0 +1,420 @@
+On the scanned worksheet, problem 3 shows the student carried the tens digit incorrectly, giving 84 instead of 74.
+In problem 5, the student borrowed from the hundreds column but forgot to reduce it, leaving the subtraction one off.
+The photographed page shows a sign error in problem 7: the student wrote -12 instead of +12 when combining terms.
+Problem 2 shows the decimal point shifted one place to the left, turning 3.5 into 0.35 in the final answer.
+The student's unit conversion in problem 9 is wrong, converting 2 kilometers to 200 meters instead of 2000.
+A transcription error is visible in problem 4: the working correctly finds 156 but the boxed answer reads 165.
+The worksheet shows the student misread the question in problem 6, solving for perimeter when the question asked for area.
+In problem 8, two digits appear reversed in the final answer, 39 written where 93 was calculated.
+A rounding error is present in problem 10, where 4.78 was rounded down to 4.7 instead of up to 4.8.
+Camera captures an off-by-one error in problem 1, the student counted 11 apples instead of 12.
+Problem 13 shows the student subtracting the smaller digit from the larger one in each column, ignoring which number was on top.
+The worksheet shows a mixed-units error in problem 16: the student adds 3 feet and 2 yards without converting to a common unit first.
+Problem 18's multiplication is copied down as 63 in the final answer line, though the working clearly shows 68.
+Problem 11 shows the student applied the wrong formula, using the perimeter formula where the area formula was required.
+The fraction in problem 12's final answer, 8/12, is left unsimplified instead of being reduced to 2/3.
+In the geometry problem, the diagram is unlabeled, so the marked angle cannot be matched to the working.
+Problem 14 shows correct substitution into the quadratic formula but an arithmetic slip under the square root.
+The student's proof in problem 15 is only half-finished, stopping after the second step with no conclusion drawn.
+Problem 20's ratio answer of 6:9 is left unreduced instead of being simplified to 2:3.
+几何题的图形没有标注角度,批改时无法对照演算过程核实。
+Verdict: the final answer is correct but the working omits the unit, so award partial credit and note the missing unit.
+Verdict: the method in problem 6 is entirely correct, but a single carry error in the last step gives an incorrect final answer, deduct one mark only.
+Verdict: the student solved for the wrong quantity due to misreading the question, no credit for the final answer but partial credit for the algebra shown.
+Verdict: the fraction is left unsimplified, deduct half a mark per the rubric even though the value is numerically correct.
+Verdict: wrong formula applied throughout the geometry section, no credit despite neat handwriting.
+判定:第八题最终答案正确但未标注单位,依据评分标准扣半分,并在旁批注提醒学生补写单位。
+判定:第九题解法完全正确,只是最后一步进位出错导致结果有误,依规定仅扣一分。
+判定:第七题因看错题目中的单位而算错了求解目标,最终答案不给分,但保留演算步骤的部分分数。
+A partial-credit cue is any solution with a correct method but a single arithmetic slip in the final step.
+A carry-error cue applies when a student's addition working is correct except for a mishandled carry into the next column.
+A sign-error cue is any instance where a positive or negative sign is dropped, flipped, or mismatched between steps.
+A wrong-method cue means the overall approach does not match the mathematical operation the question requires, regardless of arithmetic accuracy.
+An unsimplified-answer cue applies when a numerically correct fraction or ratio is left in an unreduced form.
+部分给分提示是指解题方法正确,仅在最后一步出现单一运算失误的情形。
+进位错误提示是指加法演算过程正确,只是进位到下一位时处理有误。
+方法错误提示是指整体解题思路与题目要求的运算完全不符,与计算准确与否无关。
+CLEAR: all six problems are solved correctly with legible working and units shown; full marks.
+Negative case: the fraction 3/4 in problem 13 is already in simplest form, no deduction needed.
+No error found: the student's carry in problem 2 is correctly handled across all three columns.
+CLEAR: the geometry proof is fully labeled, each step justified, and the conclusion matches the given statement.
+清空判定:全部十道题作答正确,书写工整且单位标注齐全,应给予满分。
+无错误:第五题连续两次进位均处理正确,无需扣分。
+carry error in the tens column
+sign error in combining terms
+decimal point misplaced in the answer
+unit conversion error, km to m
+transcription error, working vs boxed answer
+wrong formula applied in geometry
+unsimplified fraction in final answer
+misread question, solved wrong quantity
+reversed digits in final answer
+rounding error, rounded down instead of up
+The scanned image shows neat, legible handwriting throughout, every digit clearly formed.
+Problem 4's working is smudged, likely from a wet eraser, making two digits difficult to distinguish.
+The student's answer to problem 7 is illegible, the numeral could be a 1 or a 7 depending on the slant.
+Faded pencil marks in the margin of problem 9 are barely visible under the scanner's lighting.
+The student crossed out an earlier attempt at problem 3 and rewrote the working beside it, both versions overlapping.
+Handwriting in problem 11 spills outside the designated answer box, running into the next question's space.
+Overwritten digits in problem 5 are ambiguous, it is unclear whether the original numeral was a 1 or a 7.
+The worksheet shows heavily messy working for problem 8, arrows and cross-outs make the sequence of steps hard to follow.
+第四题的字迹被水渍浸染,两个数字难以辨认。
+A ballpoint pen has bled through the thin worksheet paper, making problem 13's digits visible but doubled from the reverse side.
+第九题铅笔字迹已经褪色,在扫描光线下几乎看不清。
+The student appears to have erased problem 10's original answer so hard that the paper has thinned and torn slightly.
+第十一题的书写超出了答题框,延伸到了下一题的空白处。
+Verdict: the answer is correct but illegible handwriting makes verification difficult, request the student rewrite it clearly.
+Verdict: overwritten digits in problem 5 cannot be reliably read as either 1 or 7, mark the problem as ambiguous and ask for clarification.
+Verdict: messy cross-outs obscure the final line of working, but the boxed answer is legible and correct, award full marks.
+判定:答案正确但字迹难以辨认,应要求学生重新誊写清楚。
+判定:第五题数字被涂改,无法确定是1还是7,标记为字迹存疑并要求学生说明。
+A legibility cue is any instance where handwriting is smudged, faded, overwritten, or otherwise difficult for the grader to read with confidence.
+An out-of-box cue applies when a student's writing extends beyond the designated answer area into unrelated space.
+字迹存疑提示是指笔迹模糊、褪色、涂改或其他导致批改者无法确信读出内容的情形。
+Negative case: the handwriting is small but perfectly legible under magnification, no penalty for neatness.
+CLEAR: despite cursive style, every digit and symbol on the page is unambiguous and easy to grade.
+清空判定:虽然字体较小,但放大后完全清晰可辨,不予扣分。
+smudged ink obscuring two digits
+illegible numeral, could be 1 or 7
+faded pencil marks in the margin
+crossed-out and rewritten working
+handwriting spilling outside the answer box
+Problem 6 is left completely blank, with no attempt at an answer or working.
+The student skipped question 9 entirely, jumping from problem 8 to problem 10 without explanation.
+Only the final answer is written for problem 12, with no steps shown to support it.
+The proof in problem 15 is half-finished, ending abruptly after the third line with no closing statement.
+The worksheet is missing the name and date header at the top of the page.
+Page two of the three-page worksheet appears to be missing from the scanned submission.
+The student wrote "I don't know" next to problem 7 instead of attempting a solution.
+Problem 3's answer box is empty, but faint erased marks suggest an attempt was made and removed.
+第六题完全空白,没有任何作答或演算痕迹。
+Question 22 is answered out of order, appearing squeezed into the margin next to question 19 instead of its own space.
+第十二题只写了最终答案,没有展示任何解题步骤。
+The last two lines of problem 17's derivation are missing, leaving the final simplification step undone.
+这份作业缺少姓名和日期的抬头信息。
+The staple mark in the corner suggests a page was once attached but is no longer present in this scan.
+Verdict: problem 6 is blank, award zero marks and flag for the student to attempt it during office hours.
+Verdict: the answer to problem 12 is correct but no working is shown, per rubric award only half credit.
+Verdict: a half-finished proof earns partial credit for the steps completed, but no credit for the missing conclusion.
+Verdict: missing name and date header should be noted but does not affect the academic score.
+判定:第十题完全空白无作答,判零分,并建议学生在答疑时间补做该题。
+判定:第十九题答案正确但未写出解题步骤,依据评分标准只能给予一半分数。
+判定:缺少姓名日期抬头应予以提示,但不影响学业得分。
+A blank-answer cue is any question left entirely without an attempt, no marks, no working, no erasure traces.
+A skipped-question cue applies when a student's work jumps from one problem number to a later one, omitting a question in between.
+A no-working cue means only the final answer appears, with no supporting calculation or reasoning shown.
+An incomplete-proof cue applies to any multi-step derivation that stops before reaching a final justified conclusion.
+漏做提示是指某道题完全没有作答痕迹,既无演算也无擦除痕迹。
+只写答案提示是指仅出现最终答案,没有任何支持性演算或推理过程。
+Negative case: problem 9 appears skipped at first glance, but the answer is actually written in the margin, fully correct.
+CLEAR: every question from 1 to 15 has both working and a final answer present, nothing is missing.
+No missing-work flag: the header is present and legible at the top of the page as required.
+清空判定:第九题乍看像是漏做,实际答案写在页边空白处,内容完全正确。
+无缺漏标记:页面顶端姓名日期抬头完整清晰,符合要求。
+blank answer box for problem six
+skipped question, no attempt shown
+answer only, steps not shown
+half-finished proof missing conclusion
+missing name and date header
+missing page from the scanned submission
+The essay's opening paragraph lacks a clear thesis statement, leaving the reader unsure of the argument's direction.
+Paragraph two has a strong topic sentence, but the supporting evidence that follows is only loosely related.
+The student's conclusion simply repeats the introduction word for word instead of synthesizing the argument.
+A run-on sentence spans nearly the entire second paragraph, joining four independent clauses without punctuation.
+Subject-verb disagreement appears in the third sentence: "the students was late" instead of "were late."
+Several spelling errors are visible in the composition, including "recieve" and "definately."
+The essay cites no textual evidence to support its central claim about the character's motivation.
+A sudden shift to markedly more polished phrasing in the essay's final paragraph, unlike the student's own style seen elsewhere on the page, raises a plagiarism suspicion.
+The five-paragraph essay is missing its conclusion entirely, ending abruptly after the third body paragraph.
+Grammar throughout the piece is largely correct, but tense shifts unexpectedly between past and present in paragraph three.
+作文开头段落缺少明确的中心论点,读者难以判断文章的论述方向。
+Paragraph four wanders between two unrelated ideas without ever settling on a single controlling point.
+结论部分几乎逐字重复了引言,没有对论点进行总结升华。
+A fragment sentence appears in paragraph one, missing a verb entirely: "The old house on the hill, quiet and forgotten."
+作文中出现主谓不一致的语法错误。
+The word "definitely" is misspelled as "definately" three separate times across the essay.
+这篇作文没有引用任何文本证据来支持其关于人物动机的核心论点。
+An unusually advanced vocabulary appears only in paragraph two, sharply contrasting with the simpler phrasing elsewhere in the essay.
+Verdict: the essay has a clear thesis and strong evidence, but the conclusion is missing, deduct marks for structure only.
+Verdict: near-identical phrasing to another student's paper warrants a plagiarism flag for teacher review before scoring.
+Verdict: the run-on sentence and subject-verb disagreement should each be circled and counted as separate grammar deductions.
+Verdict: spelling errors are minor and do not affect the content score, but should be noted for the student's awareness.
+判定:作文论点明确、论据充分,但缺少结论,仅在结构部分扣分。
+判定:第三段措辞与他人作文几乎完全一致,应标记疑似抄袭并提交教师复核后再评分。
+判定:病句与主谓不一致应分别圈出并各自计为独立的语法扣分项。
+A thesis cue is any essay opening that fails to state a clear, arguable central claim.
+An evidence cue applies when a paragraph's topic sentence is not adequately supported by textual or factual detail.
+A plagiarism-suspicion cue is triggered when phrasing, structure, or argument closely mirrors another student's known submission.
+A grammar-error cue covers run-on sentences, subject-verb disagreement, tense shifts, and comma splices.
+论点提示是指作文开头未能提出明确、可论证的中心论点的情形。
+抄袭嫌疑提示是指措辞、结构或论点与他人已知提交内容高度相似的情形。
+Negative case: the essay's vocabulary is advanced but every grammatical structure used is correct.
+CLEAR: the five-paragraph essay has a clear thesis, well-supported body paragraphs, and a synthesizing conclusion.
+No plagiarism concern: the phrasing is similar to a class discussion example but properly cites the source.
+清空判定:五段式作文论点清晰、论据充分、结论具有总结性,结构完整。
+无抄袭嫌疑:措辞与课堂讨论示例相似,但已恰当注明出处。
+missing thesis statement in the introduction
+weak evidence supporting the topic sentence
+run-on sentence spanning the paragraph
+subject-verb disagreement in sentence three
+spelling errors, recieve and definately
+suspected plagiarism, near-identical phrasing
+conclusion missing from the five-paragraph essay
+tense shifting between past and present
+The lab report's diagram of the circuit is unlabeled, so the grader cannot confirm which component is the resistor.
+Problem 4 in the physics worksheet omits units on the final velocity, giving "12" instead of "12 m/s."
+The chemistry answer correctly balances the equation but reports the wrong number of significant figures.
+The student's hypothesis is clearly stated, but the conclusion does not reference the collected data at all.
+A safety note is missing from the lab procedure section, where the student should have flagged the use of a corrosive acid.
+The bar graph in the biology worksheet has no axis labels, making the reported trend unverifiable.
+Problem 6 shows the correct free-body diagram but an incorrect application of Newton's second law in the calculation.
+The student's measurement of 3.14159 for pi is reported with excessive precision beyond the instrument's accuracy.
+实验报告中的电路图没有标注,批改者无法确认哪个元件是电阻。
+Problem 19's answer for mass is given as "250" with no indication of grams, kilograms, or any other unit.
+化学方程式配平正确,但有效数字位数报告错误。
+The line graph plotting temperature over time has its x-axis and y-axis labels swapped.
+Verdict: the balanced equation is correct but missing units on the final answer, deduct one mark per the units criterion.
+Verdict: the diagram is unlabeled, so full marks cannot be awarded even though the underlying physics is correct.
+Verdict: hypothesis and procedure are well written, but the conclusion fails to reference the data, request a revision.
+判定:方程式配平正确但最终答案缺少单位,按单位评分标准扣一分。
+判定:图表未标注,即使物理原理正确也无法给予满分。
+A labeled-diagram cue applies to any diagram, circuit, or graph submitted without axis labels or component identifiers.
+A units-criterion cue covers any numeric answer lacking the appropriate physical unit.
+A data-conclusion cue is any conclusion paragraph that fails to reference or interpret the collected experimental data.
+标注图表提示是指任何未标注坐标轴或元件名称的图表、电路图或曲线图。
+单位标准提示是指数值答案缺少相应物理单位的情形。
+Negative case: the circuit diagram is fully labeled with each resistor and capacitor clearly marked.
+CLEAR: units are present on every numeric answer throughout the physics worksheet.
+清空判定:该电路图每个电阻、电容与开关均标注清楚,元件辨识无误。
+无缺失:整份物理作业每个数值答案都标注了单位。
+unlabeled circuit diagram in the lab report
+missing units on final velocity answer
+correct equation, wrong significant figures
+conclusion not referencing collected data
+missing safety note in lab procedure
+bar graph without axis labels
+The grader marks problem 1 correct with a red tick in the margin.
+A circle is drawn around the carry error in problem 3 to flag it for the student's attention.
+One mark is deducted from problem 5 for the missing unit, noted with a small "-1" beside the answer.
+Partial credit of two out of three points is awarded for problem 9's correct method despite the wrong final answer.
+A note in red ink asks the student to redo problem 11's third step, circling the point where the error begins.
+The grader writes "clear reasoning, well done" beside problem 14's fully justified proof.
+Problem 15 is flagged with a sticky note for teacher review due to a suspected transcription discrepancy.
+A checkmark and "+5" are written next to the essay's strong thesis statement in the margin.
+批改者在第一题旁打了红色对勾表示正确。
+A wavy underline beneath problem 6 marks a step the grader wants the student to reconsider.
+第五题因缺少单位被扣一分,旁边标注"-1"。
+Half credit is written next to problem 13, with a note explaining that the setup was correct but the final computation was not.
+红笔批注要求学生重做第十一题第三步,并圈出出错的起点。
+A gold star is drawn next to problem 20, marking it as the most elegant solution on the page.
+Verdict: mark problem 1 correct with a tick, no further action needed.
+Verdict: circle the carry error in problem 3, deduct one mark, and note the correction in the margin.
+Verdict: award two of three points for problem 9's correct method, deduct one for the final arithmetic slip.
+Verdict: flag problem 15 for teacher review before finalizing the score, the discrepancy needs a second opinion.
+判定:第一题打勾即可,无需其他操作。
+判定:圈出第三题的进位错误,扣一分,并在旁批注更正方式。
+判定:第十五题应提交教师复核后再定分数,该处差异需要第二意见确认。
+A tick-mark cue applies whenever a fully correct answer with valid working is confirmed by the grader.
+A circle-the-error cue is used to visually flag the exact location of a mistake for the student to review.
+A flag-for-review cue applies to any answer where the grader is uncertain and a second opinion from the teacher is warranted.
+A praise cue is any margin note acknowledging clear reasoning, neat presentation, or an elegant solution method.
+打勾提示是指批改者确认答案完全正确且演算有效时使用的标记。
+圈出错误提示是指用圈标出具体错误位置,方便学生复查的批改方式。
+标记复核提示是指批改者对某题存疑,需要教师给出第二意见的情形。
+Negative case: no deduction is applied because the "-1" mark near problem 5 was written by the student, not the grader.
+CLEAR: every problem on the page carries a tick mark, confirming a fully graded and fully correct submission.
+清空判定:第五题旁的"-1"其实是学生自己写的草稿,批改者并未扣分。
+无扣分:全页每道题旁都有对勾,确认已全部批改且全部正确。
+red tick mark beside a correct answer
+circled error flagging the mistake
+one mark deducted for missing unit
+partial credit for correct method
+margin note requesting a redo
+praise comment for clear reasoning
+sticky note flagging teacher review
+On a photographed worksheet taken under uneven classroom lighting, problem 7's decimal point is hard to distinguish from a stray pencil mark.
+Problem 4's working shows two crossed-out attempts before the final answer, suggesting the student found this question especially difficult.
+The handwriting in the last two problems is noticeably rushed and messier than the rest of the page, with letters trailing off toward the margin.
+The worksheet shows only four of six problems attempted, with the last two answer boxes left completely empty.
+The homework page is a phone photo taken at a slight angle, leaving problem 2's answer blurred enough that it's hard to confirm whether it reads 6 or 8.
+A red annotation beside problem 9 reads "rechecked, mark confirmed," showing the answer was reviewed a second time and left unchanged.
+In a bilingual classroom worksheet, the English instructions are followed correctly but the numeric answer in problem 5 is still wrong.
+A copied-answer cue is any instance where a single answer's handwriting on a worksheet noticeably differs from the rest of the page, suggesting it was copied rather than independently written.
+During re-grading of this worksheet, problem 3 still shows the same carry error that was flagged during the first pass.
+On a worksheet scanned at an angle, problem 6's answer sits partly outside the visible frame of the image.
+在教室灯光不均的情况下拍摄的作业照片中,第七题的小数点很难与铅笔污渍区分开。
+Only the first ten problems on the page carry grading marks; the remaining problems are left unmarked and unscored.
+页面最后两题的字迹明显潦草仓促,笔画拖拽延伸到页边空白处。
+A worksheet submitted through a classroom app shows compression artifacts that make problem 9's decimal point hard to confirm.
+第九题旁用红笔写着"已复核,维持原评分",表明该题曾被重新核对过。
+The written explanation for problem 14 uses unusually formal phrasing that doesn't match the informal wording used elsewhere on this student's page.
+重新批改这张作业时,第三题仍然出现了与首次批改时相同的进位错误。
+Problem 10's working correctly arrives at 42, but the boxed final answer reads 24, a mismatch between the calculation and the stated result.
+The algebra steps in problem 13 solve for x = 5, yet the student circled x = 3 as the final answer, contradicting the work shown.
+第十题的演算过程正确得出42,但方框内最终答案却写着24,两者不一致。
+Problem 21's working correctly derives a probability of 0.25, but the student writes 25 as the final answer without the decimal.
+Verdict: when the shown working contradicts the boxed answer, credit the working and flag the boxed answer as a transcription slip.
+Verdict: a final answer that disagrees with the demonstrated steps should be marked wrong even if the answer alone happens to be a common value.
+判定:当演算过程与方框答案不一致时,以演算过程为准,并将方框答案标记为誊写失误。
+An answer-mismatch cue is any case where the final boxed or stated answer contradicts the result actually derived in the working.
+答案不符提示是指最终方框或声明的答案与演算过程实际得出的结果相互矛盾的情形。
+Negative case: the boxed answer 42 matches the working exactly, no mismatch to flag.
+CLEAR: every boxed answer on the page is consistent with its corresponding working, no transcription slips found.
+清空判定:十道题的方框答案均与演算步骤完全吻合,未见任何誊写错漏。
+boxed answer contradicting the shown working
+final answer disagreeing with derived steps
+In problem 16, the student correctly sets up the quadratic equation but makes a sign error when applying the quadratic formula, flipping -b to +b.
+Problem 17 shows the student factoring x^2 - 9 as (x-3)(x+3), which is correct, but then drops one of the two solutions when stating the answer.
+The system of equations in problem 18 is solved by substitution correctly, but the final answer swaps the values of x and y.
+Problem 19's answer of x = 4 is correct, but the student never isolated x, jumping directly from the equation to the answer with no algebra shown.
+In problem 20, the student distributes incorrectly, writing 3(x+2) as 3x+2 instead of 3x+6.
+第十六题正确列出了一元二次方程,但代入求根公式时出现符号错误,把-b写成了+b。
+Problem 23 simplifies (x+2)/(x+2) to 1 correctly but forgets to note the excluded value where x cannot equal -2.
+第十八题用代入法解方程组本身正确,但最终答案把x和y的值弄反了。
+In problem 25, the student squares a binomial incorrectly, writing (x+3)^2 as x^2+9 instead of x^2+6x+9.
+Verdict: a correct factoring step followed by a dropped solution earns partial credit only, both roots must be stated for full marks.
+Verdict: swapping x and y values after a correct substitution method is a transcription-style error, deduct one mark from an otherwise full solution.
+Verdict: distributing incorrectly invalidates the rest of the algebra that follows, no credit beyond the distribution step.
+判定:因式分解正确但漏写一个解,只给部分分数,需完整写出两个解才能得满分。
+判定:代入法本身正确,但最终把x和y的值互换,视为誊写类错误,从满分中扣一分。
+A dropped-solution cue applies when a correctly factored equation yields two roots but only one is reported as the final answer.
+A distribution-error cue covers any case where the distributive property is applied incorrectly across parentheses.
+漏解提示是指方程正确因式分解后应有两个根,却只报告了其中一个作为最终答案的情形。
+Negative case: both roots x = 3 and x = -3 are clearly stated in problem 17's final answer, no deduction.
+CLEAR: the distribution in problem 20 is applied correctly across every term, full marks for that step.
+Negative case: problem 25's binomial expansion is carried out correctly with all three terms present.
+dropped solution, only one root reported
+sign flip in the quadratic formula
+x and y values swapped in final answer
+incorrect distribution across parentheses
+The angle-sum proof in problem 21 correctly totals 180 degrees but never labels which angles were added.
+Problem 22 asks for the volume of a cylinder, but the student calculates the surface area instead, applying the wrong formula entirely.
+The diagram accompanying problem 23 is neatly drawn and fully labeled, with every side length and angle marked.
+In problem 24, the radius is mistakenly used where the diameter was required, halving the correct final answer.
+Problem 25's triangle proof correctly identifies congruent sides but cites the wrong postulate, SSS instead of SAS.
+第二十一题角度和证明正确得出180度,但没有标注具体是哪几个角相加。
+Problem 27 correctly finds the area of the base but forgets to multiply by height to get the final volume.
+第二十四题误用半径代替题目要求的直径,导致最终答案偏小一半。
+Verdict: the numeric result is correct but angles are unlabeled in the proof, deduct half a mark for the labeled-diagram criterion.
+Verdict: volume and surface area formulas were confused entirely, no credit for the final answer despite tidy working.
+Verdict: radius used instead of diameter halves the answer, deduct for the conceptual error even though the arithmetic that follows is correct.
+判定:数值结果正确但证明中角度未标注,依据标注图表标准扣半分。
+判定:体积与表面积公式完全用错,尽管演算工整,最终答案不给分。
+A wrong-formula-entirely cue applies when the formula used corresponds to a different geometric quantity than the one requested.
+A labeled-diagram criterion is met only when every relevant side, angle, or point in a diagram is explicitly marked.
+公式完全错误提示是指所用公式对应的几何量与题目要求的量完全不同的情形。
+标注图表标准是指图中每个相关边长、角度或点都必须明确标注才能视为达标。
+Negative case: problem 23's diagram already labels every side and angle correctly, criterion fully met.
+CLEAR: the correct volume formula is applied and every step is labeled, full marks for problem 22 after correction.
+Negative case: problem 27 correctly multiplies base area by height, arriving at the right volume.
+volume and surface area formulas confused
+radius used instead of diameter
+wrong postulate cited in triangle proof
+unlabeled angles in an otherwise correct proof
+The word-problem answer for problem 26 is missing its unit label entirely, just the bare number "45" is written.
+Problem 27's written response trails off mid-sentence, apparently interrupted before the explanation was finished.
+The student left the multiple-choice bubble for question 28 unfilled, neither circled nor marked in any way.
+Two consecutive questions, 29 and 30, are both blank, suggesting the student ran out of time before finishing the section.
+第二十六题的应用题答案完全没有标注单位,只写了裸数字"45"。
+The short-answer response for question 29 is only two words long, far short of the explanation the rubric requires.
+第二十八题的选择题选项没有被填涂,既没有圈选也没有做任何标记。
+Verdict: a bare number without its required unit label loses the units portion of the rubric even if the number itself is correct.
+Verdict: two consecutive blank questions at the end of the section likely indicate the student ran out of time, note this for the teacher rather than treating it as a knowledge gap.
+判定:裸数字答案缺少必需的单位标注,即使数字本身正确也要扣除单位相关分数。
+An unmarked-response cue applies to multiple-choice questions where no option has been selected in any form.
+未作答提示是指选择题中没有以任何形式选定选项的情形。
+Negative case: question 28's bubble is faintly filled in pencil, easy to miss but present upon closer inspection.
+清空判定:第二十八题的选项其实用铅笔轻轻填涂过,仔细查看可见,并非漏答。
+The student's numeral 4 and 9 are nearly indistinguishable throughout the page due to a consistent personal handwriting style.
+Water damage on the bottom corner of the scanned page has blurred the last two problems beyond recognition.
+The student used a light-colored gel pen that scanned poorly, leaving problem 12's working almost invisible.
+Cramped handwriting forces three lines of working into the space meant for one, making the sequence of steps hard to trace.
+学生的数字4和9整份作业中都很相似,风格导致难以区分。
+A coffee stain covers the corner of the page, but fortunately none of the numbered problems are affected.
+学生使用了浅色果冻笔书写,扫描后第十二题的演算几乎看不见。
+Verdict: a personal handwriting quirk causing 4/9 ambiguity should prompt a request for the student to write more distinctly going forward.
+判定:因个人书写习惯导致4和9难以区分,应提醒学生今后书写更清晰。
+A pen-visibility cue applies when the ink or pencil used scans too faintly for the grader to reliably read the content.
+墨色不清提示是指所用墨水或铅笔颜色过浅,扫描后批改者难以可靠辨认内容的情形。
+Negative case: despite cramped spacing, every digit in problem 12 remains individually legible upon close inspection.
+Negative case: the coffee stain on the page corner does not obscure any answer or working.
+The student's chemistry lab report correctly lists all reagents but omits the required safety goggles note from the procedure.
+In the biology diagram of the cell, the mitochondria is mislabeled as the nucleus.
+Problem 30 asks for the answer in scientific notation, but the student writes the full decimal expansion instead.
+The physics free-body diagram omits the force of gravity entirely, showing only the applied and normal forces.
+化学实验报告正确列出了所有试剂,但程序说明中遗漏了必须佩戴护目镜的安全提示。
+The periodic table reference sketch mislabels the symbol for sodium as "So" instead of "Na."
+第三十题要求用科学计数法作答,学生却写出了完整的小数展开式。
+Verdict: a mislabeled organelle invalidates the diagram-labeling criterion, deduct despite otherwise accurate cell structure.
+Verdict: writing the full decimal instead of scientific notation does not change the numeric value but fails the format requirement, deduct per rubric.
+判定:细胞器标注错误导致图表标注标准未达标,尽管细胞结构整体准确仍需扣分。
+A format-cue applies when a numerically correct answer is expressed in a form other than what the question explicitly requires.
+格式提示是指数值答案正确但表达形式与题目明确要求的格式不符的情形。
+Negative case: the free-body diagram in problem 31 correctly includes gravity, normal force, and applied force, complete and accurate.
+Negative case: the periodic table sketch correctly labels sodium as "Na" throughout.
+The essay's citation format is inconsistent, mixing MLA in-text citations with an APA-style reference list.
+Paragraph three introduces a new argument without any transition from the previous paragraph, disrupting the essay's flow.
+The student's word choice is vivid and precise throughout, elevating an otherwise simple narrative.
+A comma splice joins two independent clauses in the essay's final sentence, weakening an otherwise strong conclusion.
+作文引用格式不统一,正文夹注使用了MLA格式,参考文献却是APA格式。
+The essay's introduction and conclusion each reference a different thesis, contradicting one another.
+作文结尾句出现逗号连接两个独立分句的病句,削弱了原本有力的结论。
+Verdict: inconsistent citation format should be flagged for the student but does not affect the content or argument score.
+Verdict: strong vivid word choice throughout the narrative earns bonus recognition in the margin, even though structure needs work.
+判定:引用格式不一致应予以标注提醒学生,但不影响内容与论点得分。
+A citation-format cue applies when in-text citations and the reference list follow inconsistent or mismatched styles.
+A transition cue is any paragraph that introduces a new idea without linking language connecting it to the previous paragraph.
+引用格式提示是指正文夹注与参考文献列表所用格式不一致或不匹配的情形。
+Negative case: all in-text citations and the reference list consistently follow MLA format throughout the essay.
+清空判定:全篇正文夹注与参考文献均统一采用MLA格式,无需标注。
+The grader writes "see me after class" beside problem 24's unusual but ultimately correct alternative method.
+A double underline highlights the correct use of significant figures in problem 30's answer, praised in the margin.
+The teacher stamps "REDO" across the top of a worksheet returned for a second attempt after a low first score.
+A checklist in the margin ticks off each rubric criterion individually: working shown, units correct, diagram labeled.
+批改者在第二十四题旁写下"下课后来找我",因为解法虽不常见但结果正确。
+A green highlighter marks the one problem out of twelve that the student got wrong, making the review easier.
+页边的评分清单逐项打勾:演算展示、单位正确、图表标注,一一核对。
+Verdict: an unusual but valid alternative method should be praised and referenced as a teaching example, not penalized for deviating from the expected approach.
+Verdict: a worksheet scoring below the redo threshold should be returned with a clear "REDO" instruction and a resubmission deadline.
+判定:解法虽不常见但完全有效,应予以表扬并作为教学案例参考,而非因偏离常规方法而扣分。
+A redo-request cue applies when overall performance falls below a set threshold, warranting a full second attempt rather than isolated corrections.
+A rubric-checklist cue is any margin annotation that verifies each scoring criterion individually against the student's work.
+重做要求提示是指整体表现低于设定门槛,需要学生完整重做而非仅修正个别错误的情形。
+Negative case: the "REDO" stamp was applied to the wrong student's worksheet by mistake, this submission actually scored well above threshold.
+清空判定:"重做"印章其实盖错了学生的作业,该份提交实际得分远高于门槛。
+Every answer box on the page carries only a full check or a full cross, with no partial-credit marks written anywhere on the sheet.
+On a take-home assignment photographed under a desk lamp at night, the yellow-tinted lighting makes pencil shading hard to distinguish from ink.
+In an online-submitted PDF scan, problem 5's answer is cut off at the edge of the page, likely from a misaligned scanner bed.
+A second, different-colored ink circles a mistake in problem 8, with a teacher's initials added beside it confirming the flag was correct.
+A sticky note beside problem 12 reads "unsure, please confirm," flagging the answer for a second grader's final judgment.
+页面上每道题旁只标有整勾或整叉,没有任何一处给予部分分数的标记。
+A textbook page number is penciled beside each answer, apparently jotted down as a reference alongside the working.
+在线提交的PDF扫描件中,第五题答案因扫描仪对位不准而被裁切在页边之外。
+第十二题旁贴着一张便签,写着"不确定,请确认",将该题留给他人做最终判定。
+off-by-one counting error in word problem
+wrong method entirely, mismatched operation
+correct answer, no working shown
+correct method, arithmetic slip in last step
+student redo requested for step three
+flagged for teacher review, discrepancy noted
+full marks, all units and working present
+partial credit for correct method only
+no credit, wrong formula throughout
+plagiarism suspicion flagged for review
+missing conclusion in five-paragraph essay
+correct diagram, unlabeled angles
+deduct one mark, missing unit
+tick mark confirms fully correct problem
+The worksheet photo is rotated about ten degrees off horizontal, causing the ruled lines of problem 8 to slant diagonally across the frame.
+A camera-flash glare washes out the ink in problem 3's answer box, leaving only a pale rectangle where the response should be.
+照片右侧边缘被裁切,导致该页最后一题完全没有出现在画面中。
+The photo's low resolution makes the digits in problem 9's final answer blur into an indistinct smudge when the image is enlarged.
+A fingertip presses down on the page corner, covering the last two digits of problem 6's working.
+页面中间的折痕正好压过第十一题的等号,使其部分被遮挡。
+Verdict: option C is clearly circled for question 28 and matches the answer key exactly, award full marks.
+Both option B and option D are circled for question 29, leaving the intended choice ambiguous.
+第三十题的选项A被擦除后改填了选项C,涂改痕迹依稀可见。
+A choice-mismatch cue applies when the option selected on the page does not match the correct option listed on the answer key.
+Verdict: the tallied marks per question sum to 92, but the circled total at the bottom of the page reads 89, recount before finalizing the score.
+missing subtotal before the next section begins
+Negative case: the running tally in the margin adds up to exactly the same total circled at the bottom of the page, no recount needed.

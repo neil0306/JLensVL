@@ -1,0 +1,420 @@
+At the maker bench, two students are wiring a breadboard together, comparing circuit diagrams as they work.
+A student is carefully measuring cardboard pieces with a ruler before cutting out the prototype frame.
+Two girls at the group table are testing their robot chassis, adjusting the gear alignment by hand.
+A boy is soldering a joint on the circuit board, eyes fixed on the tip as his partner holds the wire steady.
+At the workbench, a student adjusts the sensor angle on the robot and checks the reading on a tablet.
+A pair of students is assembling the 3D-printed bracket onto the chassis, comparing it to the worksheet diagram.
+A student leans over the microcontroller, uploading code while a partner narrates the checklist aloud.
+Camera shows a student threading jumper wires into the breadboard, testing each LED connection in turn.
+A student at the back table is scrolling on a phone under the desk while the rest of the group builds.
+One boy is spinning a pencil and staring out the window instead of working on the shared worksheet.
+A girl has wandered away from her group table and is chatting with a friend at the next bench.
+A student is doodling on the worksheet margin instead of following the circuit diagram with the group.
+Camera shows a boy leaning back in his chair, eyes closed, while his group assembles the robot chassis.
+A student keeps checking a smartwatch and glancing at the clock instead of measuring the cardboard prototype.
+Two students are trading stickers under the table while their teammates solder the circuit board.
+A pupil is flipping through an unrelated comic book tucked inside the STEAM worksheet.
+A student raises a hand and waits patiently while the teacher finishes helping another group.
+A girl waves her hand toward the teacher, pointing at a confusing step in the circuit diagram.
+A boy calls out a question about the Arduino code, then raises his hand when reminded of classroom rules.
+Camera shows a student approaching the teacher's desk directly to ask about the sensor wiring.
+A pupil raises a hand and asks whether the hot-glue gun needs to cool before the next step.
+A student taps a partner's shoulder, then raises a hand to ask the teacher about the missing part.
+A girl stands near the whiteboard, hand raised, waiting to clarify the measurement units on the worksheet.
+A boy raises his hand twice, growing visibly frustrated as the teacher attends to another table first.
+All four members of a group table are rotating tasks, taking turns soldering, measuring, and recording data.
+One boy is doing all the wiring himself while three teammates simply watch without touching any tools.
+A girl at the edge of the group table sits with arms crossed, not participating in the build at all.
+Camera shows a balanced group where one student measures, one cuts, one assembles, and one records results.
+A student is directing every step loudly, not letting teammates hold the screwdriver or glue gun.
+Two students actively build the prototype while a third quietly pushes the worksheet toward the fourth.
+A disengaged student sits turned away from the group table, doodling instead of joining the discussion.
+The group is passing the multimeter around in turn, each student taking a reading and calling it out.
+A student insists on giving the entire group presentation alone, cutting off a teammate mid-sentence.
+A student who finished early leans over to help a struggling teammate align the gears correctly.
+A girl is patiently re-explaining the circuit diagram to a confused partner who keeps miswiring the LED.
+The teacher kneels beside a group, guiding a student's hand as they position the sensor bracket.
+A boy hands a spare jumper wire to a struggling classmate whose breadboard connection keeps failing.
+Camera shows a student demonstrating the correct soldering angle to a peer who was holding the iron wrong.
+A pupil raises a hand for the teacher, pointing to a teammate who cannot get the motor to spin.
+Two students huddle over a laptop, one coaching the other through a stuck line of Arduino code.
+A struggling student stares blankly at the worksheet until a teammate walks over to help troubleshoot.
+A group is checking off each build step on the worksheet before moving to the next stage.
+A student skips ahead to gluing the chassis together without first testing the motor wiring.
+Camera shows a pair carefully following the numbered instructions, pausing to verify each connection.
+A boy rushes past the measuring step and starts cutting cardboard freehand, ignoring the worksheet.
+A group re-reads the instructions aloud together before picking up the soldering iron.
+A student jumps straight to the laser cutter stage, skipping the required safety checklist step.
+Two students compare their circuit to the reference diagram before connecting the battery pack.
+A pupil skips the calibration step and powers on the robot immediately, guessing at the settings.
+A group table sits idle, staring at a tangled mess of wires, unsure how to proceed.
+A group can't agree on which gear ratio to try next and ends up trying nothing at all.
+A group has stalled at the coding stage, the Arduino screen showing a repeated error message.
+Students at the bench keep swapping the same two wires back and forth without progress.
+A group looks toward the teacher, visibly confused about how to mount the sensor bracket.
+Two students argue quietly over which end of the battery pack connects first, making no progress.
+A group stares at a wobbling robot chassis, unsure why the gears refuse to mesh.
+Two students stare at a 3D-print calibration menu, unsure which setting to adjust first.
+A student stands before the class, holding up the cardboard prototype and explaining its design choices.
+Two students demonstrate their robot rolling across the floor, narrating each sensor's function.
+A group presents their circuit board to the class, pointing out the LED indicator lights.
+A student uses the whiteboard to sketch the circuit while a partner holds up the finished breadboard.
+Camera shows a group demoing their 3D-printed gripper picking up a small block for the class.
+A pupil explains the group's design process using the tablet to display photos of earlier prototypes.
+A student walks the class through the Arduino code line by line during the final presentation.
+Two students take turns operating the motor while explaining the propeller's thrust to classmates.
+Students at the group table pass the single available multimeter around in an orderly rotation.
+A boy keeps the only glue stick at his seat, ignoring a teammate's outstretched hand.
+Camera shows a group sharing one soldering iron by taking turns with a visible timer on the tablet.
+A girl hoards the craft knife on her side of the bench, leaving a partner waiting to cut cardboard.
+Two students negotiate turns with the shared laser cutter queue sheet posted on the whiteboard.
+A student passes the multimeter to a teammate as soon as the reading is recorded on the worksheet.
+A pupil grabs the last pair of scissors before a groupmate can reach for it, causing a brief dispute.
+The group rotates the tablet used for the build instructions so everyone can see the next step.
+The group table is neatly arranged, with tools returned to their tray after each use.
+Loose wires, glue sticks, and cardboard scraps are scattered across a cluttered workbench.
+Camera shows a tidy bench with labeled bins for screws, jumper wires, and spare LEDs.
+A messy group table has solder spools rolling near the edge, mixed in with half-eaten snacks.
+Students wipe down the bench and coil the extension cord neatly before moving to the next task.
+A cluttered workstation has the multimeter buried under a pile of cardboard offcuts and worksheets.
+A tidy 3D-printing station has filament spools stacked and the print bed cleared of debris.
+A workbench is littered with stray screws, and a hot-glue gun sits switched on and unattended, its hot tip resting against a paper worksheet.
+Two students at the back table are chatting about a video game instead of finishing the build.
+A student folds a page of the worksheet into a paper airplane and test-flies it across the group table.
+A girl is braiding a classmate's hair at the group table while the prototype remains half-built.
+Camera shows a student staring at the ceiling, humming, while teammates debug the circuit nearby.
+A boy taps a pencil rhythmically against the desk, drowning out a teammate reading the instructions aloud.
+A girl keeps refreshing a mobile game under the desk, glancing up only when the teacher walks past.
+A pupil stacks spare screws into a small tower instead of helping sort the parts bin.
+Camera shows a boy quietly humming along to music through a hidden earbud while his group plans next steps.
+A student keeps flicking a fidget spinner under the table while the group waits for the glue to set.
+在动手实验台前,两名学生正合作连接面包板电路,一边比对电路图。
+一名学生正在专心测量卡纸尺寸,准备裁剪出原型框架。
+小组成员轮流操作电烙铁,每人完成一段焊接后交给下一位。
+一名男生趴在桌上翻看手机,完全没有参与小组的搭建工作。
+一名女生离开小组座位,跑去和邻桌同学聊天,任务被搁置一旁。
+学生在作业单边缘涂鸦,没有跟上小组的电路搭建进度。
+一名学生举手等待,想请教老师关于Arduino程式码的问题。
+一名女生走到白板前,举手询问测量单位是否正确。
+小组四人分工明确,轮流负责焊接、测量、组装与记录。
+一名男生独揽所有焊接工作,其余三位组员只能在旁围观。
+一名女生双臂交叉坐在小组桌边缘,完全没有参与搭建。
+一名学生大声指挥每一步,不让组员碰触螺丝刀或热熔胶枪。
+完成任务的学生主动帮助进度落后的同伴对齐齿轮。
+老师蹲下身,手把手引导学生正确放置传感器支架。
+一名男生把备用跳线递给接线一直失败的同学。
+两名学生围着笔记本电脑,一人指导另一人修正卡住的程式码。
+小组按照作业单逐项打勾确认,再进行下一个搭建步骤。
+一名学生跳过测量步骤,直接徒手裁剪卡纸,没有对照作业单。
+小组在使用电烙铁前,先齐声重读一遍操作说明。
+一名学生跳过校准步骤,直接开机测试机器人,结果动作异常。
+小组成员盯着一团缠绕的电线发愣,不知道下一步该怎么办。
+一组学生反复调换同两根导线的位置,进度毫无起色。
+小组望向老师,对传感器支架的安装方式感到困惑。
+学生站在讲台前展示卡纸原型,向全班解释设计理念。
+两名学生演示机器人在地面移动,一边讲解各个传感器的作用。
+小组向全班展示电路板,指出LED指示灯的功能。
+一名学生用平板展示先前原型的照片,讲述小组的设计过程。
+小组成员依序轮流使用唯一的万用表,并按顺序记录读数。
+一名男生把唯一的胶棒留在自己手边,无视同伴伸出的手。
+两名学生协商共用雷射切割机的排队顺序,并写在白板上。
+小组桌面整洁,工具用完后都放回收纳盒中。
+松散的电线、胶棒与卡纸碎屑散落在杂乱的工作台上。
+学生们在换下一个任务前,擦拭桌面并把延长线整理好。
+一张凌乱的工作台上,万用表被卡纸边角料和作业单埋没。
+两名学生在后排讨论电子游戏,完全没有推进搭建任务。
+一名学生把作业单折成纸飞机,在小组桌间试飞。
+一名女生在小组桌上帮同学编辫子,原型还只完成一半。
+一名男生偷偷戴着一只耳机听音乐,完全没留意小组正在讨论下一步。
+At the maker bench, two students are soldering while a third leans in without safety goggles.
+A student pours a solution into a beaker while wearing thick rubber gloves and a lab apron.
+Camera shows a boy operating the hot-glue gun with his safety goggles pushed up on his forehead.
+A girl reaches into the 3D printer's hot zone without gloves, fingers close to the heated nozzle.
+All four students at the chemistry station are wearing goggles and aprons before opening the Bunsen burner valve.
+A student is soldering a joint with bare hands and no goggles, sparks flicking near their eyes.
+Camera shows a pupil handling a hot beaker with an apron on but no protective gloves.
+A boy leans in close to check his design while the laser cutter's protective window sits uncovered, his face level with the cutting path.
+A student dons goggles and gloves before opening the Bunsen burner, following the safety checklist exactly.
+A student sets the soldering iron down on the bare workbench instead of the stand, tip still glowing.
+Camera shows a boy waving a hot-glue gun near a classmate's hand while explaining the next step.
+A girl is pointing the soldering iron toward a neighbor while gesturing, the hot tip inches from their arm.
+A student leaves the hot-glue gun switched on and unattended at the edge of the group table.
+Camera shows a pupil carefully resting the soldering iron on its stand between each joint.
+A boy touches the soldering iron tip to test if it is hot, flinching as he pulls his hand back.
+A student is squeezing hot glue directly onto a teammate's fingers while assembling the chassis.
+Camera shows a girl holding the hot-glue gun nozzle away from her body while gluing the cardboard frame.
+A student walks across the room holding a lit soldering iron at waist height, tip pointed forward.
+A student is cutting cardboard toward their own palm with a craft knife instead of away from the body.
+Camera shows a boy waving an open craft knife around while talking to a groupmate.
+A girl uses a small hand saw to trim a wooden dowel, keeping her free hand well clear of the blade.
+A student passes a pair of open scissors blade-first to a classmate across the table.
+Camera shows a pupil cutting along a ruler's edge with a craft knife, fingers tucked safely away.
+A boy leaves an uncapped craft knife blade-up on the bench next to the worksheet.
+A student saws through a plastic rod while a teammate steadies the piece with clear hand placement.
+Camera shows a girl running her thumb along a scissor blade to test its sharpness before cutting.
+A student cuts foam board with a craft knife on a cutting mat, using slow controlled strokes.
+A student reaches toward the 3D printer's nozzle mid-print to remove a stray filament strand.
+Camera shows a group watching the laser cutter through the safety window as it engraves the acrylic sheet.
+A boy jams a wooden wedge under the laser-cutter lid to defeat the safety interlock while the cut is still running.
+A student changes the 3D printer filament spool after confirming the nozzle has cooled down.
+A student holds a bare finger too close to the hot-air rework gun while checking a soldered joint.
+A student wears the required goggles while loading a new design file into the laser cutter software.
+A group lines up finished laser-cut pieces on a tray, comparing thickness settings used for each material.
+Camera shows a pupil waiting behind the marked line for the print bed to cool before touching the part.
+A student pulls a finished print off the bed with bare hands moments after the nozzle stopped heating.
+A student lights the Bunsen burner and immediately adjusts the air valve to produce a steady blue flame.
+Camera shows a boy leaning his loose sleeve directly over an open Bunsen burner flame while stirring a beaker.
+A girl uses a pipette to carefully transfer a small volume of solution into a test tube.
+A student swirls a beaker of liquid over the open flame without holding it with tongs.
+Camera shows a pupil placing a hot beaker directly onto the worksheet paper instead of a heat mat.
+A student pours two unlabeled chemicals together in a beaker without checking the safety chart first.
+A boy walks away from a lit Bunsen burner, leaving it unattended while he fetches more supplies.
+Camera shows a girl smelling a test tube cautiously by wafting the vapor toward her nose.
+A student extinguishes the Bunsen burner properly by closing the gas valve before leaving the station.
+A spilled beaker of colored liquid spreads across the group table, dripping toward a power strip below.
+Camera shows a shard of broken glass on the floor near the chemistry station, unnoticed by passing students.
+A student's battery pack feels warm to the touch, and a faint smell rises from the exposed wiring.
+Camera shows sparks jumping from a short-circuited breadboard connection as a student jumps back.
+A puddle of water has collected under a group table, dangerously close to a plugged-in soldering station.
+Camera shows exposed copper wiring dangling from the robot chassis, close to a student's bare hand.
+A student notices a battery pack growing hot and quickly disconnects it from the circuit.
+Camera shows a broken test tube on the bench, its jagged edge left within reach of the next group.
+A student wipes up a small chemical spill immediately with a paper towel and alerts the teacher.
+A soldering iron is balanced precariously on the edge of the bench, close to tipping onto the floor.
+Camera shows an extension cord snaking across the walkway between group tables, an obvious trip hazard.
+A craft knife sits blade-out on the very edge of the workbench, within reach of a passing student.
+A tangle of jumper wires and charging cables lies across the floor near the 3D-printing station.
+Camera shows a student tripping slightly over a loose cable while carrying a tray of components.
+A pair of scissors rests half off the table edge, wobbling each time the bench is bumped.
+Cables from the laser cutter and 3D printer are neatly bundled and taped down along the wall.
+Camera shows a glue gun cord stretched taut across an aisle where students frequently walk.
+A student coils the soldering station's power cable and tucks it against the wall after use.
+A girl with long, untied hair leans close to the spinning robot chassis wheel while adjusting the motor.
+Camera shows a boy's loose hoodie sleeve dangling near the rotating propeller as it spins up.
+A student ties back long hair before leaning over the Bunsen burner flame to check the beaker.
+Camera shows a pupil's untucked scarf hanging near the 3D printer's moving gantry rail.
+A student rolls up loose sleeves before reaching into the 3D printer to clear a jam.
+Camera shows a girl's ponytail swinging close to the spinning drill bit on the workbench.
+A boy reaches over the hot plate with a loose sleeve cuff dangling just above the heating element.
+A student secures loose sleeves with a rubber band before operating the hand-crank generator.
+Camera shows a pupil leaning over the rotating gears of the robot chassis with hair falling forward.
+A student sprints across the classroom holding a beaker of liquid, sloshing it toward classmates.
+Camera shows a boy jogging between group tables while carrying an unsheathed craft knife.
+A student walks carefully, both hands steady, carrying a finished circuit board to the display table.
+Camera shows a pupil running across the room with the hot-glue gun's mains cord trailing and snapping taut behind them.
+A student carries the soldering iron with the tip pointed downward and away from other students.
+Camera shows a girl weaving quickly between benches with an open pair of scissors in hand.
+A student walks slowly and announces "hot, coming through" while carrying a heated beaker.
+Camera shows a boy dashing to grab supplies, nearly colliding with a classmate holding a Bunsen burner.
+A student places the multimeter down before moving, rather than carrying it while walking briskly.
+A student wires the motor terminals in reverse, causing the robot wheels to spin backward unexpectedly.
+Camera shows a boy testing a drone propeller at full speed while holding the frame in one bare hand.
+A group double-checks the polarity of the battery pack before connecting it to the motor driver.
+Camera shows a student's finger drifting close to a spinning propeller during a bench test.
+A pupil sets the robot chassis on a stand before running the motor test, keeping hands clear of the gears.
+A student notices the charging cable's insulation is frayed near the plug and stops using it immediately.
+A student correctly grounds the circuit before powering on the robot for the first test run.
+Camera shows a boy holding a spinning motor shaft with bare fingers to slow it down manually.
+A student mounts the propeller guard before activating the drone motor for a bench test.
+在动手实验台前,两名学生正在焊接,第三人凑近查看却没有戴护目镜。
+一名学生戴着厚橡胶手套和实验围裙,小心地将溶液倒入烧杯。
+一名男生操作热熔胶枪时,把护目镜推到额头上,完全没有防护。
+一名女生没戴手套就把手伸向3D打印机的高温区域,手指靠近喷嘴。
+化学实验台前四名学生都戴好护目镜和围裙,才打开酒精灯的开关。
+一名学生赤手焊接接点,没有佩戴护目镜,火花在眼前飞溅。
+一名学生把仍然发烫的电烙铁直接放在裸露的桌面上,而不是烙铁架上。
+一名男生挥舞着热熔胶枪靠近同学的手,一边讲解下一步骤。
+一名女生用美工刀朝自己手掌方向切割卡纸,而不是朝外切。
+一名男生挥舞着打开的美工刀,一边和组员聊天。
+一名学生传递打开的剪刀时刀尖朝向对面同学,十分危险。
+一名男生在打印过程中伸手靠近3D打印机喷嘴,想清除多余的耗材丝。
+一名男生在雷射切割仍在进行时,用木楔卡住护盖以绕过安全联锁装置。
+一名男生把宽松的连帽衫袖口悬在正在旋转的螺旋桨附近。
+一名学生点燃酒精灯后,立即调整进气阀,使火焰变成稳定的蓝色。
+一名男生的宽松衣袖直接悬在酒精灯的明火上方,同时搅拌烧杯。
+一名学生未使用坩埚钳,直接用手摇晃放在明火上的烧杯。
+一名学生把两种未标示的化学品直接混合倒入烧杯,事先没有查看安全表。
+打翻的彩色溶液在小组桌上蔓延,朝下方的电源插座方向流去。
+化学实验台附近的地面上有一块破碎玻璃碎片,过路学生都没有察觉。
+一名学生的电池组摸起来发烫,外露的电线还散发出一丝焦味。
+一块面包板短路时冒出火花,学生吓得往后一跳。
+一摊积水聚集在小组桌下方,危险地靠近正在通电的焊接工作站。
+机器人底盘上垂着一段外露的铜线,离学生的裸手很近。
+一名学生发现电池组开始发热,立刻将其从电路中断开。
+电烙铁被随意搁在工作台边缘,随时可能滑落到地上。
+一条延长线横穿在小组桌之间的通道上,是明显的绊倒隐患。
+一把美工刀刀刃朝外放在工作台最边缘,伸手可及。
+3D打印区与雷射切割机的电线被整齐捆好并沿墙贴平。
+一名长发未扎的女生俯身靠近正在旋转的机器人底盘轮子调整马达。
+一名学生在检查酒精灯火焰前,先把长发扎好。
+一名男生把手伸到热板上方,松垮的袖口正好悬在发热元件之上。
+一名学生手持烧杯液体在教室里奔跑,液体不断溅出。
+一名男生手持未套刀鞘的美工刀在小组桌之间小跑穿梭。
+一名学生将马达接线接反,导致机器人车轮突然反向转动。
+一名男生在测试无人机螺旋桨全速运转时,徒手扶着机架。
+一名学生发现机器人电池外壳有轻微鼓起变形,立刻停止使用并告知老师。
+一名学生在启动机器人测试前,先将电路正确接地。
+During the morning lab session, students rotate between the soldering station and the coding corner as the teacher circulates.
+In the afternoon build block, the classroom hums with the sound of motors being tested at every group table.
+During a rainy indoor recess extension, students continue their robotics build while a teaching assistant checks each bench for goggles.
+At the start of the maker period, the teacher demonstrates the hot-glue gun's safety switch before students begin.
+Near the end of class, several groups rush to finish soldering before the bell, tools moving quickly across benches.
+Under the bright overhead lights of the STEAM lab, six group tables hum with sawing, gluing, and testing.
+During a guest engineer's visit, students eagerly demonstrate their 3D-printed prototypes at the front of the room.
+In the quiet reading corner adjacent to the lab, one student reviews the circuit worksheet before returning to the group.
+As the class transitions from lecture to build time, students collect goggles and aprons from the supply shelf.
+During the final ten minutes of the lesson, the teacher walks the room checking that all Bunsen burners are off.
+On a busy double-period lab day, the classroom camera captures overlapping activity at the soldering and 3D-printing stations.
+Just before the fire drill bell, students quickly power down the 3D printer and step away from the workbench.
+上午的实验课上,学生们轮流在焊接站与编程角之间切换,老师在教室里巡视。
+下午的搭建课时段,教室里回荡着各组测试马达的声音。
+阴雨天的延长室内课上,助教巡查每张工作台,确认学生都戴好护目镜。
+动手课开始前,老师先示范热熔胶枪的安全开关,学生才开始操作。
+下课铃声将近,几个小组抓紧时间完成焊接,工具在桌面上快速移动。
+STEAM实验室灯光明亮,六张小组桌上同时进行着锯切、粘合与测试。
+消防演习铃响前,学生们迅速关闭3D打印机并离开工作台。
+Verdict: a student scrolling on a phone under the desk while the group builds warrants a gentle on-task reminder.
+This is an ENGAGEMENT cue: one student directing every step and not sharing tools indicates a group-dynamics issue worth addressing.
+Verdict: a disengaged student sitting with arms crossed at the edge of the table should be invited back into the task.
+This is an ENGAGEMENT cue: a group staring blankly at tangled wires for several minutes needs a teacher prompt to unstick them.
+Verdict: a student raising a hand repeatedly without being noticed should be prioritized by the teacher next.
+This is an ENGAGEMENT cue: a struggling student who cannot get the motor to spin should receive peer or teacher support soon.
+Verdict: two students chatting about unrelated topics while teammates solder is an off-task pattern worth a check-in.
+This is an ENGAGEMENT cue: a group skipping the calibration step and guessing at settings should be redirected to the worksheet.
+Verdict: a student hoarding the only glue stick while a teammate waits is a fairness issue the teacher should address.
+This is an ENGAGEMENT cue: balanced task rotation across all four group members reflects strong collaborative practice.
+Verdict: a group that re-reads instructions together before using the soldering iron demonstrates good on-task discipline.
+This is an ENGAGEMENT cue: a student presenting the prototype confidently to the class reflects strong understanding of the build.
+Verdict: a messy workbench with tools scattered and unreturned signals a workflow issue worth a quick tidy-up reminder.
+This is an ENGAGEMENT cue: a student helping a struggling teammate align gears reflects positive peer collaboration.
+Verdict: a group stalled at the coding stage with a repeated error message needs a teacher prompt before frustration builds.
+判定:学生躲在桌下用手机,而小组仍在搭建,应给予温和的专注提醒。
+这是一个专注度信号:一人独揽所有步骤且不分享工具,反映出小组分工存在问题。
+判定:小组盯着缠绕的电线发愣数分钟,需要老师给出提示帮助他们摆脱困境。
+这是一个专注度信号:学生自信地向全班展示原型,说明其对搭建过程理解到位。
+判定:工作台工具散乱、用完未归位,反映出流程需要老师提醒整理。
+This is a SAFETY cue: a student using the hot-glue gun near a peer's hand warrants an immediate reminder about the tip temperature.
+Verdict: a student reaching bare-handed into the 3D printer's hot zone is a SAFETY-CRITICAL situation requiring immediate intervention.
+This is a SAFETY cue: a soldering iron left glowing on the bare workbench must be moved to its stand right away.
+Verdict: a student without goggles at the laser cutter station is a safety violation that should be corrected before the beam activates.
+This is a SAFETY-CRITICAL cue: exposed wiring on the robot chassis near a student's bare hand must be addressed before further testing.
+Verdict: an unattended lit Bunsen burner is a SAFETY-CRITICAL hazard requiring the teacher's immediate attention.
+This is a SAFETY cue: a craft knife left blade-out on the bench edge should be capped and stored properly at once.
+Verdict: a battery pack that feels warm with a faint smell rising is a SAFETY-CRITICAL condition requiring disconnection immediately.
+This is a SAFETY cue: loose sleeves dangling near a spinning propeller must be secured before the motor is powered on.
+Verdict: a student running across the room with a beaker of liquid is a SAFETY-CRITICAL scenario requiring an immediate stop.
+This is a SAFETY cue: mixing unlabeled chemicals without checking the safety chart first should be halted immediately.
+Verdict: an extension cord crossing the walkway between benches is a trip hazard that should be taped down promptly.
+This is a SAFETY cue: a student opening the laser cutter lid mid-cut has broken the safety interlock and must stop at once.
+Verdict: a short circuit producing sparks on a breadboard requires the teacher to cut power immediately.
+This is a SAFETY cue: a spilled beaker near a plugged-in power strip must be cleaned up before anyone approaches the outlet.
+判定:学生在同伴手边使用热熔胶枪,必须立即提醒注意枪嘴温度。
+这是一个安全类信号:学生赤手伸入3D打印机的高温区域,属于必须立即处理的紧急情况。
+判定:燃烧中的酒精灯无人看管,属于必须立即处理的安全隐患。
+这是一个安全类信号:电池组摸起来发烫并伴有异味,须立即断开连接处理。
+判定:面包板发生短路并冒出火花,老师必须立刻切断电源。
+An off-task cue is any student idling on a phone or wandering while the rest of the group builds.
+A dominant-participant cue applies when one student controls every tool and step, leaving teammates only to watch.
+A disengagement cue is any student physically present at the table but not touching materials or contributing ideas.
+A stuck-group cue is triggered when a team makes no visible progress for several minutes and shows visible confusion.
+A help-needed cue is any struggling student whose repeated attempts at a step continue to fail without teammate support.
+A skipped-step cue applies when a group proceeds to a later build stage without completing the required prior step.
+A fair-sharing cue means tools such as the multimeter, glue gun, or craft knife are rotated evenly among group members.
+A presentation-readiness cue is any student able to clearly explain their prototype's function and design choices to the class.
+离题提示是指小组仍在搭建时,有学生却在滑手机或四处走动。
+主导型提示是指一名学生独占所有工具和步骤,其余组员只能旁观。
+卡关提示是指小组数分钟内毫无进展,并表现出明显的困惑神情。
+A SAFETY cue is any observation indicating a hazard from apparatus, chemicals, or sharp tools during hands-on work.
+A missing-PPE cue applies when a student handles hazardous equipment such as a soldering iron or Bunsen burner without goggles, gloves, or an apron.
+A hot-tool-handling cue is triggered when a soldering iron, hot-glue gun, or heated nozzle is pointed toward or left near another student.
+A sharp-tool cue covers any craft knife, scissors, or saw used carelessly, waved around, or passed blade-first to another student.
+A chemical-handling cue applies when solutions are mixed without checking labels, or a flame or hot beaker is left unattended.
+An electrical-hazard cue means exposed wiring, a short circuit, or a battery pack that has become noticeably hot.
+A trip-and-clutter cue is any loose cable, unstored tool, or item left on a bench edge that could fall or cause a fall.
+An entanglement cue applies when loose hair, sleeves, or scarves come close to rotating or heated equipment.
+安全类提示是指在动手操作过程中,由器材、化学品或利器带来的潜在危险。
+防护装备缺失提示是指学生在操作电烙铁或酒精灯等危险器材时,未佩戴护目镜、手套或围裙。
+缠绕风险提示是指松散的头发、衣袖或围巾靠近正在旋转或发热的设备。
+CLEAR: all four group members are wearing goggles, sharing the task, and following the build steps.
+Negative case: the student glances at a phone briefly to check the time, then returns immediately to soldering.
+No safety cue: the soldering iron is resting securely in its stand, tip pointed away from any student.
+CLEAR: the group shares the multimeter smoothly, each student taking a turn without dispute.
+No off-task cue: the student pauses to stretch for a moment, then resumes measuring the cardboard piece.
+Negative case: a brief laugh between teammates while assembling the chassis does not interrupt their progress.
+CLEAR: goggles, gloves, and aprons are worn correctly by every student at the chemistry station.
+No safety concern: the Bunsen burner flame is small, blue, and attended by a student standing an arm's length away.
+Negative case: a student sets down the craft knife on a marked tray, blade capped, before reaching for the ruler.
+CLEAR: the workbench is tidy, with all tools returned to labeled bins after the build session.
+No engagement concern: a quiet student is listening intently while a teammate explains the next wiring step.
+Negative case: the extension cord is taped flat along the wall, posing no trip hazard to passing students.
+CLEAR: the 3D printer's safety door remains closed throughout the entire print cycle.
+No safety cue: a student's long hair is tied back neatly before leaning near the Bunsen burner.
+Negative case: the group briefly disagrees about wiring order, then quickly resolves it and continues building.
+CLEAR: the battery pack is checked and found cool to the touch, connected correctly to the motor driver.
+No off-task cue: a student steps away momentarily to return a borrowed tool, then rejoins the group immediately.
+Negative case: the laser cutter's safety window remains closed and the interlock engaged for the entire engraving job.
+清空判定:小组四人都戴好护目镜,任务分工明确,并按步骤操作。
+无安全提示:电烙铁稳稳放在烙铁架上,烙铁头没有朝向任何学生。
+无离题提示:学生短暂看了一眼手机确认时间,随即立刻回去继续焊接。
+清空判定:化学实验台前每位学生都正确佩戴护目镜、手套与围裙。
+无安全提示:酒精灯火焰小而稳定,有学生在一臂距离外看管。
+清空判定:工作台整洁,搭建结束后所有工具都归位到标示好的收纳盒中。
+无安全提示:延长线已平整地贴在墙边,不会造成绊倒风险。
+清空判定:3D打印机的安全护盖在整个打印过程中始终保持关闭。
+无安全提示:学生的长发在靠近酒精灯前已经整齐扎好。
+清空判定:电池组经检查温度正常,并正确连接到马达驱动器上。
+student soldering without safety goggles
+one pupil dominating the group while others watch
+student idling on a phone during group build
+struggling student needing teacher assistance with wiring
+hot-glue gun pointed near a classmate's hand
+craft knife left blade-out on bench edge
+goggles pushed up on forehead near laser cutter
+exposed wiring dangling near a student's bare hand
+battery pack feeling warm to the touch
+spilled beaker near a plugged-in power strip
+long hair loose near a spinning robot wheel
+loose sleeve dangling above a hot plate
+student running with a beaker of liquid
+tangled cables across the walkway between benches
+group stuck on a repeated coding error
+student presenting a 3D-printed prototype to the class
+tidy workbench with tools returned to bins
+messy group table cluttered with cardboard scraps
+student hoarding the only glue stick
+multimeter shared fairly among group members
+disengaged student sitting with arms crossed
+student raising a hand for the teacher
+two students collaborating on a circuit diagram
+Bunsen burner left unattended with flame lit
+broken glass shard near the chemistry station
+student skipping the calibration step entirely
+soldering iron glowing on a bare workbench
+laser cutter lid opened mid-cut
+propeller spinning near an unguarded bare hand
+student wiring a breadboard with a partner
+group re-reading instructions before using tools
+short circuit sparking on a breadboard
+student mixing unlabeled chemicals without checking labels
+extension cord snaking across a walkway
+student tying back hair before a lab task
+group stalled at the coding stage
+student demonstrating a robot chassis to classmates
+off-task chatting about unrelated topics
+teacher guiding a student's hand on a sensor
+student wearing goggles and gloves correctly
+jumper wires tangled on the printing station floor
+student jumping ahead without following worksheet steps
+scissors passed blade-first across the table
+drone motor tested with a bare hand nearby
+student wiping up a chemical spill immediately
+A student rinses a splash of solution from their forearm at the eye-wash station and immediately alerts the teacher.
+Camera shows the fire extinguisher bracket empty, its extinguisher removed for inspection and not yet replaced.
+一名学生打翻了少量化学溶液,立刻从急救柜取出洒漏处理包进行清理。
+This is a SAFETY cue: soldering continues at a station with the fume extractor switched off, letting solder smoke drift toward students' faces.
+这是一个安全类信号:雷射切割压克力时排烟系统未开启,刺鼻气味在教室里扩散。
+A chemical-labeling cue applies when a beaker or bottle of solution has no label identifying its contents or hazard level.
+CLEAR: all chemical bottles on the shelf are labeled with their contents and returned to the correct locked cabinet.
+This is an ENGAGEMENT cue: after a group finishes presenting, the teacher gives specific feedback on their circuit design and checks it against the grading rubric aloud.
+一名同学在演示环节结束后举手,向汇报小组提出了一个关于齿轮传动比的问题。
+unlabeled beaker left on the chemistry bench

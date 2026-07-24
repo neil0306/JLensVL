@@ -1,0 +1,49 @@
+{"_header": true, "name": "p3_smoking_verdict_text", "task": "smoking-verdict-from-text", "labels": ["CONFIRMED", "POSSIBLE", "CLEAR"], "note": "Each item is a natural-language description of a cropped worksite photo of ONE person. Ground-truth label is the correct smoking tier under the domain rules: holding a cigarette (even unlit/lowered) or any clearly-resolved lit cigarette/cigar/vape/pipe with smoke/vapor/glowing tip => CONFIRMED; a genuinely ambiguous cue (a maybe-stick, a faint haze, a few-pixel object) => POSSIBLE; empty hands / a non-smoking object (phone, food, drink, tool) OR a lighter/pack/ashtray ALONE with no cigarette in mouth-or-hand => CLEAR. Blur or low resolution alone is never a reason for CLEAR."}
+{"id": "conf-01", "text": "A lit cigarette is clearly visible held between the worker's fingers right next to his mouth.", "label": "CONFIRMED"}
+{"id": "conf-02", "text": "A vape pen is pressed to the person's lips and a faint cloud of vapor is escaping.", "label": "CONFIRMED"}
+{"id": "conf-03", "text": "A cigar is being smoked and a glowing orange tip is plainly visible in the hand.", "label": "CONFIRMED"}
+{"id": "conf-04", "text": "A construction worker in a hard hat has a cigarette dangling from the corner of his mouth.", "label": "CONFIRMED"}
+{"id": "conf-05", "text": "The man is exhaling a cloud of smoke with a cigarette held between two fingers.", "label": "CONFIRMED"}
+{"id": "conf-06", "text": "At night a glowing red ember sits at the worker's fingertips as he takes a drag.", "label": "CONFIRMED"}
+{"id": "conf-07", "text": "A laborer on the scaffold is smoking a cigarette during his break, smoke drifting up.", "label": "CONFIRMED"}
+{"id": "conf-08", "text": "The worker is holding a cigarette in his hand; it is lowered from his mouth and unlit right now.", "label": "CONFIRMED"}
+{"id": "conf-09", "text": "A vape device and its vapor plume are both clearly resolved at the person's face.", "label": "CONFIRMED"}
+{"id": "conf-10", "text": "A thin ribbon of smoke rises from the cigarette pinched in the man's lips.", "label": "CONFIRMED"}
+{"id": "conf-11", "text": "Of two workers by the crane, this one has a visible lit cigarette in his mouth.", "label": "CONFIRMED"}
+{"id": "conf-12", "text": "A tobacco pipe is clamped in the man's mouth with a curl of smoke coming off the bowl.", "label": "CONFIRMED"}
+{"id": "conf-13", "text": "The person is mid-drag on a hand-rolled cigarette, the tip visibly glowing.", "label": "CONFIRMED"}
+{"id": "conf-14", "text": "An e-cigarette glows and a mist hangs around the worker's face as he inhales.", "label": "CONFIRMED"}
+{"id": "conf-15", "text": "A cigarette is held to the lips and a length of grey ash is clearly visible on its end.", "label": "CONFIRMED"}
+{"id": "conf-16", "text": "On his break the man smokes a cigar and the lit orange tip is unmistakable in close view.", "label": "CONFIRMED"}
+{"id": "poss-01", "text": "A small object in the hand could be a cigarette but might just as well be a pen or a straw.", "label": "POSSIBLE"}
+{"id": "poss-02", "text": "In this high drone shot a thin white stick near the lips might be a cigarette but is only a few pixels.", "label": "POSSIBLE"}
+{"id": "poss-03", "text": "A faint wisp of haze near the mouth could be smoke or could just be motion blur.", "label": "POSSIBLE"}
+{"id": "poss-04", "text": "A blurry hand is raised to the mouth holding a maybe-stick, with a possible faint haze around it.", "label": "POSSIBLE"}
+{"id": "poss-05", "text": "An elongated object at the lips could be a cigarette, a straw, or a toothpick; it cannot be told apart.", "label": "POSSIBLE"}
+{"id": "poss-06", "text": "At far scale a tiny tan stick sits between two fingers but its identity is unclear.", "label": "POSSIBLE"}
+{"id": "poss-07", "text": "Something pale hovers near the mouth in a low-resolution frame; it is genuinely ambiguous.", "label": "POSSIBLE"}
+{"id": "poss-08", "text": "There is a possible vapor near the face, but in the cold air it could simply be the person's breath.", "label": "POSSIBLE"}
+{"id": "poss-09", "text": "A distant figure has a hand near the face and an indistinct object that may or may not be a cigarette.", "label": "POSSIBLE"}
+{"id": "poss-10", "text": "A pale item behind the ear is being moved toward the mouth; it might be a cigarette or a pencil.", "label": "POSSIBLE"}
+{"id": "poss-11", "text": "A brief glint near the hand might be a lighter flame or just a reflection off metal.", "label": "POSSIBLE"}
+{"id": "poss-12", "text": "An object near the lips is partially occluded by the hand and cannot be confirmed as a cigarette.", "label": "POSSIBLE"}
+{"id": "poss-13", "text": "A thin line at the mouth might be a cigarette or might be a scratch on the camera lens.", "label": "POSSIBLE"}
+{"id": "poss-14", "text": "The hand is cupped near the mouth as if shielding a light, but nothing can be clearly made out.", "label": "POSSIBLE"}
+{"id": "poss-15", "text": "A faint plume drifts past the worker that could be either fine dust or thin smoke.", "label": "POSSIBLE"}
+{"id": "poss-16", "text": "A small bright dot appears at the fingertips that could be a lit ember or a reflection.", "label": "POSSIBLE"}
+{"id": "clear-01", "text": "The person has empty hands and there is no cigarette, cigar, or vape anywhere near the mouth.", "label": "CLEAR"}
+{"id": "clear-02", "text": "The worker is holding a phone to his ear and no smoking object is present at all.", "label": "CLEAR"}
+{"id": "clear-03", "text": "The person is drinking from a water bottle and the hands hold no cigarette or vape.", "label": "CLEAR"}
+{"id": "clear-04", "text": "The man is eating food and there is no smoke, no glowing tip, and no thin white stick.", "label": "CLEAR"}
+{"id": "clear-05", "text": "The worker is adjusting his helmet strap with an empty hand and the mouth region is bare.", "label": "CLEAR"}
+{"id": "clear-06", "text": "The man is scratching his cheek with an empty hand; no cigarette is anywhere in view.", "label": "CLEAR"}
+{"id": "clear-07", "text": "The forklift operator has a phone in one hand and a coffee cup in the other, both non-smoking.", "label": "CLEAR"}
+{"id": "clear-08", "text": "The person's hand rests on his chin and the mouth is plainly empty of any object.", "label": "CLEAR"}
+{"id": "clear-09", "text": "A lighter and a pack of cigarettes sit on the table, but nothing is in the person's mouth or hand.", "label": "CLEAR"}
+{"id": "clear-10", "text": "An ashtray is visible on the ledge, yet the worker holds no cigarette and none is at his lips.", "label": "CLEAR"}
+{"id": "clear-11", "text": "The laborer carries a plank with both hands fully occupied and nothing near his face.", "label": "CLEAR"}
+{"id": "clear-12", "text": "The man is talking and gesturing with both hands, and there is nothing held in either hand.", "label": "CLEAR"}
+{"id": "clear-13", "text": "The worker is wearing a dust mask over his mouth and is clearly not smoking anything.", "label": "CLEAR"}
+{"id": "clear-14", "text": "The person is wiping sweat from his forehead with a towel and holds no smoking object.", "label": "CLEAR"}
+{"id": "clear-15", "text": "The supervisor is pointing at a blueprint with an empty hand and nothing at his mouth.", "label": "CLEAR"}
+{"id": "clear-16", "text": "The man is carrying a toolbox with both hands and there is no cigarette or smoke present.", "label": "CLEAR"}

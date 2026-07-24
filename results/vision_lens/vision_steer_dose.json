@@ -1,0 +1,250 @@
+{
+  "image": "dog.jpg",
+  "question": "What is the main subject of this photo? Answer with a single word.",
+  "alphas": [
+    0.0,
+    0.05,
+    0.1,
+    0.2,
+    0.4,
+    0.8
+  ],
+  "results": [
+    {
+      "block": 2,
+      "A": [
+        "white"
+      ],
+      "B": [
+        "black"
+      ],
+      "concept_a": "white",
+      "concept_b": "black",
+      "a_id": 4022,
+      "b_id": 3565,
+      "mode": "steer",
+      "baseline": {
+        "model_a": 11.6875,
+        "model_b": 6.0
+      },
+      "dose": [
+        {
+          "alpha": 0.0,
+          "model_a": 11.6875,
+          "model_b": 6.0,
+          "pref": -5.6875
+        },
+        {
+          "alpha": 0.05,
+          "model_a": 11.3125,
+          "model_b": 5.84375,
+          "pref": -5.46875
+        },
+        {
+          "alpha": 0.1,
+          "model_a": 11.5,
+          "model_b": 5.75,
+          "pref": -5.75
+        },
+        {
+          "alpha": 0.2,
+          "model_a": 11.625,
+          "model_b": 6.0625,
+          "pref": -5.5625
+        },
+        {
+          "alpha": 0.4,
+          "model_a": 11.0625,
+          "model_b": 5.875,
+          "pref": -5.1875
+        },
+        {
+          "alpha": 0.8,
+          "model_a": 10.25,
+          "model_b": 5.9375,
+          "pref": -4.3125
+        }
+      ],
+      "flipped": false,
+      "effect": 1.375
+    },
+    {
+      "block": 16,
+      "A": [
+        "white"
+      ],
+      "B": [
+        "black"
+      ],
+      "concept_a": "white",
+      "concept_b": "black",
+      "a_id": 4022,
+      "b_id": 3565,
+      "mode": "steer",
+      "baseline": {
+        "model_a": 11.6875,
+        "model_b": 6.0
+      },
+      "dose": [
+        {
+          "alpha": 0.0,
+          "model_a": 11.6875,
+          "model_b": 6.0,
+          "pref": -5.6875
+        },
+        {
+          "alpha": 0.05,
+          "model_a": 11.5625,
+          "model_b": 5.875,
+          "pref": -5.6875
+        },
+        {
+          "alpha": 0.1,
+          "model_a": 11.625,
+          "model_b": 5.84375,
+          "pref": -5.78125
+        },
+        {
+          "alpha": 0.2,
+          "model_a": 11.9375,
+          "model_b": 5.96875,
+          "pref": -5.96875
+        },
+        {
+          "alpha": 0.4,
+          "model_a": 12.5,
+          "model_b": 7.0,
+          "pref": -5.5
+        },
+        {
+          "alpha": 0.8,
+          "model_a": 11.875,
+          "model_b": 11.6875,
+          "pref": -0.1875
+        }
+      ],
+      "flipped": false,
+      "effect": 5.5
+    },
+    {
+      "block": 2,
+      "A": [
+        "dog",
+        "puppy"
+      ],
+      "B": [
+        "cat",
+        "kitten"
+      ],
+      "concept_a": "dog",
+      "concept_b": "cat",
+      "a_id": 5388,
+      "b_id": 7993,
+      "mode": "steer",
+      "baseline": {
+        "model_a": 17.25,
+        "model_b": 8.6875
+      },
+      "dose": [
+        {
+          "alpha": 0.0,
+          "model_a": 17.25,
+          "model_b": 8.6875,
+          "pref": -8.5625
+        },
+        {
+          "alpha": 0.05,
+          "model_a": 17.375,
+          "model_b": 8.8125,
+          "pref": -8.5625
+        },
+        {
+          "alpha": 0.1,
+          "model_a": 17.125,
+          "model_b": 8.625,
+          "pref": -8.5
+        },
+        {
+          "alpha": 0.2,
+          "model_a": 17.375,
+          "model_b": 9.0,
+          "pref": -8.375
+        },
+        {
+          "alpha": 0.4,
+          "model_a": 17.25,
+          "model_b": 10.0,
+          "pref": -7.25
+        },
+        {
+          "alpha": 0.8,
+          "model_a": 9.25,
+          "model_b": 9.4375,
+          "pref": 0.1875
+        }
+      ],
+      "flipped": true,
+      "effect": 8.75
+    },
+    {
+      "block": 16,
+      "A": [
+        "dog",
+        "puppy"
+      ],
+      "B": [
+        "cat",
+        "kitten"
+      ],
+      "concept_a": "dog",
+      "concept_b": "cat",
+      "a_id": 5388,
+      "b_id": 7993,
+      "mode": "steer",
+      "baseline": {
+        "model_a": 17.25,
+        "model_b": 8.6875
+      },
+      "dose": [
+        {
+          "alpha": 0.0,
+          "model_a": 17.25,
+          "model_b": 8.6875,
+          "pref": -8.5625
+        },
+        {
+          "alpha": 0.05,
+          "model_a": 17.0,
+          "model_b": 8.625,
+          "pref": -8.375
+        },
+        {
+          "alpha": 0.1,
+          "model_a": 16.625,
+          "model_b": 8.5,
+          "pref": -8.125
+        },
+        {
+          "alpha": 0.2,
+          "model_a": 16.25,
+          "model_b": 9.3125,
+          "pref": -6.9375
+        },
+        {
+          "alpha": 0.4,
+          "model_a": 15.1875,
+          "model_b": 14.375,
+          "pref": -0.8125
+        },
+        {
+          "alpha": 0.8,
+          "model_a": 8.6875,
+          "model_b": 16.5,
+          "pref": 7.8125
+        }
+      ],
+      "flipped": true,
+      "effect": 16.375
+    }
+  ]
+}

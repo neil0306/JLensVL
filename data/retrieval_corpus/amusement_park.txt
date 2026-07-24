@@ -1,0 +1,410 @@
+On the plaza CCTV, a small child in a yellow cap is standing alone near the carousel, looking around anxiously for a parent.
+A guest yelps as hot coffee spills across his forearm at the food-court counter, reflexively shaking his hand.
+A guest's lips and face begin to swell rapidly at a food-court table, his companions looking alarmed.
+A dropped baby bottle rolls under the queue-line barrier toward the roller-coaster track, the parent reaching after it.
+Roving staff spot a child sitting alone on a bench outside the log flume, sobbing quietly.
+A teenage boy pinches his nose, blood dripping onto his shirt, as he steps out of the log-flume queue looking dazed.
+一名男童独自站在旋转木马附近,四处张望,似乎与家人走散。
+一个奶瓶从排队护栏下方滚落,朝过山车轨道方向滚去,家长伸手去够。
+一名少年在激流勇进队伍中捏着鼻子止血,血滴落在衣服上,神情有些恍惚。
+A crying toddler is sitting at the roller-coaster unload zone, refusing to move while the line backs up behind him.
+A phone slides across the coaster seat and knocks against the restraint bar as the train banks through a turn.
+At the drop-tower boarding gate, a small boy stretches on tiptoe against the height marker but still falls short of the line.
+过山车转弯时,一部手机在座椅上滑动,撞到了安全压杠。
+在跌落塔登乘闸口,一名男孩踮脚贴着身高标尺测量,仍未达到限高线。
+落水后的小男孩在激流勇进出口哭着找家人,浑身湿透。
+An elderly woman is fanning herself near the carousel, looking around for a shaded bench to sit down.
+A visibly pregnant guest pauses near the drop tower, one hand on her lower back, scanning for the first-aid station sign.
+CCTV shows a grey-haired man leaning against the exclusion fence, breathing heavily near the coaster exit.
+A guest stumbles off the launch coaster and vomits near the exit ramp, gripping a railing for support.
+A senior guest with a cane is shuffling slowly toward the shade near the Ferris wheel base, visibly tired.
+一位孕妇在摩天轮旁停下脚步,手扶后腰,四处寻找急救站的指示牌。
+一名老年游客靠在栏杆上大口喘气,脸色略显苍白。
+A family stands at the plaza intersection, all four studying a folded park map, turning it in different directions.
+CCTV shows a man scratching his head while comparing the paper map to the overhead directional sign.
+A couple is seen backtracking twice near the same mascot statue, clearly unsure which path leads to the water rides.
+A tourist stares at the park app on his phone, then up at the signage, then back at his phone again.
+一家人站在广场路口研究地图,四人各执一词,方向不一。
+一名游客反复对照手机地图与园区指示牌,神情困惑。
+A wheelchair user waits at the base of the ride-access ramp for the roller coaster, no attendant nearby.
+CCTV shows a stroller parked awkwardly at the switchback entrance, the parent struggling to fold it one-handed.
+A guest's camera strap gets caught in the swinging-ship ride's safety chain moments before departure.
+A father is trying to lift a double stroller over the queue-line barrier near the bumper cars.
+坐轮椅的游客停在过山车无障碍坡道入口,附近没有工作人员协助。
+一名家长在旋转木马入口处折叠婴儿车时手忙脚乱。
+A guest's sun hat blows off on the drop tower platform and lands near the operator console, unnoticed by the owner.
+CCTV shows a phone sliding out of a rider's pocket onto the roller-coaster platform just before dispatch.
+A wallet falls from a woman's bag near the log-flume load zone and she walks off without noticing.
+A guest repeatedly presses the malfunctioning call button at the ride-exit intercom, unable to reach any staff.
+一名游客的手机从口袋滑落到过山车站台,本人毫无察觉。
+一名游客反复按压出口对讲呼叫按钮却始终无人回应,神情焦急。
+A family with a small child is gathered at the height-check post, arguing quietly about whether he meets the 120 cm line.
+CCTV shows a father lifting his daughter up against the height marker, looking uncertain at the measurement.
+A gust of wind sweeps a guest's straw hat onto the swinging-ship ride's track just before it starts moving.
+一家人聚在身高检测柱旁,对孩子是否达到限高线争论不休。
+一阵大风吹落一名游客的草帽,恰好落在摆船项目即将启动的轨道上。
+A guest in the switchback queue for the roller coaster is swaying slightly, face flushed red under the midday sun.
+CCTV shows a man in the water-ride queue wiping sweat repeatedly and leaning against the railing for support.
+A woman in the coaster line fans herself with a park map, looking pale and unsteady on her feet.
+一名游客在过山车排队区脸色通红,身体微微摇晃,似乎中暑。
+男子在水上项目队伍中不断擦汗,靠着栏杆勉强站立。
+A guest stands at the guest-relations counter, gesturing toward a torn park map, clearly needing directions.
+CCTV shows a family approaching guest relations with a lost child's shoe in hand, asking staff for help.
+A visitor waits at the guest-relations window holding a broken locker key, looking frustrated.
+一名游客在游客服务中心柜台前比划着破损的园区地图,询问方向。
+一家人拿着捡到的儿童鞋子走向游客服务中心求助。
+This is a PROACTIVE-SERVICE cue: a child standing alone near the carousel with no adult in sight requires staff to approach immediately.
+Verdict: a crying toddler at the roller-coaster unload zone is a proactive-service trigger, staff should comfort the child and locate the guardian.
+This is a service-first trigger: an elderly guest fanning herself near the shade needs a bench or first-aid escort offered promptly.
+Verdict: a pregnant guest scanning for the first-aid station warrants a staff escort rather than waiting to be asked.
+This is a PROACTIVE-SERVICE cue: a wheelchair user stalled at the ride-access ramp should be assisted by the nearest operator.
+Verdict: a family confused at the height-check post is a proactive-service scenario, staff should clarify the requirement calmly.
+This is a service-first cue: a guest who dropped a phone on the ride platform should have it retrieved and returned before the next dispatch.
+Verdict: an overheated guest swaying in the queue line should be offered water and shade before symptoms worsen.
+This is a PROACTIVE-SERVICE cue: a lost guest studying the park map repeatedly should be approached and offered directions to the water rides.
+Verdict: a guest at guest-relations with a service need should be attended to without unnecessary delay.
+判定:孩子独自站在旋转木马附近且无成人陪伴,属于主动服务提示,应立即有职员上前询问。
+判定:游客在排队区脸色苍白摇晃,应主动提供饮水和阴凉处休息。
+这是一个主动服务信号:轮椅游客卡在坡道入口,应由最近的操作员上前协助。
+判定:一家人在身高检测柱前争论不休,属于需要主动说明的服务场景。
+A proactive-service cue is any observation where a guest visibly needs help but has not asked for it, such as a lost child, an overheated guest, or a family confused by signage.
+A lost-child cue is triggered when a minor is separated from an adult guardian and shows signs of distress or aimless wandering near a ride or plaza.
+A rest-need cue means an elderly, pregnant, or overheated guest is visibly seeking shade, a bench, or the first-aid station.
+A dropped-item cue is any personal item that falls from a guest's possession on a ride platform or queue line without the guest noticing.
+A height-confusion cue applies when a family lingers at the height-check post uncertain whether a child meets the ride's minimum requirement.
+主动服务提示是指游客明显需要帮助却未主动求助的情形,例如走失儿童、中暑游客或对身高标识感到困惑的家庭。
+走失儿童提示是指未成年游客与监护人分离,并在乐园区域内表现出焦虑或漫无目的游走的情形。
+No service cue: the child is holding an adult's hand tightly while walking briskly toward the carousel, clearly not lost.
+Negative case: a fit young couple studies the map once, nods, and walks confidently toward the roller coaster.
+CLEAR: the elderly guest is seated comfortably in the shade, fanning herself calmly, no distress observed.
+No proactive-service trigger: the family at the height-check post measures the child once and proceeds without confusion.
+Negative case: the wheelchair user rolls smoothly up the accessible ramp without any obstruction.
+无提示:孩子紧紧牵着大人的手快步走向旋转木马,并非走失。
+无提示:一对年轻情侣看了一次地图后便自信地走向过山车。
+child standing alone near the carousel
+crying toddler at the roller-coaster unload zone
+elderly guest fanning herself in the shade
+pregnant guest scanning for the first-aid station sign
+wheelchair user stalled at the ride-access ramp
+family confused at the height-check post
+guest's phone sliding off the ride platform
+overheated guest swaying in the queue line
+tourist studying a folded park map, looking lost
+visitor at guest relations holding a broken locker key
+stroller parked awkwardly at the switchback entrance
+guest's sun hat blown off near the operator console
+father lifting his daughter against the height marker
+lost boy tugging at a stranger's sleeve near the drop tower
+senior guest with a cane shuffling toward the shade
+CCTV on the roller-coaster platform shows a rider's lap bar sitting loose, not clicked down, as the train prepares to dispatch.
+The operator console shows a red light on seat 4, indicating the shoulder harness has not locked before the drop-tower ascent.
+A child's seatbelt is seen hanging open on the swinging-ship ride just before the safety check.
+A guest pats his pockets frantically after boarding the coaster, mouthing that he left his inhaler behind as the restraint bar locks down.
+A guest on the pendulum ride has one strap of the harness unbuckled as the restraint-check light stays amber.
+一名过山车乘客的安全压杠明显未锁死,列车即将发车。
+操作台显示4号座位安全带指示灯为红色,肩带尚未锁定。
+一名游客登上过山车后急切地拍打口袋,比划着说自己忘带了吸入器,此时安全压杠已经锁下。
+A teenager is seen standing up in his seat while the roller coaster is mid-course, hands raised above the restraint.
+CCTV shows a rider unbuckling and rising to his feet on the moving Ferris-wheel gondola.
+A man stands up briefly on the bumper car while it is still moving, losing his balance against the rail.
+一名少年在过山车运行途中站起身,双手举过安全压杠。
+摩天轮车厢内一名乘客在运行中解开安全带并起身。
+A backpack is left sitting on the roller-coaster seat as the restraint bar comes down, wedged against the rider's leg.
+CCTV shows a phone sliding loose on the launch-coaster platform tray just before dispatch.
+A sun hat is caught under the lap bar mechanism on the drop tower, visible to the operator camera.
+一个背包被压在过山车安全杠下方,随列车即将出发。
+一部手机在发射式过山车平台上滑动,尚未被收纳。
+A man is seen stepping over the exclusion fence near the roller-coaster track, trying to retrieve a dropped cap.
+CCTV shows a teenager climbing through the gap in the coaster perimeter fence toward the rail.
+A guest crosses the low barrier near the log-flume trough, standing dangerously close to the moving boats.
+一名男子跨过过山车隔离围栏,试图捡回掉落的帽子。
+一名青少年从围栏缺口钻入过山车轨道区域附近。
+A child well below the height-check post marker is let through the station gate by a distracted parent.
+CCTV shows a boy standing on tiptoe at the height post, trying to appear tall enough for the coaster.
+一名明显未达限高线的儿童被家长带过站台闸门。
+男孩在身高检测柱前踮起脚尖,试图显得够高。
+The switchback queue for the water ride is packed shoulder to shoulder, guests pressed against the railing as the line stalls.
+CCTV shows the plaza in front of the roller coaster dangerously full after a ride delay, no room to move.
+A crush risk is building at the ticket turnstile as two tour groups converge at the same entrance.
+排队区因过山车延误而人潮拥堵,游客被挤压在护栏边。
+广场因排队延误而人满为患,几乎无法移动。
+A young man hops over the queue railing to skip ahead in the roller-coaster line, ignoring posted signs.
+CCTV shows a boy climbing the switchback barrier to cut across to a shorter lane.
+一名男子翻越排队护栏插队,无视警示标识。
+一名男孩爬过之字形排队栏杆,试图抄近路。
+Two boys are seen sprinting across the splash-pad deck, slipping on the wet tiles near the fountain jets.
+CCTV shows a teenager running along the log-flume splash zone, nearly colliding with another guest.
+两名男孩在戏水区湿滑地面上奔跑,险些滑倒。
+一名少年在激流勇进溅水区狂奔,险些撞到其他游客。
+A group of teenagers is pushing each other near the edge of the splash pool, laughing but dangerously close to the water.
+CCTV shows two boys wrestling playfully on the wet deck beside the log-flume splash zone.
+一群青少年在戏水池边互相推搡打闹,靠近水域十分危险。
+两名男孩在激流勇进溅水区嬉戏摔跤。
+A child is seen struggling and flailing in the splash-pad pool, head briefly going under the surface.
+CCTV shows a guest at the log-flume splash zone unable to stand, arms waving for help.
+一名儿童在戏水池中挣扎,头部短暂没入水中。
+激流勇进溅水区一名游客无法站稳,举手呼救。
+A man collapses in the roller-coaster queue line, sliding down against the railing, motionless.
+CCTV shows a woman fainting near the ticket turnstile, staff nearby have not yet noticed.
+一名男子在过山车排队区突然晕倒,靠着栏杆滑坐在地。
+一名女子在售票闸机附近晕厥,周围工作人员尚未察觉。
+Two men shove each other in the roller-coaster queue, the argument quickly turning physical.
+CCTV shows a scuffle breaking out near the bumper-car entrance, fists being thrown.
+两名男子在过山车排队区互相推搡,争执迅速升级为肢体冲突。
+碰碰车入口处爆发争执,双方拳脚相向。
+A backpack sits alone on a bench near the Ferris wheel, no owner in sight for over ten minutes.
+CCTV shows a duffel bag abandoned near the ride exit, nobody approaching to claim it.
+一个背包被遗留在摩天轮旁的长椅上,已超过十分钟无人认领。
+一个手提袋独自留在出口附近,始终没有人靠近。
+CCTV shows sparks flashing from a control panel near the drop-tower base as the ride cycles.
+A loose side panel on the roller-coaster track is visibly rattling as the train passes overhead.
+Operators report a faint trail of smoke rising from the carousel motor housing beneath the platform.
+摩天轮控制箱附近监控画面中出现电火花闪烁。
+过山车轨道旁一块面板明显松动,列车经过时发出撞击声。
+旋转木马平台下方隐约可见电机冒出的烟雾。
+A man vaults over the queue-line barrier at the log flume, bypassing the switchback entirely.
+CCTV shows a teenager hopping the turnstile at the water ride instead of tapping his wristband.
+一名男子翻越激流勇进排队护栏,完全绕过之字形通道。
+一名青少年跳过水上项目的闸机,未刷手环直接进入。
+This is a SAFETY cue: a lap bar sitting loose before dispatch requires the operator to halt the ride immediately.
+Verdict: a child whose seatbelt is hanging open on the swinging-ship ride must be secured before the safety check clears.
+This is a SAFETY-CRITICAL cue: a rider standing up mid-course on a moving coaster demands an emergency stop.
+Verdict: a guest crossing the exclusion fence toward the track is an immediate safety risk requiring urgent intervention.
+This is a SAFETY cue: a child below the height marker being waved through the gate must be stopped before boarding.
+Verdict: a dangerous crush forming in the switchback queue requires crowd control before anyone is injured.
+This is a SAFETY cue: a guest climbing the queue railing to cut the line must be redirected immediately.
+Verdict: running on the wet splash-pad deck is a slip hazard that staff must correct on sight.
+This is a SAFETY-CRITICAL cue: a guest struggling and going under at the splash pool requires an immediate water rescue.
+Verdict: a guest fainting in the queue line is a medical emergency requiring first aid and shade at once.
+This is a SAFETY cue: a physical fight breaking out in the queue must be separated by staff without delay.
+Verdict: an unattended bag left near the ride exit for an extended period must be reported and the area checked.
+This is a SAFETY-CRITICAL cue: sparks or smoke from a ride's mechanical housing require an immediate ride shutdown.
+Verdict: a guest vaulting the queue barrier to bypass the switchback is a safety and access-control violation.
+判定:发车前安全压杠未锁死,操作员必须立即暂停该班次。
+判定:游客跨越隔离围栏靠近轨道,属于需要紧急处理的安全风险。
+这是一个安全类信号:儿童在戏水池中挣扎没入水面,需要立即施救。
+判定:排队区人群过度拥挤,存在踩踏风险,需立刻疏导人流。
+判定:控制箱冒出电火花或烟雾,必须立即停止该项目运行。
+A safety cue is any observation indicating imminent risk of harm, such as an unfastened restraint, a guest near the track, or a mechanical fault.
+A restraint cue is any rider whose safety harness, lap bar, or seatbelt is not fully fastened before dispatch.
+A track-intrusion cue is any guest whose body crosses the exclusion fence or barrier toward the ride's moving path.
+A crush-risk cue means queue-line density has reached a level where guests cannot move freely and are pressed against railings.
+A water-distress cue is triggered when a guest in a splash pool or flume trough is struggling, submerged, or unable to stand.
+A mechanical-fault cue covers any spark, smoke, loose panel, or unusual noise observed on a ride during operation.
+无人看管行李提示是指任何背包或箱包在乐园区域内长时间放置且无人认领的情形。
+安全约束提示是指骑乘者的安全带、压杠或安全带扣在发车前未完全锁定的情形。
+机械故障提示包括项目运行期间出现的电火花、烟雾、松动面板或异常响声。
+No safety cue: the rider's lap bar clicks down firmly and the operator console shows a solid green checklight.
+Negative case: the two boys are simply splashing each other playfully in the shallow end, well within the marked splash zone.
+CLEAR: all lap bars are down and locked, and the operator's checklight is green before dispatch.
+No security concern: the bag on the bench belongs to a guest seated right next to it, checking a park map.
+Negative case: the child at the height post measures well above the line and passes through without issue.
+无安全提示:安全压杠已完全锁定,操作台显示绿灯,可以正常发车。
+无安全提示:长椅旁的背包属于坐在旁边看地图的游客,并非无人看管。
+lap bar sitting loose before dispatch
+rider standing up mid-course on a moving coaster
+guest crossing the exclusion fence toward the track
+child below the height marker at the station gate
+dangerous crush in the switchback queue
+guest climbing the queue railing to cut the line
+running on the wet splash-pad deck
+child struggling and submerged in the splash pool
+guest fainting in the roller-coaster queue
+physical fight breaking out near the bumper cars
+unattended backpack near the Ferris-wheel bench
+sparks flashing from the drop-tower control panel
+guest vaulting the queue barrier at the log flume
+loose panel rattling on the coaster track
+smoke rising from the carousel motor housing
+At night, a lone ride operator patrols the dimly lit plaza while CCTV monitors an almost empty park.
+During the summer weekend peak, families stream through the ticket turnstiles as staff scan the crowd for anyone needing help.
+On a rainy afternoon, a guest with a wet umbrella slips slightly near the carousel entrance, catching the railing.
+As the closing-hour crowd thins, a guest sags against the drop-tower railing, one hand pressed to his chest, breathing hard while no staff are nearby.
+During peak season, a wheelchair user waits patiently at the accessible ramp as the crowd streams past without noticing.
+The overhead camera captures a wide view of the plaza where a pregnant guest navigates slowly through dense foot traffic.
+Under the midday sun, a tourist with a stroller stops to photograph the mascot, blocking the walkway near the gate.
+在夜间灯光昏暗的广场上,一名值班操作员独自巡视,监控画面中乐园几乎空无一人。
+暑期周末高峰时段,大批家庭涌入售票闸机,职员在人群中留意是否有人需要协助。
+雨天里,一名游客撑着湿伞在旋转木马入口处险些滑倒,幸好扶住了栏杆。
+A guest reports feeling dizzy and disoriented immediately after exiting the spinning teacup ride, holding onto a railing.
+An expecting mother in a sundress pauses at the base of the drop-tower stairs, visibly winded and holding the rail.
+Zoomed-out view shows a pregnant guest navigating a crowded queue line for the log flume, slightly off balance.
+A wobbly elderly gentleman is seen leaning heavily on his cane while crossing the plaza near closing time.
+CCTV from a high corner angle shows a frail grandmother inching along the shaded walkway for support.
+A senior guest with a rollator walker is stuck at the base of the coaster exit stairs, no ramp nearby.
+An elderly woman near the accessible viewing area looks anxiously at the crowded queue line.
+A toddler reaches through the carousel's outer railing, fingers inches from the rotating platform edge.
+Overhead camera shows a manual wheelchair user unable to reach the ride-access ramp call button.
+A guide-dog user pauses at the roller-coaster station gate, the dog sitting attentively beside a hesitant owner.
+A young mother folds a stroller one-handed while balancing a crying infant on her hip near the carousel.
+A father carries twin infants in a double sling, struggling to also manage a locker key near guest relations.
+A guest's shoe becomes wedged in the gap between the platform and the log-flume boat as it docks.
+A guest drags a wheeled cooler with a broken wheel, the cooler scraping loudly across the plaza tiles.
+Camera shows a guest's backpack strap snapping as they try to carry multiple souvenirs and a stroller.
+A tourist family piles bags onto a single stroller that tips precariously near the coaster exit.
+A guest doubles over near the Ferris-wheel queue, gasping for breath after sprinting to catch the last ride of the day.
+Several small children trail behind a distracted guardian, one lagging far behind near the mascot statue.
+A grandparent watches three grandchildren scatter in different directions near the ticket turnstile.
+A visitor stares at a multilingual park map, mouthing the words, clearly unable to read the ride names.
+A guest pulls out a phone, opens a translation app, and looks around helplessly for the nearest restroom.
+Camera shows someone pacing the same fifty-metre stretch of plaza for several minutes, lost.
+A guest's keys slip from a pocket and clatter onto the queue-line pavement unnoticed.
+A souvenir bag tears open near the exit, spilling stuffed toys across the plaza floor.
+A guest sets down a camera bag to tie a shoelace, then walks off without picking it back up.
+An elderly man sits down abruptly on a bench, looking pale and disoriented after climbing the coaster exit stairs.
+A teenager wanders in circles near the food-court corridor, earbuds in, seemingly unaware of surroundings.
+A guest at the locker area is patting all his pockets repeatedly, unable to find his locker key.
+A child in a stroller drops a pacifier onto the ride-access ramp, the parent too distracted to notice.
+一名游客走下发射式过山车后在出口坡道呕吐,扶着栏杆勉强站稳。
+一位穿连衣裙的准妈妈在跌落塔楼梯口停下,气喘吁吁地扶着栏杆。
+拄着助行架的老人被困在过山车出口楼梯底部,附近没有斜坡可用。
+一名幼童把手伸进旋转木马外围栏杆,手指几乎触碰到旋转的平台边缘。
+视障游客的导盲犬在过山车站台闸门旁安静等候,主人显得有些犹豫。
+年轻母亲一手抱着哭闹的婴儿,一手折叠婴儿车,在旋转木马旁手忙脚乱。
+游客的储物柜钥匙怎么也找不到,不停拍打自己的口袋。
+This is a PROACTIVE-SERVICE cue: a guest with a broken cooler wheel struggling near the plaza should be offered a hand by staff.
+Verdict: a guide-dog user hesitating at the station gate is a proactive-service scenario, staff should confirm the queue is clear.
+This is a service-first trigger: a souvenir bag has torn open, spilling contents, and the guest needs immediate help gathering items.
+Verdict: an elderly guest who sat down abruptly and looks pale should be checked on promptly, this may escalate to a medical concern.
+Verdict: a guest unable to find a locker key should be assisted by staff rather than left to search alone.
+判定:购物袋破裂物品散落一地,属于需要立即协助的场景。
+判定:脸色苍白突然坐下的老年游客应尽快有人上前查看情况。
+A locker-assistance cue applies when a guest is visibly unable to open, locate, or operate a rental locker.
+A guide-dog cue applies when a visually impaired guest with an assistance dog appears to hesitate at a gate, ramp, or queue line.
+A separated-child cue is triggered when a child is visibly out of arm's reach of their guardian near a ride or plaza for more than a few seconds.
+无障碍犬只提示是指携带导盲犬的视障游客在闸机、坡道或排队区出现犹豫的情形。
+走失儿童提示是指儿童在乐园区域内与监护人距离超出可及范围数秒以上。
+Negative case: the guest with the guide dog walks confidently through the gate without pausing.
+CLEAR: the family with several children moves through the plaza in an orderly line, holding hands.
+No service cue: the guest with a stroller easily lifts it over the ramp threshold unaided.
+无提示:携带导盲犬的游客顺利通过闸机,没有任何犹豫。
+无提示:一家人手拉手有序穿过广场,没有孩子走散的迹象。
+guest with a broken cooler wheel near the plaza
+guide-dog user hesitating at the station gate
+folding stroller stuck at the narrow turnstile
+grandmother pushing a stroller up the ramp, out of breath
+child lagging behind a distracted guardian near the mascot
+tourist family with an overloaded souvenir stroller
+guest reading a multilingual park map, confused
+souvenir bag spilled open near the exit
+elderly man sitting down abruptly, looking pale
+guest patting his pockets, unable to find a locker key
+A man is seen prying at the safety-bar locking mechanism with a multitool near the coaster loading bay, tampering with the restraint.
+CCTV shows a guest forcibly wedging a metal selfie stick into the ride's safety-bar hinge, trying to keep it from locking.
+A visitor is seen swinging a long selfie stick dangerously close to other guests' faces in the queue line.
+Camera footage shows a guest attempting to pry open the operator console panel near the drop-tower base.
+A man conceals a pocketknife while fiddling with the carousel gate latch, glancing around nervously.
+一名男子在过山车装载区用多功能工具撬动安全压杠锁扣。
+一名游客将金属自拍杆强行卡入安全杠铰链,阻止其锁定。
+男子藏着一把小刀摆弄旋转木马的闸门锁,神情紧张地四处张望。
+CCTV captures a shoving match spreading from two people to a group of five near the ticket turnstile.
+A melee breaks out in the crowded queue line, with bystanders trying to flee the scuffle.
+Camera shows a woman being grabbed by the arm and pulled backward during a heated confrontation near the food court.
+Two guests exchange shoves near the carousel, knocking over a nearby trash bin.
+两人在售票闸机旁扭打成一团,周围游客纷纷后退躲避。
+一场肢体冲突从两人蔓延至五人,场面一度失控。
+A forsaken backpack sits alone against the plaza wall, untouched for fifteen minutes, a wire visibly protruding from the zipper.
+CCTV shows a solitary duffel bag parked beside the vending machine with wires sticking out, no one claiming it.
+An abandoned tote bag has been left near the ticket-turnstile pillar since the last tour group passed.
+一件行李袋孤零零地靠在广场墙边,拉链缝隙中隐约可见电线,十五分钟无人认领。
+自动售货机旁停放着一个无人认领的行李箱,包身露出电线。
+A man is seen vaulting the mechanical-yard perimeter fence near the ride's back-of-house access, avoiding the staffed gate entirely.
+CCTV shows a guest hopping the low barrier near the operator room instead of using the marked path.
+A youth scales the ride-exit turnstile in one motion, landing on the restricted side without staff noticing.
+一名男子翻越机械区围栏,完全绕过有人看守的通道。
+青年一跃翻过出口闸机栏杆,未经工作人员察觉直接进入限制区。
+A guest leans dangerously far over the log-flume trough edge to look for an incoming boat, feet near the water's edge.
+CCTV shows a man stepping directly onto the restricted maintenance walkway beside the coaster track.
+A woman crosses the low barrier to retrieve a dropped hat, the coaster train audible in the distance.
+A guest stands with toes over the splash-zone edge, phone raised, trying to record the approaching boat.
+一名游客身体大幅前倾探视激流勇进水道,双脚几乎踏入水域。
+游客越过低矮护栏去捡拾掉落的帽子,此时过山车列车轰鸣声已经临近。
+A man loses consciousness and slumps against the ticket turnstile, blocking the lane entirely.
+CCTV shows a guest experiencing what appears to be a seizure on the queue-line bench.
+A woman is found unresponsive near the mascot photo area, a small pool of dropped items scattered around her.
+一名男子失去意识,倒靠在售票闸机旁,完全堵住通道。
+游客在排队区长椅上疑似癫痫发作,身体不断抽搐。
+The plaza is packed like sardines during a ride breakdown, guests pressed against the exclusion fence.
+CCTV shows a dangerous bottleneck forming at the single open turnstile during a fire-drill evacuation.
+A crowd surge nearly knocks over an elderly guest as everyone rushes toward the reopened gate.
+广场因过山车故障挤满游客,人群紧贴隔离围栏,几乎无法呼吸。
+单一开放闸机在消防演习疏散中造成严重瓶颈,人群拥堵形成安全隐患。
+A restraint-alarm chime sounds repeatedly as a guest keeps unbuckling and rebuckling the lap bar during dispatch checks.
+CCTV shows an operator repeatedly resetting the safety-bar checklight as a guest fidgets with the mechanism.
+游客反复解开又扣上安全压杠,触发发车前的安全报警提示音。
+操作员反复重置安全杠检查灯,因一名游客不断摆弄压杠机构。
+A man has been standing at the same operator console for over forty minutes, glancing repeatedly at the security camera.
+CCTV shows a guest circling the staff-only door near the control room three times without ever approaching it directly.
+Camera footage shows an individual taking photos of the CCTV camera positions along the queue-line corridor.
+一名男子在同一操作台前停留超过四十分钟,不断瞥向监控摄像头。
+游客绕着控制室的工作人员专用门走了三圈,始终没有直接靠近。
+Vandals are seen scratching graffiti into the mascot statue's base late in the evening.
+CCTV captures a group prying at a vending-machine panel near the food court, attempting to force it open.
+A guest carves initials into a wooden queue-line railing using a small blade.
+深夜有人在吉祥物雕像底座上刻画涂鸦,行为十分嚣张。
+一群人正在美食广场附近撬动自动售货机面板,企图强行打开。
+A man sprints against the flow of the exit ramp, shoving past guests near the bottom.
+CCTV shows two teenagers racing each other down the queue-line switchback ramp, nearly falling.
+A guest jumps down the last several steps of the coaster exit stairs, landing hard on the platform floor.
+一名男子逆着出口坡道的人流狂奔,推挤沿途游客。
+两名青少年在排队坡道上互相追逐奔跑,险些摔倒。
+This is a SAFETY cue: a guest tampering with the safety-bar locking mechanism must be reported to security at once.
+Verdict: a shoving match spreading to five people near the turnstile requires immediate multi-staff response and crowd separation.
+This is a SAFETY-CRITICAL cue: an abandoned bag with visible wires must trigger area evacuation protocol.
+Verdict: a guest vaulting the mechanical-yard perimeter fence is an unauthorized-access safety risk.
+This is a SAFETY cue: a guest leaning over the log-flume trough edge as a boat approaches is an imminent danger requiring urgent intervention.
+Verdict: an unresponsive guest near the mascot photo area is a medical emergency requiring immediate first aid.
+This is a SAFETY cue: a crowd surge near a reopened gate risks injury to bystanders, especially elderly guests nearby.
+Verdict: repeated restraint-alarm chimes during dispatch checks indicate a safety hazard that could trap or injure a rider.
+This is a SAFETY cue: a person photographing CCTV camera positions repeatedly may indicate reconnaissance and should be logged.
+Verdict: vandals scratching graffiti into the mascot statue at night should be reported to security for immediate response.
+判定:游客擅自撬动安全压杠锁扣机构,必须立即通报保安处理。
+判定:闸机附近冲突已蔓延至五人,需要多名工作人员介入并分隔人群。
+这是一个安全类信号:行李中可见电线外露,应立即启动疏散预案。
+判定:游客翻越机械区围栏,属于未经授权闯入的安全风险。
+判定:排队区反复触发安全杠报警提示音,存在夹伤或困锁乘客的风险。
+A tampering cue is any observation of a guest attempting to defeat, pry, or bypass a ride's restraint-locking mechanism.
+An altercation cue covers any physical contact between guests escalating beyond a friendly gesture, including shoving, grabbing, or punches.
+A restricted-area cue is any guest whose body or limbs cross a maintenance walkway, exclusion fence, or back-of-house boundary.
+A reconnaissance cue applies when a person repeatedly photographs security infrastructure or paces the same restricted-adjacent area without purpose.
+武器与破坏提示的定义包括任何明显撬动安全装置的工具、刀具或如自拍杆之类被用于阻止安全杠锁定的物品。
+冲突提示是指游客之间发生超出友好举动的肢体接触,包括推搡、拉扯或拳击。
+Negative case: the guest's bag briefly grazes the restraint sensor and the checklight resets automatically, no one is tampering with it.
+No safety cue: the group of teenagers is simply laughing and taking photos together near the mascot statue, not vandalizing anything.
+CLEAR: the man near the operator console is on a scheduled maintenance check, radio in hand, not loitering.
+无安全提示:游客的背包只是轻触安全杠感应器导致检查灯重置,并非人为撬动。
+无安全提示:一群青少年只是在吉祥物雕像前拍照说笑,并非在实施破坏行为。
+guest tampering with the safety-bar locking mechanism
+shoving match spreading through the ticket-turnstile queue
+abandoned duffel bag with wires visible near the vending machine
+youth vaulting the mechanical-yard perimeter fence
+guest's feet over the splash-zone edge as a boat arrives
+man slumped unconscious against the ticket turnstile
+crowd surge pressing against the exclusion fence
+restraint-alarm chime sounding repeatedly during dispatch checks
+man photographing CCTV camera positions repeatedly
+graffiti scratched into the mascot statue's base
+teenagers racing down the queue-line switchback ramp
+stroller wheel caught on the ride-access ramp threshold
+guest's shoelace caught in the boarding-ramp grating as the line moves forward
+family piling luggage onto a single stroller near the exit
+guest's sunglasses left on the carousel platform tray
+operator console flashing amber before a lap-bar recheck
+children crowding tightly against the ride-exit gate as the next cycle unloads
+guest limping heavily near the coaster queue, wincing with each step
+guest's locker door jammed shut, yanking repeatedly at the handle
+guest-relations staff radioing security about a lost child
+guest's sandal pulled toward an uncovered splash-pad drain grate, fingers reaching in after it
+a coaster car's side panel rattles loudly and works loose between cycles
+park map dispenser empty, guests crowding the information board
+wristband scanner beeping red at the water-ride turnstile
+queue-line switchback rope sagging under a leaning crowd
+souvenir cart blocking the emergency exit path near the plaza
+A guest is seen limping heavily near the coaster queue, wincing with each step and gripping the railing for support.
+CCTV shows a guest's locker door jammed shut as he yanks repeatedly at the handle, unable to close it.
+A cluster of children presses tightly against the ride-exit gate railing just as the next cycle of riders unloads.
+一名游客在过山车排队区一瘸一拐地行走,每走一步都面露痛苦并紧抓栏杆借力。
+监控画面显示,一名游客的储物柜柜门卡死,反复拉拽把手却始终无法关闭。
+一群孩子紧贴在出口闸门栏杆上,恰逢下一批乘客正在下车。
+CCTV shows a guest's sandal pulled toward an uncovered splash-pad drain grate, his fingers reaching into the opening after it.
+CCTV shows a coaster car's side panel rattling loudly and working loose as the train completes another cycle.

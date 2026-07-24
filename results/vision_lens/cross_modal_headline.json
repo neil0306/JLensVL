@@ -1,0 +1,427 @@
+{
+  "image": "dog.jpg@224px",
+  "question": "Main subject?",
+  "model_answer": "The main subject of the image is a **white Samoyed dog**.",
+  "blocks": {
+    "2": {
+      "in_encoder": {
+        "dog": {
+          "score": -0.010808523744344711,
+          "rank": 6720,
+          "top1": false,
+          "top5": false,
+          "peak_pos": 21,
+          "topk": [
+            "_",
+            "(",
+            "-",
+            ",",
+            "/",
+            ":",
+            "'",
+            "1"
+          ]
+        },
+        "cat": {
+          "score": 0.4198598265647888,
+          "rank": 1760,
+          "top1": false,
+          "top5": false,
+          "peak_pos": 35,
+          "topk": [
+            "\u65f6\u65e5",
+            "arder",
+            "primarily",
+            "geschrieben",
+            "ews",
+            "\u200b\u200b",
+            "unca",
+            "\u0435\u0447\u0430\u0442"
+          ]
+        },
+        "animal": {
+          "score": 0.18428215384483337,
+          "rank": 1556,
+          "top1": false,
+          "top5": false,
+          "peak_pos": 43,
+          "topk": [
+            "_",
+            ":",
+            "(",
+            ",",
+            "-",
+            "/",
+            "\"",
+            "S"
+          ]
+        },
+        "car": {
+          "score": 0.26797688007354736,
+          "rank": 335,
+          "top1": false,
+          "top5": false,
+          "peak_pos": 2,
+          "topk": [
+            "_",
+            "-",
+            "...",
+            ":",
+            "/",
+            "?",
+            ",",
+            "!"
+          ]
+        },
+        "banana": {
+          "score": 0.09821269661188126,
+          "rank": 68226,
+          "top1": false,
+          "top5": false,
+          "peak_pos": 35,
+          "topk": [
+            "\u65f6\u65e5",
+            "arder",
+            "primarily",
+            "geschrieben",
+            "ews",
+            "\u200b\u200b",
+            "unca",
+            "\u0435\u0447\u0430\u0442"
+          ]
+        },
+        "clock": {
+          "score": 0.07685236632823944,
+          "rank": 2028,
+          "top1": false,
+          "top5": false,
+          "peak_pos": 40,
+          "topk": [
+            "_",
+            "-",
+            "(",
+            "/",
+            "_",
+            ",",
+            "...",
+            "."
+          ]
+        }
+      },
+      "post_fusion": {
+        "dog": {
+          "score": 5.46875,
+          "rank": 1288,
+          "top1": false,
+          "top5": false,
+          "peak_pos": 234,
+          "topk": [
+            "grin",
+            "gradient",
+            "\u4e09\u4efd",
+            "groove",
+            "\u58eb",
+            "\u68af\u5ea6",
+            "gracia",
+            "triple"
+          ]
+        },
+        "cat": {
+          "score": 5.15625,
+          "rank": 1947,
+          "top1": false,
+          "top5": false,
+          "peak_pos": 37,
+          "topk": [
+            "Bel",
+            "bel",
+            "-bel",
+            "be",
+            "ber",
+            "Bel",
+            "bee",
+            "bel"
+          ]
+        },
+        "animal": {
+          "score": 8.25,
+          "rank": 23,
+          "top1": false,
+          "top5": false,
+          "peak_pos": 214,
+          "topk": [
+            "stup",
+            "for",
+            "_grad",
+            ".gr",
+            "gradient",
+            "grande",
+            "\u5473\u7684",
+            "_gradient"
+          ]
+        },
+        "car": {
+          "score": 8.8125,
+          "rank": 35,
+          "top1": false,
+          "top5": false,
+          "peak_pos": 186,
+          "topk": [
+            "Female",
+            "bling",
+            "outside",
+            "VT",
+            "neos",
+            "Female",
+            "NT",
+            "nc"
+          ]
+        },
+        "banana": {
+          "score": 4.9375,
+          "rank": 2466,
+          "top1": false,
+          "top5": false,
+          "peak_pos": 37,
+          "topk": [
+            "Bel",
+            "bel",
+            "-bel",
+            "be",
+            "ber",
+            "Bel",
+            "bee",
+            "bel"
+          ]
+        },
+        "clock": {
+          "score": 4.9375,
+          "rank": 2070,
+          "top1": false,
+          "top5": false,
+          "peak_pos": 238,
+          "topk": [
+            "outside",
+            "Gr",
+            "-gr",
+            "outside",
+            "triple",
+            "grin",
+            "outer",
+            "grated"
+          ]
+        }
+      }
+    },
+    "16": {
+      "in_encoder": {
+        "dog": {
+          "score": 0.2910902500152588,
+          "rank": 682,
+          "top1": false,
+          "top5": false,
+          "peak_pos": 14,
+          "topk": [
+            "_",
+            ",",
+            "\"",
+            "-",
+            ".",
+            "(",
+            "/",
+            "_"
+          ]
+        },
+        "cat": {
+          "score": 0.2314707338809967,
+          "rank": 1811,
+          "top1": false,
+          "top5": false,
+          "peak_pos": 53,
+          "topk": [
+            "_",
+            "...",
+            "(",
+            "1",
+            ",",
+            "S",
+            "2",
+            "or"
+          ]
+        },
+        "animal": {
+          "score": 0.38533666729927063,
+          "rank": 1369,
+          "top1": false,
+          "top5": false,
+          "peak_pos": 45,
+          "topk": [
+            "_",
+            "...",
+            "(",
+            "1",
+            ".",
+            "2",
+            "S",
+            "5"
+          ]
+        },
+        "car": {
+          "score": 0.32925039529800415,
+          "rank": 1240,
+          "top1": false,
+          "top5": false,
+          "peak_pos": 51,
+          "topk": [
+            "_",
+            "(",
+            ",",
+            ".",
+            "1",
+            ":",
+            "...",
+            "-"
+          ]
+        },
+        "banana": {
+          "score": -0.11792576313018799,
+          "rank": 21246,
+          "top1": false,
+          "top5": false,
+          "peak_pos": 3,
+          "topk": [
+            "_",
+            "-",
+            "/",
+            ":",
+            "s",
+            "...",
+            "<|endoftext|>",
+            "("
+          ]
+        },
+        "clock": {
+          "score": 0.2339913249015808,
+          "rank": 1222,
+          "top1": false,
+          "top5": false,
+          "peak_pos": 21,
+          "topk": [
+            "_",
+            "-",
+            "(",
+            ":",
+            ".",
+            "/",
+            ",",
+            "<|endoftext|>"
+          ]
+        }
+      },
+      "post_fusion": {
+        "dog": {
+          "score": 4.5,
+          "rank": 5017,
+          "top1": false,
+          "top5": false,
+          "peak_pos": 2,
+          "topk": [
+            "Against",
+            "against",
+            "against",
+            "\u76d8",
+            "\u5bf9\u767d",
+            "\u7968",
+            "\u8d85\u9ad8",
+            "\u043f\u0440\u043e\u0442\u0438"
+          ]
+        },
+        "cat": {
+          "score": 3.5,
+          "rank": 14269,
+          "top1": false,
+          "top5": false,
+          "peak_pos": 180,
+          "topk": [
+            "Gr",
+            ".Gr",
+            "_gr",
+            "-gr",
+            "\u84ec",
+            ".gr",
+            "\u82b3\u8349",
+            "\u8349"
+          ]
+        },
+        "animal": {
+          "score": 7.8125,
+          "rank": 63,
+          "top1": false,
+          "top5": false,
+          "peak_pos": 133,
+          "topk": [
+            "\u5176\u8eab",
+            "\u683c\u91cc",
+            "\u6743\u4eba",
+            "sample",
+            "en",
+            "\u683c\u6797",
+            "\u0413\u0440\u0443",
+            "portfolio"
+          ]
+        },
+        "car": {
+          "score": 8.6875,
+          "rank": 17,
+          "top1": false,
+          "top5": false,
+          "peak_pos": 61,
+          "topk": [
+            "uko",
+            "outsiders",
+            "bling",
+            "Against",
+            "\u5916\u9762",
+            "\u7968",
+            "flt",
+            "looking"
+          ]
+        },
+        "banana": {
+          "score": 4.15625,
+          "rank": 9439,
+          "top1": false,
+          "top5": false,
+          "peak_pos": 151,
+          "topk": [
+            "Ke",
+            "Ke",
+            "neos",
+            "ke",
+            "\u5473\u7684",
+            "uid",
+            "\u7559\u8a00",
+            "FTC"
+          ]
+        },
+        "clock": {
+          "score": 4.84375,
+          "rank": 3872,
+          "top1": false,
+          "top5": false,
+          "peak_pos": 155,
+          "topk": [
+            "double",
+            "ouble",
+            "Double",
+            "double",
+            "Double",
+            "-double",
+            ".double",
+            "(double"
+          ]
+        }
+      }
+    }
+  }
+}

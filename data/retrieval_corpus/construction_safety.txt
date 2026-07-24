@@ -1,0 +1,421 @@
+On the third-floor slab, a worker leans over the unguarded edge without a harness lanyard clipped on.
+CCTV shows a labourer carrying his hard hat by the chin strap instead of wearing it on his head.
+CCTV shows a worker stepping through a pile of discarded formwork, several boards still bristling with upright nails left unremoved.
+Drone footage shows two workers near the tower crane base with bare heads, no helmets in sight.
+A supervisor is seen wearing a hard hat pushed back off his forehead, chin strap dangling loose.
+Drone footage shows loose brick fragments falling from the fourth floor with no debris netting or catch platform installed below.
+监控画面显示一名工人在钢筋区行走时没有佩戴安全帽。
+一名工人把安全帽挂在手臂上,并未戴在头上作业。
+A worker on the ground floor is wearing a plain grey t-shirt with no hi-vis vest inside the active work zone.
+CCTV shows a labourer handling rebar with bare hands, no gloves, near a stack of freshly cut steel bars.
+A worker steps off the scaffold in sandals instead of safety boots, ankles fully exposed.
+Drone footage shows three workers unloading a delivery truck without hi-vis vests, blending into the background.
+A worker mixing cement is seen without gloves, hands directly in contact with wet concrete.
+一名工人未穿反光衣就进入施工作业区,身影在监控中几乎无法辨认。
+工人赤手搬运钢筋,没有佩戴手套。
+CCTV shows a roofer walking along the ridge line with a harness on but the lanyard hanging free, unclipped.
+A worker on the formwork platform at height has no safety belt at all, only a hard hat.
+CCTV shows a worker's self-retracting lifeline device with a visibly frayed cable, still in use at height without being tagged out.
+Drone footage shows two workers relocating a ladder while a third worker remains standing near its top rung.
+一名工人在三楼平台边缘作业,安全带的挂钩并未扣在锚点上。
+一名工人的安全绳固定点绑在未经检验的临时栏杆上,而非专用锚点。
+Lifting is in progress: the tower crane hoists a pallet of blockwork past the second floor while two workers stand directly beneath.
+CCTV shows a chain block lowering a steel beam while a worker reaches up to guide it with his bare hand less than half a metre away.
+CCTV shows a stack of scaffold tubes stored vertically without strapping, leaning against the site cabin wall.
+Drone footage shows a group of workers sheltering from rain under an unsecured tarpaulin lean-to rigged against a shipping container.
+A worker stands within one metre of a suspended concrete bucket as it is being lowered onto the slab.
+The site hoist cage rises past the fourth floor with a worker leaning out to grab a dropped tool from the shaft opening.
+监控画面显示一名工人在无人监督的情况下操作液压剪切割钢筋,手部靠近刀口。
+无人机画面显示一辆装载机在场地内高速行驶,未按限速标志减速。
+工地临时办公室外堆放着多个未加盖的化学品桶,标签已经脱落。
+Verdict: a worker standing directly under a suspended load without a hard hat is an immediate stop-work hazard.
+Verdict: any worker standing within one metre of or directly beneath a suspended load must be removed from the lifting path before work continues.
+Verdict: a harness worn but not clipped to an anchor point provides no fall protection and must be treated as a fall hazard.
+Verdict: a worker at height with an unclipped harness lanyard is an immediate fall hazard requiring work stoppage.
+Verdict: removing a hard hat inside an active lifting zone, even briefly, is a PPE violation requiring correction on the spot.
+This is a SAFETY cue: a worker guiding a suspended load with a bare hand at close range must be stopped immediately.
+判定:工人在吊运作业下方且未戴安全帽,属于必须立即停工处理的危险情况。
+判定:安全带未扣入锚点等同于没有防坠落保护,应视为高处作业风险。
+A PPE cue is any worker missing a hard hat, hi-vis vest, gloves, or safety boots while inside the active zone.
+A hard-hat cue distinguishes a helmet worn on the head from one merely carried, held, or set aside nearby.
+A harness cue requires the lanyard clip to be physically connected to an approved anchor point, not just worn loosely.
+A load-proximity cue applies to any worker within one metre of, or directly under, a load that is being lifted or suspended.
+安全帽提示区分了安全帽是否真正戴在头上,而非仅仅拿在手中或放在一旁。
+安全带提示要求挂钩必须实际扣入合格的锚点,而不仅仅是系在身上。
+CLEAR: all workers on the platform wear hard hats and hi-vis vests, harness lanyards clipped to the anchor.
+Negative case: the worker sets his hard hat on the ground only after stepping fully outside the marked work zone.
+No PPE violation: the labourer is wearing gloves, boots, and a buttoned hi-vis vest throughout the lifting operation.
+CLEAR: the crane operator has paused the lift and sounded the horn, no worker remains beneath the suspended load.
+清空判定:平台上所有工人均佩戴安全帽和反光衣,安全带挂钩已扣入锚点。
+无提示:工人的安全带扣钩牢固地挂在锚点上,高处作业符合规范。
+worker without a hard hat near the hoist
+hard hat carried in hand, not worn
+worker missing hi-vis vest in active zone
+bare hands on freshly cut rebar
+harness worn but lanyard unclipped
+worker directly beneath a suspended load
+worker within one metre of a lifted pallet
+chain block lowering a beam over a worker's head
+unclipped safety belt at height
+labourer guiding a load with a bare hand
+CCTV shows a worker propping open a fire-rated stairwell door with a brick, defeating the door's self-closing function.
+A drone pass reveals the lifting zone has no temporary fencing at all, pedestrians walking freely beneath the crane's swing arc.
+Drone footage shows a stack of used timber pallets piled directly in front of the site's only fire hydrant access point.
+CCTV shows a worker splicing a damaged extension cable with insulation tape instead of taking it out of service.
+A permanent concrete wall stands beside the pit, but no temporary fencing has been erected around the open excavation itself.
+A site vehicle is parked on a visible slope near the excavation edge with no wheel chocks in place.
+监控画面显示一名工人用砖块顶住防火门,使楼梯间的防火门始终无法自动关闭。
+无人机画面显示一辆车辆停放在开挖边缘附近的斜坡上,车轮没有使用轮挡。
+围栏之间留有明显缺口,工人可直接穿过进入吊运作业区。
+CCTV shows a rigging crew hooking a load directly onto a lifting hook with no master shackle or ring in between.
+A worker is seen attaching a sling straight to the crane hook's bare tip, bypassing the required master link entirely.
+Drone footage shows two chains running to the load at a visible angle, clearly not vertical to the ground.
+CCTV shows the lifting chain sloped roughly forty-five degrees from the hook down to the load, far from vertical.
+A rigger connects a wire rope directly around the hook shank instead of using an approved shackle.
+The inspector flags a sling looped straight over the hook with no ring, a prohibited direct connection.
+监控显示吊运钢丝绳直接勾挂在吊钩上,没有使用卸扣或吊环。
+吊链明显倾斜,并非与地面垂直,存在滑脱风险。
+CCTV shows a suspended steel bundle tilting noticeably to one side as it clears the second floor.
+A load of formwork panels sways and tips as the crane operator swings the boom too quickly.
+Drone footage shows a pallet of bricks visibly unbalanced, one corner riding higher than the other mid-lift.
+CCTV shows a concrete bucket swinging wide, off-centre from the hook, as it is lowered toward the pour site.
+一段吊运画面显示钢构件明显倾斜,一侧明显高于另一侧。
+Verdict: a load hooked directly without a master shackle or ring is an improper slinging hazard and must not proceed.
+Verdict: a lifting chain that is not vertical to the ground indicates unbalanced rigging and risks the load slipping free.
+This is a SAFETY cue: an open excavation or lifting zone with no temporary hi-vis fencing must be cordoned off before work resumes.
+Verdict: a visibly tilted or unbalanced suspended load must be lowered and re-rigged before the lift continues.
+This is a SAFETY-CRITICAL cue: direct hook-to-load connection without a shackle is prohibited and the lift must stop.
+判定:吊索直接挂在吊钩上而未使用卸扣,属于违规吊挂,必须立即停止作业。
+判定:吊运区域未设置连续围栏,属于必须立即整改的安全隐患。
+A fencing cue distinguishes temporary hi-vis fencing, made of orange or red-and-white blocks, cones with tape, or gates, from permanent walls or railings, which do not count as fencing.
+A vertical-chain cue means the lifting chain or cable must hang perpendicular to the ground; any visible slope indicates improper rigging.
+A rigging cue requires a master shackle, ring, or link between the hook and the load; a sling or chain hooked directly onto the load is a prohibited connection.
+A load-balance cue flags any suspended load that visibly tilts, tips, or hangs off-centre from the hook during a lift.
+围栏提示区分了临时反光围栏(如橙色或红白相间的围挡、带警示带的雪糕筒或闸门)与永久性墙体或护栏,后者不计入合规围栏。
+垂直链条提示是指吊运链条或钢缆必须与地面垂直,任何明显倾斜都表示吊挂方式不当。
+CLEAR: the excavation is fully enclosed by continuous orange hi-vis fencing with a locked gate at the single access point.
+Negative case: the lifting chain hangs perfectly vertical from the hook to the load, showing no visible slope.
+No rigging violation: the sling is connected through a master ring, correctly linking the hook to the load.
+CLEAR: the suspended pallet hangs level and centred beneath the hook throughout the lift.
+清空判定:开挖区四周设有连续的橙色临时围栏,出入口设有闸门。
+无提示:吊链自吊钩至载荷保持垂直,没有任何倾斜迹象。
+lifting zone with no temporary fencing
+gap left open between hi-vis barrier blocks
+load hooked directly without a master shackle
+lifting chain sloped, not vertical to the ground
+suspended steel bundle tilting to one side
+sling looped straight over the crane hook
+unbalanced pallet riding higher on one corner
+cones set out without connecting tape
+CCTV shows a stack of empty pallets sitting directly beneath the crane's lifting path, blocking the drop zone.
+Drone footage shows a row of rubbish bins parked under the swing radius of the tower crane's jib.
+A ventilation duct has been left across the ground-level lifting corridor, right where the load is due to be set down.
+CCTV shows loose debris and offcuts scattered across the intended landing spot for the suspended load.
+A stack of storage bins sits in the path between the hoist and the material laydown area, forcing workers to detour.
+仓储区通道上堆放着杂物,正好挡在吊运路径上。
+吊运落地点堆满了废弃模板,妨碍了正常卸货。
+CCTV shows a worker climbing directly onto a load of steel bars while it is still suspended from the crane hook.
+Drone footage shows a labourer riding on top of a pallet of blockwork as it is hoisted up the building's face.
+A worker steps onto a suspended timber bundle to steady it by hand while it swings mid-air.
+一名工人爬上仍在吊运中的钢材捆,随载荷一同升高。
+CCTV shows the outrigger beam fully extended with the yellow-and-white warning triangle correctly displayed at its base.
+Drone footage shows a mobile crane's outrigger pad sitting on a loose timber plank instead of a proper spreader mat, with no warning triangle in place.
+CCTV shows an outrigger leg only partially extended, leaning on bare soil with no ground support plate underneath.
+一台流动式起重机的支腿已完全展开,底部正确摆放了黄白警示三角标志。
+另一台起重机的支腿仅垫着一块木板,没有铺设专用垫板,也未设置警示标志。
+CCTV shows a worker crossing rutted, uneven ground littered with formwork offcuts near the site access ramp.
+Drone footage reveals the haul road pitted with deep puddles and loose gravel, causing a wheelbarrow to tip.
+A labourer trips over a coil of unsecured cable lying across the walkway near the batching plant.
+地面坑洼不平,散落着模板废料,工人经过时险些绊倒。
+CCTV shows a skip bin overflowing with construction debris, cardboard and offcuts spilling onto the ground around it.
+Drone footage shows rubbish piled well above the rim of the site waste bin, blocking the adjacent walkway.
+A pile of packaging waste has accumulated beside the bin because it has not been emptied for days.
+垃圾桶内的建筑废料已堆满溢出,纸箱和碎料散落在周边地面。
+CCTV shows a section of yellow barrier lying flat on the ground instead of being stood upright around the hazard area.
+Drone footage shows yellow barriers stacked against a wall rather than erected around the open trench they were meant to protect.
+围栏黄色护栏东倒西歪地堆放在一旁,并未按要求竖立围护危险区域。
+CCTV shows the platform railing along the river-facing edge with no lifebuoy mounted, only an empty bracket.
+Drone footage shows a lifebuoy sitting on the ground beside the railing instead of hung on its designated mounting point.
+救生圈掉落在栏杆旁的地面上,并未挂回指定的安装支架上。
+Verdict: obstructing the lifting path with bins, ducts, or pallets forces an unsafe last-second dodge and must be cleared before lifting resumes.
+Verdict: a worker riding or climbing on a suspended load is an extreme fall and crush hazard requiring immediate stop-work.
+This is a SAFETY cue: an outrigger without a spreader mat and warning triangle risks crane instability and must be corrected before lifting.
+Verdict: rubbish overflowing a site bin onto a walkway is a trip and fire-load hazard requiring immediate housekeeping.
+Verdict: yellow barriers lying flat instead of erected upright fail to protect the hazard zone and must be re-set immediately.
+This is a SAFETY cue: a missing lifebuoy on a waterside railing leaves no rescue equipment available in an emergency.
+判定:吊运路径上堆放杂物,工人卸货时被迫临时避让,属于必须立即清理的安全隐患。
+判定:工人攀爬正在吊运的载荷,属于极端危险行为,须立即停止作业处理。
+判定:起重机支腿未铺设垫板且未设置警示三角标志,存在整机失稳的风险。
+An obstruction cue is any duct, bin, pallet, or pile of debris left inside the marked lifting path or drop zone.
+A load-climbing cue applies whenever a worker stands, sits, or rides on a load that is still suspended or being hoisted.
+An outrigger cue requires a proper spreader mat under each extended leg with the yellow-and-white warning triangle displayed; a leg on bare ground or a loose plank fails the cue.
+A housekeeping cue covers any waste bin overflowing past its rim or debris left uncleared on a walkway or work platform.
+A barrier cue requires yellow barriers to be stood upright and continuous around a hazard; barriers lying flat or stacked aside do not count as erected.
+吊运路径障碍提示是指风管、垃圾桶、卡板或废料堆放在标记的吊运路径或卸货区内。
+支腿提示要求每个展开的支腿下方铺设专用垫板并显示黄白警示三角标志,支腿垫木板或直接落地均不合格。
+CLEAR: the lifting path is fully clear from the hook to the drop zone, no bins, ducts, or debris in the way.
+Negative case: the load has already been set down and secured before the labourer approaches to unhook the sling.
+No load-climbing violation: the worker waits at ground level until the pallet is fully lowered before touching it.
+CLEAR: both outrigger legs rest on proper spreader mats with warning triangles clearly displayed.
+清空判定:吊运路径畅通无阻,从吊钩到卸货区之间没有任何障碍物。
+无提示:载荷已完全落地并固定后,工人才上前解开吊索。
+bins parked under the crane's swing radius
+worker climbing onto a suspended load
+outrigger leg resting on bare soil, no spreader mat
+missing warning triangle at the outrigger base
+rubbish bin overflowing onto the walkway
+yellow barrier lying flat instead of erected
+lifebuoy missing from its railing bracket
+debris scattered across the lifting drop zone
+uneven ground littered with formwork offcuts
+CCTV shows an open excavation over two metres deep with no shoring, timbering, or trench box installed along either wall.
+Drone footage shows a trench running beside the site office with vertical unsupported earth walls and no bracing.
+A worker climbs down into a deep trench using the sloped soil as steps, no ladder, no shoring visible.
+开挖沟槽深逾两米,两侧土壁未加任何支撑或护板。
+一名工人踩着裸露的泥壁爬入未支撑的深沟,现场没有梯子。
+CCTV shows a floor opening on the second level with no guardrail or cover, a stack of materials placed right beside the drop.
+Drone footage shows an unguarded edge along the building's north face where formwork has been stripped, no railing installed.
+A worker walks within arm's reach of an open floor penetration with no barrier or warning tape around it.
+二楼楼板开口周围没有护栏或盖板,材料就堆放在洞口旁边。
+建筑北侧边缘的模板已拆除,但护栏尚未安装,存在坠落风险。
+CCTV shows a worker standing on the very top rung of an extension ladder to reach a light fixture, well above the recommended stand-off.
+Drone footage shows a ladder leaning against the scaffold at a shallow angle, feet not secured, wobbling as the worker climbs.
+A labourer over-reaches sideways from a ladder to grab a tool, one foot lifting off the rung entirely.
+一名工人站在梯子最顶端伸手作业,远超安全站立高度。
+梯子架设角度过陡且底部未固定,工人攀爬时明显晃动。
+CCTV shows a scaffold platform on the third level with several planks missing, leaving a gap wide enough to step through.
+Drone footage shows a scaffold lacking toe-boards along its outer edge, tools sitting loosely near the open lip.
+A worker walks across a scaffold deck where two adjacent boards are not properly overlapped, creating a trip hazard.
+脚手架第三层缺少多块脚手板,留下的空隙足以让人踏空。
+脚手架外侧未设置踢脚板,工具随意放置在开口边缘。
+CCTV shows a cluster of exposed rebar starters protruding from a footing with no protective caps fitted.
+Drone footage shows a worker walking past a forest of uncapped vertical rebar dowels near the column bases.
+一处基础钢筋外露,顶端没有安装防护帽,存在刺伤风险。
+CCTV shows standing water pooled around a temporary distribution board with a power cable submerged beneath the surface.
+Drone footage shows a live extension cable running directly through a puddle near the site generator.
+A worker steps through standing water while carrying a power tool, the cable trailing into the same puddle.
+一处配电箱周围积水严重,一根电缆浸没在水中。
+CCTV shows a section of exposed live wire hanging from a temporary distribution point, insulation stripped bare.
+CCTV shows welding sparks landing near an open drum of solvent stored just metres from the hot works area.
+Drone footage shows a worker grinding steel with sparks showering onto a pile of timber offcuts and cardboard packaging.
+A welder works beside a stack of gas cylinders with no fire blanket or spark screen in place.
+电焊作业产生的火花飞溅到附近的木料废料堆上,周围没有任何防护屏。
+CCTV shows a fire extinguisher mounted on the wall completely blocked by a stack of stored materials in front of it.
+Drone footage shows a fire extinguisher cabinet hidden behind parked wheelbarrows, inaccessible in an emergency.
+消防灭火器前方堆满了物料,一旦发生火情将无法及时取用。
+Verdict: an open excavation deeper than 1.2 metres without shoring or a trench box is an immediate cave-in hazard requiring work stoppage.
+Verdict: an unguarded floor opening or edge with no railing or cover is a fall hazard that must be barricaded before any work continues nearby.
+This is a SAFETY cue: a worker over-reaching from a ladder risks a fall and the ladder must be repositioned before continuing.
+Verdict: missing planks or toe-boards on a scaffold platform create both a fall-through and falling-object hazard requiring immediate repair.
+Verdict: exposed rebar without protective caps is an impalement hazard and caps must be fitted before the area is reopened.
+This is a SAFETY-CRITICAL cue: a live cable submerged in standing water is an electrocution hazard and power must be isolated immediately.
+Verdict: welding sparks near stored flammables or gas cylinders is a fire hazard requiring an immediate spark screen or relocation.
+This is a SAFETY cue: a blocked fire extinguisher leaves no usable fire response and must be cleared immediately.
+判定:开挖深度超过一点二米且未设支撑,属于随时可能坍塌的安全隐患,必须立即停工。
+判定:楼板开口或边缘未设护栏,属于坠落风险,须立即设置围挡。
+判定:电缆浸泡在积水中,属于触电风险,必须立即断电处理。
+判定:焊接火花靠近易燃物或气瓶存放处,属于火灾隐患,须立即设置防护或转移物料。
+An excavation cue is any trench or pit deeper than about 1.2 metres lacking shoring, timbering, or a trench box along its walls.
+An unguarded-edge cue applies to any floor opening, stripped formwork edge, or level change with no railing, cover, or barrier tape.
+A ladder cue flags unsafe setup, including a shallow leaning angle, unsecured feet, or a worker standing on the top rungs or over-reaching sideways.
+A scaffold cue covers missing planks, gaps between boards, or the absence of toe-boards along an open edge.
+A rebar cue applies to any exposed vertical or protruding steel bar without a protective cap fitted to its tip.
+A live-electrical cue is any exposed wire, submerged cable, or power source in contact with standing water.
+A hot-works cue applies when welding, cutting, or grinding sparks fall near flammable materials, solvents, or gas cylinders without a spark screen.
+开挖提示是指深度约超过一点二米、且沟壁没有支撑、护板或护槽的沟渠或坑洞。
+护栏提示适用于任何楼板开口、拆模后暴露的边缘或高差处,且没有护栏、盖板或警示带。
+梯子提示标记不安全的架设方式,包括角度过缓、底部未固定,或工人站在最顶端横向伸手作业。
+CLEAR: the trench is fully shored with a trench box installed along both walls before any worker enters.
+Negative case: the floor opening is covered with a rated timber hatch and surrounded by continuous guardrail.
+CLEAR: the ladder is tied off at the top, footed by a second worker, and set at the correct four-to-one angle.
+No scaffold violation: every plank is fully decked and toe-boards run continuously along the open edge.
+CLEAR: all exposed rebar starters on the footing are fitted with orange protective caps.
+Negative case: the distribution board sits on a raised platform well clear of the pooled water nearby.
+清空判定:沟槽两侧已安装护槽支撑,工人进入前经过检查确认安全。
+无提示:楼板开口已用合格盖板覆盖,并设有连续护栏围护。
+open trench with no shoring or trench box
+unguarded floor opening near stripped formwork
+worker over-reaching from the top rung of a ladder
+scaffold plank missing, gap wide enough to fall through
+exposed rebar dowels with no protective caps
+live cable submerged in standing water
+welding sparks near stored solvent drums
+fire extinguisher blocked by stacked materials
+scaffold platform lacking toe-boards
+worker climbing an unsecured ladder over-reaching sideways
+CCTV shows a spoil pile heaped directly at the lip of an open trench, soil already sliding back into the excavation.
+Drone footage shows excavated material stacked less than half a metre from the trench edge, adding surcharge weight on the unsupported wall.
+挖出的泥土直接堆在沟槽边缘,已有部分泥土滑落回沟内。
+CCTV shows a dump truck reversing toward the site gate with no banksman present and no reversing alarm audible.
+Drone footage shows an excavator swinging its bucket while a labourer walks directly through the machine's slew radius unnoticed.
+A wheel loader backs up across the yard with its beeper sounding but no one guiding it, a worker crossing behind unaware.
+自卸卡车正在倒车驶向大门,现场没有指挥员,也听不到倒车警报声。
+一名工人在挖掘机回转范围内行走,司机似乎并未注意到他。
+CCTV shows dry demolition debris being broken up with no water spray, a visible dust cloud drifting toward the site boundary.
+Drone footage shows a concrete cutting operation raising thick dust with no suppression hose connected nearby.
+切割混凝土时扬起大量粉尘,现场没有开启水雾抑尘系统。
+CCTV shows a stack of steel pipes leaning unevenly against a fence, one end resting on loose bricks.
+Drone footage shows precast concrete panels stored upright without bracing, tilting slightly in the wind.
+A pile of timber formwork is stacked well above head height with no strapping, swaying as workers pass close by.
+钢管随意斜靠在围栏上,一端垫着松动的砖块,极不稳固。
+预制混凝土板未加支撑直立堆放,受风力影响略有倾斜。
+CCTV shows a worker operating an angle grinder on steel without safety glasses, sparks flying toward his unprotected face.
+Drone footage shows a labourer using a cut-off saw with no ear protection, standing beside a running generator.
+一名工人使用角磨机切割钢材时未戴护目镜,火花直接飞向面部。
+工人操作切割锯时没有佩戴耳塞,机器噪音很大。
+CCTV shows stacked materials completely blocking the designated emergency exit door on the ground floor.
+Drone footage shows scaffolding erected directly across a fire escape route, leaving no clear path in an emergency.
+紧急出口被堆放的物料完全挡住,一旦发生火警将无法及时疏散。
+CCTV shows a worker entering a manhole chamber alone with no one stationed at the surface as a watcher.
+CCTV shows a worker running a portable generator inside a poorly ventilated store room with the door shut.
+监控画面显示一名工人独自在偏僻的仓储区作业,身上未携带任何通讯设备。
+Verdict: a spoil pile stacked at the trench edge adds dangerous surcharge and must be relocated at least the trench depth away.
+Verdict: a reversing vehicle with no banksman and no working alarm is a struck-by hazard requiring an immediate halt.
+This is a SAFETY cue: a worker inside an excavator's slew radius must be stopped and moved clear before the machine resumes swinging.
+Verdict: dry cutting or demolition without water suppression generates a respiratory hazard and must be halted until suppression is active.
+This is a SAFETY cue: materials stacked unstably against a fence or wall risk a sudden collapse and must be re-stacked and secured.
+Verdict: cutting or grinding without eye or ear protection is a PPE violation requiring the worker to stop until properly equipped.
+This is a SAFETY-CRITICAL cue: a blocked emergency exit must be cleared immediately, this is a life-safety violation.
+Verdict: confined-space entry without a dedicated watcher at the surface is prohibited and must be stopped immediately.
+判定:挖出的泥土堆放在沟槽边缘,增加了额外荷载,必须移至安全距离以外。
+判定:车辆倒车时没有指挥员且警报未响,属于碰撞风险,须立即停止作业。
+判定:工人未佩戴护目镜进行切割作业,属于个人防护违规,应立即停止并配备防护装备。
+判定:工人独自进入受限空间且地面无人监护,属于禁止行为,必须立即制止。
+A spoil-pile cue is any excavated material heaped within roughly one trench-depth of the excavation's edge.
+A banksman cue applies to any reversing plant or dump truck operating without a dedicated ground guide and an audible reversing alarm.
+A swing-radius cue means a worker is standing or walking within the slew or working radius of an operating excavator or crane.
+A dust-suppression cue covers any dry cutting, grinding, or demolition activity producing visible dust with no water spray in use.
+An unstable-stacking cue applies to materials piled, leaned, or stored without bracing, strapping, or a stable base.
+A hearing-and-eye-protection cue applies when a worker performs cutting, grinding, or drilling without safety glasses or ear protection fitted.
+弃土堆提示是指挖出的泥土堆放距离沟槽边缘不足约一个沟槽深度的范围内。
+指挥员提示适用于任何倒车中的机械或卡车,现场既没有专职指挥员也没有可听见的倒车警报。
+CLEAR: the spoil pile is stockpiled well beyond the trench depth, with no soil sliding back toward the excavation.
+Negative case: the dump truck reverses slowly with a banksman guiding from a safe position and the alarm sounding continuously.
+CLEAR: the excavator's swing radius is fully cordoned off and no worker is present within the marked zone.
+No dust violation: the demolition crew has connected a water suppression hose, keeping visible dust to a minimum.
+CLEAR: the pipe stack rests on timber dunnage with strapping securing every layer, no leaning observed.
+Negative case: both workers are wearing safety glasses and ear defenders throughout the grinding operation.
+清空判定:弃土堆放位置远离沟槽边缘,没有泥土滑落的迹象。
+无提示:卡车倒车时有指挥员在安全位置引导,警报声持续响起。
+spoil pile heaped at the trench edge
+dump truck reversing with no banksman
+worker inside the excavator's swing radius
+dry cutting with visible dust and no water spray
+steel pipes stacked unevenly against a fence
+worker grinding steel with no safety glasses
+emergency exit blocked by stacked materials
+confined-space entry with no watcher at the surface
+worker using a cut-off saw with no ear protection
+timber formwork stacked above head height, unstrapped
+At dawn, the site is still quiet as a lone night-shift worker checks the fencing around the excavation under floodlights.
+During the midday concrete pour, dozens of workers move around the pump line as the site engineer scans for anyone standing under the boom.
+On a wet morning after overnight rain, a worker crosses a muddy, rutted access road carrying a load of rebar, feet sliding slightly.
+Drone footage over the whole site at dusk shows the tower crane parked with its jib locked, no lifting activity underway.
+During a hot afternoon, a worker pauses in the shade near the water station, hard hat off, hi-vis vest unzipped, resting briefly outside the active zone.
+清晨工地仍然安静,夜班工人正借助泛光灯检查开挖区周围的围栏。
+午间浇筑混凝土时,数十名工人在泵管周围忙碌,工程师留意是否有人站在泵管臂下方。
+雨后清晨,一名工人踩着泥泞不平的便道搬运钢筋,脚下略有打滑。
+Verdict: a worker resting outside the marked active zone with PPE removed is acceptable as long as no lifting or hot works is underway nearby.
+CLEAR: the crane is parked and locked with the jib secured, no suspended load and no workers beneath it at dusk.
+判定:工人在标记的作业区之外临时休息、暂时摘下防护装备,只要附近没有吊运或动火作业即属于可接受情形。
+worker resting outside the active zone during a break
+tower crane parked and locked at end of shift
+muddy access road after overnight rain
+CCTV shows a worker on a scissor lift platform with the guardrail gate left open and no harness clipped to the anchor point.
+Drone footage shows a mobile elevated work platform raised to full height with three workers aboard, exceeding its rated occupancy.
+A worker operates a boom lift close to overhead power lines with no spotter watching the clearance distance.
+The crane's load chart indicator shows the rigger attempting to lift a load beyond the rated capacity for the current boom angle.
+CCTV shows a tag line hanging unused while the load spins freely as it is hoisted past the fourth floor.
+Drone footage shows the crane still lifting during a gusty spell, the anemometer reading above the posted wind limit for the boom length.
+一名工人在剪叉式升降平台上作业,护栏门敞开着,安全带也未扣入锚点。
+无人机画面显示高空作业车已升至最高位置,平台上多站了一人,超出额定载重人数。
+CCTV shows a forklift operator driving without a seatbelt, forks raised well above the recommended travel height.
+Drone footage shows a telehandler lifting a work cage that is not a certified personnel basket, two workers standing inside.
+A worker refuels a generator with the engine still running, fuel splashing near a nearby ignition source.
+叉车司机未系安全带,货叉在行驶时抬升过高,存在倾覆风险。
+一台伸缩臂叉装车正在吊运一个未经认证的作业吊笼,笼内站着两名工人。
+CCTV shows a temporary electrical panel with its cover door left open, live terminals exposed at chest height.
+Drone footage shows extension cords daisy-chained across a wet section of the yard, connectors sitting in a puddle.
+配电箱的箱门敞开着,带电端子暴露在外,高度正好在人体胸部位置。
+CCTV shows a worker breaking up material suspected to contain asbestos without any wetting or sealed enclosure in place.
+A labourer chips away at old insulation board with no respirator, dust visibly rising around his face.
+疑似含石棉的材料在未采取湿润或封闭措施的情况下被直接敲碎处理。
+CCTV shows a pile-driving rig hammering steel sheet piles while nearby workers wear no hearing protection at all.
+Drone footage shows a worker standing unprotected beside a running compressor for an extended period, no earmuffs visible.
+打桩机持续作业产生巨大噪音,附近工人没有佩戴任何听力防护装备。
+CCTV shows a roof worker walking along an unprotected leading edge with no edge protection or lifeline system rigged.
+Drone footage shows a skylight opening on the roof left uncovered, indistinguishable from the surrounding surface.
+屋顶边缘没有设置任何防护栏或生命线系统,工人正沿边缘行走。
+一处天窗开口未加盖板,与周围屋面几乎无法区分,极易踏空。
+CCTV shows the night shift work area lit by a single failed floodlight, workers moving in near darkness near the excavation.
+Drone footage taken after dark shows a stretch of scaffold access completely unlit, no torch or headlamp in use.
+夜班施工区域仅有一盏损坏的泛光灯,工人在开挖区附近的昏暗环境中作业。
+CCTV shows a freshly mopped section of the site office floor with no wet-floor warning sign displayed.
+A worker slips slightly on a section of walkway still wet from pressure washing, no cone or sign placed nearby.
+刚清洗过的通道地面湿滑,现场没有摆放警示牌。
+CCTV shows the permit-to-work board at the site entrance with no active permits displayed despite ongoing hot works nearby.
+Drone footage shows a toolbox-talk sign-in sheet left blank for the day even though multiple crews are on site.
+现场许可证公示栏空白,尽管附近正在进行动火作业。
+CCTV shows a gap cut into the site security fencing near the material lay-down area, unsecured overnight.
+Drone footage shows the site gate propped open with a brick, no security personnel stationed nearby after hours.
+工地围栏被剪开一道缺口,材料堆放区在夜间处于无人看管状态。
+CCTV shows a worker entering a below-ground chamber with no gas detector clipped to his vest before descending.
+工人进入未经通风检测的地下管道内作业,现场没有配备应急逃生绳。
+CCTV shows the first-aid station cabinet open and mostly empty, missing bandages and burn dressings.
+急救箱柜门敞开,里面的绷带和烧伤敷料几乎已用完。
+Verdict: a worker on an elevated platform without the harness clipped and the guardrail gate closed must stop work immediately.
+Verdict: exceeding the rated occupancy or load capacity of a mobile elevated work platform is an overload hazard requiring an immediate reduction.
+This is a SAFETY cue: lifting near overhead power lines without a dedicated spotter risks electrocution and must be halted.
+Verdict: a crane lift exceeding the rated load chart for the current boom angle must be stopped and re-calculated before continuing.
+This is a SAFETY cue: lifting during winds above the posted limit for the boom length risks the load swinging out of control.
+Verdict: an open live electrical panel at working height is a shock hazard and must be closed and locked out immediately.
+This is a SAFETY-CRITICAL cue: breaking up suspected asbestos material without wetting or containment must be stopped and reported at once.
+Verdict: prolonged exposure to pile-driving or compressor noise without hearing protection requires immediate PPE correction.
+This is a SAFETY cue: an unprotected roof leading edge or uncovered skylight is a fall-through hazard requiring immediate barricading.
+Verdict: confined-space entry without a gas detector is prohibited due to the risk of an undetected toxic or oxygen-deficient atmosphere.
+判定:高空作业平台上安全带未扣且护栏门未关闭,必须立即停止作业。
+判定:高空作业车搭载人数超过额定载荷,属于超载,须立即纠正。
+判定:起重作业靠近高压电线且没有专职监护人员,存在触电风险,须立即停止。
+判定:密闭空间作业前未使用气体检测仪,属于禁止行为,必须立即制止。
+判定:疑似石棉材料未采取湿润或封闭处理即被敲碎,须立即停止并上报处理。
+A MEWP cue applies to any elevated platform where the guardrail gate is left open or the harness lanyard is not clipped to the designated anchor.
+An overload cue covers any lifting equipment, platform, or vehicle carrying more people or weight than its rated capacity allows.
+A power-line clearance cue applies to any lifting or elevated work performed near overhead lines without a dedicated spotter maintaining safe distance.
+A hazardous-material cue is any suspected asbestos or similarly hazardous material disturbed without wetting, sealing, or respiratory protection.
+A confined-space cue requires a gas detector and a surface watcher before any worker descends into a below-ground or enclosed chamber.
+高空作业车提示适用于护栏门敞开或安全带未扣入指定锚点的任何升降平台。
+超载提示涵盖任何超出额定载重或载人数量的起重设备、平台或车辆。
+密闭空间提示要求工人下井或进入密闭空间前必须配备气体检测仪并安排地面监护人员。
+CLEAR: the scissor lift guardrail gate is closed and latched, the worker's harness clipped to the designated anchor point.
+Negative case: the boom lift maintains a safe distance from the overhead line, with a spotter continuously monitoring clearance.
+CLEAR: the crane's load chart confirms the lift is well within the rated capacity for the current boom configuration.
+No violation: the electrical panel door is closed, locked, and tagged out before any nearby work begins.
+CLEAR: the worker checks the gas detector reading and confirms a safe atmosphere before entering the confined space, a watcher stationed above.
+清空判定:剪叉式升降平台护栏门已关闭锁好,工人安全带已扣入指定锚点。
+无提示:工人下井前已确认气体检测仪读数正常,地面也安排了监护人员。
+worker on a MEWP with the guardrail gate open
+harness unclipped on a scissor lift platform
+crane lift exceeding the rated load chart
+lifting near overhead power lines with no spotter
+forklift operator driving without a seatbelt
+electrical panel door left open, live terminals exposed
+asbestos-suspect material broken without wetting
+worker beside a pile driver with no hearing protection
+unprotected leading edge on the roof
+uncovered skylight opening on the roof deck
+confined-space entry with no gas detector
+first-aid cabinet nearly empty of supplies
+site security fencing cut open overnight
+CCTV shows pedestrian workers crossing the haul road at an unmarked point, stepping directly into the path of a loaded dump truck.
+工人在未设标记的通行点随意穿越行车道,身旁正好有满载的自卸卡车驶过。
+Verdict: pedestrians crossing a haul road with no marked, segregated walkway are exposed to a struck-by hazard and a crossing point must be established immediately.
+pedestrian crossing a haul road with no marked walkway
+Drone footage shows a row of gas cylinders lying flat and unrestrained against the site fence, valves facing in different directions.
+CLEAR: the gas cylinder storage cage holds every cylinder upright and chained to the rack, with caps fitted over the valves.
+A gas-cylinder storage cue distinguishes cylinders secured upright with valve caps fitted from cylinders left loose, lying down, or leaning unrestrained.
+CCTV shows welding underway at the tank farm with no hot-work permit posted on the site permit board.
+开挖作业已经开始,但现场许可证公示栏上并未张贴开挖许可证。
+Verdict: hot works or excavation proceeding without a displayed, signed permit-to-work must be stopped until the permit is confirmed and posted.
+CCTV shows a worker left suspended in his harness after a fall, hanging against the wall with no rescue kit or ladder brought to the scene for several minutes.
+判定:高处作业若没有预先制定的坠落救援方案和救援装备,悬空的工人将面临悬吊创伤风险,必须在恢复作业前予以纠正。
+CLEAR: the leading edge of the slab is fitted with a full guardrail and toe-board, preventing both falls and dropped tools.

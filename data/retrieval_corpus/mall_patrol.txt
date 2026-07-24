@@ -1,0 +1,418 @@
+On the atrium CCTV, a toddler is wandering alone between two clothing racks, no parent in sight.
+A young boy is discovered alone near the arcade machines, too short to reach the counter, no adult accompanying him.
+CCTV shows a small girl standing by the elevator lobby doors, repeatedly pressing the button and looking around for her parents.
+A little girl in a pink backpack is seen walking alone past the anchor store entrance, clearly separated from her group.
+监控画面显示一名男童独自站在书店入口处哭泣,身边没有大人陪伴。
+一名小女孩在美食广场的餐桌间来回张望,似乎与家人走散了。
+An elderly man repeatedly checks his watch while sitting on the same bench for over twenty minutes, glancing anxiously toward the exits.
+CCTV shows a grey-haired shopper walking into the wrong storefront twice within a few minutes, backing out in confusion each time.
+An elderly shopper is asking a passerby for directions near the cinema entrance, gesturing helplessly.
+A senior man in a cardigan circles the same promotional booth three times, seemingly lost.
+一位老年女士在同一张长椅上反复看表坐了二十多分钟,不时焦虑地望向出口方向。
+监控拍到一名白发顾客两次误入同一家店铺,每次都困惑地退出。
+A shopper is standing in front of the mall directory, tracing the map with a finger, brow furrowed.
+A shopper repeatedly taps the unresponsive kiosk touchscreen, then steps back and looks around for a staff member.
+A woman circles back to the same directory board for the third time, phone in hand.
+A visitor holds a printed map upside down, turning it in circles while standing at a corridor junction.
+监控拍到一名男子扫描指示牌上的二维码后,盯着手机屏幕一脸困惑。
+一对外国游客夫妇走到问询台前,指着地图比划,身后渐渐排起队伍。
+An elderly woman is struggling to carry two large shopping bags, pausing every few steps near the checkout queue.
+CCTV shows a senior man setting down heavy bags every few metres, breathing hard near the travelator.
+A grandmother with several bulging bags is having trouble navigating the narrow gap by a security bollard.
+An old man's bags are slipping from his grip near the gift-wrapping counter, nearly spilling onto the floor.
+一位老太太提着两大袋购物袋艰难前行,在结账队伍附近几次停下喘息。
+一名老先生的购物袋在礼品包装柜台附近几乎脱手滑落。
+A wheelchair user is stuck at a small step near the car park lift lobby, unable to proceed without help.
+CCTV shows a pram wedged against a narrow storefront entrance, the mother unable to push it through.
+A man in a motorized wheelchair is waiting beside the glass balustrade, looking toward the service counter for assistance.
+A stroller catches on a raised threshold near the play area, the child inside starting to fuss.
+一名轮椅使用者被困在停车场电梯厅附近的小台阶前,无法自行通过。
+一辆婴儿车卡在商铺入口狭窄处,母亲怎么推都推不动。
+A shopper's wallet slips from an open handbag near the checkout queue, unnoticed as she walks away.
+CCTV shows a phone sliding off a bench seat in the atrium, the owner already halfway to the escalator.
+A man's keys fall from his jacket pocket near the promotional booth, and he continues walking without noticing.
+A shopping voucher flutters out of a woman's bag near the anchor store entrance, drifting unseen across the floor.
+一名顾客的钱包从敞开的手袋中滑落在结账队伍附近,本人毫无察觉。
+一部手机从中庭长椅上滑落,失主已经走到电梯口都没发现。
+A middle-aged shopper is seated on a bench near the food court, fanning herself and looking pale.
+CCTV shows a man gripping the armrest of a bench near the cinema entrance, breathing unevenly.
+A woman rests her head against the wall near the restroom, eyes closed, looking unwell.
+An elderly shopper sways slightly while seated near the gift-wrapping counter, one hand pressed to his chest.
+一名中年顾客坐在美食广场附近的长椅上不停扇风,脸色发白。
+一位老年顾客坐在礼品包装柜台旁身体微微摇晃,一手按着胸口。
+A customer approaches a cleaning trolley attendant, gesturing urgently while asking for the restroom.
+CCTV shows a visitor stopping several shoppers in a row, apparently asking for directions to the exit.
+A man is looking up and down the concourse, mouthing a store name, clearly searching for a specific shop.
+A woman gestures toward the escalator while asking a security guard how to reach the car park lift lobby.
+一名顾客拦住多名路过的购物者,似乎在打听洗手间的方向。
+一位女士向保安比划着询问如何前往停车场电梯厅。
+A shopping bag splits open near the checkout queue, sending boxes and wrapped items sliding across the tile.
+CCTV shows a paper bag tearing at the handle near the escalator, its contents scattering down the steps.
+A shopper's bag catches on a bollard and rips open, spilling clothing items onto the concourse floor.
+A gift-wrapped box tumbles from an overloaded bag near the promotional booth, rolling toward the fountain.
+一个购物袋在结账队伍附近突然破裂,盒子和包装好的物品散落一地。
+顾客的纸袋提手在电梯口断裂,里面的物品滚落到台阶下。
+A visibly pregnant shopper is resting against the glass balustrade near the atrium, one hand on her lower back.
+CCTV shows an expectant mother easing herself onto a bench near the play area, breathing slowly.
+A pregnant woman pauses at the top of the escalator, gripping the handrail and shifting her weight.
+A heavily pregnant shopper leans against a storefront pillar, looking tired near the checkout queue.
+一名孕妇靠在中庭的玻璃护栏旁休息,一手扶着后腰。
+一位准妈妈在儿童游乐区附近的长椅上缓缓坐下,呼吸有些急促。
+A shopper walks past the same storefront three times, checking a printed unit number against the numbers above the doors.
+A non-English-speaking shopper points at a store name on his phone, showing it to passersby one after another.
+A visitor doubles back at a corridor junction, unsure whether the north wing or south wing leads to the store she wants.
+A shopper asks a passing staff member to point directly to a store on the wall-mounted map, but the staff member is called away mid-explanation.
+一名外国游客拿着翻译软件站在导览指示牌前,一脸茫然地看着促销展台的工作人员。
+一名年长的外国游客在自助导览查询台上输入店铺名称,却始终搜不出结果。
+This is a PROACTIVE-SERVICE cue: a child wandering alone between clothing racks should prompt a guard to approach and help locate the parent.
+Verdict: an elderly shopper circling the same promotional booth repeatedly is a proactive-service trigger, not a security concern.
+This is a service-first trigger: a shopper struggling with heavy bags near the checkout queue should be offered a cart or assistance.
+Verdict: a wheelchair user stuck at a step near the car park lift lobby warrants immediate staff assistance.
+This is a PROACTIVE-SERVICE cue: a dropped wallet unnoticed by its owner should be retrieved and reported to the service counter.
+Verdict: an elderly shopper who has sat down abruptly and looks pale should be checked on promptly.
+This is a service-first cue: a foreign tourist confused at a kiosk should be approached and offered directions.
+Verdict: a pregnant shopper resting against the glass balustrade, breathing heavily, deserves a proactive check-in.
+This is a PROACTIVE-SERVICE cue: a customer repeatedly asking passersby for the restroom should be guided there directly by staff.
+Verdict: a spilled shopping bag with items scattered across the concourse should be cleaned up and the shopper assisted immediately.
+判定:幼童独自在货架间徘徊,属于主动服务提示,保安应上前协助寻找家长。
+这是一个主动服务信号:顾客携带重物在结账队伍附近步履维艰,应主动提供协助。
+判定:孕妇靠着玻璃护栏气喘吁吁,属于需要主动关心的情形。
+这是一个服务优先信号:外国游客在导览指示牌前显得困惑,应主动上前提供指引。
+A proactive-service cue is any observation where a shopper visibly needs help but has not asked for it, such as a lost child, an elderly shopper, or someone with heavy bags.
+A lost-child cue applies when a young child is seen alone or separated from an adult guardian in a busy retail area.
+A lost-shopper cue is triggered when someone repeatedly studies the mall directory, a wayfinding kiosk, or a store map while standing still or backtracking.
+A luggage-difficulty cue covers any shopper visibly struggling to carry bags, packages, or a stroller through a gate, step, or narrow storefront entrance.
+A dropped-item cue is any wallet, phone, or voucher that falls from a shopper's possession without the shopper noticing.
+A faintness cue means a shopper appears pale, sweating, or unsteady while seated or standing still for an extended period.
+走失儿童提示是指儿童在繁忙商场区域内独自出现或与监护人分离的情形。
+无障碍协助提示指顾客明显需要帮助却未主动求助,例如孕妇、轮椅使用者或携带重物的顾客。
+No service cue: the child is holding a parent's hand and walking calmly toward the escalator.
+Negative case: a fit young shopper crosses the atrium quickly without any sign of difficulty or hesitation.
+CLEAR: the elderly shopper checks the directory once, nods, and confidently walks toward the correct storefront.
+No proactive-service trigger: the pregnant shopper is seated comfortably on a bench and not attempting to move.
+Negative case: the wheelchair user glides smoothly through the wide gate near the anchor store without any obstruction.
+清空判定:该顾客步伐轻快,手提小包,没有任何需要协助的迹象。
+无提示:孩子牵着家长的手平静地走向电梯,并未走散。
+toddler wandering alone between clothing racks
+elderly shopper circling the same promotional booth
+shopper studying the mall directory, looking lost
+elderly woman struggling with heavy shopping bags
+wheelchair user stuck at a step near the lift lobby
+wallet slipping unnoticed from an open handbag
+shopper feeling faint on a food court bench
+customer asking for directions to the restroom
+spilled shopping bag with items scattered on the floor
+pregnant shopper resting against the glass balustrade
+foreign tourist confused at a wayfinding kiosk
+stroller wedged against a narrow storefront entrance
+senior shopper pausing repeatedly near the travelator
+child separated from guardian near the anchor store
+dropped phone sliding off an atrium bench unnoticed
+CCTV shows a wet patch spreading across the atrium floor near the fountain, no warning sign placed nearby.
+CCTV shows melted ice cream pooling beneath a bench near the play area, no cleaning staff nearby.
+A leaking planter near the atrium escalator has left a thin film of water on the tile, unmarked by any sign.
+Camera footage shows condensation pooling near the entrance doors on a rainy day, the floor slick and unmarked.
+一名顾客打翻的珍珠奶茶洒在电影院入口附近的地面,没有放置警示标志。
+水族展示柜旁渗出的水迹蔓延至主力店入口通道,未见任何警示牌。
+A small child is sitting directly on the moving escalator steps, ignoring a parent's call from below.
+CCTV shows a toddler perched on the escalator tread, legs dangling near the moving comb plate.
+A young boy sits down on the escalator mid-ride, blocking passengers from stepping past him.
+一名幼童坐在正在运行的扶梯台阶上,不顾下方家长的呼喊。
+监控拍到一名男孩在扶梯行驶途中坐下,阻挡了后方乘客通行。
+A teenager is seen sprinting up the down escalator, shoving past shoppers near the top.
+CCTV shows two boys racing each other down the up escalator, nearly colliding with an elderly rider.
+一名少年逆向冲上下行扶梯,推挤沿途购物者。
+A mother is pushing a stroller directly onto the escalator, ignoring the posted warning sign.
+CCTV shows a pram wheel catching on the escalator step edge as the parent struggles to keep it upright.
+一名母亲不顾警示标志,直接将婴儿车推上扶梯。
+A shopper's shoelace is caught at the base of the escalator, and the moving step is dragging the lace taut.
+CCTV shows a loose scarf being pulled toward the escalator comb plate as its wearer tries to step off.
+一名顾客的鞋带卷入扶梯底部,移动的踏板正拉扯着鞋带。
+Dangerous overcrowding is building near the atrium stage as a flash sale draws a surging crowd.
+CCTV shows shoppers packed shoulder to shoulder at the anchor store entrance, unable to move in any direction.
+A crush risk is developing near the promotional booth as shoppers push forward for discounted items.
+特卖活动引发中庭舞台附近人潮聚集,存在明显的拥挤风险。
+监控显示主力店入口处购物者摩肩接踵,几乎无法移动。
+A man is seen slipping a folded jacket into his backpack while browsing a storefront rack, avoiding the clerk's gaze.
+CCTV shows a woman tucking a small electronics box under her coat near the checkout queue.
+一名男子在货架前将一件折叠好的外套塞进背包,同时刻意避开店员视线。
+A shopper is seen prying at a security tag with a small tool behind a clothing rack, glancing around nervously.
+CCTV shows a man attempting to peel off a price tag sticker in the corner of a storefront, out of camera line of sight.
+一名顾客在货架后方用小工具撬弄防盗标签,不时紧张地张望四周。
+A woman enters the fitting room with three garments and exits wearing extra layers, only two items in hand.
+CCTV shows a man exiting a fitting room stall noticeably bulkier than when he entered, no items returned to the rack.
+一名女士带着三件衣服进入试衣间,出来时手上只剩两件却明显多穿了一层。
+Two shoppers are shoving each other near the checkout queue, the argument escalating into a physical scuffle.
+CCTV captures a heated confrontation between two men near the food court, fists raised.
+A woman is shoved against a storefront pillar during an argument that quickly turns physical.
+两名顾客在结账队伍附近互相推搡,争执逐渐升级为肢体冲突。
+监控拍到两名男子在美食广场附近激烈争执,双方举起拳头。
+An unattended backpack is sitting alone near a security bollard, no owner in sight for several minutes.
+A wheeled suitcase sits alone beside the information counter, no one claiming it despite several paging announcements.
+CCTV shows a rolled umbrella bag propped against the entrance turnstile, forgotten for nearly fifteen minutes.
+一件礼品包装盒被遗弃在电影院售票柜台旁,长时间无人认领。
+一辆装满购物袋的手推车被丢弃在消防通道附近,无人看管。
+This is a SAFETY cue: a wet floor without a warning sign near the fountain must be cordoned off immediately.
+Verdict: a child sitting on moving escalator steps is an immediate safety risk requiring intervention.
+This is a SAFETY-CRITICAL cue: a stroller pushed directly onto an escalator must be stopped before it reaches the top.
+Verdict: overcrowding near the atrium stage during a flash sale requires crowd control before a crush occurs.
+This is a SAFETY cue: a shopper concealing goods inside a jacket at a storefront rack should be reported to loss prevention.
+Verdict: tampering with a security tag behind a clothing rack is a clear shoplifting indicator requiring closer observation.
+This is a SAFETY cue: a fitting-room exit with extra layers and fewer returned items should be flagged to store staff.
+Verdict: two shoppers shoving each other near the checkout queue is an active altercation requiring immediate intervention.
+This is a SAFETY-CRITICAL cue: an unattended backpack near a security bollard must be reported and the area cordoned off.
+Verdict: shoelace caught at the base of a moving escalator requires an emergency stop before injury occurs.
+判定:喷泉附近地面湿滑且无警示标志,应立即封锁该区域。
+这是一个安全类信号:幼童坐在运行中的扶梯台阶上,需要立即处理以防意外。
+判定:结账队伍附近两名顾客发生肢体冲突,需要立刻介入处理。
+这是一个安全类信号:安全护柱旁的无人背包应立即上报并封锁周边区域。
+A safety cue is any observation indicating imminent risk of harm, such as a wet floor, an altercation, or a person near a hazardous area.
+A wet-floor cue is any observation of liquid, spillage, or a mopped area without a warning sign nearby.
+An escalator-misuse cue covers a child sitting on the steps, running against the flow, a stroller riding the escalator, or clothing caught in the comb plate.
+A shoplifting cue includes concealing merchandise, tampering with a security tag, or leaving a fitting room with more items than were checked in.
+An unattended-item cue means any bag, box, or parcel left on the floor or a bench with no person within reach for a sustained time.
+A crush-risk cue means shopper density near a sale or stage has reached a level where individuals cannot move freely.
+防盗提示的定义包括藏匿商品、撬弄防盗标签,或带着比登记数量更多的衣物离开试衣间。
+无人看管物品提示是指任何箱包或包裹长时间放置在地面或长椅上且无人在旁认领的情形。
+No safety cue: the floor near the fountain is dry, and the cleaning trolley is parked well away from foot traffic.
+Negative case: the parent has folded the stroller and carries the child by hand while stepping onto the escalator.
+CLEAR: the shopper folds the jacket back onto the rack after trying it on, then walks toward the checkout queue.
+No security concern: two friends near the food court are laughing and patting each other on the shoulder, clearly not fighting.
+Negative case: the bag on the bench belongs to a shopper seated right next to it, checking a phone.
+清空判定:两名朋友在美食广场附近互相拍肩大笑,并非打斗行为。
+无安全提示:长椅旁的购物袋主人就坐在旁边,正在看手机,并非无人看管。
+wet floor with no warning sign
+child sitting on moving escalator steps
+stroller pushed onto a running escalator
+shoelace caught in the escalator comb plate
+sale crowd surging near the atrium stage
+shopper concealing a jacket inside a backpack
+security tag pried off behind a clothing rack
+fitting room exit with extra unpaid layers
+altercation escalating near the checkout queue
+unattended backpack beside a security bollard
+briefcase left alone on the atrium floor
+shoppers packed shoulder to shoulder at a sale
+teenager sprinting up the down escalator
+scarf pulled toward the escalator comb plate
+two men racing down the up escalator
+A senior shopper using a rollator walker is stuck at the base of a short staircase near the food court, no ramp in sight.
+CCTV shows an elderly man leaning heavily on his cane while crossing the atrium at closing time, moving very slowly.
+一位使用助行架的老年顾客被困在美食广场附近的短楼梯底部,附近没有斜坡可用。
+A guide-dog user pauses at the entrance to an anchor store, the dog sitting attentively beside a hesitant owner.
+CCTV shows a visually impaired shopper's assistance dog stopping abruptly near a security bollard, the owner uncertain why.
+一名视障顾客的导盲犬在主力店入口处突然停下,主人显得有些疑惑。
+A tourist family piles overflowing shopping bags onto a single trolley that tips precariously near the escalator.
+CCTV shows a shopper's rolling cart toppling over near the gift-wrapping counter, boxes spilling across the floor.
+一家游客将大量购物袋堆在一辆手推车上,推车在电梯口附近险些翻倒。
+A visitor stares at a multilingual directory sign, mouthing the words, clearly unable to read the store map.
+CCTV shows a shopper opening a translation app and looking around helplessly near the wayfinding kiosk.
+一名顾客盯着多语言指示牌喃喃自语,似乎完全看不懂商场地图。
+A shopper's glasses slip from a shirt pocket and clatter onto the escalator step, unnoticed by the owner.
+CCTV shows a set of car keys falling from a woman's bag near the valet counter, no one stopping to pick them up.
+一名顾客的眼镜从衣袋滑落,掉在扶梯台阶上无人察觉。
+A small child trails several metres behind a distracted guardian near the play area, weaving through other shoppers.
+CCTV shows a boy wandering toward the cinema entrance alone while his parent browses a nearby storefront.
+一名孩童落在心不在焉的监护人身后数米,在儿童游乐区附近穿梭独行。
+A shopper with an arm in a cast struggles to pull open the heavy glass door near the anchor store.
+CCTV shows a man on crutches having difficulty balancing bags while navigating the checkout queue.
+一名手臂打着石膏的顾客在主力店门口费力地推开沉重的玻璃门。
+An elderly shopper sits down abruptly on a bench near the escalator, looking pale and disoriented.
+CCTV shows a man gripping the service counter for support, visibly unsteady after climbing the stairs.
+一位老年顾客在扶梯附近的长椅上突然坐下,脸色苍白,神情恍惚。
+This is a PROACTIVE-SERVICE cue: a shopper using a rollator walker stuck at a staircase should be offered an alternate route or a lift escort.
+Verdict: a guide-dog hesitating at a storefront entrance is a proactive-service scenario, staff should confirm the path is clear.
+This is a service-first trigger: an overloaded trolley about to tip should prompt a guard to steady it before items spill.
+Verdict: a shopper struggling to read a multilingual directory sign should be approached and offered directions in a shared language.
+This is a PROACTIVE-SERVICE cue: a shopper on crutches or in a cast having difficulty with a heavy door should be assisted promptly.
+Verdict: an elderly shopper who sat down abruptly near the escalator and looks pale should be checked on without delay.
+判定:使用助行架的顾客被困在楼梯前,应主动提供替代路线或电梯陪同。
+这是一个主动服务信号:购物车即将翻倒,保安应上前扶稳以免物品散落。
+判定:脸色苍白突然坐下的老年顾客应尽快有人上前查看情况。
+A mobility-aid cue applies when a shopper using a cane, walker, wheelchair, or crutches appears stuck at a step, door, or gate.
+An assistance-animal cue is triggered when a guide dog or service animal hesitates or stops abruptly near an entrance or escalator.
+A language-barrier cue covers any shopper unable to read directory signage or relying on a translation app to communicate.
+助行辅具提示是指使用拐杖、助行架、轮椅或拐杖行走的顾客在台阶、门口或闸口处受阻的情形。
+Negative case: the guide-dog user walks confidently through the storefront entrance without pausing.
+CLEAR: the tourist family's trolley is well balanced and rolls smoothly toward the exit.
+清空判定:携带导盲犬的顾客顺利通过入口,没有任何犹豫。
+shopper with a rollator walker stuck at a staircase
+guide dog hesitating at a storefront entrance
+overloaded shopping trolley tipping near the escalator
+shopper struggling to read a multilingual directory sign
+shopper on crutches struggling with a heavy glass door
+elderly shopper sitting down abruptly, looking pale
+A man has collapsed on the concourse floor near the checkout queue, lying motionless while shoppers step around him.
+CCTV shows a woman fainting near the escalator landing and sliding down against the handrail.
+一名男子突然倒地,躺在结账队伍附近一动不动,购物者纷纷绕行。
+A display cabinet near the anchor store has shattered, glass shards scattered across the walkway.
+CCTV shows a promotional booth's glass panel cracking and falling after being bumped by a passing cart.
+主力店附近的展示柜玻璃破碎,碎片散落在通道上。
+A thin wisp of smoke is rising from behind a storefront near the food court, no staff yet aware.
+CCTV shows sparks and a faint haze near an electrical panel close to the cinema entrance.
+美食广场附近一处店铺后方冒出一缕烟雾,尚未有员工察觉。
+A fire exit near the car park lift lobby is blocked by stacked promotional display boards.
+CCTV shows a cleaning trolley and stock boxes piled in front of an emergency exit door.
+停车场电梯厅附近的消防通道被堆放的促销展板堵住。
+A youth is seen spraying graffiti across a restroom wall near the play area.
+CCTV captures a man scratching a storefront window with a sharp object, damaging the glass.
+一名青年正在儿童游乐区附近的洗手间墙壁上喷涂涂鸦。
+A child is seen climbing onto the glass balustrade railing overlooking the atrium void, parent unaware nearby.
+CCTV shows a teenager leaning far over the atrium railing to take a photo, feet lifting off the ground.
+一名儿童爬上俯瞰中庭空井的玻璃护栏,家长并未察觉。
+A tray of hot soup spills across the food court floor, no wet floor sign placed and shoppers walking nearby.
+CCTV shows spilled coffee spreading across the tile near a kiosk seating nook, no cone placed nearby as shoppers walk through it unaware.
+货梯搬运途中滴落的水渍留在停车场电梯厅地面,无人放置警示标志。
+A man is aggressively approaching shoppers near the entrance, raising his voice when they decline to give money.
+CCTV shows a panhandler blocking a family's path near the promotional booth, gesturing insistently.
+一名男子在入口处不断纠缠购物者,遭拒后提高音量表现出攻击性。
+This is a SAFETY cue: a person collapsed near the checkout queue is a medical emergency requiring immediate first aid.
+Verdict: shattered glass from a display cabinet near the anchor store must be cordoned off before anyone is injured.
+This is a SAFETY-CRITICAL cue: smoke rising near a storefront must be reported and the area evacuated if it spreads.
+Verdict: a blocked fire exit near the car park lift lobby is a code violation requiring immediate clearance.
+This is a SAFETY cue: graffiti in progress on a restroom wall should be reported to security for immediate response.
+Verdict: a child climbing the glass balustrade over the atrium void is an immediate fall risk requiring urgent intervention.
+This is a SAFETY cue: a food-court spill without a warning sign is a slip hazard requiring prompt cleanup.
+Verdict: an aggressive panhandler blocking a family's path requires a guard to intervene and de-escalate.
+判定:结账队伍附近有人倒地,属于医疗紧急情况,应立即呼叫急救。
+这是一个安全类信号:消防通道被杂物堵塞,必须立即清空以确保紧急疏散畅通。
+判定:儿童爬上俯瞰中庭空井的护栏,存在坠落风险,需要立刻制止。
+这是一个安全类信号:美食广场地面洒落液体且无警示牌,存在滑倒风险,需尽快清理。
+A collapse cue is triggered when a person is lying on the ground, unresponsive, or shows signs of fainting.
+A fire-hazard cue includes any visible smoke, sparks, or burning smell near electrical fixtures or storefronts.
+A blocked-exit cue means any fire exit, emergency door, or evacuation route obstructed by stock, furniture, or trolleys.
+A fall-risk cue applies when a person, especially a child, climbs or leans over a railing or balustrade above an open void.
+消防安全提示的定义包括任何可见的烟雾、火花,或电气设施附近散发的焦味。
+高空坠落风险提示是指有人尤其是儿童攀爬或探身越过俯瞰空井的护栏。
+No safety cue: the man near the food court table is simply resting his eyes, not unconscious, and responds when spoken to.
+Negative case: the display cabinet glass is intact, and the promotional booth staff is simply rearranging items behind it.
+CLEAR: the wisp of haze near the electrical panel is steam from a nearby coffee machine, not smoke.
+No safety concern: the fire exit is briefly obstructed by a single cart being moved through, cleared within seconds.
+清空判定:电气设施附近的雾气是咖啡机蒸汽,并非烟雾。
+无安全提示:消防通道只是暂时被一辆手推车经过挡住,几秒后已清空。
+person collapsed near the checkout queue
+shattered glass scattered near a display cabinet
+smoke rising behind a food court storefront
+fire exit blocked by stacked display boards
+graffiti sprayed on a restroom wall
+child climbing the glass balustrade over the atrium void
+spilled soup on the food court floor, no sign
+aggressive panhandler blocking a family's path
+teenager leaning over the atrium railing for a photo
+cleaning trolley obstructing an emergency exit door
+A man has been standing at the same service counter for over forty minutes, glancing repeatedly at the security camera.
+CCTV shows a person circling the valet counter three times without ever approaching to hand over a claim ticket.
+Camera footage shows an individual photographing CCTV camera positions along the concourse ceiling.
+一名男子在同一服务台前停留超过四十分钟,不断瞥向监控摄像头。
+监控拍到一人绕着代客泊车柜台走了三圈,始终没有上前递交取车单。
+A shopper's suitcase wheel catches on the travelator belt seam, tipping the bag sideways.
+CCTV shows a man leaning against the travelator handrail, phone raised, blocking the moving walkway for others.
+一名顾客的行李箱轮子卡在自动步道的接缝处,箱子侧翻。
+A youth is seen hopping over a security bollard rope to cut in line at the cinema entrance.
+CCTV shows a man ducking under a queue barrier near the checkout, bypassing the line entirely.
+一名青年跳过安全护柱的隔离绳,在电影院入口插队。
+A dispute is escalating at the checkout queue as a customer argues loudly with a cashier over a discount.
+CCTV shows two shoppers arguing over a place in line near the gift-wrapping counter, voices rising.
+结账队伍中一名顾客与收银员就折扣问题激烈争执,声音越来越大。
+A long queue snakes around the anchor store entrance before opening hours, shoppers pressing forward as the doors unlock.
+CCTV shows a promotional booth surrounded by a dense crowd grabbing for free samples, jostling for position.
+主力店开门前排起长队,店门打开瞬间人群向前拥挤。
+A storefront's roller shutter is dented and partially stuck, blocking half the entrance.
+CCTV shows a fallen promotional banner tangled around a security bollard near the food court.
+一家店铺的卷帘门凹陷卡住,遮住了一半的入口。
+A backpack left near the cinema entrance has a wire visibly protruding from a side pocket, unattended for over ten minutes.
+CCTV shows a box wrapped in tape sitting alone near a security bollard, no one nearby to claim it.
+扶梯着陆平台附近有一个相机包无人看管,已超过十分钟。
+A group of children is climbing on play area equipment beyond the marked age limit, no attendant present.
+CCTV shows a toddler slipping through a gap in the play area fence while a caregiver checks a phone nearby.
+一群孩子在儿童游乐区攀爬超出标示年龄限制的设施,现场无人看管。
+This is a SAFETY cue: a person repeatedly photographing CCTV camera positions may indicate reconnaissance and should be logged.
+Verdict: a shopper vaulting over a security bollard rope to skip the queue should be redirected calmly by staff.
+This is a PROACTIVE-SERVICE cue: a loud dispute at the checkout queue over a discount should be defused before it escalates.
+Verdict: a dense sale crowd surging at an anchor store opening requires crowd control staff positioned at the entrance.
+This is a SAFETY-CRITICAL cue: a backpack with a visible wire left unattended must trigger area evacuation protocol.
+Verdict: children climbing play area equipment beyond the age limit without an attendant present should be gently stopped.
+判定:有人反复拍摄监控摄像头位置,可能存在踩点行为,应予以记录。
+这是一个安全类信号:背包中可见电线外露且长时间无人看管,应立即启动疏散预案。
+判定:开业前主力店门口人群拥挤,需要保安在入口处提前布置疏导。
+A reconnaissance cue applies when a person repeatedly photographs security infrastructure or paces the same restricted-adjacent area without purpose.
+A queue-disturbance cue covers any dispute, cutting in line, or raised voices near a checkout or entrance queue.
+An opening-rush cue means a dense crowd gathers and surges forward at a store or booth opening, risking a crush.
+排队纠纷提示是指结账队伍或入口队伍中出现的争执、插队或大声争吵行为。
+Negative case: the man near the valet counter is simply waiting for his car, checking the time occasionally.
+CLEAR: the queue at the anchor store moves in an orderly line with staff directing shoppers calmly.
+清空判定:代客泊车柜台旁的男子只是在等车,偶尔看表,并非可疑逗留。
+man loitering near the service counter for an hour
+suitcase wheel catching on the travelator belt seam
+youth hopping over a security bollard rope
+dispute escalating at the checkout queue
+dense crowd surging at an anchor store opening
+damaged roller shutter blocking a storefront entrance
+backpack with a visible wire near a security bollard
+children climbing play area equipment unattended
+At night, a lone security guard patrols the dimly lit atrium while CCTV monitors a nearly empty food court.
+During the morning opening rush, hundreds of shoppers flow through the main entrance as staff scan the crowd for anyone needing help.
+On a rainy afternoon, a customer's wet umbrella drips onto the tile near the entrance, the floor turning slippery underfoot.
+In the late-evening quiet before closing, a single shopper lingers near the escalator, motionless for a long time.
+During a weekend sale, a wheelchair user waits patiently near the accessible gate as the crowd streams past without noticing.
+Under bright atrium skylights, a pregnant shopper navigates slowly through dense foot traffic near the fountain.
+On a hot summer day, shoppers crowd into the air-conditioned food court, queues forming at every counter.
+During a public holiday, the car park lift lobby is jammed as families haul stacks of shopping bags toward their vehicles.
+夜间灯光昏暗的中庭里,一名保安独自巡逻,监控画面中美食广场几乎空无一人。
+清晨开门高峰时段,数百名顾客涌入主入口,职员在人群中留意是否有人需要协助。
+雨天里,顾客滴水的雨伞在入口处弄湿地面,地砖变得湿滑。
+打烊前的傍晚时分,一名顾客独自在电梯口徘徊,长时间一动不动。
+周末促销期间,一名轮椅使用者在无障碍闸口耐心等候,人潮川流而过却无人察觉。
+中庭天窗下阳光明亮,一名孕妇在喷泉附近的密集人流中缓慢穿行。
+炎热的夏日,顾客纷纷涌入有空调的美食广场,各柜台前排起长队。
+公众假期期间,停车场电梯厅十分拥挤,家庭们提着大包小包购物袋等候电梯。
+A cleaning crew mops the food court floor after closing, moving cones and signs methodically between empty tables.
+During the holiday gift season, the gift-wrapping counter queue stretches past the neighboring storefront, staff working quickly.
+Near the cinema entrance on a Friday night, a long ticket queue spills into the main concourse, security monitoring the flow.
+Overnight, the valet stand sits empty and dark, a single security light illuminating the car park lift lobby entrance.
+A shopper is seen holding a receipt and searching storefront signs, apparently trying to locate customer service for a return.
+CCTV shows a customer waving to get a cleaner's attention near a spilled drink, unsure who else to alert.
+A visitor with a large empty stroller searches for a nursing room, checking signage near the restroom corridor.
+A shopper at the service counter looks confused filling out a form, staff attention elsewhere.
+An elderly couple shares a single chair near the checkout queue, one visibly more tired than the other.
+A man returns repeatedly to the same anchor store rack, seemingly looking for a specific size no staff has confirmed.
+一名顾客拿着收据在店铺招牌间寻找,似乎想找客户服务台办理退换货。
+一名带着空婴儿车的访客在洗手间走廊附近寻找哺乳室标识。
+CCTV shows a promotional booth's extension cord running across a walkway, unsecured and a trip hazard.
+A stack of empty pallets is left blocking half of a service corridor near the loading dock entrance.
+A shopper trips over an uneven floor tile near the entrance, catching themselves on a bollard.
+CCTV shows a broken chair at a food court table with a jagged edge exposed, still in use by shoppers.
+A cart abandoned mid-aisle in an anchor store blocks the path for a wheelchair user approaching from behind.
+A promotional booth balloon display has come loose and is drifting toward the escalator entrance.
+一条促销展台的电源线横跨通道且未固定,存在绊倒风险。
+美食广场一张椅子破损,边缘锋利,顾客仍在使用,存在受伤风险。
+Verdict: an extension cord running unsecured across a walkway is a trip hazard requiring immediate taping down or rerouting.
+This is a PROACTIVE-SERVICE cue: a visitor searching for a nursing room should be guided there directly by staff.
+Verdict: a cart abandoned mid-aisle blocking a wheelchair user's path should be moved immediately.
+No safety cue: the extension cord is neatly taped down along the wall, posing no trip risk to passing shoppers.
+CLEAR: the chair at the food court table has been marked out of service and roped off for repair.
+This is a service-first trigger: an elderly couple sharing one chair near the checkout queue should be offered a second seat.
+判定:通道上未固定的电源线属于绊倒风险,应立即用胶带固定或改道。
+这是一个主动服务信号:寻找哺乳室的访客应由职员直接引导前往。
+清空判定:电源线已沿墙面整齐固定,不会对经过的顾客造成绊倒风险。
+shopper searching for customer service to process a return
+visitor looking for a nursing room near the restroom corridor
+unsecured extension cord crossing a walkway
+abandoned cart blocking a wheelchair user's path
+broken chair with a jagged edge at a food court table
+elderly couple sharing a single chair near the checkout queue
+loose balloon display drifting toward the escalator
+pallets blocking a service corridor near the loading dock
+shopper tripping over an uneven floor tile near a bollard
+promotional booth crowd grabbing for free samples
+A lost grandmother is found sitting quietly near the gift-wrapping counter, unable to recall which entrance she came from.
+CCTV shows a shopper flagging down a roving guard near the travelator, pointing urgently toward the food court.
+一位走失的老奶奶安静地坐在礼品包装柜台附近,记不清自己是从哪个入口进来的。
+A shopper politely asks a roving guard for directions to the nearest restroom, nods in thanks, and walks off calmly.
+CCTV shows a visitor asking a storefront clerk which exit leads closest to the car park, then heading off with a clear route in mind.
+一名顾客向服务台职员询问最近的电梯位置,得到指引后从容离开。
+一位顾客向保安询问离洗手间最近的通道,道谢后径直走去。
+A quiet elderly man sits near the entrance with a small donation box, greeting passersby softly but never blocking their path or raising his voice.
+CLEAR: despite the flash sale, shoppers near the atrium stage are moving freely with no pushing or crowding.
+清空判定:扶梯上的儿童安静地站在父母身旁扶着扶手,并无危险行为。
+No security concern: a raised voice near the checkout queue quickly turns into laughter as the dispute is resolved with a smile.

@@ -1,0 +1,174 @@
+{
+  "image": "dog.jpg@224px",
+  "answer": "The main subject of the image is a **white Samoyed dog**.",
+  "rows": {
+    "FUSE-LL-img": {
+      "dog": 1,
+      "cat": 24,
+      "animal": 6,
+      "car": 191,
+      "white": 3,
+      "banana": 5851,
+      "clock": 660
+    },
+    "FUSE-LL-ans": {
+      "dog": 79,
+      "cat": 401,
+      "animal": 334,
+      "car": 628,
+      "white": 6,
+      "banana": 16966,
+      "clock": 13795
+    },
+    "ENC-Jv-L2": {
+      "dog": 6720,
+      "cat": 1760,
+      "animal": 1556,
+      "car": 335,
+      "white": 215,
+      "banana": 68226,
+      "clock": 2028
+    },
+    "ENC-naive-L2": {
+      "dog": 407,
+      "cat": 2706,
+      "animal": 615,
+      "car": 325,
+      "white": 364,
+      "banana": 62854,
+      "clock": 56
+    },
+    "FUSE-Jxans-L2-peak": {
+      "dog": 704,
+      "cat": 1444,
+      "animal": 272,
+      "car": 64,
+      "white": 8293,
+      "banana": 6768,
+      "clock": 312
+    },
+    "FUSE-Jxans-L2-mean": {
+      "dog": 10693,
+      "cat": 137505,
+      "animal": 56046,
+      "car": 132086,
+      "white": 230012,
+      "banana": 198457,
+      "clock": 116744
+    },
+    "FUSE-Jximg-L2-peak": {
+      "dog": 1288,
+      "cat": 1947,
+      "animal": 23,
+      "car": 35,
+      "white": 21,
+      "banana": 2466,
+      "clock": 2070
+    },
+    "FUSE-Jximg-L2-mean": {
+      "dog": 195256,
+      "cat": 142471,
+      "animal": 12346,
+      "car": 86891,
+      "white": 45686,
+      "banana": 86321,
+      "clock": 36042
+    },
+    "ENC-Jv-L16": {
+      "dog": 682,
+      "cat": 1811,
+      "animal": 1369,
+      "car": 1240,
+      "white": 384,
+      "banana": 21246,
+      "clock": 1222
+    },
+    "ENC-naive-L16": {
+      "dog": 46277,
+      "cat": 52121,
+      "animal": 74764,
+      "car": 67891,
+      "white": 17,
+      "banana": 100971,
+      "clock": 164041
+    },
+    "FUSE-Jxans-L16-peak": {
+      "dog": 328,
+      "cat": 1981,
+      "animal": 4,
+      "car": 21,
+      "white": 9101,
+      "banana": 19759,
+      "clock": 535
+    },
+    "FUSE-Jxans-L16-mean": {
+      "dog": 79393,
+      "cat": 83013,
+      "animal": 530,
+      "car": 1673,
+      "white": 172672,
+      "banana": 238683,
+      "clock": 154079
+    },
+    "FUSE-Jximg-L16-peak": {
+      "dog": 5017,
+      "cat": 14269,
+      "animal": 63,
+      "car": 17,
+      "white": 1,
+      "banana": 9439,
+      "clock": 3872
+    },
+    "FUSE-Jximg-L16-mean": {
+      "dog": 212468,
+      "cat": 93256,
+      "animal": 4394,
+      "car": 818,
+      "white": 22865,
+      "banana": 225158,
+      "clock": 109854
+    }
+  },
+  "topk": {
+    "FUSE-LL-ans": [
+      "The",
+      "Main",
+      "A",
+      "Based",
+      "In",
+      "White",
+      "You",
+      "Yes"
+    ],
+    "FUSE-LL-img@dogpeak": [
+      "dog",
+      "dog",
+      "fluffy",
+      "\u72ac",
+      "white",
+      "canine",
+      "\u72d7",
+      "dogs"
+    ],
+    "ENC-Jv-L2@dogpeak": [
+      "_",
+      "(",
+      "-",
+      ",",
+      "/",
+      ":",
+      "'",
+      "1"
+    ],
+    "ENC-Jv-L16@dogpeak": [
+      "_",
+      ",",
+      "\"",
+      "-",
+      ".",
+      "(",
+      "/",
+      "_"
+    ]
+  }
+}

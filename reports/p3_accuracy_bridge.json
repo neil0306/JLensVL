@@ -1,0 +1,5001 @@
+{
+  "mode": "real",
+  "model": "/home/anu/qwen35_4b_dl",
+  "lens": "lens_qwen35_4b_final.pt",
+  "layer": null,
+  "n_examples": 48,
+  "per_variant": {
+    "neutral": {
+      "lens_margin": 6.649739583333333,
+      "accuracy": 1.0,
+      "n_examples": 48
+    },
+    "native": {
+      "lens_margin": 9.483723958333334,
+      "accuracy": 0.9583333333333334,
+      "n_examples": 48
+    },
+    "terse": {
+      "lens_margin": 4.821614583333333,
+      "accuracy": 0.7708333333333334,
+      "n_examples": 48
+    },
+    "verbose": {
+      "lens_margin": 9.989583333333334,
+      "accuracy": 1.0,
+      "n_examples": 48
+    },
+    "role": {
+      "lens_margin": 5.51171875,
+      "accuracy": 0.9791666666666666,
+      "n_examples": 48
+    },
+    "reasoned": {
+      "lens_margin": 3.23828125,
+      "accuracy": 0.8333333333333334,
+      "n_examples": 48
+    }
+  },
+  "bridge": {
+    "n_variants": 6,
+    "pearson_lensmargin_vs_accuracy": 0.6765783196017241,
+    "spearman_lensmargin_vs_accuracy": 0.7247137945655605,
+    "helper_pick": "verbose",
+    "real_best": "neutral",
+    "helper_pick_is_real_best": false,
+    "helper_pick_accuracy": 1.0,
+    "real_best_accuracy": 1.0,
+    "accuracy_gap_of_helper_pick": 0.0,
+    "margin_rank": {
+      "neutral": 4.0,
+      "native": 5.0,
+      "terse": 2.0,
+      "verbose": 6.0,
+      "role": 3.0,
+      "reasoned": 1.0
+    },
+    "accuracy_rank": {
+      "neutral": 5.5,
+      "native": 3.0,
+      "terse": 1.0,
+      "verbose": 5.5,
+      "role": 4.0,
+      "reasoned": 2.0
+    },
+    "claim_supported": true
+  },
+  "details": {
+    "neutral": {
+      "margin_per_example": [
+        {
+          "id": "conf-01",
+          "senses": {
+            "CONFIRMED": 16.75,
+            "POSSIBLE": 8.9375,
+            "CLEAR": 20.5
+          },
+          "top_sense": "CLEAR",
+          "margin": 3.75
+        },
+        {
+          "id": "conf-02",
+          "senses": {
+            "CONFIRMED": 16.5,
+            "POSSIBLE": 12.4375,
+            "CLEAR": 18.75
+          },
+          "top_sense": "CLEAR",
+          "margin": 2.25
+        },
+        {
+          "id": "conf-03",
+          "senses": {
+            "CONFIRMED": 17.0,
+            "POSSIBLE": 9.4375,
+            "CLEAR": 20.0
+          },
+          "top_sense": "CLEAR",
+          "margin": 3.0
+        },
+        {
+          "id": "conf-04",
+          "senses": {
+            "CONFIRMED": 16.75,
+            "POSSIBLE": 11.25,
+            "CLEAR": 18.875
+          },
+          "top_sense": "CLEAR",
+          "margin": 2.125
+        },
+        {
+          "id": "conf-05",
+          "senses": {
+            "CONFIRMED": 17.125,
+            "POSSIBLE": 10.625,
+            "CLEAR": 19.0
+          },
+          "top_sense": "CLEAR",
+          "margin": 1.875
+        },
+        {
+          "id": "conf-06",
+          "senses": {
+            "CONFIRMED": 16.875,
+            "POSSIBLE": 10.5625,
+            "CLEAR": 18.5
+          },
+          "top_sense": "CLEAR",
+          "margin": 1.625
+        },
+        {
+          "id": "conf-07",
+          "senses": {
+            "CONFIRMED": 17.375,
+            "POSSIBLE": 10.1875,
+            "CLEAR": 19.25
+          },
+          "top_sense": "CLEAR",
+          "margin": 1.875
+        },
+        {
+          "id": "conf-08",
+          "senses": {
+            "CONFIRMED": 13.1875,
+            "POSSIBLE": 16.875,
+            "CLEAR": 18.625
+          },
+          "top_sense": "CLEAR",
+          "margin": 1.75
+        },
+        {
+          "id": "conf-09",
+          "senses": {
+            "CONFIRMED": 16.125,
+            "POSSIBLE": 10.9375,
+            "CLEAR": 20.125
+          },
+          "top_sense": "CLEAR",
+          "margin": 4.0
+        },
+        {
+          "id": "conf-10",
+          "senses": {
+            "CONFIRMED": 16.75,
+            "POSSIBLE": 11.6875,
+            "CLEAR": 19.25
+          },
+          "top_sense": "CLEAR",
+          "margin": 2.5
+        },
+        {
+          "id": "conf-11",
+          "senses": {
+            "CONFIRMED": 16.875,
+            "POSSIBLE": 11.9375,
+            "CLEAR": 18.5
+          },
+          "top_sense": "CLEAR",
+          "margin": 1.625
+        },
+        {
+          "id": "conf-12",
+          "senses": {
+            "CONFIRMED": 17.0,
+            "POSSIBLE": 9.875,
+            "CLEAR": 20.0
+          },
+          "top_sense": "CLEAR",
+          "margin": 3.0
+        },
+        {
+          "id": "conf-13",
+          "senses": {
+            "CONFIRMED": 17.125,
+            "POSSIBLE": 10.6875,
+            "CLEAR": 18.875
+          },
+          "top_sense": "CLEAR",
+          "margin": 1.75
+        },
+        {
+          "id": "conf-14",
+          "senses": {
+            "CONFIRMED": 16.375,
+            "POSSIBLE": 10.6875,
+            "CLEAR": 18.875
+          },
+          "top_sense": "CLEAR",
+          "margin": 2.5
+        },
+        {
+          "id": "conf-15",
+          "senses": {
+            "CONFIRMED": 16.875,
+            "POSSIBLE": 8.6875,
+            "CLEAR": 20.625
+          },
+          "top_sense": "CLEAR",
+          "margin": 3.75
+        },
+        {
+          "id": "conf-16",
+          "senses": {
+            "CONFIRMED": 17.0,
+            "POSSIBLE": 10.4375,
+            "CLEAR": 20.5
+          },
+          "top_sense": "CLEAR",
+          "margin": 3.5
+        },
+        {
+          "id": "poss-01",
+          "senses": {
+            "CONFIRMED": 6.1875,
+            "POSSIBLE": 18.625,
+            "CLEAR": 20.0
+          },
+          "top_sense": "CLEAR",
+          "margin": 1.375
+        },
+        {
+          "id": "poss-02",
+          "senses": {
+            "CONFIRMED": 7.5625,
+            "POSSIBLE": 17.875,
+            "CLEAR": 23.25
+          },
+          "top_sense": "CLEAR",
+          "margin": 5.375
+        },
+        {
+          "id": "poss-03",
+          "senses": {
+            "CONFIRMED": 6.65625,
+            "POSSIBLE": 18.125,
+            "CLEAR": 21.25
+          },
+          "top_sense": "CLEAR",
+          "margin": 3.125
+        },
+        {
+          "id": "poss-04",
+          "senses": {
+            "CONFIRMED": 8.8125,
+            "POSSIBLE": 18.875,
+            "CLEAR": 18.0
+          },
+          "top_sense": "POSSIBLE",
+          "margin": 0.875
+        },
+        {
+          "id": "poss-05",
+          "senses": {
+            "CONFIRMED": 7.34375,
+            "POSSIBLE": 18.75,
+            "CLEAR": 19.375
+          },
+          "top_sense": "CLEAR",
+          "margin": 0.625
+        },
+        {
+          "id": "poss-06",
+          "senses": {
+            "CONFIRMED": 9.0,
+            "POSSIBLE": 17.5,
+            "CLEAR": 21.125
+          },
+          "top_sense": "CLEAR",
+          "margin": 3.625
+        },
+        {
+          "id": "poss-07",
+          "senses": {
+            "CONFIRMED": 7.6875,
+            "POSSIBLE": 17.125,
+            "CLEAR": 21.25
+          },
+          "top_sense": "CLEAR",
+          "margin": 4.125
+        },
+        {
+          "id": "poss-08",
+          "senses": {
+            "CONFIRMED": 7.25,
+            "POSSIBLE": 18.0,
+            "CLEAR": 22.75
+          },
+          "top_sense": "CLEAR",
+          "margin": 4.75
+        },
+        {
+          "id": "poss-09",
+          "senses": {
+            "CONFIRMED": 6.84375,
+            "POSSIBLE": 19.125,
+            "CLEAR": 18.25
+          },
+          "top_sense": "POSSIBLE",
+          "margin": 0.875
+        },
+        {
+          "id": "poss-10",
+          "senses": {
+            "CONFIRMED": 9.0,
+            "POSSIBLE": 18.75,
+            "CLEAR": 18.5
+          },
+          "top_sense": "POSSIBLE",
+          "margin": 0.25
+        },
+        {
+          "id": "poss-11",
+          "senses": {
+            "CONFIRMED": 7.65625,
+            "POSSIBLE": 18.875,
+            "CLEAR": 18.875
+          },
+          "top_sense": "POSSIBLE",
+          "margin": 0.0
+        },
+        {
+          "id": "poss-12",
+          "senses": {
+            "CONFIRMED": 6.78125,
+            "POSSIBLE": 17.625,
+            "CLEAR": 21.625
+          },
+          "top_sense": "CLEAR",
+          "margin": 4.0
+        },
+        {
+          "id": "poss-13",
+          "senses": {
+            "CONFIRMED": 6.6875,
+            "POSSIBLE": 18.125,
+            "CLEAR": 21.625
+          },
+          "top_sense": "CLEAR",
+          "margin": 3.5
+        },
+        {
+          "id": "poss-14",
+          "senses": {
+            "CONFIRMED": 8.0,
+            "POSSIBLE": 16.5,
+            "CLEAR": 23.25
+          },
+          "top_sense": "CLEAR",
+          "margin": 6.75
+        },
+        {
+          "id": "poss-15",
+          "senses": {
+            "CONFIRMED": 7.53125,
+            "POSSIBLE": 19.125,
+            "CLEAR": 17.75
+          },
+          "top_sense": "POSSIBLE",
+          "margin": 1.375
+        },
+        {
+          "id": "poss-16",
+          "senses": {
+            "CONFIRMED": 8.5625,
+            "POSSIBLE": 18.75,
+            "CLEAR": 18.5
+          },
+          "top_sense": "POSSIBLE",
+          "margin": 0.25
+        },
+        {
+          "id": "clear-01",
+          "senses": {
+            "CONFIRMED": 11.375,
+            "POSSIBLE": 10.125,
+            "CLEAR": 27.5
+          },
+          "top_sense": "CLEAR",
+          "margin": 16.125
+        },
+        {
+          "id": "clear-02",
+          "senses": {
+            "CONFIRMED": 10.125,
+            "POSSIBLE": 9.875,
+            "CLEAR": 28.125
+          },
+          "top_sense": "CLEAR",
+          "margin": 18.0
+        },
+        {
+          "id": "clear-03",
+          "senses": {
+            "CONFIRMED": 9.75,
+            "POSSIBLE": 11.25,
+            "CLEAR": 28.125
+          },
+          "top_sense": "CLEAR",
+          "margin": 16.875
+        },
+        {
+          "id": "clear-04",
+          "senses": {
+            "CONFIRMED": 9.875,
+            "POSSIBLE": 10.6875,
+            "CLEAR": 27.875
+          },
+          "top_sense": "CLEAR",
+          "margin": 17.1875
+        },
+        {
+          "id": "clear-05",
+          "senses": {
+            "CONFIRMED": 10.3125,
+            "POSSIBLE": 15.5,
+            "CLEAR": 24.0
+          },
+          "top_sense": "CLEAR",
+          "margin": 8.5
+        },
+        {
+          "id": "clear-06",
+          "senses": {
+            "CONFIRMED": 9.4375,
+            "POSSIBLE": 11.9375,
+            "CLEAR": 28.0
+          },
+          "top_sense": "CLEAR",
+          "margin": 16.0625
+        },
+        {
+          "id": "clear-07",
+          "senses": {
+            "CONFIRMED": 11.5,
+            "POSSIBLE": 11.375,
+            "CLEAR": 26.75
+          },
+          "top_sense": "CLEAR",
+          "margin": 15.25
+        },
+        {
+          "id": "clear-08",
+          "senses": {
+            "CONFIRMED": 11.4375,
+            "POSSIBLE": 9.9375,
+            "CLEAR": 27.0
+          },
+          "top_sense": "CLEAR",
+          "margin": 15.5625
+        },
+        {
+          "id": "clear-09",
+          "senses": {
+            "CONFIRMED": 8.6875,
+            "POSSIBLE": 17.375,
+            "CLEAR": 24.375
+          },
+          "top_sense": "CLEAR",
+          "margin": 7.0
+        },
+        {
+          "id": "clear-10",
+          "senses": {
+            "CONFIRMED": 10.0,
+            "POSSIBLE": 14.6875,
+            "CLEAR": 26.375
+          },
+          "top_sense": "CLEAR",
+          "margin": 11.6875
+        },
+        {
+          "id": "clear-11",
+          "senses": {
+            "CONFIRMED": 11.8125,
+            "POSSIBLE": 12.0,
+            "CLEAR": 26.25
+          },
+          "top_sense": "CLEAR",
+          "margin": 14.25
+        },
+        {
+          "id": "clear-12",
+          "senses": {
+            "CONFIRMED": 10.125,
+            "POSSIBLE": 11.8125,
+            "CLEAR": 27.375
+          },
+          "top_sense": "CLEAR",
+          "margin": 15.5625
+        },
+        {
+          "id": "clear-13",
+          "senses": {
+            "CONFIRMED": 11.9375,
+            "POSSIBLE": 10.1875,
+            "CLEAR": 26.75
+          },
+          "top_sense": "CLEAR",
+          "margin": 14.8125
+        },
+        {
+          "id": "clear-14",
+          "senses": {
+            "CONFIRMED": 11.0,
+            "POSSIBLE": 11.25,
+            "CLEAR": 27.875
+          },
+          "top_sense": "CLEAR",
+          "margin": 16.625
+        },
+        {
+          "id": "clear-15",
+          "senses": {
+            "CONFIRMED": 11.875,
+            "POSSIBLE": 10.1875,
+            "CLEAR": 27.0
+          },
+          "top_sense": "CLEAR",
+          "margin": 15.125
+        },
+        {
+          "id": "clear-16",
+          "senses": {
+            "CONFIRMED": 9.9375,
+            "POSSIBLE": 9.4375,
+            "CLEAR": 28.75
+          },
+          "top_sense": "CLEAR",
+          "margin": 18.8125
+        }
+      ],
+      "accuracy_per_example": [
+        {
+          "id": "conf-01",
+          "label": "CONFIRMED",
+          "pred": "CONFIRMED",
+          "correct": true,
+          "answer": "CONFIRMED"
+        },
+        {
+          "id": "conf-02",
+          "label": "CONFIRMED",
+          "pred": "CONFIRMED",
+          "correct": true,
+          "answer": "CONFIRMED"
+        },
+        {
+          "id": "conf-03",
+          "label": "CONFIRMED",
+          "pred": "CONFIRMED",
+          "correct": true,
+          "answer": "CONFIRMED"
+        },
+        {
+          "id": "conf-04",
+          "label": "CONFIRMED",
+          "pred": "CONFIRMED",
+          "correct": true,
+          "answer": "CONFIRMED"
+        },
+        {
+          "id": "conf-05",
+          "label": "CONFIRMED",
+          "pred": "CONFIRMED",
+          "correct": true,
+          "answer": "CONFIRMED"
+        },
+        {
+          "id": "conf-06",
+          "label": "CONFIRMED",
+          "pred": "CONFIRMED",
+          "correct": true,
+          "answer": "CONFIRMED"
+        },
+        {
+          "id": "conf-07",
+          "label": "CONFIRMED",
+          "pred": "CONFIRMED",
+          "correct": true,
+          "answer": "CONFIRMED"
+        },
+        {
+          "id": "conf-08",
+          "label": "CONFIRMED",
+          "pred": "CONFIRMED",
+          "correct": true,
+          "answer": "CONFIRMED"
+        },
+        {
+          "id": "conf-09",
+          "label": "CONFIRMED",
+          "pred": "CONFIRMED",
+          "correct": true,
+          "answer": "CONFIRMED"
+        },
+        {
+          "id": "conf-10",
+          "label": "CONFIRMED",
+          "pred": "CONFIRMED",
+          "correct": true,
+          "answer": "CONFIRMED"
+        },
+        {
+          "id": "conf-11",
+          "label": "CONFIRMED",
+          "pred": "CONFIRMED",
+          "correct": true,
+          "answer": "CONFIRMED"
+        },
+        {
+          "id": "conf-12",
+          "label": "CONFIRMED",
+          "pred": "CONFIRMED",
+          "correct": true,
+          "answer": "CONFIRMED"
+        },
+        {
+          "id": "conf-13",
+          "label": "CONFIRMED",
+          "pred": "CONFIRMED",
+          "correct": true,
+          "answer": "CONFIRMED"
+        },
+        {
+          "id": "conf-14",
+          "label": "CONFIRMED",
+          "pred": "CONFIRMED",
+          "correct": true,
+          "answer": "CONFIRMED"
+        },
+        {
+          "id": "conf-15",
+          "label": "CONFIRMED",
+          "pred": "CONFIRMED",
+          "correct": true,
+          "answer": "CONFIRMED"
+        },
+        {
+          "id": "conf-16",
+          "label": "CONFIRMED",
+          "pred": "CONFIRMED",
+          "correct": true,
+          "answer": "CONFIRMED"
+        },
+        {
+          "id": "poss-01",
+          "label": "POSSIBLE",
+          "pred": "POSSIBLE",
+          "correct": true,
+          "answer": "POSSIBLE"
+        },
+        {
+          "id": "poss-02",
+          "label": "POSSIBLE",
+          "pred": "POSSIBLE",
+          "correct": true,
+          "answer": "POSSIBLE"
+        },
+        {
+          "id": "poss-03",
+          "label": "POSSIBLE",
+          "pred": "POSSIBLE",
+          "correct": true,
+          "answer": "POSSIBLE"
+        },
+        {
+          "id": "poss-04",
+          "label": "POSSIBLE",
+          "pred": "POSSIBLE",
+          "correct": true,
+          "answer": "POSSIBLE"
+        },
+        {
+          "id": "poss-05",
+          "label": "POSSIBLE",
+          "pred": "POSSIBLE",
+          "correct": true,
+          "answer": "POSSIBLE"
+        },
+        {
+          "id": "poss-06",
+          "label": "POSSIBLE",
+          "pred": "POSSIBLE",
+          "correct": true,
+          "answer": "POSSIBLE"
+        },
+        {
+          "id": "poss-07",
+          "label": "POSSIBLE",
+          "pred": "POSSIBLE",
+          "correct": true,
+          "answer": "POSSIBLE"
+        },
+        {
+          "id": "poss-08",
+          "label": "POSSIBLE",
+          "pred": "POSSIBLE",
+          "correct": true,
+          "answer": "POSSIBLE"
+        },
+        {
+          "id": "poss-09",
+          "label": "POSSIBLE",
+          "pred": "POSSIBLE",
+          "correct": true,
+          "answer": "POSSIBLE"
+        },
+        {
+          "id": "poss-10",
+          "label": "POSSIBLE",
+          "pred": "POSSIBLE",
+          "correct": true,
+          "answer": "POSSIBLE"
+        },
+        {
+          "id": "poss-11",
+          "label": "POSSIBLE",
+          "pred": "POSSIBLE",
+          "correct": true,
+          "answer": "POSSIBLE"
+        },
+        {
+          "id": "poss-12",
+          "label": "POSSIBLE",
+          "pred": "POSSIBLE",
+          "correct": true,
+          "answer": "POSSIBLE"
+        },
+        {
+          "id": "poss-13",
+          "label": "POSSIBLE",
+          "pred": "POSSIBLE",
+          "correct": true,
+          "answer": "POSSIBLE"
+        },
+        {
+          "id": "poss-14",
+          "label": "POSSIBLE",
+          "pred": "POSSIBLE",
+          "correct": true,
+          "answer": "POSSIBLE"
+        },
+        {
+          "id": "poss-15",
+          "label": "POSSIBLE",
+          "pred": "POSSIBLE",
+          "correct": true,
+          "answer": "POSSIBLE"
+        },
+        {
+          "id": "poss-16",
+          "label": "POSSIBLE",
+          "pred": "POSSIBLE",
+          "correct": true,
+          "answer": "POSSIBLE"
+        },
+        {
+          "id": "clear-01",
+          "label": "CLEAR",
+          "pred": "CLEAR",
+          "correct": true,
+          "answer": "CLEAR"
+        },
+        {
+          "id": "clear-02",
+          "label": "CLEAR",
+          "pred": "CLEAR",
+          "correct": true,
+          "answer": "CLEAR"
+        },
+        {
+          "id": "clear-03",
+          "label": "CLEAR",
+          "pred": "CLEAR",
+          "correct": true,
+          "answer": "CLEAR"
+        },
+        {
+          "id": "clear-04",
+          "label": "CLEAR",
+          "pred": "CLEAR",
+          "correct": true,
+          "answer": "CLEAR"
+        },
+        {
+          "id": "clear-05",
+          "label": "CLEAR",
+          "pred": "CLEAR",
+          "correct": true,
+          "answer": "CLEAR"
+        },
+        {
+          "id": "clear-06",
+          "label": "CLEAR",
+          "pred": "CLEAR",
+          "correct": true,
+          "answer": "CLEAR"
+        },
+        {
+          "id": "clear-07",
+          "label": "CLEAR",
+          "pred": "CLEAR",
+          "correct": true,
+          "answer": "CLEAR"
+        },
+        {
+          "id": "clear-08",
+          "label": "CLEAR",
+          "pred": "CLEAR",
+          "correct": true,
+          "answer": "CLEAR"
+        },
+        {
+          "id": "clear-09",
+          "label": "CLEAR",
+          "pred": "CLEAR",
+          "correct": true,
+          "answer": "CLEAR"
+        },
+        {
+          "id": "clear-10",
+          "label": "CLEAR",
+          "pred": "CLEAR",
+          "correct": true,
+          "answer": "CLEAR"
+        },
+        {
+          "id": "clear-11",
+          "label": "CLEAR",
+          "pred": "CLEAR",
+          "correct": true,
+          "answer": "CLEAR"
+        },
+        {
+          "id": "clear-12",
+          "label": "CLEAR",
+          "pred": "CLEAR",
+          "correct": true,
+          "answer": "CLEAR"
+        },
+        {
+          "id": "clear-13",
+          "label": "CLEAR",
+          "pred": "CLEAR",
+          "correct": true,
+          "answer": "CLEAR"
+        },
+        {
+          "id": "clear-14",
+          "label": "CLEAR",
+          "pred": "CLEAR",
+          "correct": true,
+          "answer": "CLEAR"
+        },
+        {
+          "id": "clear-15",
+          "label": "CLEAR",
+          "pred": "CLEAR",
+          "correct": true,
+          "answer": "CLEAR"
+        },
+        {
+          "id": "clear-16",
+          "label": "CLEAR",
+          "pred": "CLEAR",
+          "correct": true,
+          "answer": "CLEAR"
+        }
+      ]
+    },
+    "native": {
+      "margin_per_example": [
+        {
+          "id": "conf-01",
+          "senses": {
+            "CONFIRMED": 14.125,
+            "POSSIBLE": 5.53125,
+            "CLEAR": 12.25
+          },
+          "top_sense": "CONFIRMED",
+          "margin": 1.875
+        },
+        {
+          "id": "conf-02",
+          "senses": {
+            "CONFIRMED": 15.0625,
+            "POSSIBLE": 6.0625,
+            "CLEAR": 12.25
+          },
+          "top_sense": "CONFIRMED",
+          "margin": 2.8125
+        },
+        {
+          "id": "conf-03",
+          "senses": {
+            "CONFIRMED": 15.0,
+            "POSSIBLE": 5.59375,
+            "CLEAR": 11.8125
+          },
+          "top_sense": "CONFIRMED",
+          "margin": 3.1875
+        },
+        {
+          "id": "conf-04",
+          "senses": {
+            "CONFIRMED": 15.0625,
+            "POSSIBLE": 8.0,
+            "CLEAR": 13.6875
+          },
+          "top_sense": "CONFIRMED",
+          "margin": 1.375
+        },
+        {
+          "id": "conf-05",
+          "senses": {
+            "CONFIRMED": 15.25,
+            "POSSIBLE": 6.03125,
+            "CLEAR": 12.0625
+          },
+          "top_sense": "CONFIRMED",
+          "margin": 3.1875
+        },
+        {
+          "id": "conf-06",
+          "senses": {
+            "CONFIRMED": 15.0625,
+            "POSSIBLE": 6.84375,
+            "CLEAR": 13.125
+          },
+          "top_sense": "CONFIRMED",
+          "margin": 1.9375
+        },
+        {
+          "id": "conf-07",
+          "senses": {
+            "CONFIRMED": 14.6875,
+            "POSSIBLE": 7.34375,
+            "CLEAR": 13.4375
+          },
+          "top_sense": "CONFIRMED",
+          "margin": 1.25
+        },
+        {
+          "id": "conf-08",
+          "senses": {
+            "CONFIRMED": 14.9375,
+            "POSSIBLE": 8.625,
+            "CLEAR": 13.8125
+          },
+          "top_sense": "CONFIRMED",
+          "margin": 1.125
+        },
+        {
+          "id": "conf-09",
+          "senses": {
+            "CONFIRMED": 15.375,
+            "POSSIBLE": 6.25,
+            "CLEAR": 12.4375
+          },
+          "top_sense": "CONFIRMED",
+          "margin": 2.9375
+        },
+        {
+          "id": "conf-10",
+          "senses": {
+            "CONFIRMED": 15.625,
+            "POSSIBLE": 6.9375,
+            "CLEAR": 12.875
+          },
+          "top_sense": "CONFIRMED",
+          "margin": 2.75
+        },
+        {
+          "id": "conf-11",
+          "senses": {
+            "CONFIRMED": 14.625,
+            "POSSIBLE": 6.625,
+            "CLEAR": 13.8125
+          },
+          "top_sense": "CONFIRMED",
+          "margin": 0.8125
+        },
+        {
+          "id": "conf-12",
+          "senses": {
+            "CONFIRMED": 15.3125,
+            "POSSIBLE": 6.4375,
+            "CLEAR": 12.5
+          },
+          "top_sense": "CONFIRMED",
+          "margin": 2.8125
+        },
+        {
+          "id": "conf-13",
+          "senses": {
+            "CONFIRMED": 15.0625,
+            "POSSIBLE": 5.4375,
+            "CLEAR": 12.125
+          },
+          "top_sense": "CONFIRMED",
+          "margin": 2.9375
+        },
+        {
+          "id": "conf-14",
+          "senses": {
+            "CONFIRMED": 14.875,
+            "POSSIBLE": 6.46875,
+            "CLEAR": 12.5
+          },
+          "top_sense": "CONFIRMED",
+          "margin": 2.375
+        },
+        {
+          "id": "conf-15",
+          "senses": {
+            "CONFIRMED": 14.9375,
+            "POSSIBLE": 6.09375,
+            "CLEAR": 13.25
+          },
+          "top_sense": "CONFIRMED",
+          "margin": 1.6875
+        },
+        {
+          "id": "conf-16",
+          "senses": {
+            "CONFIRMED": 14.5625,
+            "POSSIBLE": 6.59375,
+            "CLEAR": 12.25
+          },
+          "top_sense": "CONFIRMED",
+          "margin": 2.3125
+        },
+        {
+          "id": "poss-01",
+          "senses": {
+            "CONFIRMED": 5.65625,
+            "POSSIBLE": 18.875,
+            "CLEAR": 16.625
+          },
+          "top_sense": "POSSIBLE",
+          "margin": 2.25
+        },
+        {
+          "id": "poss-02",
+          "senses": {
+            "CONFIRMED": 8.25,
+            "POSSIBLE": 18.875,
+            "CLEAR": 20.25
+          },
+          "top_sense": "CLEAR",
+          "margin": 1.375
+        },
+        {
+          "id": "poss-03",
+          "senses": {
+            "CONFIRMED": 7.1875,
+            "POSSIBLE": 18.125,
+            "CLEAR": 22.125
+          },
+          "top_sense": "CLEAR",
+          "margin": 4.0
+        },
+        {
+          "id": "poss-04",
+          "senses": {
+            "CONFIRMED": 9.75,
+            "POSSIBLE": 18.125,
+            "CLEAR": 14.0625
+          },
+          "top_sense": "POSSIBLE",
+          "margin": 4.0625
+        },
+        {
+          "id": "poss-05",
+          "senses": {
+            "CONFIRMED": 5.96875,
+            "POSSIBLE": 18.875,
+            "CLEAR": 14.75
+          },
+          "top_sense": "POSSIBLE",
+          "margin": 4.125
+        },
+        {
+          "id": "poss-06",
+          "senses": {
+            "CONFIRMED": 6.90625,
+            "POSSIBLE": 18.5,
+            "CLEAR": 22.125
+          },
+          "top_sense": "CLEAR",
+          "margin": 3.625
+        },
+        {
+          "id": "poss-07",
+          "senses": {
+            "CONFIRMED": 6.53125,
+            "POSSIBLE": 19.5,
+            "CLEAR": 14.125
+          },
+          "top_sense": "POSSIBLE",
+          "margin": 5.375
+        },
+        {
+          "id": "poss-08",
+          "senses": {
+            "CONFIRMED": 8.0625,
+            "POSSIBLE": 16.125,
+            "CLEAR": 24.875
+          },
+          "top_sense": "CLEAR",
+          "margin": 8.75
+        },
+        {
+          "id": "poss-09",
+          "senses": {
+            "CONFIRMED": 6.75,
+            "POSSIBLE": 19.125,
+            "CLEAR": 15.25
+          },
+          "top_sense": "POSSIBLE",
+          "margin": 3.875
+        },
+        {
+          "id": "poss-10",
+          "senses": {
+            "CONFIRMED": 7.34375,
+            "POSSIBLE": 18.75,
+            "CLEAR": 17.875
+          },
+          "top_sense": "POSSIBLE",
+          "margin": 0.875
+        },
+        {
+          "id": "poss-11",
+          "senses": {
+            "CONFIRMED": 6.46875,
+            "POSSIBLE": 18.375,
+            "CLEAR": 22.625
+          },
+          "top_sense": "CLEAR",
+          "margin": 4.25
+        },
+        {
+          "id": "poss-12",
+          "senses": {
+            "CONFIRMED": 7.53125,
+            "POSSIBLE": 19.0,
+            "CLEAR": 18.375
+          },
+          "top_sense": "POSSIBLE",
+          "margin": 0.625
+        },
+        {
+          "id": "poss-13",
+          "senses": {
+            "CONFIRMED": 6.59375,
+            "POSSIBLE": 17.625,
+            "CLEAR": 23.75
+          },
+          "top_sense": "CLEAR",
+          "margin": 6.125
+        },
+        {
+          "id": "poss-14",
+          "senses": {
+            "CONFIRMED": 7.375,
+            "POSSIBLE": 17.125,
+            "CLEAR": 24.5
+          },
+          "top_sense": "CLEAR",
+          "margin": 7.375
+        },
+        {
+          "id": "poss-15",
+          "senses": {
+            "CONFIRMED": 8.125,
+            "POSSIBLE": 17.5,
+            "CLEAR": 23.125
+          },
+          "top_sense": "CLEAR",
+          "margin": 5.625
+        },
+        {
+          "id": "poss-16",
+          "senses": {
+            "CONFIRMED": 10.0,
+            "POSSIBLE": 18.375,
+            "CLEAR": 15.5
+          },
+          "top_sense": "POSSIBLE",
+          "margin": 2.875
+        },
+        {
+          "id": "clear-01",
+          "senses": {
+            "CONFIRMED": 6.3125,
+            "POSSIBLE": 5.6875,
+            "CLEAR": 29.25
+          },
+          "top_sense": "CLEAR",
+          "margin": 22.9375
+        },
+        {
+          "id": "clear-02",
+          "senses": {
+            "CONFIRMED": 6.09375,
+            "POSSIBLE": 5.96875,
+            "CLEAR": 28.5
+          },
+          "top_sense": "CLEAR",
+          "margin": 22.40625
+        },
+        {
+          "id": "clear-03",
+          "senses": {
+            "CONFIRMED": 6.78125,
+            "POSSIBLE": 6.15625,
+            "CLEAR": 28.75
+          },
+          "top_sense": "CLEAR",
+          "margin": 21.96875
+        },
+        {
+          "id": "clear-04",
+          "senses": {
+            "CONFIRMED": 6.4375,
+            "POSSIBLE": 6.15625,
+            "CLEAR": 29.0
+          },
+          "top_sense": "CLEAR",
+          "margin": 22.5625
+        },
+        {
+          "id": "clear-05",
+          "senses": {
+            "CONFIRMED": 6.0,
+            "POSSIBLE": 6.28125,
+            "CLEAR": 28.25
+          },
+          "top_sense": "CLEAR",
+          "margin": 21.96875
+        },
+        {
+          "id": "clear-06",
+          "senses": {
+            "CONFIRMED": 6.34375,
+            "POSSIBLE": 5.59375,
+            "CLEAR": 28.5
+          },
+          "top_sense": "CLEAR",
+          "margin": 22.15625
+        },
+        {
+          "id": "clear-07",
+          "senses": {
+            "CONFIRMED": 6.75,
+            "POSSIBLE": 5.875,
+            "CLEAR": 28.625
+          },
+          "top_sense": "CLEAR",
+          "margin": 21.875
+        },
+        {
+          "id": "clear-08",
+          "senses": {
+            "CONFIRMED": 6.21875,
+            "POSSIBLE": 6.15625,
+            "CLEAR": 28.625
+          },
+          "top_sense": "CLEAR",
+          "margin": 22.40625
+        },
+        {
+          "id": "clear-09",
+          "senses": {
+            "CONFIRMED": 6.03125,
+            "POSSIBLE": 6.25,
+            "CLEAR": 29.0
+          },
+          "top_sense": "CLEAR",
+          "margin": 22.75
+        },
+        {
+          "id": "clear-10",
+          "senses": {
+            "CONFIRMED": 6.0,
+            "POSSIBLE": 6.5625,
+            "CLEAR": 28.5
+          },
+          "top_sense": "CLEAR",
+          "margin": 21.9375
+        },
+        {
+          "id": "clear-11",
+          "senses": {
+            "CONFIRMED": 6.0625,
+            "POSSIBLE": 5.71875,
+            "CLEAR": 28.125
+          },
+          "top_sense": "CLEAR",
+          "margin": 22.0625
+        },
+        {
+          "id": "clear-12",
+          "senses": {
+            "CONFIRMED": 6.28125,
+            "POSSIBLE": 5.53125,
+            "CLEAR": 28.875
+          },
+          "top_sense": "CLEAR",
+          "margin": 22.59375
+        },
+        {
+          "id": "clear-13",
+          "senses": {
+            "CONFIRMED": 6.5,
+            "POSSIBLE": 6.3125,
+            "CLEAR": 27.75
+          },
+          "top_sense": "CLEAR",
+          "margin": 21.25
+        },
+        {
+          "id": "clear-14",
+          "senses": {
+            "CONFIRMED": 6.59375,
+            "POSSIBLE": 5.625,
+            "CLEAR": 28.5
+          },
+          "top_sense": "CLEAR",
+          "margin": 21.90625
+        },
+        {
+          "id": "clear-15",
+          "senses": {
+            "CONFIRMED": 6.34375,
+            "POSSIBLE": 5.5625,
+            "CLEAR": 28.375
+          },
+          "top_sense": "CLEAR",
+          "margin": 22.03125
+        },
+        {
+          "id": "clear-16",
+          "senses": {
+            "CONFIRMED": 6.40625,
+            "POSSIBLE": 5.59375,
+            "CLEAR": 28.25
+          },
+          "top_sense": "CLEAR",
+          "margin": 21.84375
+        }
+      ],
+      "accuracy_per_example": [
+        {
+          "id": "conf-01",
+          "label": "CONFIRMED",
+          "pred": "CONFIRMED",
+          "correct": true,
+          "answer": "CONFIRMED"
+        },
+        {
+          "id": "conf-02",
+          "label": "CONFIRMED",
+          "pred": "CONFIRMED",
+          "correct": true,
+          "answer": "CONFIRMED"
+        },
+        {
+          "id": "conf-03",
+          "label": "CONFIRMED",
+          "pred": "CONFIRMED",
+          "correct": true,
+          "answer": "CONFIRMED"
+        },
+        {
+          "id": "conf-04",
+          "label": "CONFIRMED",
+          "pred": "CONFIRMED",
+          "correct": true,
+          "answer": "CONFIRMED"
+        },
+        {
+          "id": "conf-05",
+          "label": "CONFIRMED",
+          "pred": "CONFIRMED",
+          "correct": true,
+          "answer": "CONFIRMED"
+        },
+        {
+          "id": "conf-06",
+          "label": "CONFIRMED",
+          "pred": "CONFIRMED",
+          "correct": true,
+          "answer": "CONFIRMED"
+        },
+        {
+          "id": "conf-07",
+          "label": "CONFIRMED",
+          "pred": "CONFIRMED",
+          "correct": true,
+          "answer": "CONFIRMED"
+        },
+        {
+          "id": "conf-08",
+          "label": "CONFIRMED",
+          "pred": "CONFIRMED",
+          "correct": true,
+          "answer": "CONFIRMED"
+        },
+        {
+          "id": "conf-09",
+          "label": "CONFIRMED",
+          "pred": "CONFIRMED",
+          "correct": true,
+          "answer": "CONFIRMED"
+        },
+        {
+          "id": "conf-10",
+          "label": "CONFIRMED",
+          "pred": "CONFIRMED",
+          "correct": true,
+          "answer": "CONFIRMED"
+        },
+        {
+          "id": "conf-11",
+          "label": "CONFIRMED",
+          "pred": "CONFIRMED",
+          "correct": true,
+          "answer": "CONFIRMED"
+        },
+        {
+          "id": "conf-12",
+          "label": "CONFIRMED",
+          "pred": "CONFIRMED",
+          "correct": true,
+          "answer": "CONFIRMED"
+        },
+        {
+          "id": "conf-13",
+          "label": "CONFIRMED",
+          "pred": "CONFIRMED",
+          "correct": true,
+          "answer": "CONFIRMED"
+        },
+        {
+          "id": "conf-14",
+          "label": "CONFIRMED",
+          "pred": "CONFIRMED",
+          "correct": true,
+          "answer": "CONFIRMED"
+        },
+        {
+          "id": "conf-15",
+          "label": "CONFIRMED",
+          "pred": "CONFIRMED",
+          "correct": true,
+          "answer": "CONFIRMED"
+        },
+        {
+          "id": "conf-16",
+          "label": "CONFIRMED",
+          "pred": "CONFIRMED",
+          "correct": true,
+          "answer": "CONFIRMED"
+        },
+        {
+          "id": "poss-01",
+          "label": "POSSIBLE",
+          "pred": "POSSIBLE",
+          "correct": true,
+          "answer": "POSSIBLE"
+        },
+        {
+          "id": "poss-02",
+          "label": "POSSIBLE",
+          "pred": "POSSIBLE",
+          "correct": true,
+          "answer": "POSSIBLE"
+        },
+        {
+          "id": "poss-03",
+          "label": "POSSIBLE",
+          "pred": "POSSIBLE",
+          "correct": true,
+          "answer": "POSSIBLE"
+        },
+        {
+          "id": "poss-04",
+          "label": "POSSIBLE",
+          "pred": "POSSIBLE",
+          "correct": true,
+          "answer": "POSSIBLE"
+        },
+        {
+          "id": "poss-05",
+          "label": "POSSIBLE",
+          "pred": "POSSIBLE",
+          "correct": true,
+          "answer": "POSSIBLE"
+        },
+        {
+          "id": "poss-06",
+          "label": "POSSIBLE",
+          "pred": "POSSIBLE",
+          "correct": true,
+          "answer": "POSSIBLE"
+        },
+        {
+          "id": "poss-07",
+          "label": "POSSIBLE",
+          "pred": "POSSIBLE",
+          "correct": true,
+          "answer": "POSSIBLE"
+        },
+        {
+          "id": "poss-08",
+          "label": "POSSIBLE",
+          "pred": "CLEAR",
+          "correct": false,
+          "answer": "CLEAR"
+        },
+        {
+          "id": "poss-09",
+          "label": "POSSIBLE",
+          "pred": "POSSIBLE",
+          "correct": true,
+          "answer": "POSSIBLE"
+        },
+        {
+          "id": "poss-10",
+          "label": "POSSIBLE",
+          "pred": "POSSIBLE",
+          "correct": true,
+          "answer": "POSSIBLE"
+        },
+        {
+          "id": "poss-11",
+          "label": "POSSIBLE",
+          "pred": "POSSIBLE",
+          "correct": true,
+          "answer": "POSSIBLE"
+        },
+        {
+          "id": "poss-12",
+          "label": "POSSIBLE",
+          "pred": "POSSIBLE",
+          "correct": true,
+          "answer": "POSSIBLE"
+        },
+        {
+          "id": "poss-13",
+          "label": "POSSIBLE",
+          "pred": "POSSIBLE",
+          "correct": true,
+          "answer": "POSSIBLE"
+        },
+        {
+          "id": "poss-14",
+          "label": "POSSIBLE",
+          "pred": "CLEAR",
+          "correct": false,
+          "answer": "CLEAR"
+        },
+        {
+          "id": "poss-15",
+          "label": "POSSIBLE",
+          "pred": "POSSIBLE",
+          "correct": true,
+          "answer": "POSSIBLE"
+        },
+        {
+          "id": "poss-16",
+          "label": "POSSIBLE",
+          "pred": "POSSIBLE",
+          "correct": true,
+          "answer": "POSSIBLE"
+        },
+        {
+          "id": "clear-01",
+          "label": "CLEAR",
+          "pred": "CLEAR",
+          "correct": true,
+          "answer": "CLEAR"
+        },
+        {
+          "id": "clear-02",
+          "label": "CLEAR",
+          "pred": "CLEAR",
+          "correct": true,
+          "answer": "CLEAR"
+        },
+        {
+          "id": "clear-03",
+          "label": "CLEAR",
+          "pred": "CLEAR",
+          "correct": true,
+          "answer": "CLEAR"
+        },
+        {
+          "id": "clear-04",
+          "label": "CLEAR",
+          "pred": "CLEAR",
+          "correct": true,
+          "answer": "CLEAR"
+        },
+        {
+          "id": "clear-05",
+          "label": "CLEAR",
+          "pred": "CLEAR",
+          "correct": true,
+          "answer": "CLEAR"
+        },
+        {
+          "id": "clear-06",
+          "label": "CLEAR",
+          "pred": "CLEAR",
+          "correct": true,
+          "answer": "CLEAR"
+        },
+        {
+          "id": "clear-07",
+          "label": "CLEAR",
+          "pred": "CLEAR",
+          "correct": true,
+          "answer": "CLEAR"
+        },
+        {
+          "id": "clear-08",
+          "label": "CLEAR",
+          "pred": "CLEAR",
+          "correct": true,
+          "answer": "CLEAR"
+        },
+        {
+          "id": "clear-09",
+          "label": "CLEAR",
+          "pred": "CLEAR",
+          "correct": true,
+          "answer": "CLEAR"
+        },
+        {
+          "id": "clear-10",
+          "label": "CLEAR",
+          "pred": "CLEAR",
+          "correct": true,
+          "answer": "CLEAR"
+        },
+        {
+          "id": "clear-11",
+          "label": "CLEAR",
+          "pred": "CLEAR",
+          "correct": true,
+          "answer": "CLEAR"
+        },
+        {
+          "id": "clear-12",
+          "label": "CLEAR",
+          "pred": "CLEAR",
+          "correct": true,
+          "answer": "CLEAR"
+        },
+        {
+          "id": "clear-13",
+          "label": "CLEAR",
+          "pred": "CLEAR",
+          "correct": true,
+          "answer": "CLEAR"
+        },
+        {
+          "id": "clear-14",
+          "label": "CLEAR",
+          "pred": "CLEAR",
+          "correct": true,
+          "answer": "CLEAR"
+        },
+        {
+          "id": "clear-15",
+          "label": "CLEAR",
+          "pred": "CLEAR",
+          "correct": true,
+          "answer": "CLEAR"
+        },
+        {
+          "id": "clear-16",
+          "label": "CLEAR",
+          "pred": "CLEAR",
+          "correct": true,
+          "answer": "CLEAR"
+        }
+      ]
+    },
+    "terse": {
+      "margin_per_example": [
+        {
+          "id": "conf-01",
+          "senses": {
+            "CONFIRMED": 11.5625,
+            "POSSIBLE": 10.6875,
+            "CLEAR": 18.625
+          },
+          "top_sense": "CLEAR",
+          "margin": 7.0625
+        },
+        {
+          "id": "conf-02",
+          "senses": {
+            "CONFIRMED": 10.875,
+            "POSSIBLE": 15.5625,
+            "CLEAR": 18.5
+          },
+          "top_sense": "CLEAR",
+          "margin": 2.9375
+        },
+        {
+          "id": "conf-03",
+          "senses": {
+            "CONFIRMED": 11.5625,
+            "POSSIBLE": 12.0,
+            "CLEAR": 17.75
+          },
+          "top_sense": "CLEAR",
+          "margin": 5.75
+        },
+        {
+          "id": "conf-04",
+          "senses": {
+            "CONFIRMED": 11.0625,
+            "POSSIBLE": 13.75,
+            "CLEAR": 18.25
+          },
+          "top_sense": "CLEAR",
+          "margin": 4.5
+        },
+        {
+          "id": "conf-05",
+          "senses": {
+            "CONFIRMED": 11.3125,
+            "POSSIBLE": 13.125,
+            "CLEAR": 18.875
+          },
+          "top_sense": "CLEAR",
+          "margin": 5.75
+        },
+        {
+          "id": "conf-06",
+          "senses": {
+            "CONFIRMED": 10.875,
+            "POSSIBLE": 12.9375,
+            "CLEAR": 18.125
+          },
+          "top_sense": "CLEAR",
+          "margin": 5.1875
+        },
+        {
+          "id": "conf-07",
+          "senses": {
+            "CONFIRMED": 11.5625,
+            "POSSIBLE": 13.3125,
+            "CLEAR": 17.625
+          },
+          "top_sense": "CLEAR",
+          "margin": 4.3125
+        },
+        {
+          "id": "conf-08",
+          "senses": {
+            "CONFIRMED": 10.4375,
+            "POSSIBLE": 16.625,
+            "CLEAR": 17.875
+          },
+          "top_sense": "CLEAR",
+          "margin": 1.25
+        },
+        {
+          "id": "conf-09",
+          "senses": {
+            "CONFIRMED": 10.75,
+            "POSSIBLE": 13.5,
+            "CLEAR": 20.5
+          },
+          "top_sense": "CLEAR",
+          "margin": 7.0
+        },
+        {
+          "id": "conf-10",
+          "senses": {
+            "CONFIRMED": 11.5,
+            "POSSIBLE": 14.0625,
+            "CLEAR": 19.125
+          },
+          "top_sense": "CLEAR",
+          "margin": 5.0625
+        },
+        {
+          "id": "conf-11",
+          "senses": {
+            "CONFIRMED": 11.375,
+            "POSSIBLE": 12.3125,
+            "CLEAR": 17.625
+          },
+          "top_sense": "CLEAR",
+          "margin": 5.3125
+        },
+        {
+          "id": "conf-12",
+          "senses": {
+            "CONFIRMED": 11.1875,
+            "POSSIBLE": 14.375,
+            "CLEAR": 18.125
+          },
+          "top_sense": "CLEAR",
+          "margin": 3.75
+        },
+        {
+          "id": "conf-13",
+          "senses": {
+            "CONFIRMED": 11.5625,
+            "POSSIBLE": 11.8125,
+            "CLEAR": 17.125
+          },
+          "top_sense": "CLEAR",
+          "margin": 5.3125
+        },
+        {
+          "id": "conf-14",
+          "senses": {
+            "CONFIRMED": 10.75,
+            "POSSIBLE": 15.4375,
+            "CLEAR": 18.125
+          },
+          "top_sense": "CLEAR",
+          "margin": 2.6875
+        },
+        {
+          "id": "conf-15",
+          "senses": {
+            "CONFIRMED": 11.1875,
+            "POSSIBLE": 12.3125,
+            "CLEAR": 18.625
+          },
+          "top_sense": "CLEAR",
+          "margin": 6.3125
+        },
+        {
+          "id": "conf-16",
+          "senses": {
+            "CONFIRMED": 11.5625,
+            "POSSIBLE": 12.875,
+            "CLEAR": 18.875
+          },
+          "top_sense": "CLEAR",
+          "margin": 6.0
+        },
+        {
+          "id": "poss-01",
+          "senses": {
+            "CONFIRMED": 9.625,
+            "POSSIBLE": 15.1875,
+            "CLEAR": 16.875
+          },
+          "top_sense": "CLEAR",
+          "margin": 1.6875
+        },
+        {
+          "id": "poss-02",
+          "senses": {
+            "CONFIRMED": 9.8125,
+            "POSSIBLE": 16.375,
+            "CLEAR": 19.25
+          },
+          "top_sense": "CLEAR",
+          "margin": 2.875
+        },
+        {
+          "id": "poss-03",
+          "senses": {
+            "CONFIRMED": 9.8125,
+            "POSSIBLE": 16.5,
+            "CLEAR": 18.125
+          },
+          "top_sense": "CLEAR",
+          "margin": 1.625
+        },
+        {
+          "id": "poss-04",
+          "senses": {
+            "CONFIRMED": 9.9375,
+            "POSSIBLE": 14.8125,
+            "CLEAR": 17.75
+          },
+          "top_sense": "CLEAR",
+          "margin": 2.9375
+        },
+        {
+          "id": "poss-05",
+          "senses": {
+            "CONFIRMED": 9.875,
+            "POSSIBLE": 14.75,
+            "CLEAR": 19.625
+          },
+          "top_sense": "CLEAR",
+          "margin": 4.875
+        },
+        {
+          "id": "poss-06",
+          "senses": {
+            "CONFIRMED": 9.875,
+            "POSSIBLE": 11.25,
+            "CLEAR": 18.875
+          },
+          "top_sense": "CLEAR",
+          "margin": 7.625
+        },
+        {
+          "id": "poss-07",
+          "senses": {
+            "CONFIRMED": 9.8125,
+            "POSSIBLE": 12.0,
+            "CLEAR": 16.875
+          },
+          "top_sense": "CLEAR",
+          "margin": 4.875
+        },
+        {
+          "id": "poss-08",
+          "senses": {
+            "CONFIRMED": 9.25,
+            "POSSIBLE": 17.125,
+            "CLEAR": 19.125
+          },
+          "top_sense": "CLEAR",
+          "margin": 2.0
+        },
+        {
+          "id": "poss-09",
+          "senses": {
+            "CONFIRMED": 9.6875,
+            "POSSIBLE": 14.3125,
+            "CLEAR": 17.75
+          },
+          "top_sense": "CLEAR",
+          "margin": 3.4375
+        },
+        {
+          "id": "poss-10",
+          "senses": {
+            "CONFIRMED": 9.6875,
+            "POSSIBLE": 15.1875,
+            "CLEAR": 19.0
+          },
+          "top_sense": "CLEAR",
+          "margin": 3.8125
+        },
+        {
+          "id": "poss-11",
+          "senses": {
+            "CONFIRMED": 9.875,
+            "POSSIBLE": 16.25,
+            "CLEAR": 18.375
+          },
+          "top_sense": "CLEAR",
+          "margin": 2.125
+        },
+        {
+          "id": "poss-12",
+          "senses": {
+            "CONFIRMED": 9.125,
+            "POSSIBLE": 17.375,
+            "CLEAR": 18.0
+          },
+          "top_sense": "CLEAR",
+          "margin": 0.625
+        },
+        {
+          "id": "poss-13",
+          "senses": {
+            "CONFIRMED": 9.875,
+            "POSSIBLE": 16.25,
+            "CLEAR": 19.0
+          },
+          "top_sense": "CLEAR",
+          "margin": 2.75
+        },
+        {
+          "id": "poss-14",
+          "senses": {
+            "CONFIRMED": 9.6875,
+            "POSSIBLE": 12.625,
+            "CLEAR": 18.375
+          },
+          "top_sense": "CLEAR",
+          "margin": 5.75
+        },
+        {
+          "id": "poss-15",
+          "senses": {
+            "CONFIRMED": 10.0,
+            "POSSIBLE": 16.375,
+            "CLEAR": 18.0
+          },
+          "top_sense": "CLEAR",
+          "margin": 1.625
+        },
+        {
+          "id": "poss-16",
+          "senses": {
+            "CONFIRMED": 10.375,
+            "POSSIBLE": 14.75,
+            "CLEAR": 18.0
+          },
+          "top_sense": "CLEAR",
+          "margin": 3.25
+        },
+        {
+          "id": "clear-01",
+          "senses": {
+            "CONFIRMED": 10.3125,
+            "POSSIBLE": 12.0625,
+            "CLEAR": 20.0
+          },
+          "top_sense": "CLEAR",
+          "margin": 7.9375
+        },
+        {
+          "id": "clear-02",
+          "senses": {
+            "CONFIRMED": 9.6875,
+            "POSSIBLE": 12.6875,
+            "CLEAR": 20.375
+          },
+          "top_sense": "CLEAR",
+          "margin": 7.6875
+        },
+        {
+          "id": "clear-03",
+          "senses": {
+            "CONFIRMED": 10.0,
+            "POSSIBLE": 13.625,
+            "CLEAR": 20.125
+          },
+          "top_sense": "CLEAR",
+          "margin": 6.5
+        },
+        {
+          "id": "clear-04",
+          "senses": {
+            "CONFIRMED": 9.6875,
+            "POSSIBLE": 9.3125,
+            "CLEAR": 19.125
+          },
+          "top_sense": "CLEAR",
+          "margin": 9.4375
+        },
+        {
+          "id": "clear-05",
+          "senses": {
+            "CONFIRMED": 10.8125,
+            "POSSIBLE": 14.75,
+            "CLEAR": 19.25
+          },
+          "top_sense": "CLEAR",
+          "margin": 4.5
+        },
+        {
+          "id": "clear-06",
+          "senses": {
+            "CONFIRMED": 9.875,
+            "POSSIBLE": 15.0,
+            "CLEAR": 19.25
+          },
+          "top_sense": "CLEAR",
+          "margin": 4.25
+        },
+        {
+          "id": "clear-07",
+          "senses": {
+            "CONFIRMED": 9.75,
+            "POSSIBLE": 13.1875,
+            "CLEAR": 20.5
+          },
+          "top_sense": "CLEAR",
+          "margin": 7.3125
+        },
+        {
+          "id": "clear-08",
+          "senses": {
+            "CONFIRMED": 10.625,
+            "POSSIBLE": 13.125,
+            "CLEAR": 20.0
+          },
+          "top_sense": "CLEAR",
+          "margin": 6.875
+        },
+        {
+          "id": "clear-09",
+          "senses": {
+            "CONFIRMED": 9.9375,
+            "POSSIBLE": 16.375,
+            "CLEAR": 17.25
+          },
+          "top_sense": "CLEAR",
+          "margin": 0.875
+        },
+        {
+          "id": "clear-10",
+          "senses": {
+            "CONFIRMED": 9.6875,
+            "POSSIBLE": 14.875,
+            "CLEAR": 18.75
+          },
+          "top_sense": "CLEAR",
+          "margin": 3.875
+        },
+        {
+          "id": "clear-11",
+          "senses": {
+            "CONFIRMED": 10.375,
+            "POSSIBLE": 12.375,
+            "CLEAR": 18.75
+          },
+          "top_sense": "CLEAR",
+          "margin": 6.375
+        },
+        {
+          "id": "clear-12",
+          "senses": {
+            "CONFIRMED": 10.6875,
+            "POSSIBLE": 13.625,
+            "CLEAR": 19.75
+          },
+          "top_sense": "CLEAR",
+          "margin": 6.125
+        },
+        {
+          "id": "clear-13",
+          "senses": {
+            "CONFIRMED": 10.1875,
+            "POSSIBLE": 12.1875,
+            "CLEAR": 21.125
+          },
+          "top_sense": "CLEAR",
+          "margin": 8.9375
+        },
+        {
+          "id": "clear-14",
+          "senses": {
+            "CONFIRMED": 10.0,
+            "POSSIBLE": 13.75,
+            "CLEAR": 20.625
+          },
+          "top_sense": "CLEAR",
+          "margin": 6.875
+        },
+        {
+          "id": "clear-15",
+          "senses": {
+            "CONFIRMED": 10.625,
+            "POSSIBLE": 12.6875,
+            "CLEAR": 18.875
+          },
+          "top_sense": "CLEAR",
+          "margin": 6.1875
+        },
+        {
+          "id": "clear-16",
+          "senses": {
+            "CONFIRMED": 9.875,
+            "POSSIBLE": 13.125,
+            "CLEAR": 20.75
+          },
+          "top_sense": "CLEAR",
+          "margin": 7.625
+        }
+      ],
+      "accuracy_per_example": [
+        {
+          "id": "conf-01",
+          "label": "CONFIRMED",
+          "pred": "CONFIRMED",
+          "correct": true,
+          "answer": "CONFIRMED"
+        },
+        {
+          "id": "conf-02",
+          "label": "CONFIRMED",
+          "pred": "CONFIRMED",
+          "correct": true,
+          "answer": "CONFIRMED"
+        },
+        {
+          "id": "conf-03",
+          "label": "CONFIRMED",
+          "pred": "CONFIRMED",
+          "correct": true,
+          "answer": "CONFIRMED"
+        },
+        {
+          "id": "conf-04",
+          "label": "CONFIRMED",
+          "pred": "CONFIRMED",
+          "correct": true,
+          "answer": "Tier: **CONFIRMED**\n\n**Reasoning:**\nThe sentence explicitly states that the construction worker \"has a cigarette dangling from the corner of his mouth.\" This is a direct description of the act of smok"
+        },
+        {
+          "id": "conf-05",
+          "label": "CONFIRMED",
+          "pred": "CONFIRMED",
+          "correct": true,
+          "answer": "CONFIRMED"
+        },
+        {
+          "id": "conf-06",
+          "label": "CONFIRMED",
+          "pred": "CONFIRMED",
+          "correct": true,
+          "answer": "**CONFIRMED**\n\n**Reasoning:**\nThe phrase \"glowing red ember\" is a widely recognized and unambiguous literary metaphor for a burning cigarette tip. The context of a \"worker\" taking a \"drag\" further sol"
+        },
+        {
+          "id": "conf-07",
+          "label": "CONFIRMED",
+          "pred": "CONFIRMED",
+          "correct": true,
+          "answer": "CONFIRMED"
+        },
+        {
+          "id": "conf-08",
+          "label": "CONFIRMED",
+          "pred": "POSSIBLE",
+          "correct": false,
+          "answer": "**POSSIBLE**\n\n**Reasoning:**\nThe statement confirms the presence of a cigarette and its current state (unlit and lowered), but it does not explicitly state that the worker is a smoker. The worker coul"
+        },
+        {
+          "id": "conf-09",
+          "label": "CONFIRMED",
+          "pred": "CLEAR",
+          "correct": false,
+          "answer": "CLEAR"
+        },
+        {
+          "id": "conf-10",
+          "label": "CONFIRMED",
+          "pred": "CONFIRMED",
+          "correct": true,
+          "answer": "CONFIRMED"
+        },
+        {
+          "id": "conf-11",
+          "label": "CONFIRMED",
+          "pred": "CONFIRMED",
+          "correct": true,
+          "answer": "Tier: **CONFIRMED**\n\n**Reasoning:**\nThe statement explicitly states that the worker has a \"visible lit cigarette in his mouth.\" The presence of a lit cigarette is a definitive, observable fact within "
+        },
+        {
+          "id": "conf-12",
+          "label": "CONFIRMED",
+          "pred": "CONFIRMED",
+          "correct": true,
+          "answer": "CONFIRMED"
+        },
+        {
+          "id": "conf-13",
+          "label": "CONFIRMED",
+          "pred": "CONFIRMED",
+          "correct": true,
+          "answer": "Tier: **CONFIRMED**\n\n**Reasoning:**\nThe phrase \"tip visibly glowing\" is a definitive physical description of a burning cigarette ember. While the term \"mid-drag\" is slightly non-standard (usually \"mid"
+        },
+        {
+          "id": "conf-14",
+          "label": "CONFIRMED",
+          "pred": "CONFIRMED",
+          "correct": true,
+          "answer": "**CONFIRMED**\n\n**Reasoning:**\nThe phrase \"An e-cigarette glows and a mist hangs around the worker's face as he inhales\" is a direct, literal description of the physical act of using an e-cigarette. It"
+        },
+        {
+          "id": "conf-15",
+          "label": "CONFIRMED",
+          "pred": "CONFIRMED",
+          "correct": true,
+          "answer": "Tier: **CONFIRMED**\n\n**Reasoning:**\nThe phrase \"grey ash is clearly visible\" provides direct, unambiguous visual evidence of combustion. In the context of smoking classification, the presence of ash o"
+        },
+        {
+          "id": "conf-16",
+          "label": "CONFIRMED",
+          "pred": "CONFIRMED",
+          "correct": true,
+          "answer": "CONFIRMED"
+        },
+        {
+          "id": "poss-01",
+          "label": "POSSIBLE",
+          "pred": "POSSIBLE",
+          "correct": true,
+          "answer": "Tier: **POSSIBLE**\n\n**Reasoning:**\nThe statement explicitly presents a scenario of ambiguity where the visual evidence (a small object in hand) is insufficient to definitively identify the item as a c"
+        },
+        {
+          "id": "poss-02",
+          "label": "POSSIBLE",
+          "pred": "POSSIBLE",
+          "correct": true,
+          "answer": "Tier: **POSSIBLE**\n\n**Reasoning:**\nThe description explicitly states that the object \"might be a cigarette\" and notes its extremely small size (\"only a few pixels\"). In image classification, when an o"
+        },
+        {
+          "id": "poss-03",
+          "label": "POSSIBLE",
+          "pred": "POSSIBLE",
+          "correct": true,
+          "answer": "Tier: **POSSIBLE**\n\n**Reasoning:**\nThe statement explicitly presents two distinct possibilities: the visual could be actual smoke, or it could be an optical artifact (motion blur). Because the evidenc"
+        },
+        {
+          "id": "poss-04",
+          "label": "POSSIBLE",
+          "pred": "POSSIBLE",
+          "correct": true,
+          "answer": "**POSSIBLE**\n\n**Reasoning:**\nThe description contains significant ambiguity regarding the nature of the object (\"maybe-stick\") and the visual evidence of smoke (\"possible faint haze\"). While the gestu"
+        },
+        {
+          "id": "poss-05",
+          "label": "POSSIBLE",
+          "pred": "CONFIRMED",
+          "correct": false,
+          "answer": "**CONFIRMED**\n\n**Reasoning:**\nThe statement explicitly states that the object \"cannot be told apart\" among the listed options (cigarette, straw, toothpick). In the context of smoking tiers, this indic"
+        },
+        {
+          "id": "poss-06",
+          "label": "POSSIBLE",
+          "pred": "CONFIRMED",
+          "correct": false,
+          "answer": "**Tier: CONFIRMED**\n\n**Reasoning:**\nThe phrase \"tiny tan stick\" is a classic, unambiguous description of a cigarette (or possibly a joint, but \"stick\" strongly implies a manufactured cigarette). The c"
+        },
+        {
+          "id": "poss-07",
+          "label": "POSSIBLE",
+          "pred": "POSSIBLE",
+          "correct": true,
+          "answer": "**Tier: POSSIBLE**\n\n**Reasoning:**\nThe description explicitly states that the image is \"low-resolution\" and \"genuinely ambiguous.\" In the context of image classification tiers:\n*   **CONFIRMED** requi"
+        },
+        {
+          "id": "poss-08",
+          "label": "POSSIBLE",
+          "pred": "POSSIBLE",
+          "correct": true,
+          "answer": "Tier: POSSIBLE"
+        },
+        {
+          "id": "poss-09",
+          "label": "POSSIBLE",
+          "pred": "POSSIBLE",
+          "correct": true,
+          "answer": "**Tier: POSSIBLE**\n\n**Reasoning:**\nThe description explicitly states the object \"may or may not be a cigarette.\" In smoking tier classifications, an image or description where the act of smoking is am"
+        },
+        {
+          "id": "poss-10",
+          "label": "POSSIBLE",
+          "pred": "POSSIBLE",
+          "correct": true,
+          "answer": "**POSSIBLE**\n\n**Reasoning:**\nThe phrase \"pale item behind the ear\" is a classic trope in visual media (often found in cartoons or stylized illustrations) used to depict a character holding a cigarette"
+        },
+        {
+          "id": "poss-11",
+          "label": "POSSIBLE",
+          "pred": "POSSIBLE",
+          "correct": true,
+          "answer": "**POSSIBLE**\n\n**Reasoning:**\nThe phrase describes an ambiguous visual cue (\"a brief glint\") that could be interpreted in two ways: a dangerous object (lighter flame) or a mundane one (reflection off m"
+        },
+        {
+          "id": "poss-12",
+          "label": "POSSIBLE",
+          "pred": "POSSIBLE",
+          "correct": true,
+          "answer": "**POSSIBLE**\n\n**Reasoning:**\nThe description explicitly states that the object \"cannot be confirmed as a cigarette\" due to partial occlusion. In smoking detection guidelines, when an object is ambiguo"
+        },
+        {
+          "id": "poss-13",
+          "label": "POSSIBLE",
+          "pred": "POSSIBLE",
+          "correct": true,
+          "answer": "Tier: **POSSIBLE**\n\n**Reasoning:**\nThe statement presents two distinct possibilities: a literal interpretation (a cigarette) and a technical/artistic interpretation (a scratch on a lens). Because the "
+        },
+        {
+          "id": "poss-14",
+          "label": "POSSIBLE",
+          "pred": "CONFIRMED",
+          "correct": false,
+          "answer": "**CONFIRMED**\n\n**Reasoning:**\nThe phrase \"nothing can be clearly made out\" explicitly states that the object or action being shielded is indistinct or invisible. In the context of smoking tiers, this "
+        },
+        {
+          "id": "poss-15",
+          "label": "POSSIBLE",
+          "pred": "POSSIBLE",
+          "correct": true,
+          "answer": "**POSSIBLE**\n\n**Reasoning:**\nThe phrase \"could be either fine dust or thin smoke\" explicitly introduces ambiguity. The text does not provide definitive visual or contextual evidence to confirm the sub"
+        },
+        {
+          "id": "poss-16",
+          "label": "POSSIBLE",
+          "pred": "POSSIBLE",
+          "correct": true,
+          "answer": "**Tier: POSSIBLE**\n\n**Reasoning:**\nThe phrase \"could be a lit ember or a reflection\" explicitly introduces ambiguity. In smoking classification:\n*   **CONFIRMED** requires definitive evidence of smoke"
+        },
+        {
+          "id": "clear-01",
+          "label": "CLEAR",
+          "pred": "CLEAR",
+          "correct": true,
+          "answer": "CLEAR"
+        },
+        {
+          "id": "clear-02",
+          "label": "CLEAR",
+          "pred": "CLEAR",
+          "correct": true,
+          "answer": "CLEAR"
+        },
+        {
+          "id": "clear-03",
+          "label": "CLEAR",
+          "pred": "CLEAR",
+          "correct": true,
+          "answer": "CLEAR"
+        },
+        {
+          "id": "clear-04",
+          "label": "CLEAR",
+          "pred": "CONFIRMED",
+          "correct": false,
+          "answer": "Tier: **CONFIRMED**\n\n**Reasoning:**\nThe description explicitly states the absence of all three primary indicators of smoking:\n1.  No smoke.\n2.  No glowing tip.\n3.  No thin white stick (cigarette).\n\nSi"
+        },
+        {
+          "id": "clear-05",
+          "label": "CLEAR",
+          "pred": "CLEAR",
+          "correct": true,
+          "answer": "CLEAR"
+        },
+        {
+          "id": "clear-06",
+          "label": "CLEAR",
+          "pred": "CONFIRMED",
+          "correct": false,
+          "answer": "**CONFIRMED**\n\n**Reasoning:**\nThe statement explicitly states that \"no cigarette is anywhere in view.\" In the context of smoking tier classification, the absence of a visible cigarette (or smoke) mean"
+        },
+        {
+          "id": "clear-07",
+          "label": "CLEAR",
+          "pred": "CLEAR",
+          "correct": true,
+          "answer": "CLEAR"
+        },
+        {
+          "id": "clear-08",
+          "label": "CLEAR",
+          "pred": "CLEAR",
+          "correct": true,
+          "answer": "CLEAR"
+        },
+        {
+          "id": "clear-09",
+          "label": "CLEAR",
+          "pred": "POSSIBLE",
+          "correct": false,
+          "answer": "Tier: **POSSIBLE**\n\n**Reasoning:**\nThe presence of a lighter and a pack of cigarettes on a table creates a strong contextual implication that the person intends to smoke or has recently smoked. Howeve"
+        },
+        {
+          "id": "clear-10",
+          "label": "CLEAR",
+          "pred": "CONFIRMED",
+          "correct": false,
+          "answer": "**CONFIRMED**\n\n**Reasoning:**\nThe statement explicitly states that the worker \"holds no cigarette and none is at his lips.\" This directly contradicts the common assumption that someone holding an asht"
+        },
+        {
+          "id": "clear-11",
+          "label": "CLEAR",
+          "pred": "CONFIRMED",
+          "correct": false,
+          "answer": "**CONFIRMED**\n\n**Reasoning:**\nThe phrase \"nothing near his face\" explicitly states that the laborer is not holding anything near his face. Since the hands are fully occupied carrying a plank, there is"
+        },
+        {
+          "id": "clear-12",
+          "label": "CLEAR",
+          "pred": "CLEAR",
+          "correct": true,
+          "answer": "CLEAR"
+        },
+        {
+          "id": "clear-13",
+          "label": "CLEAR",
+          "pred": "CLEAR",
+          "correct": true,
+          "answer": "CLEAR"
+        },
+        {
+          "id": "clear-14",
+          "label": "CLEAR",
+          "pred": "CLEAR",
+          "correct": true,
+          "answer": "CLEAR"
+        },
+        {
+          "id": "clear-15",
+          "label": "CLEAR",
+          "pred": "CONFIRMED",
+          "correct": false,
+          "answer": "**CONFIRMED**\n\n**Reasoning:**\nThe phrase \"pointing at a blueprint with an empty hand\" explicitly states that the hand is empty, meaning no cigarette is being held. The phrase \"nothing at his mouth\" ex"
+        },
+        {
+          "id": "clear-16",
+          "label": "CLEAR",
+          "pred": "CLEAR",
+          "correct": true,
+          "answer": "CLEAR"
+        }
+      ]
+    },
+    "verbose": {
+      "margin_per_example": [
+        {
+          "id": "conf-01",
+          "senses": {
+            "CONFIRMED": 17.875,
+            "POSSIBLE": 5.53125,
+            "CLEAR": 13.625
+          },
+          "top_sense": "CONFIRMED",
+          "margin": 4.25
+        },
+        {
+          "id": "conf-02",
+          "senses": {
+            "CONFIRMED": 17.75,
+            "POSSIBLE": 7.03125,
+            "CLEAR": 16.375
+          },
+          "top_sense": "CONFIRMED",
+          "margin": 1.375
+        },
+        {
+          "id": "conf-03",
+          "senses": {
+            "CONFIRMED": 18.125,
+            "POSSIBLE": 6.28125,
+            "CLEAR": 14.1875
+          },
+          "top_sense": "CONFIRMED",
+          "margin": 3.9375
+        },
+        {
+          "id": "conf-04",
+          "senses": {
+            "CONFIRMED": 17.625,
+            "POSSIBLE": 7.5625,
+            "CLEAR": 15.5625
+          },
+          "top_sense": "CONFIRMED",
+          "margin": 2.0625
+        },
+        {
+          "id": "conf-05",
+          "senses": {
+            "CONFIRMED": 18.125,
+            "POSSIBLE": 6.03125,
+            "CLEAR": 13.875
+          },
+          "top_sense": "CONFIRMED",
+          "margin": 4.25
+        },
+        {
+          "id": "conf-06",
+          "senses": {
+            "CONFIRMED": 17.875,
+            "POSSIBLE": 6.53125,
+            "CLEAR": 14.8125
+          },
+          "top_sense": "CONFIRMED",
+          "margin": 3.0625
+        },
+        {
+          "id": "conf-07",
+          "senses": {
+            "CONFIRMED": 17.75,
+            "POSSIBLE": 6.96875,
+            "CLEAR": 15.0625
+          },
+          "top_sense": "CONFIRMED",
+          "margin": 2.6875
+        },
+        {
+          "id": "conf-08",
+          "senses": {
+            "CONFIRMED": 17.25,
+            "POSSIBLE": 8.3125,
+            "CLEAR": 16.25
+          },
+          "top_sense": "CONFIRMED",
+          "margin": 1.0
+        },
+        {
+          "id": "conf-09",
+          "senses": {
+            "CONFIRMED": 17.625,
+            "POSSIBLE": 6.4375,
+            "CLEAR": 16.75
+          },
+          "top_sense": "CONFIRMED",
+          "margin": 0.875
+        },
+        {
+          "id": "conf-10",
+          "senses": {
+            "CONFIRMED": 18.0,
+            "POSSIBLE": 7.25,
+            "CLEAR": 15.0
+          },
+          "top_sense": "CONFIRMED",
+          "margin": 3.0
+        },
+        {
+          "id": "conf-11",
+          "senses": {
+            "CONFIRMED": 17.875,
+            "POSSIBLE": 6.125,
+            "CLEAR": 14.75
+          },
+          "top_sense": "CONFIRMED",
+          "margin": 3.125
+        },
+        {
+          "id": "conf-12",
+          "senses": {
+            "CONFIRMED": 18.125,
+            "POSSIBLE": 6.6875,
+            "CLEAR": 14.625
+          },
+          "top_sense": "CONFIRMED",
+          "margin": 3.5
+        },
+        {
+          "id": "conf-13",
+          "senses": {
+            "CONFIRMED": 17.75,
+            "POSSIBLE": 6.15625,
+            "CLEAR": 14.875
+          },
+          "top_sense": "CONFIRMED",
+          "margin": 2.875
+        },
+        {
+          "id": "conf-14",
+          "senses": {
+            "CONFIRMED": 17.625,
+            "POSSIBLE": 7.0625,
+            "CLEAR": 17.0
+          },
+          "top_sense": "CONFIRMED",
+          "margin": 0.625
+        },
+        {
+          "id": "conf-15",
+          "senses": {
+            "CONFIRMED": 18.0,
+            "POSSIBLE": 6.53125,
+            "CLEAR": 15.4375
+          },
+          "top_sense": "CONFIRMED",
+          "margin": 2.5625
+        },
+        {
+          "id": "conf-16",
+          "senses": {
+            "CONFIRMED": 17.875,
+            "POSSIBLE": 6.5625,
+            "CLEAR": 14.5625
+          },
+          "top_sense": "CONFIRMED",
+          "margin": 3.3125
+        },
+        {
+          "id": "poss-01",
+          "senses": {
+            "CONFIRMED": 4.5,
+            "POSSIBLE": 19.75,
+            "CLEAR": 11.75
+          },
+          "top_sense": "POSSIBLE",
+          "margin": 8.0
+        },
+        {
+          "id": "poss-02",
+          "senses": {
+            "CONFIRMED": 5.5,
+            "POSSIBLE": 20.125,
+            "CLEAR": 14.625
+          },
+          "top_sense": "POSSIBLE",
+          "margin": 5.5
+        },
+        {
+          "id": "poss-03",
+          "senses": {
+            "CONFIRMED": 4.375,
+            "POSSIBLE": 20.125,
+            "CLEAR": 12.6875
+          },
+          "top_sense": "POSSIBLE",
+          "margin": 7.4375
+        },
+        {
+          "id": "poss-04",
+          "senses": {
+            "CONFIRMED": 6.71875,
+            "POSSIBLE": 19.875,
+            "CLEAR": 12.5
+          },
+          "top_sense": "POSSIBLE",
+          "margin": 7.375
+        },
+        {
+          "id": "poss-05",
+          "senses": {
+            "CONFIRMED": 5.65625,
+            "POSSIBLE": 19.75,
+            "CLEAR": 14.25
+          },
+          "top_sense": "POSSIBLE",
+          "margin": 5.5
+        },
+        {
+          "id": "poss-06",
+          "senses": {
+            "CONFIRMED": 5.65625,
+            "POSSIBLE": 19.875,
+            "CLEAR": 14.0625
+          },
+          "top_sense": "POSSIBLE",
+          "margin": 5.8125
+        },
+        {
+          "id": "poss-07",
+          "senses": {
+            "CONFIRMED": 5.65625,
+            "POSSIBLE": 20.0,
+            "CLEAR": 14.375
+          },
+          "top_sense": "POSSIBLE",
+          "margin": 5.625
+        },
+        {
+          "id": "poss-08",
+          "senses": {
+            "CONFIRMED": 4.96875,
+            "POSSIBLE": 20.0,
+            "CLEAR": 13.0
+          },
+          "top_sense": "POSSIBLE",
+          "margin": 7.0
+        },
+        {
+          "id": "poss-09",
+          "senses": {
+            "CONFIRMED": 4.4375,
+            "POSSIBLE": 20.125,
+            "CLEAR": 10.75
+          },
+          "top_sense": "POSSIBLE",
+          "margin": 9.375
+        },
+        {
+          "id": "poss-10",
+          "senses": {
+            "CONFIRMED": 6.40625,
+            "POSSIBLE": 19.75,
+            "CLEAR": 14.1875
+          },
+          "top_sense": "POSSIBLE",
+          "margin": 5.5625
+        },
+        {
+          "id": "poss-11",
+          "senses": {
+            "CONFIRMED": 6.25,
+            "POSSIBLE": 19.5,
+            "CLEAR": 18.25
+          },
+          "top_sense": "POSSIBLE",
+          "margin": 1.25
+        },
+        {
+          "id": "poss-12",
+          "senses": {
+            "CONFIRMED": 6.59375,
+            "POSSIBLE": 19.625,
+            "CLEAR": 16.125
+          },
+          "top_sense": "POSSIBLE",
+          "margin": 3.5
+        },
+        {
+          "id": "poss-13",
+          "senses": {
+            "CONFIRMED": 5.40625,
+            "POSSIBLE": 19.625,
+            "CLEAR": 15.5
+          },
+          "top_sense": "POSSIBLE",
+          "margin": 4.125
+        },
+        {
+          "id": "poss-14",
+          "senses": {
+            "CONFIRMED": 7.0625,
+            "POSSIBLE": 18.75,
+            "CLEAR": 19.75
+          },
+          "top_sense": "CLEAR",
+          "margin": 1.0
+        },
+        {
+          "id": "poss-15",
+          "senses": {
+            "CONFIRMED": 4.6875,
+            "POSSIBLE": 20.125,
+            "CLEAR": 11.6875
+          },
+          "top_sense": "POSSIBLE",
+          "margin": 8.4375
+        },
+        {
+          "id": "poss-16",
+          "senses": {
+            "CONFIRMED": 9.625,
+            "POSSIBLE": 19.5,
+            "CLEAR": 12.3125
+          },
+          "top_sense": "POSSIBLE",
+          "margin": 7.1875
+        },
+        {
+          "id": "clear-01",
+          "senses": {
+            "CONFIRMED": 7.65625,
+            "POSSIBLE": 6.875,
+            "CLEAR": 29.625
+          },
+          "top_sense": "CLEAR",
+          "margin": 21.96875
+        },
+        {
+          "id": "clear-02",
+          "senses": {
+            "CONFIRMED": 7.34375,
+            "POSSIBLE": 6.5625,
+            "CLEAR": 29.75
+          },
+          "top_sense": "CLEAR",
+          "margin": 22.40625
+        },
+        {
+          "id": "clear-03",
+          "senses": {
+            "CONFIRMED": 7.5,
+            "POSSIBLE": 6.625,
+            "CLEAR": 29.875
+          },
+          "top_sense": "CLEAR",
+          "margin": 22.375
+        },
+        {
+          "id": "clear-04",
+          "senses": {
+            "CONFIRMED": 8.25,
+            "POSSIBLE": 7.84375,
+            "CLEAR": 29.625
+          },
+          "top_sense": "CLEAR",
+          "margin": 21.375
+        },
+        {
+          "id": "clear-05",
+          "senses": {
+            "CONFIRMED": 8.0625,
+            "POSSIBLE": 8.3125,
+            "CLEAR": 29.75
+          },
+          "top_sense": "CLEAR",
+          "margin": 21.4375
+        },
+        {
+          "id": "clear-06",
+          "senses": {
+            "CONFIRMED": 8.375,
+            "POSSIBLE": 7.59375,
+            "CLEAR": 29.75
+          },
+          "top_sense": "CLEAR",
+          "margin": 21.375
+        },
+        {
+          "id": "clear-07",
+          "senses": {
+            "CONFIRMED": 7.1875,
+            "POSSIBLE": 5.96875,
+            "CLEAR": 30.0
+          },
+          "top_sense": "CLEAR",
+          "margin": 22.8125
+        },
+        {
+          "id": "clear-08",
+          "senses": {
+            "CONFIRMED": 8.625,
+            "POSSIBLE": 8.5,
+            "CLEAR": 29.375
+          },
+          "top_sense": "CLEAR",
+          "margin": 20.75
+        },
+        {
+          "id": "clear-09",
+          "senses": {
+            "CONFIRMED": 7.0,
+            "POSSIBLE": 7.3125,
+            "CLEAR": 29.75
+          },
+          "top_sense": "CLEAR",
+          "margin": 22.4375
+        },
+        {
+          "id": "clear-10",
+          "senses": {
+            "CONFIRMED": 8.125,
+            "POSSIBLE": 9.0,
+            "CLEAR": 29.375
+          },
+          "top_sense": "CLEAR",
+          "margin": 20.375
+        },
+        {
+          "id": "clear-11",
+          "senses": {
+            "CONFIRMED": 8.625,
+            "POSSIBLE": 9.125,
+            "CLEAR": 29.5
+          },
+          "top_sense": "CLEAR",
+          "margin": 20.375
+        },
+        {
+          "id": "clear-12",
+          "senses": {
+            "CONFIRMED": 7.96875,
+            "POSSIBLE": 8.25,
+            "CLEAR": 29.75
+          },
+          "top_sense": "CLEAR",
+          "margin": 21.5
+        },
+        {
+          "id": "clear-13",
+          "senses": {
+            "CONFIRMED": 9.0625,
+            "POSSIBLE": 8.0,
+            "CLEAR": 29.5
+          },
+          "top_sense": "CLEAR",
+          "margin": 20.4375
+        },
+        {
+          "id": "clear-14",
+          "senses": {
+            "CONFIRMED": 8.5625,
+            "POSSIBLE": 7.53125,
+            "CLEAR": 29.75
+          },
+          "top_sense": "CLEAR",
+          "margin": 21.1875
+        },
+        {
+          "id": "clear-15",
+          "senses": {
+            "CONFIRMED": 8.0,
+            "POSSIBLE": 6.625,
+            "CLEAR": 30.0
+          },
+          "top_sense": "CLEAR",
+          "margin": 22.0
+        },
+        {
+          "id": "clear-16",
+          "senses": {
+            "CONFIRMED": 8.125,
+            "POSSIBLE": 7.3125,
+            "CLEAR": 29.625
+          },
+          "top_sense": "CLEAR",
+          "margin": 21.5
+        }
+      ],
+      "accuracy_per_example": [
+        {
+          "id": "conf-01",
+          "label": "CONFIRMED",
+          "pred": "CONFIRMED",
+          "correct": true,
+          "answer": "CONFIRMED"
+        },
+        {
+          "id": "conf-02",
+          "label": "CONFIRMED",
+          "pred": "CONFIRMED",
+          "correct": true,
+          "answer": "CONFIRMED"
+        },
+        {
+          "id": "conf-03",
+          "label": "CONFIRMED",
+          "pred": "CONFIRMED",
+          "correct": true,
+          "answer": "CONFIRMED"
+        },
+        {
+          "id": "conf-04",
+          "label": "CONFIRMED",
+          "pred": "CONFIRMED",
+          "correct": true,
+          "answer": "CONFIRMED"
+        },
+        {
+          "id": "conf-05",
+          "label": "CONFIRMED",
+          "pred": "CONFIRMED",
+          "correct": true,
+          "answer": "CONFIRMED"
+        },
+        {
+          "id": "conf-06",
+          "label": "CONFIRMED",
+          "pred": "CONFIRMED",
+          "correct": true,
+          "answer": "CONFIRMED"
+        },
+        {
+          "id": "conf-07",
+          "label": "CONFIRMED",
+          "pred": "CONFIRMED",
+          "correct": true,
+          "answer": "CONFIRMED"
+        },
+        {
+          "id": "conf-08",
+          "label": "CONFIRMED",
+          "pred": "CONFIRMED",
+          "correct": true,
+          "answer": "CONFIRMED"
+        },
+        {
+          "id": "conf-09",
+          "label": "CONFIRMED",
+          "pred": "CONFIRMED",
+          "correct": true,
+          "answer": "CONFIRMED"
+        },
+        {
+          "id": "conf-10",
+          "label": "CONFIRMED",
+          "pred": "CONFIRMED",
+          "correct": true,
+          "answer": "CONFIRMED"
+        },
+        {
+          "id": "conf-11",
+          "label": "CONFIRMED",
+          "pred": "CONFIRMED",
+          "correct": true,
+          "answer": "CONFIRMED"
+        },
+        {
+          "id": "conf-12",
+          "label": "CONFIRMED",
+          "pred": "CONFIRMED",
+          "correct": true,
+          "answer": "CONFIRMED"
+        },
+        {
+          "id": "conf-13",
+          "label": "CONFIRMED",
+          "pred": "CONFIRMED",
+          "correct": true,
+          "answer": "CONFIRMED"
+        },
+        {
+          "id": "conf-14",
+          "label": "CONFIRMED",
+          "pred": "CONFIRMED",
+          "correct": true,
+          "answer": "CONFIRMED"
+        },
+        {
+          "id": "conf-15",
+          "label": "CONFIRMED",
+          "pred": "CONFIRMED",
+          "correct": true,
+          "answer": "CONFIRMED"
+        },
+        {
+          "id": "conf-16",
+          "label": "CONFIRMED",
+          "pred": "CONFIRMED",
+          "correct": true,
+          "answer": "CONFIRMED"
+        },
+        {
+          "id": "poss-01",
+          "label": "POSSIBLE",
+          "pred": "POSSIBLE",
+          "correct": true,
+          "answer": "POSSIBLE"
+        },
+        {
+          "id": "poss-02",
+          "label": "POSSIBLE",
+          "pred": "POSSIBLE",
+          "correct": true,
+          "answer": "POSSIBLE"
+        },
+        {
+          "id": "poss-03",
+          "label": "POSSIBLE",
+          "pred": "POSSIBLE",
+          "correct": true,
+          "answer": "POSSIBLE"
+        },
+        {
+          "id": "poss-04",
+          "label": "POSSIBLE",
+          "pred": "POSSIBLE",
+          "correct": true,
+          "answer": "POSSIBLE"
+        },
+        {
+          "id": "poss-05",
+          "label": "POSSIBLE",
+          "pred": "POSSIBLE",
+          "correct": true,
+          "answer": "POSSIBLE"
+        },
+        {
+          "id": "poss-06",
+          "label": "POSSIBLE",
+          "pred": "POSSIBLE",
+          "correct": true,
+          "answer": "POSSIBLE"
+        },
+        {
+          "id": "poss-07",
+          "label": "POSSIBLE",
+          "pred": "POSSIBLE",
+          "correct": true,
+          "answer": "POSSIBLE"
+        },
+        {
+          "id": "poss-08",
+          "label": "POSSIBLE",
+          "pred": "POSSIBLE",
+          "correct": true,
+          "answer": "POSSIBLE"
+        },
+        {
+          "id": "poss-09",
+          "label": "POSSIBLE",
+          "pred": "POSSIBLE",
+          "correct": true,
+          "answer": "POSSIBLE"
+        },
+        {
+          "id": "poss-10",
+          "label": "POSSIBLE",
+          "pred": "POSSIBLE",
+          "correct": true,
+          "answer": "POSSIBLE"
+        },
+        {
+          "id": "poss-11",
+          "label": "POSSIBLE",
+          "pred": "POSSIBLE",
+          "correct": true,
+          "answer": "POSSIBLE"
+        },
+        {
+          "id": "poss-12",
+          "label": "POSSIBLE",
+          "pred": "POSSIBLE",
+          "correct": true,
+          "answer": "POSSIBLE"
+        },
+        {
+          "id": "poss-13",
+          "label": "POSSIBLE",
+          "pred": "POSSIBLE",
+          "correct": true,
+          "answer": "POSSIBLE"
+        },
+        {
+          "id": "poss-14",
+          "label": "POSSIBLE",
+          "pred": "POSSIBLE",
+          "correct": true,
+          "answer": "POSSIBLE"
+        },
+        {
+          "id": "poss-15",
+          "label": "POSSIBLE",
+          "pred": "POSSIBLE",
+          "correct": true,
+          "answer": "POSSIBLE"
+        },
+        {
+          "id": "poss-16",
+          "label": "POSSIBLE",
+          "pred": "POSSIBLE",
+          "correct": true,
+          "answer": "POSSIBLE"
+        },
+        {
+          "id": "clear-01",
+          "label": "CLEAR",
+          "pred": "CLEAR",
+          "correct": true,
+          "answer": "CLEAR"
+        },
+        {
+          "id": "clear-02",
+          "label": "CLEAR",
+          "pred": "CLEAR",
+          "correct": true,
+          "answer": "CLEAR"
+        },
+        {
+          "id": "clear-03",
+          "label": "CLEAR",
+          "pred": "CLEAR",
+          "correct": true,
+          "answer": "CLEAR"
+        },
+        {
+          "id": "clear-04",
+          "label": "CLEAR",
+          "pred": "CLEAR",
+          "correct": true,
+          "answer": "CLEAR"
+        },
+        {
+          "id": "clear-05",
+          "label": "CLEAR",
+          "pred": "CLEAR",
+          "correct": true,
+          "answer": "CLEAR"
+        },
+        {
+          "id": "clear-06",
+          "label": "CLEAR",
+          "pred": "CLEAR",
+          "correct": true,
+          "answer": "CLEAR"
+        },
+        {
+          "id": "clear-07",
+          "label": "CLEAR",
+          "pred": "CLEAR",
+          "correct": true,
+          "answer": "CLEAR"
+        },
+        {
+          "id": "clear-08",
+          "label": "CLEAR",
+          "pred": "CLEAR",
+          "correct": true,
+          "answer": "CLEAR"
+        },
+        {
+          "id": "clear-09",
+          "label": "CLEAR",
+          "pred": "CLEAR",
+          "correct": true,
+          "answer": "CLEAR"
+        },
+        {
+          "id": "clear-10",
+          "label": "CLEAR",
+          "pred": "CLEAR",
+          "correct": true,
+          "answer": "CLEAR"
+        },
+        {
+          "id": "clear-11",
+          "label": "CLEAR",
+          "pred": "CLEAR",
+          "correct": true,
+          "answer": "CLEAR"
+        },
+        {
+          "id": "clear-12",
+          "label": "CLEAR",
+          "pred": "CLEAR",
+          "correct": true,
+          "answer": "CLEAR"
+        },
+        {
+          "id": "clear-13",
+          "label": "CLEAR",
+          "pred": "CLEAR",
+          "correct": true,
+          "answer": "CLEAR"
+        },
+        {
+          "id": "clear-14",
+          "label": "CLEAR",
+          "pred": "CLEAR",
+          "correct": true,
+          "answer": "CLEAR"
+        },
+        {
+          "id": "clear-15",
+          "label": "CLEAR",
+          "pred": "CLEAR",
+          "correct": true,
+          "answer": "CLEAR"
+        },
+        {
+          "id": "clear-16",
+          "label": "CLEAR",
+          "pred": "CLEAR",
+          "correct": true,
+          "answer": "CLEAR"
+        }
+      ]
+    },
+    "role": {
+      "margin_per_example": [
+        {
+          "id": "conf-01",
+          "senses": {
+            "CONFIRMED": 17.875,
+            "POSSIBLE": 10.5,
+            "CLEAR": 21.0
+          },
+          "top_sense": "CLEAR",
+          "margin": 3.125
+        },
+        {
+          "id": "conf-02",
+          "senses": {
+            "CONFIRMED": 14.5625,
+            "POSSIBLE": 16.5,
+            "CLEAR": 20.125
+          },
+          "top_sense": "CLEAR",
+          "margin": 3.625
+        },
+        {
+          "id": "conf-03",
+          "senses": {
+            "CONFIRMED": 17.75,
+            "POSSIBLE": 10.5625,
+            "CLEAR": 20.625
+          },
+          "top_sense": "CLEAR",
+          "margin": 2.875
+        },
+        {
+          "id": "conf-04",
+          "senses": {
+            "CONFIRMED": 16.625,
+            "POSSIBLE": 14.1875,
+            "CLEAR": 19.625
+          },
+          "top_sense": "CLEAR",
+          "margin": 3.0
+        },
+        {
+          "id": "conf-05",
+          "senses": {
+            "CONFIRMED": 17.625,
+            "POSSIBLE": 10.9375,
+            "CLEAR": 20.75
+          },
+          "top_sense": "CLEAR",
+          "margin": 3.125
+        },
+        {
+          "id": "conf-06",
+          "senses": {
+            "CONFIRMED": 16.875,
+            "POSSIBLE": 13.3125,
+            "CLEAR": 20.0
+          },
+          "top_sense": "CLEAR",
+          "margin": 3.125
+        },
+        {
+          "id": "conf-07",
+          "senses": {
+            "CONFIRMED": 16.875,
+            "POSSIBLE": 13.125,
+            "CLEAR": 21.0
+          },
+          "top_sense": "CLEAR",
+          "margin": 4.125
+        },
+        {
+          "id": "conf-08",
+          "senses": {
+            "CONFIRMED": 14.9375,
+            "POSSIBLE": 15.8125,
+            "CLEAR": 20.75
+          },
+          "top_sense": "CLEAR",
+          "margin": 4.9375
+        },
+        {
+          "id": "conf-09",
+          "senses": {
+            "CONFIRMED": 15.875,
+            "POSSIBLE": 14.125,
+            "CLEAR": 21.0
+          },
+          "top_sense": "CLEAR",
+          "margin": 5.125
+        },
+        {
+          "id": "conf-10",
+          "senses": {
+            "CONFIRMED": 16.875,
+            "POSSIBLE": 12.8125,
+            "CLEAR": 21.125
+          },
+          "top_sense": "CLEAR",
+          "margin": 4.25
+        },
+        {
+          "id": "conf-11",
+          "senses": {
+            "CONFIRMED": 17.5,
+            "POSSIBLE": 12.1875,
+            "CLEAR": 20.75
+          },
+          "top_sense": "CLEAR",
+          "margin": 3.25
+        },
+        {
+          "id": "conf-12",
+          "senses": {
+            "CONFIRMED": 17.0,
+            "POSSIBLE": 12.0,
+            "CLEAR": 20.375
+          },
+          "top_sense": "CLEAR",
+          "margin": 3.375
+        },
+        {
+          "id": "conf-13",
+          "senses": {
+            "CONFIRMED": 17.375,
+            "POSSIBLE": 12.5,
+            "CLEAR": 19.375
+          },
+          "top_sense": "CLEAR",
+          "margin": 2.0
+        },
+        {
+          "id": "conf-14",
+          "senses": {
+            "CONFIRMED": 15.6875,
+            "POSSIBLE": 14.75,
+            "CLEAR": 20.75
+          },
+          "top_sense": "CLEAR",
+          "margin": 5.0625
+        },
+        {
+          "id": "conf-15",
+          "senses": {
+            "CONFIRMED": 17.75,
+            "POSSIBLE": 10.75,
+            "CLEAR": 21.125
+          },
+          "top_sense": "CLEAR",
+          "margin": 3.375
+        },
+        {
+          "id": "conf-16",
+          "senses": {
+            "CONFIRMED": 17.0,
+            "POSSIBLE": 12.75,
+            "CLEAR": 21.25
+          },
+          "top_sense": "CLEAR",
+          "margin": 4.25
+        },
+        {
+          "id": "poss-01",
+          "senses": {
+            "CONFIRMED": 6.3125,
+            "POSSIBLE": 19.375,
+            "CLEAR": 21.25
+          },
+          "top_sense": "CLEAR",
+          "margin": 1.875
+        },
+        {
+          "id": "poss-02",
+          "senses": {
+            "CONFIRMED": 7.21875,
+            "POSSIBLE": 19.625,
+            "CLEAR": 21.875
+          },
+          "top_sense": "CLEAR",
+          "margin": 2.25
+        },
+        {
+          "id": "poss-03",
+          "senses": {
+            "CONFIRMED": 7.40625,
+            "POSSIBLE": 19.5,
+            "CLEAR": 20.375
+          },
+          "top_sense": "CLEAR",
+          "margin": 0.875
+        },
+        {
+          "id": "poss-04",
+          "senses": {
+            "CONFIRMED": 9.3125,
+            "POSSIBLE": 19.625,
+            "CLEAR": 18.875
+          },
+          "top_sense": "POSSIBLE",
+          "margin": 0.75
+        },
+        {
+          "id": "poss-05",
+          "senses": {
+            "CONFIRMED": 6.78125,
+            "POSSIBLE": 19.375,
+            "CLEAR": 21.25
+          },
+          "top_sense": "CLEAR",
+          "margin": 1.875
+        },
+        {
+          "id": "poss-06",
+          "senses": {
+            "CONFIRMED": 7.90625,
+            "POSSIBLE": 19.375,
+            "CLEAR": 21.5
+          },
+          "top_sense": "CLEAR",
+          "margin": 2.125
+        },
+        {
+          "id": "poss-07",
+          "senses": {
+            "CONFIRMED": 6.625,
+            "POSSIBLE": 19.125,
+            "CLEAR": 20.875
+          },
+          "top_sense": "CLEAR",
+          "margin": 1.75
+        },
+        {
+          "id": "poss-08",
+          "senses": {
+            "CONFIRMED": 8.25,
+            "POSSIBLE": 19.5,
+            "CLEAR": 21.5
+          },
+          "top_sense": "CLEAR",
+          "margin": 2.0
+        },
+        {
+          "id": "poss-09",
+          "senses": {
+            "CONFIRMED": 6.9375,
+            "POSSIBLE": 20.0,
+            "CLEAR": 19.75
+          },
+          "top_sense": "POSSIBLE",
+          "margin": 0.25
+        },
+        {
+          "id": "poss-10",
+          "senses": {
+            "CONFIRMED": 8.5,
+            "POSSIBLE": 19.375,
+            "CLEAR": 19.125
+          },
+          "top_sense": "POSSIBLE",
+          "margin": 0.25
+        },
+        {
+          "id": "poss-11",
+          "senses": {
+            "CONFIRMED": 7.0625,
+            "POSSIBLE": 19.625,
+            "CLEAR": 20.5
+          },
+          "top_sense": "CLEAR",
+          "margin": 0.875
+        },
+        {
+          "id": "poss-12",
+          "senses": {
+            "CONFIRMED": 8.125,
+            "POSSIBLE": 19.625,
+            "CLEAR": 20.625
+          },
+          "top_sense": "CLEAR",
+          "margin": 1.0
+        },
+        {
+          "id": "poss-13",
+          "senses": {
+            "CONFIRMED": 6.96875,
+            "POSSIBLE": 19.125,
+            "CLEAR": 21.75
+          },
+          "top_sense": "CLEAR",
+          "margin": 2.625
+        },
+        {
+          "id": "poss-14",
+          "senses": {
+            "CONFIRMED": 7.375,
+            "POSSIBLE": 19.375,
+            "CLEAR": 21.875
+          },
+          "top_sense": "CLEAR",
+          "margin": 2.5
+        },
+        {
+          "id": "poss-15",
+          "senses": {
+            "CONFIRMED": 7.5625,
+            "POSSIBLE": 19.375,
+            "CLEAR": 20.0
+          },
+          "top_sense": "CLEAR",
+          "margin": 0.625
+        },
+        {
+          "id": "poss-16",
+          "senses": {
+            "CONFIRMED": 7.84375,
+            "POSSIBLE": 19.75,
+            "CLEAR": 20.125
+          },
+          "top_sense": "CLEAR",
+          "margin": 0.375
+        },
+        {
+          "id": "clear-01",
+          "senses": {
+            "CONFIRMED": 11.6875,
+            "POSSIBLE": 13.3125,
+            "CLEAR": 28.75
+          },
+          "top_sense": "CLEAR",
+          "margin": 15.4375
+        },
+        {
+          "id": "clear-02",
+          "senses": {
+            "CONFIRMED": 10.1875,
+            "POSSIBLE": 15.125,
+            "CLEAR": 28.25
+          },
+          "top_sense": "CLEAR",
+          "margin": 13.125
+        },
+        {
+          "id": "clear-03",
+          "senses": {
+            "CONFIRMED": 10.0625,
+            "POSSIBLE": 14.6875,
+            "CLEAR": 28.75
+          },
+          "top_sense": "CLEAR",
+          "margin": 14.0625
+        },
+        {
+          "id": "clear-04",
+          "senses": {
+            "CONFIRMED": 10.375,
+            "POSSIBLE": 16.125,
+            "CLEAR": 27.125
+          },
+          "top_sense": "CLEAR",
+          "margin": 11.0
+        },
+        {
+          "id": "clear-05",
+          "senses": {
+            "CONFIRMED": 11.8125,
+            "POSSIBLE": 17.25,
+            "CLEAR": 24.125
+          },
+          "top_sense": "CLEAR",
+          "margin": 6.875
+        },
+        {
+          "id": "clear-06",
+          "senses": {
+            "CONFIRMED": 10.3125,
+            "POSSIBLE": 14.25,
+            "CLEAR": 28.5
+          },
+          "top_sense": "CLEAR",
+          "margin": 14.25
+        },
+        {
+          "id": "clear-07",
+          "senses": {
+            "CONFIRMED": 10.4375,
+            "POSSIBLE": 15.3125,
+            "CLEAR": 27.5
+          },
+          "top_sense": "CLEAR",
+          "margin": 12.1875
+        },
+        {
+          "id": "clear-08",
+          "senses": {
+            "CONFIRMED": 12.6875,
+            "POSSIBLE": 16.375,
+            "CLEAR": 25.5
+          },
+          "top_sense": "CLEAR",
+          "margin": 9.125
+        },
+        {
+          "id": "clear-09",
+          "senses": {
+            "CONFIRMED": 8.25,
+            "POSSIBLE": 19.25,
+            "CLEAR": 24.125
+          },
+          "top_sense": "CLEAR",
+          "margin": 4.875
+        },
+        {
+          "id": "clear-10",
+          "senses": {
+            "CONFIRMED": 9.4375,
+            "POSSIBLE": 17.125,
+            "CLEAR": 26.5
+          },
+          "top_sense": "CLEAR",
+          "margin": 9.375
+        },
+        {
+          "id": "clear-11",
+          "senses": {
+            "CONFIRMED": 11.375,
+            "POSSIBLE": 16.25,
+            "CLEAR": 26.25
+          },
+          "top_sense": "CLEAR",
+          "margin": 10.0
+        },
+        {
+          "id": "clear-12",
+          "senses": {
+            "CONFIRMED": 10.1875,
+            "POSSIBLE": 17.75,
+            "CLEAR": 25.125
+          },
+          "top_sense": "CLEAR",
+          "margin": 7.375
+        },
+        {
+          "id": "clear-13",
+          "senses": {
+            "CONFIRMED": 11.75,
+            "POSSIBLE": 13.4375,
+            "CLEAR": 28.25
+          },
+          "top_sense": "CLEAR",
+          "margin": 14.8125
+        },
+        {
+          "id": "clear-14",
+          "senses": {
+            "CONFIRMED": 10.8125,
+            "POSSIBLE": 14.8125,
+            "CLEAR": 28.25
+          },
+          "top_sense": "CLEAR",
+          "margin": 13.4375
+        },
+        {
+          "id": "clear-15",
+          "senses": {
+            "CONFIRMED": 11.6875,
+            "POSSIBLE": 15.6875,
+            "CLEAR": 26.75
+          },
+          "top_sense": "CLEAR",
+          "margin": 11.0625
+        },
+        {
+          "id": "clear-16",
+          "senses": {
+            "CONFIRMED": 10.375,
+            "POSSIBLE": 12.4375,
+            "CLEAR": 29.375
+          },
+          "top_sense": "CLEAR",
+          "margin": 16.9375
+        }
+      ],
+      "accuracy_per_example": [
+        {
+          "id": "conf-01",
+          "label": "CONFIRMED",
+          "pred": "CONFIRMED",
+          "correct": true,
+          "answer": "CONFIRMED"
+        },
+        {
+          "id": "conf-02",
+          "label": "CONFIRMED",
+          "pred": "CONFIRMED",
+          "correct": true,
+          "answer": "CONFIRMED"
+        },
+        {
+          "id": "conf-03",
+          "label": "CONFIRMED",
+          "pred": "CONFIRMED",
+          "correct": true,
+          "answer": "CONFIRMED"
+        },
+        {
+          "id": "conf-04",
+          "label": "CONFIRMED",
+          "pred": "CONFIRMED",
+          "correct": true,
+          "answer": "CONFIRMED"
+        },
+        {
+          "id": "conf-05",
+          "label": "CONFIRMED",
+          "pred": "CONFIRMED",
+          "correct": true,
+          "answer": "CONFIRMED"
+        },
+        {
+          "id": "conf-06",
+          "label": "CONFIRMED",
+          "pred": "CONFIRMED",
+          "correct": true,
+          "answer": "CONFIRMED"
+        },
+        {
+          "id": "conf-07",
+          "label": "CONFIRMED",
+          "pred": "CONFIRMED",
+          "correct": true,
+          "answer": "CONFIRMED"
+        },
+        {
+          "id": "conf-08",
+          "label": "CONFIRMED",
+          "pred": "CONFIRMED",
+          "correct": true,
+          "answer": "CONFIRMED"
+        },
+        {
+          "id": "conf-09",
+          "label": "CONFIRMED",
+          "pred": "CONFIRMED",
+          "correct": true,
+          "answer": "CONFIRMED"
+        },
+        {
+          "id": "conf-10",
+          "label": "CONFIRMED",
+          "pred": "CONFIRMED",
+          "correct": true,
+          "answer": "CONFIRMED"
+        },
+        {
+          "id": "conf-11",
+          "label": "CONFIRMED",
+          "pred": "CONFIRMED",
+          "correct": true,
+          "answer": "CONFIRMED"
+        },
+        {
+          "id": "conf-12",
+          "label": "CONFIRMED",
+          "pred": "CONFIRMED",
+          "correct": true,
+          "answer": "CONFIRMED"
+        },
+        {
+          "id": "conf-13",
+          "label": "CONFIRMED",
+          "pred": "CONFIRMED",
+          "correct": true,
+          "answer": "CONFIRMED"
+        },
+        {
+          "id": "conf-14",
+          "label": "CONFIRMED",
+          "pred": "CONFIRMED",
+          "correct": true,
+          "answer": "CONFIRMED"
+        },
+        {
+          "id": "conf-15",
+          "label": "CONFIRMED",
+          "pred": "CONFIRMED",
+          "correct": true,
+          "answer": "CONFIRMED"
+        },
+        {
+          "id": "conf-16",
+          "label": "CONFIRMED",
+          "pred": "CONFIRMED",
+          "correct": true,
+          "answer": "CONFIRMED"
+        },
+        {
+          "id": "poss-01",
+          "label": "POSSIBLE",
+          "pred": "POSSIBLE",
+          "correct": true,
+          "answer": "POSSIBLE"
+        },
+        {
+          "id": "poss-02",
+          "label": "POSSIBLE",
+          "pred": "POSSIBLE",
+          "correct": true,
+          "answer": "POSSIBLE"
+        },
+        {
+          "id": "poss-03",
+          "label": "POSSIBLE",
+          "pred": "POSSIBLE",
+          "correct": true,
+          "answer": "POSSIBLE"
+        },
+        {
+          "id": "poss-04",
+          "label": "POSSIBLE",
+          "pred": "POSSIBLE",
+          "correct": true,
+          "answer": "POSSIBLE"
+        },
+        {
+          "id": "poss-05",
+          "label": "POSSIBLE",
+          "pred": "POSSIBLE",
+          "correct": true,
+          "answer": "POSSIBLE"
+        },
+        {
+          "id": "poss-06",
+          "label": "POSSIBLE",
+          "pred": "POSSIBLE",
+          "correct": true,
+          "answer": "POSSIBLE"
+        },
+        {
+          "id": "poss-07",
+          "label": "POSSIBLE",
+          "pred": "POSSIBLE",
+          "correct": true,
+          "answer": "POSSIBLE"
+        },
+        {
+          "id": "poss-08",
+          "label": "POSSIBLE",
+          "pred": "POSSIBLE",
+          "correct": true,
+          "answer": "POSSIBLE"
+        },
+        {
+          "id": "poss-09",
+          "label": "POSSIBLE",
+          "pred": "POSSIBLE",
+          "correct": true,
+          "answer": "POSSIBLE"
+        },
+        {
+          "id": "poss-10",
+          "label": "POSSIBLE",
+          "pred": "POSSIBLE",
+          "correct": true,
+          "answer": "POSSIBLE"
+        },
+        {
+          "id": "poss-11",
+          "label": "POSSIBLE",
+          "pred": "POSSIBLE",
+          "correct": true,
+          "answer": "POSSIBLE"
+        },
+        {
+          "id": "poss-12",
+          "label": "POSSIBLE",
+          "pred": "POSSIBLE",
+          "correct": true,
+          "answer": "POSSIBLE"
+        },
+        {
+          "id": "poss-13",
+          "label": "POSSIBLE",
+          "pred": "POSSIBLE",
+          "correct": true,
+          "answer": "POSSIBLE"
+        },
+        {
+          "id": "poss-14",
+          "label": "POSSIBLE",
+          "pred": "POSSIBLE",
+          "correct": true,
+          "answer": "POSSIBLE"
+        },
+        {
+          "id": "poss-15",
+          "label": "POSSIBLE",
+          "pred": "POSSIBLE",
+          "correct": true,
+          "answer": "POSSIBLE"
+        },
+        {
+          "id": "poss-16",
+          "label": "POSSIBLE",
+          "pred": "POSSIBLE",
+          "correct": true,
+          "answer": "POSSIBLE"
+        },
+        {
+          "id": "clear-01",
+          "label": "CLEAR",
+          "pred": "CLEAR",
+          "correct": true,
+          "answer": "CLEAR"
+        },
+        {
+          "id": "clear-02",
+          "label": "CLEAR",
+          "pred": "CLEAR",
+          "correct": true,
+          "answer": "CLEAR"
+        },
+        {
+          "id": "clear-03",
+          "label": "CLEAR",
+          "pred": "CLEAR",
+          "correct": true,
+          "answer": "CLEAR"
+        },
+        {
+          "id": "clear-04",
+          "label": "CLEAR",
+          "pred": "CLEAR",
+          "correct": true,
+          "answer": "CLEAR"
+        },
+        {
+          "id": "clear-05",
+          "label": "CLEAR",
+          "pred": "CLEAR",
+          "correct": true,
+          "answer": "CLEAR"
+        },
+        {
+          "id": "clear-06",
+          "label": "CLEAR",
+          "pred": "CLEAR",
+          "correct": true,
+          "answer": "CLEAR"
+        },
+        {
+          "id": "clear-07",
+          "label": "CLEAR",
+          "pred": "CLEAR",
+          "correct": true,
+          "answer": "CLEAR"
+        },
+        {
+          "id": "clear-08",
+          "label": "CLEAR",
+          "pred": "CLEAR",
+          "correct": true,
+          "answer": "CLEAR"
+        },
+        {
+          "id": "clear-09",
+          "label": "CLEAR",
+          "pred": "POSSIBLE",
+          "correct": false,
+          "answer": "POSSIBLE"
+        },
+        {
+          "id": "clear-10",
+          "label": "CLEAR",
+          "pred": "CLEAR",
+          "correct": true,
+          "answer": "CLEAR"
+        },
+        {
+          "id": "clear-11",
+          "label": "CLEAR",
+          "pred": "CLEAR",
+          "correct": true,
+          "answer": "CLEAR"
+        },
+        {
+          "id": "clear-12",
+          "label": "CLEAR",
+          "pred": "CLEAR",
+          "correct": true,
+          "answer": "CLEAR"
+        },
+        {
+          "id": "clear-13",
+          "label": "CLEAR",
+          "pred": "CLEAR",
+          "correct": true,
+          "answer": "CLEAR"
+        },
+        {
+          "id": "clear-14",
+          "label": "CLEAR",
+          "pred": "CLEAR",
+          "correct": true,
+          "answer": "CLEAR"
+        },
+        {
+          "id": "clear-15",
+          "label": "CLEAR",
+          "pred": "CLEAR",
+          "correct": true,
+          "answer": "CLEAR"
+        },
+        {
+          "id": "clear-16",
+          "label": "CLEAR",
+          "pred": "CLEAR",
+          "correct": true,
+          "answer": "CLEAR"
+        }
+      ]
+    },
+    "reasoned": {
+      "margin_per_example": [
+        {
+          "id": "conf-01",
+          "senses": {
+            "CONFIRMED": 5.375,
+            "POSSIBLE": 4.8125,
+            "CLEAR": 9.75
+          },
+          "top_sense": "CLEAR",
+          "margin": 4.375
+        },
+        {
+          "id": "conf-02",
+          "senses": {
+            "CONFIRMED": 6.9375,
+            "POSSIBLE": 4.9375,
+            "CLEAR": 7.375
+          },
+          "top_sense": "CLEAR",
+          "margin": 0.4375
+        },
+        {
+          "id": "conf-03",
+          "senses": {
+            "CONFIRMED": 4.90625,
+            "POSSIBLE": 4.84375,
+            "CLEAR": 9.9375
+          },
+          "top_sense": "CLEAR",
+          "margin": 5.03125
+        },
+        {
+          "id": "conf-04",
+          "senses": {
+            "CONFIRMED": 5.59375,
+            "POSSIBLE": 6.1875,
+            "CLEAR": 6.6875
+          },
+          "top_sense": "CLEAR",
+          "margin": 0.5
+        },
+        {
+          "id": "conf-05",
+          "senses": {
+            "CONFIRMED": 7.03125,
+            "POSSIBLE": 5.25,
+            "CLEAR": 10.75
+          },
+          "top_sense": "CLEAR",
+          "margin": 3.71875
+        },
+        {
+          "id": "conf-06",
+          "senses": {
+            "CONFIRMED": 5.75,
+            "POSSIBLE": 6.15625,
+            "CLEAR": 8.625
+          },
+          "top_sense": "CLEAR",
+          "margin": 2.46875
+        },
+        {
+          "id": "conf-07",
+          "senses": {
+            "CONFIRMED": 5.21875,
+            "POSSIBLE": 5.0,
+            "CLEAR": 8.8125
+          },
+          "top_sense": "CLEAR",
+          "margin": 3.59375
+        },
+        {
+          "id": "conf-08",
+          "senses": {
+            "CONFIRMED": 6.65625,
+            "POSSIBLE": 5.78125,
+            "CLEAR": 8.4375
+          },
+          "top_sense": "CLEAR",
+          "margin": 1.78125
+        },
+        {
+          "id": "conf-09",
+          "senses": {
+            "CONFIRMED": 8.0625,
+            "POSSIBLE": 4.875,
+            "CLEAR": 14.75
+          },
+          "top_sense": "CLEAR",
+          "margin": 6.6875
+        },
+        {
+          "id": "conf-10",
+          "senses": {
+            "CONFIRMED": 6.8125,
+            "POSSIBLE": 5.5,
+            "CLEAR": 8.0625
+          },
+          "top_sense": "CLEAR",
+          "margin": 1.25
+        },
+        {
+          "id": "conf-11",
+          "senses": {
+            "CONFIRMED": 5.84375,
+            "POSSIBLE": 6.375,
+            "CLEAR": 9.1875
+          },
+          "top_sense": "CLEAR",
+          "margin": 2.8125
+        },
+        {
+          "id": "conf-12",
+          "senses": {
+            "CONFIRMED": 5.375,
+            "POSSIBLE": 5.15625,
+            "CLEAR": 8.4375
+          },
+          "top_sense": "CLEAR",
+          "margin": 3.0625
+        },
+        {
+          "id": "conf-13",
+          "senses": {
+            "CONFIRMED": 4.25,
+            "POSSIBLE": 5.40625,
+            "CLEAR": 7.15625
+          },
+          "top_sense": "CLEAR",
+          "margin": 1.75
+        },
+        {
+          "id": "conf-14",
+          "senses": {
+            "CONFIRMED": 5.5,
+            "POSSIBLE": 5.25,
+            "CLEAR": 7.4375
+          },
+          "top_sense": "CLEAR",
+          "margin": 1.9375
+        },
+        {
+          "id": "conf-15",
+          "senses": {
+            "CONFIRMED": 5.09375,
+            "POSSIBLE": 5.0625,
+            "CLEAR": 7.625
+          },
+          "top_sense": "CLEAR",
+          "margin": 2.53125
+        },
+        {
+          "id": "conf-16",
+          "senses": {
+            "CONFIRMED": 6.5,
+            "POSSIBLE": 5.375,
+            "CLEAR": 9.375
+          },
+          "top_sense": "CLEAR",
+          "margin": 2.875
+        },
+        {
+          "id": "poss-01",
+          "senses": {
+            "CONFIRMED": 4.28125,
+            "POSSIBLE": 11.0,
+            "CLEAR": 5.03125
+          },
+          "top_sense": "POSSIBLE",
+          "margin": 5.96875
+        },
+        {
+          "id": "poss-02",
+          "senses": {
+            "CONFIRMED": 4.53125,
+            "POSSIBLE": 11.4375,
+            "CLEAR": 5.0625
+          },
+          "top_sense": "POSSIBLE",
+          "margin": 6.375
+        },
+        {
+          "id": "poss-03",
+          "senses": {
+            "CONFIRMED": 6.03125,
+            "POSSIBLE": 11.8125,
+            "CLEAR": 5.09375
+          },
+          "top_sense": "POSSIBLE",
+          "margin": 5.78125
+        },
+        {
+          "id": "poss-04",
+          "senses": {
+            "CONFIRMED": 5.59375,
+            "POSSIBLE": 9.6875,
+            "CLEAR": 5.71875
+          },
+          "top_sense": "POSSIBLE",
+          "margin": 3.96875
+        },
+        {
+          "id": "poss-05",
+          "senses": {
+            "CONFIRMED": 5.4375,
+            "POSSIBLE": 9.125,
+            "CLEAR": 6.03125
+          },
+          "top_sense": "POSSIBLE",
+          "margin": 3.09375
+        },
+        {
+          "id": "poss-06",
+          "senses": {
+            "CONFIRMED": 4.90625,
+            "POSSIBLE": 10.9375,
+            "CLEAR": 5.5625
+          },
+          "top_sense": "POSSIBLE",
+          "margin": 5.375
+        },
+        {
+          "id": "poss-07",
+          "senses": {
+            "CONFIRMED": 3.828125,
+            "POSSIBLE": 9.6875,
+            "CLEAR": 5.09375
+          },
+          "top_sense": "POSSIBLE",
+          "margin": 4.59375
+        },
+        {
+          "id": "poss-08",
+          "senses": {
+            "CONFIRMED": 6.1875,
+            "POSSIBLE": 13.125,
+            "CLEAR": 5.96875
+          },
+          "top_sense": "POSSIBLE",
+          "margin": 6.9375
+        },
+        {
+          "id": "poss-09",
+          "senses": {
+            "CONFIRMED": 5.15625,
+            "POSSIBLE": 10.4375,
+            "CLEAR": 5.78125
+          },
+          "top_sense": "POSSIBLE",
+          "margin": 4.65625
+        },
+        {
+          "id": "poss-10",
+          "senses": {
+            "CONFIRMED": 4.625,
+            "POSSIBLE": 9.625,
+            "CLEAR": 4.40625
+          },
+          "top_sense": "POSSIBLE",
+          "margin": 5.0
+        },
+        {
+          "id": "poss-11",
+          "senses": {
+            "CONFIRMED": 5.5,
+            "POSSIBLE": 13.4375,
+            "CLEAR": 4.3125
+          },
+          "top_sense": "POSSIBLE",
+          "margin": 7.9375
+        },
+        {
+          "id": "poss-12",
+          "senses": {
+            "CONFIRMED": 6.25,
+            "POSSIBLE": 10.1875,
+            "CLEAR": 6.09375
+          },
+          "top_sense": "POSSIBLE",
+          "margin": 3.9375
+        },
+        {
+          "id": "poss-13",
+          "senses": {
+            "CONFIRMED": 5.3125,
+            "POSSIBLE": 12.5625,
+            "CLEAR": 5.34375
+          },
+          "top_sense": "POSSIBLE",
+          "margin": 7.21875
+        },
+        {
+          "id": "poss-14",
+          "senses": {
+            "CONFIRMED": 5.1875,
+            "POSSIBLE": 9.5,
+            "CLEAR": 5.875
+          },
+          "top_sense": "POSSIBLE",
+          "margin": 3.625
+        },
+        {
+          "id": "poss-15",
+          "senses": {
+            "CONFIRMED": 5.28125,
+            "POSSIBLE": 11.375,
+            "CLEAR": 4.4375
+          },
+          "top_sense": "POSSIBLE",
+          "margin": 6.09375
+        },
+        {
+          "id": "poss-16",
+          "senses": {
+            "CONFIRMED": 5.21875,
+            "POSSIBLE": 12.625,
+            "CLEAR": 4.3125
+          },
+          "top_sense": "POSSIBLE",
+          "margin": 7.40625
+        },
+        {
+          "id": "clear-01",
+          "senses": {
+            "CONFIRMED": 9.4375,
+            "POSSIBLE": 6.0625,
+            "CLEAR": 9.4375
+          },
+          "top_sense": "CONFIRMED",
+          "margin": 0.0
+        },
+        {
+          "id": "clear-02",
+          "senses": {
+            "CONFIRMED": 7.65625,
+            "POSSIBLE": 7.0625,
+            "CLEAR": 9.1875
+          },
+          "top_sense": "CLEAR",
+          "margin": 1.53125
+        },
+        {
+          "id": "clear-03",
+          "senses": {
+            "CONFIRMED": 8.25,
+            "POSSIBLE": 5.53125,
+            "CLEAR": 9.125
+          },
+          "top_sense": "CLEAR",
+          "margin": 0.875
+        },
+        {
+          "id": "clear-04",
+          "senses": {
+            "CONFIRMED": 9.3125,
+            "POSSIBLE": 6.59375,
+            "CLEAR": 10.1875
+          },
+          "top_sense": "CLEAR",
+          "margin": 0.875
+        },
+        {
+          "id": "clear-05",
+          "senses": {
+            "CONFIRMED": 9.125,
+            "POSSIBLE": 6.375,
+            "CLEAR": 10.875
+          },
+          "top_sense": "CLEAR",
+          "margin": 1.75
+        },
+        {
+          "id": "clear-06",
+          "senses": {
+            "CONFIRMED": 6.25,
+            "POSSIBLE": 7.4375,
+            "CLEAR": 8.5
+          },
+          "top_sense": "CLEAR",
+          "margin": 1.0625
+        },
+        {
+          "id": "clear-07",
+          "senses": {
+            "CONFIRMED": 8.9375,
+            "POSSIBLE": 6.15625,
+            "CLEAR": 9.5625
+          },
+          "top_sense": "CLEAR",
+          "margin": 0.625
+        },
+        {
+          "id": "clear-08",
+          "senses": {
+            "CONFIRMED": 8.75,
+            "POSSIBLE": 6.375,
+            "CLEAR": 12.4375
+          },
+          "top_sense": "CLEAR",
+          "margin": 3.6875
+        },
+        {
+          "id": "clear-09",
+          "senses": {
+            "CONFIRMED": 5.625,
+            "POSSIBLE": 7.15625,
+            "CLEAR": 4.09375
+          },
+          "top_sense": "POSSIBLE",
+          "margin": 1.53125
+        },
+        {
+          "id": "clear-10",
+          "senses": {
+            "CONFIRMED": 7.875,
+            "POSSIBLE": 8.75,
+            "CLEAR": 9.5625
+          },
+          "top_sense": "CLEAR",
+          "margin": 0.8125
+        },
+        {
+          "id": "clear-11",
+          "senses": {
+            "CONFIRMED": 6.9375,
+            "POSSIBLE": 5.65625,
+            "CLEAR": 7.34375
+          },
+          "top_sense": "CLEAR",
+          "margin": 0.40625
+        },
+        {
+          "id": "clear-12",
+          "senses": {
+            "CONFIRMED": 7.53125,
+            "POSSIBLE": 6.9375,
+            "CLEAR": 9.375
+          },
+          "top_sense": "CLEAR",
+          "margin": 1.84375
+        },
+        {
+          "id": "clear-13",
+          "senses": {
+            "CONFIRMED": 6.28125,
+            "POSSIBLE": 4.875,
+            "CLEAR": 9.0
+          },
+          "top_sense": "CLEAR",
+          "margin": 2.71875
+        },
+        {
+          "id": "clear-14",
+          "senses": {
+            "CONFIRMED": 7.21875,
+            "POSSIBLE": 5.9375,
+            "CLEAR": 9.75
+          },
+          "top_sense": "CLEAR",
+          "margin": 2.53125
+        },
+        {
+          "id": "clear-15",
+          "senses": {
+            "CONFIRMED": 8.875,
+            "POSSIBLE": 5.15625,
+            "CLEAR": 10.875
+          },
+          "top_sense": "CLEAR",
+          "margin": 2.0
+        },
+        {
+          "id": "clear-16",
+          "senses": {
+            "CONFIRMED": 7.65625,
+            "POSSIBLE": 6.0,
+            "CLEAR": 8.0625
+          },
+          "top_sense": "CLEAR",
+          "margin": 0.40625
+        }
+      ],
+      "accuracy_per_example": [
+        {
+          "id": "conf-01",
+          "label": "CONFIRMED",
+          "pred": "CONFIRMED",
+          "correct": true,
+          "answer": "Key cue: Lit cigarette held at mouth.\nCONFIRMED"
+        },
+        {
+          "id": "conf-02",
+          "label": "CONFIRMED",
+          "pred": "CONFIRMED",
+          "correct": true,
+          "answer": "Vape pen pressed to lips with visible vapor\nCONFIRMED"
+        },
+        {
+          "id": "conf-03",
+          "label": "CONFIRMED",
+          "pred": "CONFIRMED",
+          "correct": true,
+          "answer": "Key cue: Visible glowing orange tip of a cigar.\nCONFIRMED"
+        },
+        {
+          "id": "conf-04",
+          "label": "CONFIRMED",
+          "pred": "CONFIRMED",
+          "correct": true,
+          "answer": "Cigarette dangling from mouth\nCONFIRMED"
+        },
+        {
+          "id": "conf-05",
+          "label": "CONFIRMED",
+          "pred": "CONFIRMED",
+          "correct": true,
+          "answer": "Key cue: Visible smoke cloud and held cigarette.\nCONFIRMED"
+        },
+        {
+          "id": "conf-06",
+          "label": "CONFIRMED",
+          "pred": "CONFIRMED",
+          "correct": true,
+          "answer": "Key cue: Visible glowing red ember at fingertips.\nCONFIRMED"
+        },
+        {
+          "id": "conf-07",
+          "label": "CONFIRMED",
+          "pred": "CONFIRMED",
+          "correct": true,
+          "answer": "Key cue: Visible cigarette and drifting smoke.\nCONFIRMED"
+        },
+        {
+          "id": "conf-08",
+          "label": "CONFIRMED",
+          "pred": "CONFIRMED",
+          "correct": true,
+          "answer": "Worker is holding a lit cigarette\nCONFIRMED"
+        },
+        {
+          "id": "conf-09",
+          "label": "CONFIRMED",
+          "pred": "CONFIRMED",
+          "correct": true,
+          "answer": "Key cue: Visible vapor plume at face\nCONFIRMED"
+        },
+        {
+          "id": "conf-10",
+          "label": "CONFIRMED",
+          "pred": "CONFIRMED",
+          "correct": true,
+          "answer": "Key cue: Visible smoke rising from lips.\nCONFIRMED"
+        },
+        {
+          "id": "conf-11",
+          "label": "CONFIRMED",
+          "pred": "CONFIRMED",
+          "correct": true,
+          "answer": "Visible lit cigarette in mouth\nCONFIRMED"
+        },
+        {
+          "id": "conf-12",
+          "label": "CONFIRMED",
+          "pred": "CONFIRMED",
+          "correct": true,
+          "answer": "Key cue: Visible tobacco pipe in mouth with active smoke.\nCONFIRMED"
+        },
+        {
+          "id": "conf-13",
+          "label": "CONFIRMED",
+          "pred": "CONFIRMED",
+          "correct": true,
+          "answer": "Key cue: Visible glowing cigarette tip\nCONFIRMED"
+        },
+        {
+          "id": "conf-14",
+          "label": "CONFIRMED",
+          "pred": "CONFIRMED",
+          "correct": true,
+          "answer": "Visible vapor and glowing device\nCONFIRMED"
+        },
+        {
+          "id": "conf-15",
+          "label": "CONFIRMED",
+          "pred": "CONFIRMED",
+          "correct": true,
+          "answer": "Key cue: Cigarette held to lips with visible ash\nCONFIRMED"
+        },
+        {
+          "id": "conf-16",
+          "label": "CONFIRMED",
+          "pred": "CONFIRMED",
+          "correct": true,
+          "answer": "Key cue: Lit orange cigar tip visible.\nCONFIRMED"
+        },
+        {
+          "id": "poss-01",
+          "label": "POSSIBLE",
+          "pred": "POSSIBLE",
+          "correct": true,
+          "answer": "Ambiguous object identification\nPOSSIBLE"
+        },
+        {
+          "id": "poss-02",
+          "label": "POSSIBLE",
+          "pred": "POSSIBLE",
+          "correct": true,
+          "answer": "Key cue: Extremely thin, ambiguous object near lips.\nPOSSIBLE"
+        },
+        {
+          "id": "poss-03",
+          "label": "POSSIBLE",
+          "pred": "POSSIBLE",
+          "correct": true,
+          "answer": "Ambiguous visual evidence\nPOSSIBLE"
+        },
+        {
+          "id": "poss-04",
+          "label": "POSSIBLE",
+          "pred": "POSSIBLE",
+          "correct": true,
+          "answer": "Blurry hand holding an indistinct object with faint haze\nPOSSIBLE"
+        },
+        {
+          "id": "poss-05",
+          "label": "POSSIBLE",
+          "pred": "POSSIBLE",
+          "correct": true,
+          "answer": "The object is indistinguishable from non-smoking items.\nPOSSIBLE"
+        },
+        {
+          "id": "poss-06",
+          "label": "POSSIBLE",
+          "pred": "POSSIBLE",
+          "correct": true,
+          "answer": "Key cue: Ambiguous object identity\nPOSSIBLE"
+        },
+        {
+          "id": "poss-07",
+          "label": "POSSIBLE",
+          "pred": "CONFIRMED",
+          "correct": false,
+          "answer": "Key cue: Ambiguous pale object near mouth\nCONFIRMED"
+        },
+        {
+          "id": "poss-08",
+          "label": "POSSIBLE",
+          "pred": "POSSIBLE",
+          "correct": true,
+          "answer": "Ambiguous vapor could be breath or smoke\nPOSSIBLE"
+        },
+        {
+          "id": "poss-09",
+          "label": "POSSIBLE",
+          "pred": "POSSIBLE",
+          "correct": true,
+          "answer": "Key cue: Indistinct object with low clarity.\nPOSSIBLE"
+        },
+        {
+          "id": "poss-10",
+          "label": "POSSIBLE",
+          "pred": "CONFIRMED",
+          "correct": false,
+          "answer": "Key cue: Ambiguous object (pale item) with uncertain identity.\nCONFIRMED"
+        },
+        {
+          "id": "poss-11",
+          "label": "POSSIBLE",
+          "pred": "POSSIBLE",
+          "correct": true,
+          "answer": "Key cue: Indeterminate glint near hand\nPOSSIBLE"
+        },
+        {
+          "id": "poss-12",
+          "label": "POSSIBLE",
+          "pred": "POSSIBLE",
+          "correct": true,
+          "answer": "Object near lips is partially occluded\nPOSSIBLE"
+        },
+        {
+          "id": "poss-13",
+          "label": "POSSIBLE",
+          "pred": "POSSIBLE",
+          "correct": true,
+          "answer": "Key cue: Ambiguous line at mouth could be a cigarette or lens scratch.\nPOSSIBLE"
+        },
+        {
+          "id": "poss-14",
+          "label": "POSSIBLE",
+          "pred": "POSSIBLE",
+          "correct": true,
+          "answer": "Cupped hand near mouth suggests shielding light rather than smoking\nPOSSIBLE"
+        },
+        {
+          "id": "poss-15",
+          "label": "POSSIBLE",
+          "pred": "POSSIBLE",
+          "correct": true,
+          "answer": "Ambiguous visual evidence of smoke versus dust\nPOSSIBLE"
+        },
+        {
+          "id": "poss-16",
+          "label": "POSSIBLE",
+          "pred": "CONFIRMED",
+          "correct": false,
+          "answer": "Key cue: Ambiguous fingertip glow\nCONFIRMED"
+        },
+        {
+          "id": "clear-01",
+          "label": "CLEAR",
+          "pred": "CLEAR",
+          "correct": true,
+          "answer": "No smoking device or smoke visible\nCLEAR"
+        },
+        {
+          "id": "clear-02",
+          "label": "CLEAR",
+          "pred": "CLEAR",
+          "correct": true,
+          "answer": "No smoking object present\nCLEAR"
+        },
+        {
+          "id": "clear-03",
+          "label": "CLEAR",
+          "pred": "CLEAR",
+          "correct": true,
+          "answer": "No smoking cues present\nCLEAR"
+        },
+        {
+          "id": "clear-04",
+          "label": "CLEAR",
+          "pred": "CLEAR",
+          "correct": true,
+          "answer": "No smoking cues present\nCLEAR"
+        },
+        {
+          "id": "clear-05",
+          "label": "CLEAR",
+          "pred": "CLEAR",
+          "correct": true,
+          "answer": "No smoking cues present\nCLEAR"
+        },
+        {
+          "id": "clear-06",
+          "label": "CLEAR",
+          "pred": "CLEAR",
+          "correct": true,
+          "answer": "No smoking object visible\nCLEAR"
+        },
+        {
+          "id": "clear-07",
+          "label": "CLEAR",
+          "pred": "CONFIRMED",
+          "correct": false,
+          "answer": "Key cue: Explicit mention of non-smoking items.\nCONFIRMED"
+        },
+        {
+          "id": "clear-08",
+          "label": "CLEAR",
+          "pred": "CONFIRMED",
+          "correct": false,
+          "answer": "Key cue: Mouth is visibly empty.\nCONFIRMED"
+        },
+        {
+          "id": "clear-09",
+          "label": "CLEAR",
+          "pred": "POSSIBLE",
+          "correct": false,
+          "answer": "Key cue: Cigarettes present but no active smoking behavior.\nPOSSIBLE"
+        },
+        {
+          "id": "clear-10",
+          "label": "CLEAR",
+          "pred": "CONFIRMED",
+          "correct": false,
+          "answer": "Key cue: Ashtray present, no active smoking.\nCONFIRMED"
+        },
+        {
+          "id": "clear-11",
+          "label": "CLEAR",
+          "pred": "CLEAR",
+          "correct": true,
+          "answer": "No smoking cues present\nCLEAR"
+        },
+        {
+          "id": "clear-12",
+          "label": "CLEAR",
+          "pred": "CLEAR",
+          "correct": true,
+          "answer": "No smoking-related objects or actions are present.\nCLEAR"
+        },
+        {
+          "id": "clear-13",
+          "label": "CLEAR",
+          "pred": "CONFIRMED",
+          "correct": false,
+          "answer": "Worker is wearing a dust mask over the mouth\nCONFIRMED"
+        },
+        {
+          "id": "clear-14",
+          "label": "CLEAR",
+          "pred": "CLEAR",
+          "correct": true,
+          "answer": "No smoking object present\nCLEAR"
+        },
+        {
+          "id": "clear-15",
+          "label": "CLEAR",
+          "pred": "CLEAR",
+          "correct": true,
+          "answer": "No smoking cue present\nCLEAR"
+        },
+        {
+          "id": "clear-16",
+          "label": "CLEAR",
+          "pred": "CLEAR",
+          "correct": true,
+          "answer": "No smoking cues present\nCLEAR"
+        }
+      ]
+    }
+  }
+}

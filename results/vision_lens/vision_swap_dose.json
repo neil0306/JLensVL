@@ -1,0 +1,63 @@
+{
+  "image": "dog.jpg",
+  "block": 2,
+  "question": "What is the main subject of this photo? Answer with a single word.",
+  "A": [
+    "dog",
+    "puppy",
+    "canine"
+  ],
+  "B": [
+    "cat",
+    "kitten",
+    "feline"
+  ],
+  "concept_a": "Puppy",
+  "concept_b": "cat",
+  "a_id": 92229,
+  "b_id": 7993,
+  "baseline": {
+    "model_a": 9.5625,
+    "model_b": 8.6875
+  },
+  "dose": [
+    {
+      "t": 0.0,
+      "model_a": 9.5625,
+      "model_b": 8.6875,
+      "pref": -0.875
+    },
+    {
+      "t": 0.25,
+      "model_a": 9.4375,
+      "model_b": 8.625,
+      "pref": -0.8125
+    },
+    {
+      "t": 0.5,
+      "model_a": 9.5,
+      "model_b": 8.625,
+      "pref": -0.875
+    },
+    {
+      "t": 1.0,
+      "model_a": 9.375,
+      "model_b": 8.625,
+      "pref": -0.75
+    },
+    {
+      "t": 1.5,
+      "model_a": 9.5625,
+      "model_b": 8.625,
+      "pref": -0.9375
+    },
+    {
+      "t": 2.0,
+      "model_a": 9.4375,
+      "model_b": 8.625,
+      "pref": -0.8125
+    }
+  ],
+  "flipped": false,
+  "effect": 0.0625
+}
