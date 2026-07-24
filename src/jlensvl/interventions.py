@@ -63,8 +63,11 @@ class LensIntervention:
 
     def _resolve_position(self, inputs, position):
         seq_len = inputs["input_ids"].shape[1]
-        p = int(position)
-        return p if p >= 0 else seq_len + p
+        orig = int(position)
+        idx = orig if orig >= 0 else seq_len + orig
+        if not (0 <= idx < seq_len):
+            raise ValueError(f"position {orig} out of range for seq_len {seq_len}")
+        return idx
 
     # ---------- concept directions ----------
     def _pick_id(self, words, residual, layer):
@@ -169,18 +172,24 @@ class LensIntervention:
         z = self.lens.transport(h, layer)
         lens_logits = self.lm.unembed(z[None])[0].float().cpu()
 
+        # Always evaluate the clean baseline (t=0) and the full swap (t=1) so
+        # baseline/effect stay meaningful regardless of the requested doses.
+        eval_ts = sorted(set(float(t) for t in doses) | {0.0, 1.0})
         dose = []
-        for t in doses:
+        by_t = {}
+        for t in eval_ts:
             if t == 0.0:
                 la, lb = float(base_logits[a_id]), float(base_logits[b_id])
             else:
                 delta = self._swap_delta(h, u_a, u_b, float(t))
                 lg, _ = self._forward_logits(inputs, layer, p, delta=delta)
                 la, lb = float(lg[a_id]), float(lg[b_id])
-            dose.append({"t": float(t), "model_a": la, "model_b": lb, "pref": lb - la})
+            entry = {"t": float(t), "model_a": la, "model_b": lb, "pref": lb - la}
+            dose.append(entry)
+            by_t[float(t)] = entry
 
-        base_pref = dose[0]["pref"]
-        full_pref = dose[-1]["pref"]
+        base_pref = by_t[0.0]["pref"]
+        full_pref = by_t[1.0]["pref"]
         flipped = (base_pref > 0) != (full_pref > 0)
         return {
             "concept_a": self.jl.tok.decode([a_id]).strip(),
@@ -188,7 +197,7 @@ class LensIntervention:
             "a_id": a_id, "b_id": b_id, "layer": layer, "position": p,
             "baseline": {
                 "lens_a": float(lens_logits[a_id]), "lens_b": float(lens_logits[b_id]),
-                "model_a": dose[0]["model_a"], "model_b": dose[0]["model_b"],
+                "model_a": by_t[0.0]["model_a"], "model_b": by_t[0.0]["model_b"],
             },
             "dose": dose,
             "flipped": bool(flipped),
@@ -392,22 +401,27 @@ class VisionLensIntervention:
         u_a = self._concept_direction(a_id, H_L, block)      # [S, d_vision]
         u_b = self._concept_direction(b_id, H_L, block)
 
+        # Always evaluate the clean baseline (t=0) and the full swap (t=1).
+        eval_ts = sorted(set(float(t) for t in doses) | {0.0, 1.0})
         dose = []
-        for t in doses:
+        by_t = {}
+        for t in eval_ts:
             if t == 0.0:
                 la, lb = float(base_logits[a_id]), float(base_logits[b_id])
             else:
                 delta = batched_swap_delta(H_L, u_a, u_b, float(t))
                 lg = self._answer_logits(inputs, block, delta)
                 la, lb = float(lg[a_id]), float(lg[b_id])
-            dose.append({"t": float(t), "model_a": la, "model_b": lb, "pref": lb - la})
+            entry = {"t": float(t), "model_a": la, "model_b": lb, "pref": lb - la}
+            dose.append(entry)
+            by_t[float(t)] = entry
 
-        base_pref = dose[0]["pref"]; full_pref = dose[-1]["pref"]
+        base_pref = by_t[0.0]["pref"]; full_pref = by_t[1.0]["pref"]
         return {
             "concept_a": self.jl.tok.decode([a_id]).strip(),
             "concept_b": self.jl.tok.decode([b_id]).strip(),
             "a_id": a_id, "b_id": b_id, "block": block,
-            "baseline": {"model_a": dose[0]["model_a"], "model_b": dose[0]["model_b"]},
+            "baseline": {"model_a": by_t[0.0]["model_a"], "model_b": by_t[0.0]["model_b"]},
             "dose": dose,
             "flipped": bool((base_pref > 0) != (full_pref > 0)),
             "effect": full_pref - base_pref,
@@ -440,18 +454,23 @@ class VisionLensIntervention:
         ub = u_b / u_b.norm(dim=-1, keepdim=True).clamp_min(1e-8)
         hn = H_L.float().norm(dim=-1, keepdim=True)              # [S,1]
         contrast = (ub - ua) * hn                                 # [S,d], ||.||~alpha*||h|| after scale
+        # Always include the clean baseline (alpha=0); sort so full = max alpha.
+        eval_as = sorted(set(float(a) for a in alphas) | {0.0})
         dose = []
-        for a in alphas:
+        by_a = {}
+        for a in eval_as:
             if a == 0.0:
                 la, lb = float(base_logits[a_id]), float(base_logits[b_id])
             else:
                 lg = self._answer_logits(inputs, block, float(a) * contrast)
                 la, lb = float(lg[a_id]), float(lg[b_id])
-            dose.append({"alpha": float(a), "model_a": la, "model_b": lb, "pref": lb - la})
-        base_pref = dose[0]["pref"]; full_pref = dose[-1]["pref"]
+            entry = {"alpha": float(a), "model_a": la, "model_b": lb, "pref": lb - la}
+            dose.append(entry)
+            by_a[float(a)] = entry
+        base_pref = by_a[0.0]["pref"]; full_pref = dose[-1]["pref"]  # dose sorted asc -> max alpha
         return {"concept_a": self.jl.tok.decode([a_id]).strip(),
                 "concept_b": self.jl.tok.decode([b_id]).strip(),
                 "a_id": a_id, "b_id": b_id, "block": block, "mode": "steer",
-                "baseline": {"model_a": dose[0]["model_a"], "model_b": dose[0]["model_b"]},
+                "baseline": {"model_a": by_a[0.0]["model_a"], "model_b": by_a[0.0]["model_b"]},
                 "dose": dose, "flipped": bool((base_pref > 0) != (full_pref > 0)),
                 "effect": full_pref - base_pref}

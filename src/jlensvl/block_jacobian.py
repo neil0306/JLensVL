@@ -196,6 +196,11 @@ class BlockJacobianLens:
         for other in lenses[1:]:
             if other.source_blocks != first.source_blocks or other.d_model != first.d_model:
                 raise ValueError("lenses disagree on source_blocks / d_model")
+            if other.target_block != first.target_block:
+                raise ValueError(
+                    f"lenses disagree on target_block "
+                    f"({first.target_block} vs {other.target_block}); "
+                    f"transports into different blocks cannot be merged")
         n_total = sum(l.n_samples for l in lenses)
         merged = {}
         for b in first.source_blocks:

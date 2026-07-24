@@ -215,9 +215,13 @@ class VisionJLens:
             raise RuntimeError(f"{model_id} has no {emb_key}; not a Qwen3.5 VLM checkpoint?")
         missing, unexpected = visual.load_state_dict(vis_sd, strict=False)
         # non-persistent buffers (e.g. rotary inv_freq) may be 'missing' — that's fine;
-        # 'unexpected' keys mean a real mismatch.
-        if unexpected:
-            raise RuntimeError(f"unexpected vision keys: {unexpected[:6]}")
+        # 'unexpected' keys mean a real mismatch. A missing *parameter* would silently
+        # stay at random init, so guard those too (mirrors from_qwen35 checking both).
+        _params = dict(visual.named_parameters())
+        real_missing = [k for k in missing if k in _params]   # exclude buffers like inv_freq
+        if unexpected or real_missing:
+            raise RuntimeError(f"vision weight load mismatch: missing={real_missing[:6]} "
+                               f"unexpected={unexpected[:6]}")
         visual = visual.to(device=device, dtype=dtype).eval()
         visual.requires_grad_(False)              # Jacobian is d(act)/d(act) at fixed weights
         unembed_weight = emb.to(device=device, dtype=torch.float32)
@@ -370,20 +374,26 @@ class VisionJLens:
         source_blocks = (list(source_blocks) if source_blocks is not None
                          else list(range(target_block)))     # 0..22 (block 23 -> identity)
         acc = RunningJacobianAccumulator(source_blocks, self.d_vision, target_block)
+        # peak-memory reporting is CUDA-only; skip it (report 0.0) on cpu/mps.
+        _is_cuda = str(self.device).startswith("cuda")
         peak = 0.0
         for i, img in enumerate(images):
             pv, gthw, (rows, cols) = self.preprocess(img, size=size)
             pv_r = pv.repeat(R, 1)
             gthw_r = gthw.repeat(R, 1)
-            torch.cuda.reset_peak_memory_stats(self.device)
+            if _is_cuda:
+                torch.cuda.reset_peak_memory_stats(self.device)
             pv_r = pv_r.clone().requires_grad_(True)
             hs, _ = self._block_residuals(pv_r, gthw_r, grad=True)
             src = {b: hs[b] for b in source_blocks}           # packed [R*S, 1024] graph nodes
             per_img = fit_block_jacobian_packed(src, hs[target_block], R=R)
             norm = acc.add(per_img)
             del hs, src, per_img
-            torch.cuda.empty_cache()
-            gb = torch.cuda.max_memory_allocated(self.device) / 1e9
+            if _is_cuda:
+                torch.cuda.empty_cache()
+                gb = torch.cuda.max_memory_allocated(self.device) / 1e9
+            else:
+                gb = 0.0
             peak = max(peak, gb)
             if verbose:
                 name = os.path.basename(img) if isinstance(img, str) else f"img{i}"

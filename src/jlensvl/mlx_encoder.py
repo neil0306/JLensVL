@@ -79,7 +79,11 @@ class MLXEncoder:
     def __init__(self, model, tokenizer, layers: Sequence[int],
                  max_length: int = 64) -> None:
         self.model = model
-        self.tm = model.model            # Qwen3_5TextModel
+        # Unwrap defensively: mlx_lm wraps Qwen3.5 as either a bare text Model
+        # (older builds exposed `.model`) or a VL `Model` whose text stack lives
+        # under `.language_model.model` (mlx_lm 0.32+). Mirror examples/05.
+        lm = getattr(model, "language_model", None) or model
+        self.tm = getattr(lm, "model", lm)   # Qwen3_5TextModel (.layers/.norm/.embed_tokens)
         self.mlx_layers = self.tm.layers
         self.layers = list(layers)
         self.target = set(self.layers)
@@ -95,7 +99,9 @@ class MLXEncoder:
         from mlx_lm import load  # lazy: MLX only exists on Apple Silicon
         model, tokenizer = load(model_id)
         if layers is None:
-            n = len(model.model.layers)
+            lm = getattr(model, "language_model", None) or model
+            inner = getattr(lm, "model", lm)
+            n = len(inner.layers)
             layers = default_layers(n)
         return cls(model, tokenizer, layers, max_length)
 

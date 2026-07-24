@@ -204,6 +204,11 @@ class RetrievalIndex:
         else:
             q2 = F.normalize(as2d(query), dim=-1)
             q_by = {L: q2 for L in layers}
+        if not q_by:
+            raise ValueError(
+                "no layers to search (the index is empty or none of the "
+                f"requested layers {layers} overlap the index layers "
+                f"{self.available_layers})")
         n_tokens = next(iter(q_by.values())).shape[0]
 
         per_layer = []  # (vals[T,k], idxs[T,k], layer)
@@ -443,6 +448,10 @@ def build_index(jl, corpus, *, layers: Optional[Sequence[int]] = None,
             continue
         V = F.normalize(torch.stack(layer_vecs[L]).float(), dim=-1).to(dtype)
         layers_data[L] = {"vectors": V, "meta": layer_meta[L]}
+    if not layers_data:
+        raise ValueError(
+            "build_index captured no layers (empty corpus or the encoder "
+            "produced no hidden states); a zero-layer index is unusable")
     return RetrievalIndex(layers_data, dtype=dtype)
 
 

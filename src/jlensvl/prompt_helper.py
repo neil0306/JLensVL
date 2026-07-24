@@ -18,7 +18,12 @@ class PromptHelper:
         self.jl = jl
 
     def _layer(self, layer):
-        return layer if layer is not None else self.jl.lens.source_layers[-2]
+        if layer is not None:
+            return layer
+        sl = self.jl.lens.source_layers
+        # penultimate source layer, but fall back to the only layer for a
+        # single-source-layer lens (source_layers[-2] would IndexError).
+        return sl[-2] if len(sl) >= 2 else sl[-1]
 
     def poised(self, prompt, *, layer=None, k=6):
         """What is the model poised to say at the end of `prompt`?
@@ -27,7 +32,8 @@ class PromptHelper:
         ll, _, _ = jl.lens.apply(jl.lm, prompt, positions=[-1], layers=[L], use_jacobian=True)
         vals, idx = ll[L][0].topk(k)
         toks = jl._decode(idx.tolist())
-        return {"tokens": toks, "top1": toks[0], "margin": float(vals[0] - vals[1]), "layer": L}
+        margin = float(vals[0] - vals[1]) if vals.numel() > 1 else float("inf")
+        return {"tokens": toks, "top1": toks[0], "margin": margin, "layer": L}
 
     def poised_continuation(self, messages, prefill, *, reasoning=False, layer=None,
                             senses=None, k=6):
@@ -60,7 +66,8 @@ class PromptHelper:
         logits = ll[L][0]
         vals, idx = logits.topk(k)
         toks = jl._decode(idx.tolist())
-        out = {"tokens": toks, "top1": toks[0], "margin": float(vals[0] - vals[1]),
+        margin = float(vals[0] - vals[1]) if vals.numel() > 1 else float("inf")
+        out = {"tokens": toks, "top1": toks[0], "margin": margin,
                "layer": int(L), "reasoning": bool(reasoning), "rendered": rendered}
         if senses:
             out["senses"] = {n: self._score_words(logits, w)

@@ -306,7 +306,7 @@ class PromptStudio:
                     suggestions[c] = self.suggest_words(c, k=k, template=template)
                 except Exception as exc:  # noqa: BLE001 - proposer is best-effort
                     suggestions[c] = []
-                    suggestions.setdefault("_errors", {})  # type: ignore[arg-type]
+                    suggestions.setdefault("_errors", {})[c] = str(exc)  # type: ignore[index]
 
         # 2. scaffold candidate prompts (model-free)
         variants = self.scaffold_variants(task, concepts, styles,
